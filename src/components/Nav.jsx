@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const links = ['Sobre mí', 'Educación', 'Competencias', 'Proyectos', 'Contacto'];
 const langs = ['ES', 'EN', 'CA'];
 
 export default function Nav() {
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef(null);
+
+  useEffect(() => {
+    function handleClick(e) {
+      if (open && rootRef.current && !rootRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [open]);
+
+  useEffect(() => {
+    if (open) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = '';
+  }, [open]);
+
   return (
     <section className="fixed inset-x-0 top-4 z-50 flex justify-center px-3678 md:px-4 transition-all duration-500">
       <nav className="flex items-center gap-2 px-2 py-2 md:px-4 rounded-full border border-white/10 backdrop-blur-xl transition-colors duration-500 max-w-[calc(100vw-1.5rem)] bg-black/80 shadow-2xl shadow-red-500/5">

@@ -5,37 +5,38 @@ const langs = ['ES', 'EN', 'CA'];
 
 export default function Nav() {
   return (
-    <section className="fixed inset-x-0 top-0 z-50 bg-slate-950/100 px-6 py-4 shadow-[0_20px_80px_-40px_rgba(15,23,42,0.8)] sm:px-10 lg:px-16">
-      <div className="mx-auto max-w-7xl">
-        <div className="rounded-full border border-white/10 bg-slate-900/95 px-4 py-3 backdrop-blur-sm">
-          <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-slate-300">
-            <div className="flex flex-wrap items-center gap-4">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">
-                M.
-              </span>
-              <nav className="hidden items-center gap-4 md:flex">
-                {links.map((link) => (
-                  <a key={link} href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} className="transition hover:text-white">
-                    {link}
-                  </a>
-                ))}
-              </nav>
-            </div>
-            <div className="flex items-center gap-2">
-              {langs.map((lang, index) => (
-                <button
-                  key={lang}
-                  className={`min-w-[2.25rem] rounded-full border px-3 py-1 text-xs font-semibold uppercase transition ${
-                    index === 0 ? 'bg-red-500 text-white border-transparent' : 'border-white/10 text-slate-300 hover:border-white/20'
-                  }`}
-                >
-                  {lang}
-                </button>
-              ))}
-            </div>
-          </div>
+    <section className="fixed inset-x-0 top-4 z-50 flex justify-center px-3678 md:px-4 transition-all duration-500">
+      <nav className="flex items-center gap-2 px-2 py-2 md:px-4 rounded-full border border-white/10 backdrop-blur-xl transition-colors duration-500 max-w-[calc(100vw-1.5rem)] bg-black/80 shadow-2xl shadow-red-500/5">
+        <a href="#" className="text-white font-bold tracking-tighter mx-2 shrink-0">
+          M<span className="text-red-500">.</span>
+        </a>
+
+        <div className="hidden items-center gap-1 overflow-x-auto whitespace-nowrap pr-1 md:flex">
+          {links.map((link) => (
+            <a
+              key={link}
+              href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+              className="px-3 md:px-4 py-2 text-xs md:text-sm font-medium text-neutral-400 hover:text-white hover:bg-white/10 rounded-full transition-all flex items-center gap-2"
+            >
+              {link}
+            </a>
+          ))}
         </div>
-      </div>
+
+        <div className="ml-1 mr-1 flex items-center gap-1 rounded-full border border-white/10 bg-black/30 px-1 py-1">
+          {langs.map((lang, index) => (
+            <button
+              key={lang}
+              type="button"
+              className={`rounded-full px-2 py-1 text-[0.625rem] font-mono uppercase tracking-wider transition-colors ${
+                index === 0 ? 'bg-red-600 text-white' : 'text-neutral-400 hover:bg-white/10 hover:text-white'
+              }`}
+            >
+              {lang.toLowerCase()}
+            </button>
+          ))}
+        </div>
+      </nav>
     </section>
   );
 }

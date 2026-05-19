@@ -20,7 +20,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="proyectos" className="relative overflow-hidden py-28">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top_left,_rgba(248,113,113,0.16),_transparent_22%),radial-gradient(circle_at_top_right,_rgba(14,165,233,0.1),_transparent_18%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 max-w-3xl">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500">Proyectos personales</p>

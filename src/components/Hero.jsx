@@ -3,7 +3,7 @@ import React from 'react';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-950/80 px-6 pb-24 pt-16 sm:px-10 lg:px-16">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[420px] bg-[radial-gradient(circle_at_top,_rgba(248,113,113,0.16),_transparent_28%),radial-gradient(circle_at_15%_15%,_rgba(14,165,233,0.12),_transparent_24%)]" />
+      <div className="absolute inset-x-0 top-0 -z-10 h-[420px]" />
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8">
@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="absolute inset-0 -z-10 rounded-[3rem] bg-gradient-to-br from-slate-900 via-slate-950 to-slate-800 blur-2xl" />
             <div className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-slate-900/90 shadow-[0_40px_120px_-40px_rgba(15,23,42,0.9)]">
               <div className="aspect-[4/5] min-h-[420px] bg-slate-800/80">
-                <div className="absolute inset-0 bg-[linear-gradient(140deg,rgba(255,255,255,0.05),transparent_40%),radial-gradient(circle_at_top_left,rgba(248,113,113,0.16),transparent_22%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(140deg,rgba(255,255,255,0.05),transparent_40%)]" />
                 <div className="absolute inset-6 rounded-[2.5rem] border border-white/10 bg-slate-950/70 backdrop-blur-[1.5px]" />
                 <div className="absolute inset-0 flex items-center justify-center text-center text-slate-500">
                   <div>

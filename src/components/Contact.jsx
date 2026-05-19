@@ -24,7 +24,7 @@ const contacts = [
 export default function Contact() {
   return (
     <section id="contacto" className="relative overflow-hidden py-28">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(248,113,113,0.12),_transparent_20%),radial-gradient(circle_at_bottom_right,_rgba(14,165,233,0.08),_transparent_20%)]" />
+      <div className="absolute inset-0" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8">

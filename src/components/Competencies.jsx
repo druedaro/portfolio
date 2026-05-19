@@ -22,7 +22,7 @@ const groups = [
 export default function Competencies() {
   return (
     <section id="competencias" className="relative overflow-hidden py-28">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(248,113,113,0.14),_transparent_20%),radial-gradient(circle_at_bottom_right,_rgba(56,189,248,0.08),_transparent_20%)]" />
+      <div className="pointer-events-none absolute inset-0" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-12 max-w-3xl">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500">Competencias</p>

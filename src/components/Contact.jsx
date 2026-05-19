@@ -1,34 +1,69 @@
 import React from 'react';
 
+const contacts = [
+  {
+    label: 'LinkedIn',
+    value: 'Miguel Pujazón Cárdenas',
+    href: 'https://www.linkedin.com/in/mpujazon',
+    icon: '⬆'
+  },
+  {
+    label: 'GitHub',
+    value: 'mpujazon',
+    href: 'https://github.com/mpujazon',
+    icon: '🐙'
+  },
+  {
+    label: 'Email',
+    value: 'mpujazoncardenas@gmail.com',
+    href: 'mailto:mpujazoncardenas@gmail.com',
+    icon: '✉️'
+  }
+];
+
 export default function Contact() {
   return (
-    <section id="contacto" className="py-24">
-      <div className="mx-auto max-w-6xl px-6 sm:px-10">
-        <div className="rounded-[2rem] border border-slate-800/70 bg-slate-950/80 p-10 shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl">
-          <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-            <div className="space-y-5">
-              <p className="text-sm uppercase tracking-[0.28em] text-sky-300">Contacto</p>
-              <h2 className="text-4xl font-semibold text-white sm:text-5xl">Hablemos de tu próximo proyecto</h2>
-              <p className="max-w-xl text-base leading-7 text-slate-400">
-                Transformo ideas en experiencias digitales con diseño, estrategia y código. Escríbeme para trabajar juntos en tu siguiente web, landing o producto.
-              </p>
+    <section id="contacto" className="relative overflow-hidden py-28">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(248,113,113,0.12),_transparent_20%),radial-gradient(circle_at_bottom_right,_rgba(14,165,233,0.08),_transparent_20%)]" />
+      <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+        <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="space-y-8">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-6xl font-black uppercase tracking-[-0.08em] text-white sm:text-7xl">
+                Hablemos
+              </h2>
+              <h3 className="text-6xl font-black uppercase tracking-[-0.08em] text-red-500 sm:text-7xl">
+                hoy.
+              </h3>
             </div>
-            <div className="rounded-[1.75rem] border border-slate-800/70 bg-slate-900/80 p-8">
-              <p className="text-sm text-slate-400">Mail directo</p>
-              <a
-                href="mailto:hola@tudominio.com"
-                className="mt-4 block break-words text-lg font-semibold text-white transition hover:text-sky-300"
-              >
-                hola@tudominio.com
-              </a>
-              <div className="mt-8 grid gap-4 text-sm text-slate-400">
-                <p>
-                  <span className="font-semibold text-slate-200">Disponible para:</span> Freelance, colaboración y asesoría técnica.
-                </p>
-                <p>
-                  <span className="font-semibold text-slate-200">Stack:</span> Astro, React, Tailwind, performance y marketing digital.
-                </p>
-              </div>
+            <p className="max-w-xl text-lg leading-8 text-slate-300">
+              Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] border border-slate-800/70 bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl">
+            <p className="mb-8 text-sm uppercase tracking-[0.3em] text-slate-400">Contacto</p>
+            <div className="space-y-4">
+              {contacts.map((contact) => (
+                <a
+                  key={contact.label}
+                  href={contact.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between rounded-3xl border border-slate-800/70 bg-slate-900/90 px-5 py-4 text-left text-slate-200 transition hover:border-slate-600/80 hover:bg-slate-900/95"
+                >
+                  <div className="flex items-center gap-4">
+                    <span className="inline-flex h-11 w-11 items-center justify-center rounded-3xl bg-slate-800 text-base text-slate-200">
+                      {contact.icon}
+                    </span>
+                    <div>
+                      <p className="font-semibold text-white">{contact.label}</p>
+                      <p className="text-sm text-slate-400">{contact.value}</p>
+                    </div>
+                  </div>
+                  <span className="text-slate-400">↗</span>
+                </a>
+              ))}
             </div>
           </div>
         </div>

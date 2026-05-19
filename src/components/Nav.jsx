@@ -5,9 +5,9 @@ const langs = ['ES', 'EN', 'CA'];
 
 export default function Nav() {
   return (
-    <section className="relative px-6 pt-6 sm:px-10 lg:px-16">
+    <section className="fixed inset-x-0 top-0 z-50 bg-slate-950/100 px-6 py-4 shadow-[0_20px_80px_-40px_rgba(15,23,42,0.8)] sm:px-10 lg:px-16">
       <div className="mx-auto max-w-7xl">
-        <div className="rounded-full border border-white/10 bg-slate-950/70 px-4 py-3 shadow-[0_20px_80px_-40px_rgba(15,23,42,0.7)] backdrop-blur-xl">
+        <div className="rounded-full border border-white/10 bg-slate-900/95 px-4 py-3 backdrop-blur-sm">
           <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-slate-300">
             <div className="flex flex-wrap items-center gap-4">
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">

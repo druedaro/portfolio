@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const links = ['Sobre mí', 'Educación', 'Competencias', 'Proyectos', 'Contacto'];
+const links = ['Sobre mí', 'Experiencia', 'Educación', 'Competencias', 'Proyectos', 'Contacto'];
 const langs = ['ES', 'EN', 'CA'];
 
 export default function Nav() {

@@ -2,65 +2,74 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Landing de producto con microinteracciones',
-    description: 'Experiencia de compra, scroll animado y sistema de contenido optimizado para conversiones y performance.',
-    tags: ['Astro', 'React', 'Motion'],
-    type: 'Landing',
-    year: '2026'
+    title: 'FilmHorizon',
+    description:
+      'SPA mobile-first para descubrir películas y series, con gestión de watchlist personal. Arquitectura feature-based con Angular 21, integración con TMDB API, autenticación Firebase, rutas protegidas y despliegue en Vercel.',
+    tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+    demo: true
   },
   {
-    title: 'Dashboard de marketing con datos en tiempo real',
-    description: 'Interfaz limpia y visual con tarjetas, estado oscuro y animaciones de entrada suaves.',
-    tags: ['Tailwind', 'UI', 'Analytics'],
-    type: 'Dashboard',
-    year: '2025'
-  },
-  {
-    title: 'Micro sitio de campaña estratégica',
-    description: 'Diseño responsive con enfoque en narrativa visual, marca y velocidad de carga.',
-    tags: ['Branding', 'Performance', 'SEO'],
-    type: 'Micro sitio',
-    year: '2026'
+    title: 'Budget Generator',
+    description:
+      'Aplicación de presupuestos web con selección de servicios, configuración dinámica de precios, historial persistente y URLs compartibles. Angular 21 con PrimeNG, tests unitarios con Vitest y despliegue en Vercel.',
+    tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+    demo: true
   }
 ];
 
 export default function Projects() {
   return (
-    <section id="proyectos" className="py-24">
-      <div className="mx-auto max-w-6xl px-6 sm:px-10">
-        <div className="mb-12 max-w-3xl space-y-4">
-          <p className="text-sm uppercase tracking-[0.28em] text-sky-300">Proyectos</p>
-          <h2 className="text-4xl font-semibold text-white sm:text-5xl">Trabajos destacados</h2>
-          <p className="max-w-2xl text-base leading-8 text-slate-400">
-            Desarrollo de piezas digitales con foco en experiencia, estrategia y rendimiento. Cada enlace, bloque y animación está pensado para vender la idea sin perder velocidad.
-          </p>
+    <section id="proyectos" className="relative overflow-hidden py-28">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top_left,_rgba(248,113,113,0.16),_transparent_22%),radial-gradient(circle_at_top_right,_rgba(14,165,233,0.1),_transparent_18%)]" />
+      <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+        <div className="mb-16 max-w-3xl">
+          <p className="text-sm uppercase tracking-[0.32em] text-red-500">Proyectos personales</p>
+          <h2 className="mt-4 text-6xl font-black uppercase tracking-[-0.05em] text-white sm:text-7xl">
+            Mis proyectos.
+          </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map((project) => (
-            <article
+        <div className="space-y-20">
+          {projects.map((project, index) => (
+            <div
               key={project.title}
-              className="group rounded-[2rem] border border-slate-800/70 bg-slate-900/85 p-6 transition duration-300 hover:-translate-y-1 hover:border-sky-500/40 hover:bg-slate-900/95"
+              className={`grid gap-10 rounded-[2rem] border border-slate-800/70 bg-slate-950/90 p-8 shadow-[0_40px_140px_-70px_rgba(15,23,42,0.8)] lg:grid-cols-[1.05fr_0.95fr] ${
+                index % 2 === 1 ? 'lg:grid-cols-[0.95fr_1.05fr]' : ''
+              }`}
             >
-              <div className="mb-4 flex items-center justify-between gap-3">
-                <span className="rounded-full bg-slate-800/80 px-3 py-1 text-[0.7rem] uppercase tracking-[0.25em] text-slate-300">
-                  {project.type}
-                </span>
-                <span className="text-xs uppercase tracking-[0.2em] text-slate-500">{project.year}</span>
+              <div className="flex flex-col justify-center">
+                <div className="mb-6 flex flex-wrap gap-3">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-slate-700/70 bg-slate-900/90 px-3 py-1 text-xs uppercase tracking-[0.28em] text-slate-400"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <h3 className="text-5xl font-black tracking-[-0.06em] text-white sm:text-6xl">{project.title}</h3>
+                <p className="mt-6 max-w-xl text-base leading-8 text-slate-400">{project.description}</p>
+                <div className="mt-8 flex flex-wrap items-center gap-5 text-sm uppercase tracking-[0.25em] text-white">
+                  <a href="#" className="inline-flex items-center gap-2 font-semibold text-white transition hover:text-red-400">
+                    Ver demo
+                    <span aria-hidden="true">→</span>
+                  </a>
+                  <span className="inline-flex h-7 w-[1px] bg-slate-700" />
+                  <span className="text-slate-400">Código disponible</span>
+                </div>
               </div>
-              <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
-              <p className="mt-4 text-sm leading-7 text-slate-400">{project.description}</p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-slate-800/80 px-3 py-1 text-[0.65rem] uppercase tracking-[0.24em] text-slate-400"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              <div className="relative overflow-hidden rounded-[2rem] border border-slate-800/80 bg-slate-900/80 p-6">
+                <div className="aspect-[16/9] rounded-[1.75rem] bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
+                  <div className="flex h-full items-center justify-center text-center text-slate-400">
+                    <div>
+                      <p className="text-sm uppercase tracking-[0.3em]">Imagen del proyecto</p>
+                      <p className="mt-4 text-xs text-slate-500">Reemplazar con captura real</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </article>
+            </div>
           ))}
         </div>
       </div>

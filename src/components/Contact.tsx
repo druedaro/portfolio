@@ -1,0 +1,81 @@
+import React from 'react';
+
+const contacts = [
+  {
+    label: 'LinkedIn',
+    value: 'Miguel Pujazón Cárdenas',
+    href: 'https://www.linkedin.com/in/mpujazon',
+    icon: '⬆'
+  },
+  {
+    label: 'GitHub',
+    value: 'mpujazon',
+    href: 'https://github.com/mpujazon',
+    icon: '🐙'
+  },
+  {
+    label: 'Email',
+    value: 'mpujazoncardenas@gmail.com',
+    href: 'mailto:mpujazoncardenas@gmail.com',
+    icon: '✉️'
+  }
+];
+
+import type { ContactTranslation } from '../i18n/translations';
+
+export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?: Partial<ContactTranslation> }) {
+  const sectionId = t.id || 'contacto';
+  const sectionTag = t.section || 'Contacto';
+  const title1 = t.title1 || 'Hablemos';
+  const title2 = t.title2 || 'hoy';
+  const description = t.description || 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.';
+
+  return (
+    <section id={sectionId} className="relative overflow-hidden py-28">
+      <div className="absolute inset-0" />
+      <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+        <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="space-y-8">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-6xl font-black uppercase tracking-[-0.08em] text-slate-900 dark:text-white sm:text-7xl">
+                {title1}
+              </h2>
+              <h3 className="text-6xl font-black uppercase tracking-[-0.08em] text-red-500 sm:text-7xl">
+                {title2}
+              </h3>
+            </div>
+            <p className="max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+              {description}
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl">
+            <p className="mb-8 text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">{sectionTag}</p>
+            <div className="space-y-4">
+              {contacts.map((contact) => (
+                <a
+                  key={contact.label}
+                  href={contact.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between rounded-3xl border border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-400 dark:border-slate-800/70 dark:bg-slate-900/90 dark:text-slate-200 dark:hover:border-slate-600/80 dark:hover:bg-slate-900/95 px-5 py-4 text-left transition-all"
+                >
+                  <div className="flex items-center gap-4">
+                    <span className="inline-flex h-11 w-11 items-center justify-center rounded-3xl bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 text-base">
+                      {contact.icon}
+                    </span>
+                    <div>
+                      <p className="font-semibold text-slate-800 dark:text-white">{contact.label}</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">{contact.value}</p>
+                    </div>
+                  </div>
+                  <span className="text-slate-400">↗</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

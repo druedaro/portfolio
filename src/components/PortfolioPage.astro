@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+import Nav from './Nav.tsx';
+import Hero from './Hero.tsx';
+import Experience from './Experience.tsx';
+import Education from './Education.tsx';
+import Competencies from './Competencies.tsx';
+import Projects from './Projects.tsx';
+import Contact from './Contact.tsx';
+import Footer from './Footer.tsx';
+import ScrollToTop from './ScrollToTop.tsx';
+import { translations } from '../i18n/translations.ts';
+
+interface Props {
+  lang: 'es' | 'en' | 'ca';
+}
+
+const { lang } = Astro.props;
+const t = translations[lang];
+
+// For hreflang alternate links:
+const origin = Astro.url.origin;
+const esUrl = `${origin}/`;
+const enUrl = `${origin}/en/`;
+const caUrl = `${origin}/ca/`;
+---
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{t.meta.title}</title>
+    <meta name="description" content={t.meta.description} />
+    
+    <!-- alternate hreflangs for SEO -->
+    <link rel="alternate" hreflang="es" href={esUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="ca" href={caUrl} />
+    <link rel="alternate" hreflang="x-default" href={esUrl} />
+
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        return 'light';
+      })();
+      
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+    <main class="overflow-hidden pt-4 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+      <Nav client:load lang={lang} t={t.nav} />
+      <Hero t={t.hero} />
+      <Experience t={t.experience} />
+      <Education t={t.education} />
+      <Competencies t={t.competencies} />
+      <Projects t={t.projects} />
+      <Contact t={t.contact} />
+      <Footer t={t.footer} />
+      <ScrollToTop client:load />
+    </main>
+  </body>
+</html>

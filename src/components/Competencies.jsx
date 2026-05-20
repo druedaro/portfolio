@@ -40,7 +40,7 @@ export default function Competencies() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16">
-          <h2 className="text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-7xl mb-6">
+          <h2 className="text-4xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-7xl mb-6">
             Competencias.
           </h2>
           <div className="w-16 h-1 bg-red-500" />

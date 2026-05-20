@@ -33,7 +33,7 @@ export default function Contact() {
                 Hablemos
               </h2>
               <h3 className="text-6xl font-black uppercase tracking-[-0.08em] text-red-500 sm:text-7xl">
-                hoy.
+                hoy
               </h3>
             </div>
             <p className="max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">

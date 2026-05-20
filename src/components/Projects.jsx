@@ -25,7 +25,7 @@ export default function Projects() {
         <div className="mb-16 max-w-3xl">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500">Proyectos personales</p>
           <h2 className="mt-4 text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-7xl">
-            Mis proyectos.
+            Mis proyectos
           </h2>
         </div>
 

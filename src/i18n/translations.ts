@@ -1,4 +1,109 @@
-export const translations = {
+export interface NavItem {
+  label: string;
+  href: string;
+}
+
+export interface HeroTranslation {
+  subtitle: string;
+  title: string;
+  description: string;
+  projectsBtn: string;
+  contactBtn: string;
+  location: string;
+  brandPhoto: string;
+  photoSubtitle: string;
+}
+
+export interface ExperienceItem {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  skills: string[];
+}
+
+export interface ExperienceTranslation {
+  id: string;
+  section: string;
+  title: string;
+  description: string;
+  items: ExperienceItem[];
+}
+
+export interface EducationItem {
+  degree: string;
+  institution: string;
+  year: string;
+  description: string;
+  focus: string[];
+}
+
+export interface EducationTranslation {
+  id: string;
+  section: string;
+  title: string;
+  description: string;
+  items: EducationItem[];
+}
+
+export interface CompetencyGroup {
+  title: string;
+  items: string[];
+}
+
+export interface CompetenciesTranslation {
+  id: string;
+  title: string;
+  subtitle: string;
+  groups: CompetencyGroup[];
+}
+
+export interface ProjectItem {
+  title: string;
+  description: string;
+  tags: string[];
+  demoLabel: string;
+  codeLabel: string;
+  demo: boolean;
+}
+
+export interface ProjectsTranslation {
+  id: string;
+  section: string;
+  title: string;
+  items: ProjectItem[];
+}
+
+export interface ContactTranslation {
+  id: string;
+  section: string;
+  title1: string;
+  title2: string;
+  description: string;
+}
+
+export interface FooterTranslation {
+  copyright: string;
+}
+
+export interface MetaTranslation {
+  title: string;
+  description: string;
+}
+
+export interface TranslationDictionary {
+  meta: MetaTranslation;
+  nav: NavItem[];
+  hero: HeroTranslation;
+  experience: ExperienceTranslation;
+  education: EducationTranslation;
+  competencies: CompetenciesTranslation;
+  projects: ProjectsTranslation;
+  contact: ContactTranslation;
+  footer: FooterTranslation;
+}
+
+export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
   es: {
     meta: {
       title: "Portfolio | Frontend Developer & Technical Marketer",

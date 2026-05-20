@@ -21,7 +21,9 @@ const contacts = [
   }
 ];
 
-export default function Contact({ t = {} }) {
+import type { ContactTranslation } from '../i18n/translations';
+
+export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?: Partial<ContactTranslation> }) {
   const sectionId = t.id || 'contacto';
   const sectionTag = t.section || 'Contacto';
   const title1 = t.title1 || 'Hablemos';

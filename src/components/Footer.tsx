@@ -1,6 +1,7 @@
 import React from 'react';
+import type { FooterTranslation } from '../i18n/translations';
 
-export default function Footer({ t = {}, lang = 'es' }) {
+export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'es' }: { t?: Partial<FooterTranslation>, lang?: string }) {
   const contactHref = lang === 'es' ? '#contacto' : lang === 'en' ? '#contact' : '#contacte';
   const copyright = t.copyright || '© 2026 MIGUEL PUJAZÓN CÁRDENAS';
 

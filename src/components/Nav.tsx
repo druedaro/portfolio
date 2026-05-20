@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import type { NavItem } from '../i18n/translations';
 
 const langs = [
   { code: 'es', label: 'ES', href: '/' },
@@ -6,14 +7,14 @@ const langs = [
   { code: 'ca', label: 'CA', href: '/ca/' }
 ];
 
-export default function Nav({ lang = 'es', t = [] }) {
+export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavItem[] }) {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState('light');
-  const rootRef = useRef(null);
+  const rootRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    function handleClick(e) {
-      if (open && rootRef.current && !rootRef.current.contains(e.target)) {
+    function handleClick(e: MouseEvent) {
+      if (open && rootRef.current && !rootRef.current.contains(e.target as Node)) {
         setOpen(false);
       }
     }

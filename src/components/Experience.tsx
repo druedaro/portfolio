@@ -24,7 +24,9 @@ const experiences = [
   }
 ];
 
-export default function Experience({ t = {} }) {
+import type { ExperienceTranslation } from '../i18n/translations';
+
+export default function Experience({ t = {} as Partial<ExperienceTranslation> }: { t?: Partial<ExperienceTranslation> }) {
   const sectionId = t.id || 'experiencia';
   const sectionTag = t.section || 'Experiencia';
   const sectionTitle = t.title || 'Trayectoria profesional';

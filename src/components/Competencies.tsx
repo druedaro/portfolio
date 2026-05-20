@@ -34,7 +34,9 @@ const groups = [
   }
 ];
 
-export default function Competencies({ t = {} }) {
+import type { CompetenciesTranslation } from '../i18n/translations';
+
+export default function Competencies({ t = {} as Partial<CompetenciesTranslation> }: { t?: Partial<CompetenciesTranslation> }) {
   const sectionId = t.id || 'competencias';
   const sectionTitle = t.title || 'Competencias';
   const sectionSubtitle = t.subtitle || 'Tecnologías principales';

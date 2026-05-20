@@ -1,11 +1,15 @@
 import React from 'react';
 
-const projects = [
+import type { ProjectItem } from '../i18n/translations';
+
+const projects: ProjectItem[] = [
   {
     title: 'FilmHorizon',
     description:
       'SPA mobile-first para descubrir películas y series, con gestión de watchlist personal. Arquitectura feature-based con Angular 21, integración con TMDB API, autenticación Firebase, rutas protegidas y despliegue en Vercel.',
     tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+    demoLabel: 'Ver demo',
+    codeLabel: 'Código disponible',
     demo: true
   },
   {
@@ -13,11 +17,15 @@ const projects = [
     description:
       'Aplicación de presupuestos web con selección de servicios, configuración dinámica de precios, historial persistente y URLs compartibles. Angular 21 con PrimeNG, tests unitarios con Vitest y despliegue en Vercel.',
     tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+    demoLabel: 'Ver demo',
+    codeLabel: 'Código disponible',
     demo: true
   }
 ];
 
-export default function Projects({ t = {} }) {
+import type { ProjectsTranslation } from '../i18n/translations';
+
+export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t?: Partial<ProjectsTranslation> }) {
   const sectionId = t.id || 'proyectos';
   const sectionTag = t.section || 'Proyectos personales';
   const sectionTitle = t.title || 'Mis proyectos';

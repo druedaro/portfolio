@@ -24,7 +24,9 @@ const education = [
   }
 ];
 
-export default function Education({ t = {} }) {
+import type { EducationTranslation } from '../i18n/translations';
+
+export default function Education({ t = {} as Partial<EducationTranslation> }: { t?: Partial<EducationTranslation> }) {
   const sectionId = t.id || 'educación';
   const sectionTag = t.section || 'Educación';
   const sectionTitle = t.title || 'Formación y estudios';

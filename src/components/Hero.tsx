@@ -1,6 +1,7 @@
 import React from 'react';
+import type { HeroTranslation } from '../i18n/translations';
 
-export default function Hero({ t = {}, lang = 'es' }) {
+export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }: { t?: Partial<HeroTranslation>, lang?: string }) {
   const projectsHref = lang === 'es' ? '#proyectos' : lang === 'en' ? '#projects' : '#projectes';
   const contactHref = lang === 'es' ? '#contacto' : lang === 'en' ? '#contact' : '#contacte';
 

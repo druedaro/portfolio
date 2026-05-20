@@ -24,24 +24,30 @@ const education = [
   }
 ];
 
-export default function Education() {
+export default function Education({ t = {} }) {
+  const sectionId = t.id || 'educación';
+  const sectionTag = t.section || 'Educación';
+  const sectionTitle = t.title || 'Formación y estudios';
+  const sectionDesc = t.description || 'Combinación de formación académica, bootcamps intensivos y aprendizaje continuo en desarrollo moderno de frontend.';
+  const items = t.items || education;
+
   return (
-    <section id="educación" className="relative overflow-hidden py-28">
+    <section id={sectionId} className="relative overflow-hidden py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-12 max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.32em] text-red-500">Educación</p>
-          <h2 className="mt-4 text-5xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-6xl">Formación y estudios</h2>
+          <p className="text-sm uppercase tracking-[0.32em] text-red-500">{sectionTag}</p>
+          <h2 className="mt-4 text-5xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-6xl">{sectionTitle}</h2>
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400">
-            Combinación de formación académica, bootcamps intensivos y aprendizaje continuo en desarrollo moderno de frontend.
+            {sectionDesc}
           </p>
         </div>
 
         <div className="grid md:grid-cols-1 gap-6">
-        {education.map((edu, idx) => (
+        {items.map((edu, idx) => (
           <div
             key={idx}
-            className="p-6 md:p-8 rounded-2xl border border-slate-200 bg-white hover:border-red-500/30 hover:bg-slate-50/50 dark:border-white/10 dark:bg-white/[0.02] dark:hover:bg-white/[0.05] transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.02)] dark:shadow-none"
+            className="p-6 md:p-8 rounded-2xl border border-slate-200 bg-white hover:border-red-500/30 hover:bg-slate-50/55 dark:border-white/10 dark:bg-white/[0.02] dark:hover:bg-white/[0.05] transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.02)] dark:shadow-none"
           >
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-3">
               <div>

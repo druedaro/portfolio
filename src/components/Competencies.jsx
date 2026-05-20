@@ -34,20 +34,25 @@ const groups = [
   }
 ];
 
-export default function Competencies() {
+export default function Competencies({ t = {} }) {
+  const sectionId = t.id || 'competencias';
+  const sectionTitle = t.title || 'Competencias';
+  const sectionSubtitle = t.subtitle || 'Tecnologías principales';
+  const sectionGroups = t.groups || groups;
+
   return (
-    <section id="competencias" className="relative overflow-hidden py-28">
+    <section id={sectionId} className="relative overflow-hidden py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16">
           <h2 className="text-5xl font-black uppercase tracking-[-0.06em] text-slate-900 dark:text-white sm:text-7xl mb-6">
-            Competencias
+            {sectionTitle}
           </h2>
           <div className="w-16 h-1 bg-red-500" />
         </div>
 
         <div className="mt-16">
-          <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-slate-400 mb-12">Tecnologías principales</p>
+          <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-slate-400 mb-12">{sectionSubtitle}</p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-20">
             {technologies.map((tech) => (
@@ -66,7 +71,7 @@ export default function Competencies() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-4">
-            {groups.map((group) => (
+            {sectionGroups.map((group) => (
               <div key={group.title} className="rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-6 shadow-[0_30px_100px_-60px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_100px_-60px_rgba(15,23,42,0.8)]">
                 <h3 className="mb-6 text-base font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300">
                   {group.title}

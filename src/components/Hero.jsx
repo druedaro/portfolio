@@ -1,6 +1,9 @@
 import React from 'react';
 
-export default function Hero() {
+export default function Hero({ t = {}, lang = 'es' }) {
+  const projectsHref = lang === 'es' ? '#proyectos' : lang === 'en' ? '#projects' : '#projectes';
+  const contactHref = lang === 'es' ? '#contacto' : lang === 'en' ? '#contact' : '#contacte';
+
   return (
     <section className="relative overflow-hidden bg-slate-50/80 dark:bg-slate-950/80 px-6 pb-24 pt-16 sm:px-10 lg:px-16">
       <div className="absolute inset-x-0 top-0 -z-10 h-[420px]" />
@@ -9,33 +12,33 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="flex items-center gap-3">
               <span className="inline-flex h-10 w-1 rounded-full bg-red-500" />
-              <p className="text-xs uppercase tracking-[0.3em] text-red-400">Frontend developer · technical marketer</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-red-400">{t.subtitle}</p>
             </div>
             <h1 className="text-6xl font-black tracking-[-0.04em] text-slate-900 dark:text-white sm:text-7xl lg:text-8xl">
-              Diseño web con impacto
+              {t.title}
             </h1>
             <div className="max-w-2xl space-y-6">
               <p className="text-lg leading-8 text-slate-700 dark:text-slate-300">
-                Desarrollo frontend moderno con enfoque en producto, rendimiento y experiencia visual. Interfaces oscuras, limpias y con movimiento sutil para destacar cada sección.
+                {t.description}
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="#proyectos"
+                  href={projectsHref}
                   className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-3 text-base font-semibold text-white transition hover:bg-red-500"
                 >
-                  Proyectos
+                  {t.projectsBtn}
                 </a>
                 <a
-                  href="#contacto"
+                  href={contactHref}
                   className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition hover:border-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:hover:border-slate-400"
                 >
-                  Contacto
+                  {t.contactBtn}
                 </a>
               </div>
             </div>
             <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
               <span className="inline-flex h-2 w-2 rounded-full bg-red-500" />
-              Barcelona
+              {t.location}
             </div>
           </div>
 
@@ -47,8 +50,8 @@ export default function Hero() {
                 <div className="absolute inset-6 rounded-[2.5rem] border border-slate-200/60 bg-white/70 backdrop-blur-[1.5px] dark:border-white/10 dark:bg-slate-950/70" />
                 <div className="absolute inset-0 flex items-center justify-center text-center text-slate-500">
                   <div>
-                    <p className="text-sm uppercase tracking-[0.28em] text-slate-600 dark:text-slate-400">Foto de marca</p>
-                    <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">Reemplaza este bloque con tu imagen o retrato</p>
+                    <p className="text-sm uppercase tracking-[0.28em] text-slate-600 dark:text-slate-400">{t.brandPhoto}</p>
+                    <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">{t.photoSubtitle}</p>
                   </div>
                 </div>
               </div>

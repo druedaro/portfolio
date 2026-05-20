@@ -21,28 +21,34 @@ const contacts = [
   }
 ];
 
-export default function Contact() {
+export default function Contact({ t = {} }) {
+  const sectionId = t.id || 'contacto';
+  const sectionTag = t.section || 'Contacto';
+  const title1 = t.title1 || 'Hablemos';
+  const title2 = t.title2 || 'hoy';
+  const description = t.description || 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.';
+
   return (
-    <section id="contacto" className="relative overflow-hidden py-28">
+    <section id={sectionId} className="relative overflow-hidden py-28">
       <div className="absolute inset-0" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8">
             <div className="flex flex-col gap-4">
               <h2 className="text-6xl font-black uppercase tracking-[-0.08em] text-slate-900 dark:text-white sm:text-7xl">
-                Hablemos
+                {title1}
               </h2>
               <h3 className="text-6xl font-black uppercase tracking-[-0.08em] text-red-500 sm:text-7xl">
-                hoy
+                {title2}
               </h3>
             </div>
             <p className="max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-              Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.
+              {description}
             </p>
           </div>
 
           <div className="rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl">
-            <p className="mb-8 text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Contacto</p>
+            <p className="mb-8 text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">{sectionTag}</p>
             <div className="space-y-4">
               {contacts.map((contact) => (
                 <a

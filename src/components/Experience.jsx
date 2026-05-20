@@ -24,21 +24,27 @@ const experiences = [
   }
 ];
 
-export default function Experience() {
+export default function Experience({ t = {} }) {
+  const sectionId = t.id || 'experiencia';
+  const sectionTag = t.section || 'Experiencia';
+  const sectionTitle = t.title || 'Trayectoria profesional';
+  const sectionDesc = t.description || 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.';
+  const items = t.items || experiences;
+
   return (
-    <section id="experiencia" className="relative overflow-hidden py-28">
+    <section id={sectionId} className="relative overflow-hidden py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-12 max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.32em] text-red-500">Experiencia</p>
-          <h2 className="mt-4 text-5xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-6xl">Trayectoria profesional</h2>
+          <p className="text-sm uppercase tracking-[0.32em] text-red-500">{sectionTag}</p>
+          <h2 className="mt-4 text-5xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-6xl">{sectionTitle}</h2>
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400">
-            Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.
+            {sectionDesc}
           </p>
         </div>
 
         <div className="space-y-6">
-        {experiences.map((exp, idx) => (
+        {items.map((exp, idx) => (
           <div
             key={idx}
             className="relative pl-6 md:pl-8 border-l border-slate-200 dark:border-white/10 hover:border-red-500/50 transition-colors duration-300 pb-6"

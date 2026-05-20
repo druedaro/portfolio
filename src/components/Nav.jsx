@@ -1,9 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const links = ['Sobre mí', 'Experiencia', 'Educación', 'Competencias', 'Proyectos', 'Contacto'];
-const langs = ['ES', 'EN', 'CA'];
+const langs = [
+  { code: 'es', label: 'ES', href: '/' },
+  { code: 'en', label: 'EN', href: '/en/' },
+  { code: 'ca', label: 'CA', href: '/ca/' }
+];
 
-export default function Nav() {
+export default function Nav({ lang = 'es', t = [] }) {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState('light');
   const rootRef = useRef(null);
@@ -40,22 +43,24 @@ export default function Nav() {
     }
   };
 
+  const homeHref = lang === 'es' ? '/' : `/${lang}/`;
+
   return (
     <section ref={rootRef} className="fixed inset-x-0 top-4 z-50 flex justify-center px-3 md:px-4 transition-all duration-500">
       <nav className="relative flex items-center gap-2 px-2 py-3 md:px-4 rounded-full border border-slate-200 bg-white/80 dark:border-white/10 dark:bg-black/80 backdrop-blur-xl transition-colors duration-500 max-w-[calc(100vw-1.5rem)] shadow-2xl shadow-red-500/5">
-        <button type="button" className="text-slate-900 dark:text-white font-bold tracking-tighter mx-2 shrink-0 bg-none border-none cursor-pointer">
+        <a href={homeHref} className="text-slate-900 dark:text-white font-bold tracking-tighter mx-2 shrink-0 bg-none border-none cursor-pointer decoration-0">
           M<span className="text-red-500">.</span>
-        </button>
+        </a>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-1 overflow-x-auto whitespace-nowrap pr-1">
-          {links.map((link) => (
+          {t.map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+              key={link.label}
+              href={link.href}
               className="px-3 md:px-4 py-2 text-xs md:text-sm font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-neutral-400 dark:hover:text-white dark:hover:bg-white/10 rounded-full transition-all flex items-center gap-2"
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>
@@ -86,16 +91,16 @@ export default function Nav() {
 
           {/* Languages */}
           <div className="hidden md:flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50/55 dark:border-white/10 dark:bg-black/30 px-1 py-1">
-            {langs.map((lang, index) => (
-              <button
-                key={lang}
-                type="button"
+            {langs.map((l) => (
+              <a
+                key={l.code}
+                href={l.href}
                 className={`rounded-full px-2 py-1 text-[0.625rem] font-mono uppercase tracking-wider transition-colors ${
-                  index === 0 ? 'bg-red-600 text-white' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white'
+                  lang === l.code ? 'bg-red-600 text-white' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white'
                 }`}
               >
-                {lang.toLowerCase()}
-              </button>
+                {l.label}
+              </a>
             ))}
           </div>
 
@@ -127,27 +132,28 @@ export default function Nav() {
         {open && (
           <div className="absolute left-1/2 top-full z-40 w-[calc(100vw-2rem)] -translate-x-1/2 rounded-2xl border border-slate-200/80 bg-white/95 dark:border-none dark:bg-black/95 p-4 shadow-xl md:hidden mt-2">
             <div className="flex flex-col gap-2">
-              {links.map((link) => (
+              {t.map((link) => (
                 <a
-                  key={link}
-                  href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                  key={link.label}
+                  href={link.href}
                   onClick={() => setOpen(false)}
                   className="block px-3 py-3 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-neutral-300 dark:hover:bg-white/5 dark:hover:text-white transition"
                 >
-                  {link}
+                  {link.label}
                 </a>
               ))}
 
               <div className="mt-2 flex items-center gap-2 border-t border-slate-200 dark:border-white/6 pt-3">
-                {langs.map((lang, index) => (
-                  <button
-                    key={lang}
+                {langs.map((l) => (
+                  <a
+                    key={l.code}
+                    href={l.href}
                     className={`rounded-full px-3 py-1 text-[0.675rem] font-mono uppercase tracking-wider transition-colors ${
-                      index === 0 ? 'bg-red-600 text-white' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:text-neutral-400 dark:hover:bg-white/5 dark:hover:text-white'
+                      lang === l.code ? 'bg-red-600 text-white' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:text-neutral-400 dark:hover:bg-white/5 dark:hover:text-white'
                     }`}
                   >
-                    {lang.toLowerCase()}
-                  </button>
+                    {l.label}
+                  </a>
                 ))}
               </div>
             </div>

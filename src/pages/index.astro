@@ -19,9 +19,23 @@ import ScrollToTop from '../components/ScrollToTop.jsx';
       name="description"
       content="Portfolio de frontend developer y technical marketer construido con Astro, React y Tailwind."
     />
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        return 'light';
+      })();
+      
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
-  <body class="min-h-screen bg-slate-950 text-slate-100">
-    <main class="overflow-hidden pt-4 bg-slate-950">
+  <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+    <main class="overflow-hidden pt-4 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
       <Nav client:load />
       <Hero />
       <Experience />

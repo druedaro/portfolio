@@ -29,20 +29,20 @@ export default function Contact() {
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8">
             <div className="flex flex-col gap-4">
-              <h2 className="text-6xl font-black uppercase tracking-[-0.08em] text-white sm:text-7xl">
+              <h2 className="text-6xl font-black uppercase tracking-[-0.08em] text-slate-900 dark:text-white sm:text-7xl">
                 Hablemos
               </h2>
               <h3 className="text-6xl font-black uppercase tracking-[-0.08em] text-red-500 sm:text-7xl">
                 hoy.
               </h3>
             </div>
-            <p className="max-w-xl text-lg leading-8 text-slate-300">
+            <p className="max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
               Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-800/70 bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl">
-            <p className="mb-8 text-sm uppercase tracking-[0.3em] text-slate-400">Contacto</p>
+          <div className="rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl">
+            <p className="mb-8 text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">Contacto</p>
             <div className="space-y-4">
               {contacts.map((contact) => (
                 <a
@@ -50,15 +50,15 @@ export default function Contact() {
                   href={contact.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center justify-between rounded-3xl border border-slate-800/70 bg-slate-900/90 px-5 py-4 text-left text-slate-200 transition hover:border-slate-600/80 hover:bg-slate-900/95"
+                  className="flex items-center justify-between rounded-3xl border border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-400 dark:border-slate-800/70 dark:bg-slate-900/90 dark:text-slate-200 dark:hover:border-slate-600/80 dark:hover:bg-slate-900/95 px-5 py-4 text-left transition-all"
                 >
                   <div className="flex items-center gap-4">
-                    <span className="inline-flex h-11 w-11 items-center justify-center rounded-3xl bg-slate-800 text-base text-slate-200">
+                    <span className="inline-flex h-11 w-11 items-center justify-center rounded-3xl bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 text-base">
                       {contact.icon}
                     </span>
                     <div>
-                      <p className="font-semibold text-white">{contact.label}</p>
-                      <p className="text-sm text-slate-400">{contact.value}</p>
+                      <p className="font-semibold text-slate-800 dark:text-white">{contact.label}</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">{contact.value}</p>
                     </div>
                   </div>
                   <span className="text-slate-400">↗</span>

@@ -24,7 +24,7 @@ export default function Projects() {
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 max-w-3xl">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500">Proyectos personales</p>
-          <h2 className="mt-4 text-6xl font-black uppercase tracking-[-0.05em] text-white sm:text-7xl">
+          <h2 className="mt-4 text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-7xl">
             Mis proyectos.
           </h2>
         </div>
@@ -33,7 +33,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`grid gap-10 rounded-[2rem] border border-slate-800/70 bg-slate-950/90 p-8 shadow-[0_40px_140px_-70px_rgba(15,23,42,0.8)] lg:grid-cols-[1.05fr_0.95fr] ${
+              className={`grid gap-10 rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 p-8 shadow-[0_40px_140px_-70px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_140px_-70px_rgba(15,23,42,0.8)] lg:grid-cols-[1.05fr_0.95fr] ${
                 index % 2 === 1 ? 'lg:grid-cols-[0.95fr_1.05fr]' : ''
               }`}
             >
@@ -42,29 +42,29 @@ export default function Projects() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-slate-700/70 bg-slate-900/90 px-3 py-1 text-xs uppercase tracking-[0.28em] text-slate-400"
+                      className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs uppercase tracking-[0.28em] text-slate-500 dark:border-slate-700/70 dark:bg-slate-900/90 dark:text-slate-400"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <h3 className="text-5xl font-black tracking-[-0.06em] text-white sm:text-6xl">{project.title}</h3>
-                <p className="mt-6 max-w-xl text-base leading-8 text-slate-400">{project.description}</p>
-                <div className="mt-8 flex flex-wrap items-center gap-5 text-sm uppercase tracking-[0.25em] text-white">
-                  <a href="#" className="inline-flex items-center gap-2 font-semibold text-white transition hover:text-red-400">
+                <h3 className="text-5xl font-black tracking-[-0.06em] text-slate-900 dark:text-white sm:text-6xl">{project.title}</h3>
+                <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 dark:text-slate-400">{project.description}</p>
+                <div className="mt-8 flex flex-wrap items-center gap-5 text-sm uppercase tracking-[0.25em] text-slate-800 dark:text-white">
+                  <a href="#" className="inline-flex items-center gap-2 font-semibold text-slate-800 hover:text-red-500 dark:text-white dark:hover:text-red-400 transition-colors">
                     Ver demo
                     <span aria-hidden="true">→</span>
                   </a>
-                  <span className="inline-flex h-7 w-[1px] bg-slate-700" />
-                  <span className="text-slate-400">Código disponible</span>
+                  <span className="inline-flex h-7 w-[1px] bg-slate-200 dark:bg-slate-700" />
+                  <span className="text-slate-500 dark:text-slate-400">Código disponible</span>
                 </div>
               </div>
-              <div className="relative overflow-hidden rounded-[2rem] border border-slate-800/80 bg-slate-900/80 p-6">
-                <div className="aspect-[16/9] rounded-[1.75rem] bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
-                  <div className="flex h-full items-center justify-center text-center text-slate-400">
+              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 dark:border-slate-800/80 dark:bg-slate-900/80 p-6">
+                <div className="aspect-[16/9] rounded-[1.75rem] bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-slate-800 dark:via-slate-900 dark:to-slate-950 shadow-[0_30px_120px_-50px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
+                  <div className="flex h-full items-center justify-center text-center text-slate-500 dark:text-slate-400">
                     <div>
-                      <p className="text-sm uppercase tracking-[0.3em]">Imagen del proyecto</p>
-                      <p className="mt-4 text-xs text-slate-500">Reemplazar con captura real</p>
+                      <p className="text-sm uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400">Imagen del proyecto</p>
+                      <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">Reemplazar con captura real</p>
                     </div>
                   </div>
                 </div>

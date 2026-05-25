@@ -45,37 +45,52 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
           </p>
         </div>
 
-        <div className="space-y-6">
-        {items.map((exp, idx) => (
-          <div
-            key={idx}
-            className="relative pl-6 md:pl-8 border-l border-slate-200 dark:border-white/10 hover:border-red-500/50 transition-colors duration-300 pb-6"
-          >
-            <div className="absolute -left-3 top-0 w-6 h-6 bg-red-500/10 dark:bg-red-500/20 border border-red-500/50 rounded-full" />
-            
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
-              <div>
-                <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white">{exp.title}</h3>
-                <p className="text-slate-600 dark:text-neutral-400 text-sm">{exp.company}</p>
+        <style>{`
+          .exp-card {
+            border-radius: 1rem;
+            padding: 1.25rem 1.25rem 1.25rem 2rem;
+            transition: box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+          }
+          .exp-card:hover {
+            box-shadow: 0 0 0 1px rgba(239,68,68,0.2), 0 8px 40px -8px rgba(239,68,68,0.25);
+            background: rgba(239,68,68,0.03);
+          }
+          .dark .exp-card:hover {
+            box-shadow: 0 0 0 1px rgba(239,68,68,0.15), 0 8px 48px -8px rgba(239,68,68,0.2);
+            background: rgba(239,68,68,0.04);
+          }
+        `}</style>
+        <div className="space-y-2">
+          {items.map((exp, idx) => (
+            <div
+              key={idx}
+              className="exp-card group relative border-l-2 border-slate-200 dark:border-white/10 hover:border-red-500/60 pb-4 cursor-default"
+            >
+              <div className="absolute -left-[9px] top-4 h-[16px] w-[16px] rounded-full border-2 border-red-500/40 bg-red-500/10 dark:bg-red-500/20 transition-all duration-400 group-hover:border-red-500 group-hover:bg-red-500/20 group-hover:scale-110" />
+
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
+                <div>
+                  <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white group-hover:text-red-500 transition-colors duration-300">{exp.title}</h3>
+                  <p className="text-slate-500 dark:text-neutral-400 text-sm">{exp.company}</p>
+                </div>
+                <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
               </div>
-              <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
+
+              <p className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed">{exp.description}</p>
+
+              <div className="flex flex-wrap gap-2">
+                {exp.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-2.5 py-1 text-xs font-medium bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-neutral-300 border border-slate-200 dark:border-white/10 rounded-full group-hover:border-red-500/30 group-hover:text-slate-900 dark:group-hover:text-white transition-colors duration-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-            
-            <p className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed">{exp.description}</p>
-            
-            <div className="flex flex-wrap gap-2">
-              {exp.skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-2.5 py-1 text-xs font-medium bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-neutral-300 border border-slate-200 dark:border-white/10 rounded-full hover:bg-slate-200 dark:hover:bg-white/10 hover:text-slate-900 dark:hover:text-white transition-colors"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </section>
   );

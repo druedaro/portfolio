@@ -222,8 +222,8 @@ const LetterGlitch = ({
     <div
       className="relative w-full h-full overflow-hidden"
       style={{
-        maskImage: 'radial-gradient(circle, black 30%, transparent 100%)',
-        WebkitMaskImage: 'radial-gradient(circle, black 30%, transparent 100%)'
+        maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+        WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)'
       }}
     >
       <canvas ref={canvasRef} className="block w-full h-full" />

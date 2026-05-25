@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 
 const LetterGlitch = ({
-  glitchColors = ['#2b4539', '#61dca3', '#61b3dc'],
+  glitchColors = ['#ea580c', '#f97316', '#fb923c'],
   glitchSpeed = 50,
   centerVignette = false,
   outerVignette = true,
@@ -219,14 +219,14 @@ const LetterGlitch = ({
   }, [glitchSpeed, smooth]);
 
   return (
-    <div className="relative w-full h-full bg-black overflow-hidden rounded-2xl border border-slate-800/80 shadow-[0_40px_120px_-30px_rgba(0,0,0,0.6)]">
+    <div
+      className="relative w-full h-full overflow-hidden"
+      style={{
+        maskImage: 'radial-gradient(circle, black 30%, transparent 100%)',
+        WebkitMaskImage: 'radial-gradient(circle, black 30%, transparent 100%)'
+      }}
+    >
       <canvas ref={canvasRef} className="block w-full h-full" />
-      {outerVignette && (
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none bg-[radial-gradient(circle,_rgba(0,0,0,0)_60%,_rgba(0,0,0,1)_100%)]"></div>
-      )}
-      {centerVignette && (
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none bg-[radial-gradient(circle,_rgba(0,0,0,0.8)_0%,_rgba(0,0,0,0)_60%)]"></div>
-      )}
     </div>
   );
 };

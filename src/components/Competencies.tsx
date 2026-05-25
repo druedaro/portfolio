@@ -1,20 +1,5 @@
 import React from 'react';
 
-const technologies = [
-  { name: 'Angular', icon: '🅰️' },
-  { name: 'TypeScript', icon: '📘' },
-  { name: 'JavaScript', icon: '📙' },
-  { name: 'RxJS', icon: '🔄' },
-  { name: 'Node.js', icon: '🟢' },
-  { name: 'PostgreSQL', icon: '🗄️' },
-  { name: 'Vitest', icon: '✅' },
-  { name: 'CSS', icon: '🎨' },
-  { name: 'Tailwind CSS', icon: '💨' },
-  { name: 'SASS', icon: '🎯' },
-  { name: 'Git', icon: '🔀' },
-  { name: 'Jira', icon: '📋' }
-];
-
 const groups = [
   {
     title: 'Angular Moderno',
@@ -36,7 +21,7 @@ const groups = [
 
 import type { CompetenciesTranslation } from '../i18n/translations';
 
-export default function Competencies({ t = {} as Partial<CompetenciesTranslation> }: { t?: Partial<CompetenciesTranslation> }) {
+export default function Competencies({ t = {} as Partial<CompetenciesTranslation>, children }: { t?: Partial<CompetenciesTranslation>; children?: React.ReactNode }) {
   const sectionId = t.id || 'competencias';
   const sectionTitle = t.title || 'Competencias';
   const sectionSubtitle = t.subtitle || 'Tecnologías principales';
@@ -55,22 +40,9 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
 
         <div className="mt-16">
           <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-slate-400 mb-12">{sectionSubtitle}</p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-20">
-            {technologies.map((tech) => (
-              <div
-                key={tech.name}
-                className="flex flex-col items-center justify-center p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 hover:border-slate-300 dark:border-slate-800/50 dark:bg-slate-950/50 dark:hover:border-red-500/50 dark:hover:bg-slate-900/80 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.02)] dark:shadow-none group"
-              >
-                <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
-                  {tech.icon}
-                </div>
-                <span className="text-xs font-semibold text-slate-600 group-hover:text-slate-900 dark:text-slate-300 dark:group-hover:text-white uppercase tracking-[0.2em] transition-colors">
-                  {tech.name}
-                </span>
-              </div>
-            ))}
-          </div>
+
+          {/* TechCarousel Astro island injected via children */}
+          {children && <div className="mb-20">{children}</div>}
 
           <div className="grid gap-6 lg:grid-cols-4">
             {sectionGroups.map((group) => (

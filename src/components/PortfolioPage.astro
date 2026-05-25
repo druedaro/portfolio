@@ -5,6 +5,7 @@ import Hero from './Hero.tsx';
 import Experience from './Experience.tsx';
 import Education from './Education.tsx';
 import Competencies from './Competencies.tsx';
+import TechCarousel from './TechCarousel.tsx';
 import Projects from './Projects.tsx';
 import Contact from './Contact.tsx';
 import Footer from './Footer.tsx';
@@ -58,7 +59,9 @@ const caUrl = `${origin}/ca/`;
       <Hero t={t.hero} />
       <Experience t={t.experience} />
       <Education t={t.education} />
-      <Competencies t={t.competencies} />
+      <Competencies t={t.competencies}>
+        <TechCarousel client:visible />
+      </Competencies>
       <Projects t={t.projects} />
       <Contact t={t.contact} />
       <Footer t={t.footer} />

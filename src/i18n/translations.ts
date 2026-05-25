@@ -91,10 +91,22 @@ export interface MetaTranslation {
   description: string;
 }
 
+export interface WhatIDoService {
+  id: string;
+  title: string;
+  items: string[];
+}
+
+export interface WhatIDoTranslation {
+  heading: string;
+  services: WhatIDoService[];
+}
+
 export interface TranslationDictionary {
   meta: MetaTranslation;
   nav: NavItem[];
   hero: HeroTranslation;
+  whatIDo: WhatIDoTranslation;
   experience: ExperienceTranslation;
   education: EducationTranslation;
   competencies: CompetenciesTranslation;
@@ -228,6 +240,38 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
           demo: true
+        }
+      ]
+    },
+    whatIDo: {
+      heading: '¿Qué hago?',
+      services: [
+        {
+          id: 'web',
+          title: 'Desarrollo Web',
+          items: [
+            'Single Page Applications (SPAs)',
+            'Landing pages y sitios web empresariales',
+            'Webs de portfolio'
+          ]
+        },
+        {
+          id: 'mobile',
+          title: 'Desarrollo Mobile',
+          items: [
+            'Progressive Web Apps (PWA)',
+            'Diseño responsive mobile-first',
+            'Soluciones multiplataforma'
+          ]
+        },
+        {
+          id: 'design',
+          title: 'Diseño UI/UX y Prototipado',
+          items: [
+            'Wireframing y prototipado',
+            'Sistemas de diseño de componentes',
+            'Interfaces accesibles (WCAG)'
+          ]
         }
       ]
     },
@@ -369,6 +413,38 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         }
       ]
     },
+    whatIDo: {
+      heading: 'What I do?',
+      services: [
+        {
+          id: 'web',
+          title: 'Web Development',
+          items: [
+            'Single Page Applications (SPAs)',
+            'Landing pages and business websites',
+            'Portfolio websites'
+          ]
+        },
+        {
+          id: 'mobile',
+          title: 'Mobile Development',
+          items: [
+            'Progressive Web Apps (PWA)',
+            'Responsive mobile-first design',
+            'Cross-platform solutions'
+          ]
+        },
+        {
+          id: 'design',
+          title: 'UI/UX Design & Prototyping',
+          items: [
+            'Wireframing and prototyping',
+            'Component design systems',
+            'Accessibility-first interfaces (WCAG)'
+          ]
+        }
+      ]
+    },
     contact: {
       id: 'contact',
       section: 'Contact',
@@ -504,6 +580,38 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
           demo: true
+        }
+      ]
+    },
+    whatIDo: {
+      heading: 'Què faig?',
+      services: [
+        {
+          id: 'web',
+          title: 'Desenvolupament Web',
+          items: [
+            'Single Page Applications (SPAs)',
+            'Landing pages i llocs web empresarials',
+            'Webs de portfolio'
+          ]
+        },
+        {
+          id: 'mobile',
+          title: 'Desenvolupament Mobile',
+          items: [
+            'Progressive Web Apps (PWA)',
+            'Disseny responsive mobile-first',
+            'Solucions multiplataforma'
+          ]
+        },
+        {
+          id: 'design',
+          title: 'Disseny UI/UX i Prototipat',
+          items: [
+            'Wireframing i prototipat',
+            'Sistemes de disseny de components',
+            'Interfícies accessibles (WCAG)'
+          ]
         }
       ]
     },

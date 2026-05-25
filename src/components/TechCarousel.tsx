@@ -141,9 +141,6 @@ export default function TechCarousel() {
           animation: ticker 30s linear infinite;
           will-change: transform;
         }
-        .ticker-track:hover {
-          animation-play-state: paused;
-        }
       `}</style>
 
       {/* Left fade mask */}

@@ -58,7 +58,7 @@ const caUrl = `${origin}/ca/`;
     <main class="overflow-hidden pt-4 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
       <Nav client:load lang={lang} t={t.nav} />
       <Hero t={t.hero} />
-      <WhatIDo client:visible />
+      <WhatIDo client:visible t={t.whatIDo} />
       <Experience t={t.experience} />
       <Education t={t.education} />
       <Competencies t={t.competencies}>

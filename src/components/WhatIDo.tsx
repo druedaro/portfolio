@@ -97,7 +97,7 @@ export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
           </div>
           
           {/* Right — LetterGlitch animation */}
-          <div className="lg:sticky lg:top-28 h-64 lg:h-[400px]">
+          <div className="lg:sticky lg:top-28 h-64 lg:h-[400px] w-full max-w-[100vw] overflow-hidden -mx-6 px-6 lg:mx-0 lg:px-0">
             <LetterGlitch />
           </div>
         </div>

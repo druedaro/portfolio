@@ -48,7 +48,7 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
             {sectionGroups.map((group) => (
               <div key={group.title} className="group rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-6 shadow-[0_30px_100px_-60px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_100px_-60px_rgba(15,23,42,0.8)] transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-red-500 hover:shadow-[0_0_40px_rgba(239,68,68,0.5)] dark:hover:shadow-[0_0_40px_rgba(239,68,68,0.4)] relative overflow-hidden z-10">
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 -z-10" />
-                <h3 className="mb-6 text-base font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300">
+                <h3 className="mb-6 text-base font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300 transition-colors duration-300 group-hover:text-red-500">
                   {group.title}
                 </h3>
                 <div className="space-y-4">

@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import React from 'react';
 
 const technologies = [
   {
@@ -127,29 +127,31 @@ const technologies = [
 ];
 
 export default function TechCarousel() {
-  const trackRef = useRef<HTMLDivElement>(null);
-
   // Duplicate list for seamless infinite loop
   const items = [...technologies, ...technologies];
 
   return (
     <div className="relative w-full overflow-hidden py-4">
+      <style>{`
+        @keyframes ticker {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .ticker-track {
+          animation: ticker 30s linear infinite;
+          will-change: transform;
+        }
+        .ticker-track:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+
       {/* Left fade mask */}
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-slate-50 to-transparent dark:from-slate-950" />
       {/* Right fade mask */}
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-slate-50 to-transparent dark:from-slate-950" />
 
-      <div
-        ref={trackRef}
-        className="flex w-max gap-10 animate-ticker"
-        style={{ willChange: 'transform' }}
-        onMouseEnter={(e) => {
-          (e.currentTarget as HTMLDivElement).style.animationPlayState = 'paused';
-        }}
-        onMouseLeave={(e) => {
-          (e.currentTarget as HTMLDivElement).style.animationPlayState = 'running';
-        }}
-      >
+      <div className="ticker-track flex w-max gap-8">
         {items.map((tech, i) => (
           <div
             key={`${tech.name}-${i}`}

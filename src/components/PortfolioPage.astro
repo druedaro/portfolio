@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Nav from './Nav.tsx';
 import Hero from './Hero.tsx';
+import WhatIDo from './WhatIDo.tsx';
 import Experience from './Experience.tsx';
 import Education from './Education.tsx';
 import Competencies from './Competencies.tsx';
@@ -57,6 +58,7 @@ const caUrl = `${origin}/ca/`;
     <main class="overflow-hidden pt-4 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
       <Nav client:load lang={lang} t={t.nav} />
       <Hero t={t.hero} />
+      <WhatIDo client:visible />
       <Experience t={t.experience} />
       <Education t={t.education} />
       <Competencies t={t.competencies}>

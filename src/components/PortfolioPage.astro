@@ -81,8 +81,19 @@ const caUrl = `${origin}/ca/`;
         const observer = new IntersectionObserver((entries, observer) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              entry.target.classList.add('reveal-visible');
-              observer.unobserve(entry.target); // Only animate once
+              const el = entry.target;
+              el.classList.add('reveal-visible');
+              observer.unobserve(el); // Only animate once
+
+              // Clear inline transitionDelay after the entry animation is complete
+              // so that it does not delay hover animations (e.g. zoom/scale effects)
+              const delayAttr = el.style.transitionDelay;
+              if (delayAttr) {
+                const delayMs = parseFloat(delayAttr) * (delayAttr.indexOf('ms') !== -1 ? 1 : 1000);
+                setTimeout(() => {
+                  el.style.transitionDelay = '';
+                }, delayMs + 1000 + 50);
+              }
             }
           });
         }, observerOptions);

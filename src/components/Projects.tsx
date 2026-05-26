@@ -10,7 +10,9 @@ const projects: ProjectItem[] = [
     tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
     demoLabel: 'Ver demo',
     codeLabel: 'Código disponible',
-    demo: true
+    demo: true,
+    codeUrl: '#',
+    demoUrl: '#'
   },
   {
     title: 'Budget Generator',
@@ -19,7 +21,9 @@ const projects: ProjectItem[] = [
     tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
     demoLabel: 'Ver demo',
     codeLabel: 'Código disponible',
-    demo: true
+    demo: true,
+    codeUrl: '#',
+    demoUrl: '#'
   }
 ];
 
@@ -64,16 +68,18 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                     </span>
                   ))}
                 </div>
-                <h3 className="text-5xl font-black tracking-[-0.06em] text-slate-900 dark:text-white sm:text-6xl">{project.title}</h3>
-                <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 dark:text-slate-400">{project.description}</p>
-                <div className="mt-8 flex flex-wrap items-center gap-5 text-sm uppercase tracking-[0.25em] text-slate-800 dark:text-white">
-                  <a href="#" className="inline-flex items-center gap-2 font-semibold text-slate-800 hover:text-red-500 dark:text-white dark:hover:text-red-400 transition-colors">
-                    {project.demoLabel || 'Ver demo'}
-                    <span aria-hidden="true">→</span>
-                  </a>
-                  <span className="inline-flex h-7 w-[1px] bg-slate-200 dark:bg-slate-700" />
-                  <span className="text-slate-500 dark:text-slate-400">{project.codeLabel || 'Código disponible'}</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <h3 className="text-5xl font-black tracking-[-0.06em] text-slate-900 dark:text-white sm:text-6xl">{project.title}</h3>
+                  <div className="flex items-center gap-2">
+                    <a href={project.codeUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.codeLabel || 'Código disponible'} className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-slate-700/50 dark:bg-slate-800/30 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:bg-slate-800 dark:hover:text-white">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </a>
+                    <a href={project.demoUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.demoLabel || 'Ver demo'} className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-slate-700/50 dark:bg-slate-800/30 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:bg-slate-800 dark:hover:text-white">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                  </div>
                 </div>
+                <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 dark:text-slate-400">{project.description}</p>
               </div>
               <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 dark:border-slate-800/80 dark:bg-slate-900/80 p-6">
                 <div className="aspect-[16/9] rounded-[1.75rem] bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-slate-800 dark:via-slate-900 dark:to-slate-950 shadow-[0_30px_120px_-50px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
@@ -87,6 +93,14 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* GitHub "More projects" button */}
+        <div className="mt-16 flex justify-center">
+          <a href="https://github.com/druedaro" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-8 py-4 text-sm font-semibold text-slate-800 transition hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800/70 dark:bg-slate-900/50 dark:text-slate-300 dark:hover:border-slate-700 dark:hover:bg-slate-800 dark:hover:text-white w-full sm:w-auto min-w-[280px]">
+            {t.id === 'projects' ? 'More projects on' : t.id === 'projectes' ? 'Més projectes a' : 'Más proyectos en'}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
         </div>
       </div>
     </section>

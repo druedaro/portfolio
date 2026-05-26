@@ -65,6 +65,8 @@ export interface ProjectItem {
   demoLabel: string;
   codeLabel: string;
   demo: boolean;
+  codeUrl?: string;
+  demoUrl?: string;
 }
 
 export interface ProjectsTranslation {

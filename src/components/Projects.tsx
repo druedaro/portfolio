@@ -53,7 +53,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
           {items.map((project, index) => (
             <div
               key={project.title}
-              className={`group grid gap-10 rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 p-8 shadow-[0_40px_140px_-70px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_140px_-70px_rgba(15,23,42,0.8)] transition-all duration-500 hover:border-orange-500/50 hover:shadow-[0_0_40px_rgba(249,115,22,0.15)] dark:hover:border-orange-500/40 dark:hover:shadow-[0_0_40px_rgba(249,115,22,0.2)] lg:grid-cols-[1.05fr_0.95fr] ${
+              className={`group grid gap-10 rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 p-8 shadow-[0_40px_140px_-70px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_140px_-70px_rgba(15,23,42,0.8)] transition-all duration-500 hover:border-red-500/50 hover:shadow-[0_0_40px_rgba(239,68,68,0.15)] dark:hover:border-red-500/40 dark:hover:shadow-[0_0_40px_rgba(239,68,68,0.2)] lg:grid-cols-[1.05fr_0.95fr] ${
                 index % 2 === 1 ? 'lg:grid-cols-[0.95fr_1.05fr]' : ''
               }`}
             >
@@ -62,7 +62,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-slate-500 transition-colors duration-300 dark:border-slate-700/70 dark:bg-slate-900/90 dark:text-slate-400 group-hover:border-orange-500 group-hover:bg-orange-600 group-hover:text-white dark:group-hover:border-orange-500/80 dark:group-hover:bg-orange-600 dark:group-hover:text-white"
+                      className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-slate-500 transition-colors duration-300 dark:border-slate-700/70 dark:bg-slate-900/90 dark:text-slate-400 group-hover:border-red-500 group-hover:bg-red-500 group-hover:text-white dark:group-hover:border-red-500/80 dark:group-hover:bg-red-500 dark:group-hover:text-white"
                     >
                       {tag}
                     </span>
@@ -74,7 +74,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                   <a href={project.codeUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.codeLabel || 'Código disponible'} className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:scale-110 hover:bg-slate-100 hover:text-slate-900 active:scale-95 dark:border-slate-700/50 dark:bg-slate-800/30 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:bg-slate-800 dark:hover:text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                   </a>
-                  <a href={project.demoUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.demoLabel || 'Ver demo'} className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-600 text-white transition-all duration-300 hover:scale-110 hover:bg-orange-500 active:scale-95 border border-transparent">
+                  <a href={project.demoUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.demoLabel || 'Ver demo'} className="flex h-12 w-12 items-center justify-center rounded-xl bg-red-500 text-white transition-all duration-300 hover:scale-110 hover:bg-red-400 active:scale-95 border border-transparent">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                   </a>
                 </div>

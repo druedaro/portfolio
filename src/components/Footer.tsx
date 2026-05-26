@@ -15,49 +15,75 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
 
         {/* Built with section */}
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500 dark:text-slate-400">
-          {/* Built with Astro */}
-          <a
-            href="https://astro.build"
-            target="_blank"
-            rel="noreferrer"
-            className="group flex items-center gap-1.5 transition-colors hover:text-[#FF5D01]"
-            aria-label="Built with Astro"
-          >
+          {/* Built with Astro & React */}
+          <div className="flex items-center gap-1.5">
             <span className="text-slate-500 dark:text-slate-400">Built with</span>
-            {/* Astro logo */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 85 107"
-              className="h-4 w-4"
-              aria-hidden="true"
+            <a
+              href="https://astro.build"
+              target="_blank"
+              rel="noreferrer"
+              className="group flex items-center gap-1.5 transition-colors hover:text-[#FF5D01]"
+              aria-label="Astro"
             >
-              <path
-                d="M27.5699 88.2418C23.0804 85.0638 21.5856 78.8705 24.1048 74.0819L49.5122 24.9773C50.5507 22.9956 53.4491 22.9956 54.4877 24.9773L79.8951 74.0819C82.4143 78.8705 80.9195 85.0638 76.43 88.2418L56.6498 101.873C53.0977 104.287 49.3321 104.287 45.78 101.873L27.5699 88.2418Z"
-                fill="#FF5D01"
-              />
-              <path
-                d="M27.5699 88.2418C23.0804 85.0638 21.5856 78.8705 24.1048 74.0819L49.5122 24.9773C50.5507 22.9956 53.4491 22.9956 54.4877 24.9773L79.8951 74.0819C82.4143 78.8705 80.9195 85.0638 76.43 88.2418L56.6498 101.873C53.0977 104.287 49.3321 104.287 45.78 101.873L27.5699 88.2418Z"
-                fill="url(#paint0_linear_astro)"
-                fillOpacity="0.3"
-              />
-              <path
-                d="M43.5 62.5C43.5 62.5 35 73.5 30.5 80.5C28.3 84 29.5 88 33 90L50 101C51.5 102 52.5 102 54 101L71 90C74.5 88 75.7 84 73.5 80.5C69 73.5 60.5 62.5 60.5 62.5C58 59.5 54 57.5 52 57.5C50 57.5 46 59.5 43.5 62.5Z"
-                fill="#FF5D01"
-              />
-              <path
-                d="M35 14C35 6.268 41.268 0 49 0H53C60.732 0 67 6.268 67 14V24L52 31L37 24V14Z"
-                fill="#FF5D01"
-                opacity="0.5"
-              />
-              <defs>
-                <linearGradient id="paint0_linear_astro" x1="52" y1="23" x2="52" y2="103" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="white" />
-                  <stop offset="1" stopColor="white" stopOpacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span className="font-medium text-slate-600 dark:text-slate-300 group-hover:text-[#FF5D01] transition-colors">Astro</span>
-          </a>
+              {/* Astro logo */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 85 107"
+                className="h-4 w-4"
+                aria-hidden="true"
+              >
+                <path
+                  d="M27.5699 88.2418C23.0804 85.0638 21.5856 78.8705 24.1048 74.0819L49.5122 24.9773C50.5507 22.9956 53.4491 22.9956 54.4877 24.9773L79.8951 74.0819C82.4143 78.8705 80.9195 85.0638 76.43 88.2418L56.6498 101.873C53.0977 104.287 49.3321 104.287 45.78 101.873L27.5699 88.2418Z"
+                  fill="#FF5D01"
+                />
+                <path
+                  d="M27.5699 88.2418C23.0804 85.0638 21.5856 78.8705 24.1048 74.0819L49.5122 24.9773C50.5507 22.9956 53.4491 22.9956 54.4877 24.9773L79.8951 74.0819C82.4143 78.8705 80.9195 85.0638 76.43 88.2418L56.6498 101.873C53.0977 104.287 49.3321 104.287 45.78 101.873L27.5699 88.2418Z"
+                  fill="url(#paint0_linear_astro)"
+                  fillOpacity="0.3"
+                />
+                <path
+                  d="M43.5 62.5C43.5 62.5 35 73.5 30.5 80.5C28.3 84 29.5 88 33 90L50 101C51.5 102 52.5 102 54 101L71 90C74.5 88 75.7 84 73.5 80.5C69 73.5 60.5 62.5 60.5 62.5C58 59.5 54 57.5 52 57.5C50 57.5 46 59.5 43.5 62.5Z"
+                  fill="#FF5D01"
+                />
+                <path
+                  d="M35 14C35 6.268 41.268 0 49 0H53C60.732 0 67 6.268 67 14V24L52 31L37 24V14Z"
+                  fill="#FF5D01"
+                  opacity="0.5"
+                />
+                <defs>
+                  <linearGradient id="paint0_linear_astro" x1="52" y1="23" x2="52" y2="103" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="white" />
+                    <stop offset="1" stopColor="white" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span className="font-medium text-slate-600 dark:text-slate-300 group-hover:text-[#FF5D01] transition-colors">Astro</span>
+            </a>
+            <span className="text-slate-300 dark:text-slate-700">&</span>
+            <a
+              href="https://react.dev"
+              target="_blank"
+              rel="noreferrer"
+              className="group flex items-center gap-1.5 transition-colors hover:text-[#61DAFB]"
+              aria-label="React"
+            >
+              {/* React logo */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-11.5 -10.23174 23 20.46348"
+                className="h-4 w-4"
+                aria-hidden="true"
+              >
+                <circle cx="0" cy="0" r="2.05" fill="#61DAFB"/>
+                <g stroke="#61DAFB" strokeWidth="1" fill="none">
+                  <ellipse rx="11" ry="4.2"/>
+                  <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
+                  <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+                </g>
+              </svg>
+              <span className="font-medium text-slate-600 dark:text-slate-300 group-hover:text-[#61DAFB] transition-colors">React</span>
+            </a>
+          </div>
 
           <span className="text-slate-300 dark:text-slate-700">·</span>
 

@@ -23,7 +23,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
             className="group flex items-center gap-1.5 transition-colors hover:text-[#FF5D01]"
             aria-label="Built with Astro"
           >
-            <span className="opacity-85 group-hover:opacity-100 transition-opacity">Built with</span>
+            <span className="text-slate-500 dark:text-slate-400">Built with</span>
             {/* Astro logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
             className="group flex items-center gap-1.5 transition-colors hover:text-[#06B6D4]"
             aria-label="Styled with TailwindCSS"
           >
-            <span className="opacity-85 group-hover:opacity-100 transition-opacity">Styled with</span>
+            <span className="text-slate-500 dark:text-slate-400">Styled with</span>
             {/* Tailwind CSS logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
             className="group flex items-center gap-1.5 transition-colors hover:text-slate-900 dark:hover:text-white"
             aria-label="Deployed on Vercel"
           >
-            <span className="opacity-85 group-hover:opacity-100 transition-opacity">Deployed on</span>
+            <span className="text-slate-500 dark:text-slate-400">Deployed on</span>
             {/* Vercel logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"

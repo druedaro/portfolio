@@ -32,12 +32,17 @@ export default {
         pulseGlow: {
           '0%, 100%': { opacity: '0.16' },
           '50%': { opacity: '0.38' }
+        },
+        ticker: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }
         }
       },
       animation: {
         float: 'float 6s ease-in-out infinite',
         fadeInUp: 'fadeInUp 0.8s ease-out both',
-        pulseGlow: 'pulseGlow 4s ease-in-out infinite'
+        pulseGlow: 'pulseGlow 4s ease-in-out infinite',
+        ticker: 'ticker 28s linear infinite'
       }
     }
   },

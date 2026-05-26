@@ -31,7 +31,7 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
   const description = t.description || 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.';
 
   return (
-    <section id={sectionId} className="relative overflow-hidden py-28">
+    <section id={sectionId} className="relative overflow-hidden pt-16 pb-28 lg:pt-12">
       <div className="absolute inset-0" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">

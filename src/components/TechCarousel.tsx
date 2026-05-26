@@ -136,7 +136,7 @@ export default function TechCarousel() {
   const prevTranslate = useRef(0);
   const animationRef = useRef<number | null>(null);
 
-  const speed = 0.5; // pixels per frame
+  const speed = 0.5;
 
   const animate = () => {
     if (!isDragging.current) {
@@ -144,15 +144,11 @@ export default function TechCarousel() {
     }
     
     if (trackRef.current && setRef.current) {
-      // The total width of one complete set of technologies (including its trailing gap)
       const singleSetWidth = setRef.current.offsetWidth;
       
-      // Seamless loop logic:
-      // If we scroll left past the first set, jump back to the right by exactly one set width
       if (Math.abs(currentTranslate.current) >= singleSetWidth) {
         currentTranslate.current += singleSetWidth;
       }
-      // If we drag right past the start, jump back to the left by exactly one set width
       if (currentTranslate.current > 0) {
         currentTranslate.current -= singleSetWidth;
       }
@@ -215,9 +211,7 @@ export default function TechCarousel() {
       onPointerLeave={handlePointerUpOrLeave}
       onPointerCancel={handlePointerUpOrLeave}
     >
-      {/* Left fade mask */}
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-slate-50 to-transparent dark:from-slate-950" />
-      {/* Right fade mask */}
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-slate-50 to-transparent dark:from-slate-950" />
 
       <div ref={trackRef} className="flex w-max will-change-transform">

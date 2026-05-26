@@ -33,7 +33,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
     setTheme(isDark ? 'dark' : 'light');
   }, []);
 
-  // Scrollspy to detect active section
   useEffect(() => {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
@@ -44,10 +43,9 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
     };
     
     const observer = new IntersectionObserver(observerCallback, {
-      rootMargin: '-30% 0px -50% 0px' // triggers when the section is in the top/middle of viewport
+      rootMargin: '-30% 0px -50% 0px'
     });
 
-    // We look for elements by id matching the hrefs
     t.forEach(link => {
       if (link.href.startsWith('#')) {
         const id = link.href.substring(1);
@@ -82,7 +80,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
           M<span className="text-red-500">.</span>
         </a>
 
-        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-1 overflow-x-auto whitespace-nowrap pr-1">
           {t.map((link) => {
             const isActive = link.href.startsWith('#') && activeSection === link.href.substring(1);
@@ -102,12 +99,9 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
           })}
         </div>
 
-        {/* Spacer */}
         <div className="flex-1" />
 
-        {/* Language + Theme + Hamburger */}
         <div className="flex items-center gap-2">
-          {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
             type="button"
@@ -126,7 +120,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
             )}
           </button>
 
-          {/* Languages */}
           <div className="hidden md:flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50/55 dark:border-white/10 dark:bg-black/30 px-1 py-1">
             {langs.map((l) => (
               <a
@@ -141,7 +134,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
             ))}
           </div>
 
-          {/* Hamburger Button */}
           <button
             aria-label="Abrir menú"
             aria-expanded={open}
@@ -165,7 +157,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
           </button>
         </div>
 
-        {/* Mobile menu overlay */}
         {open && (
           <div className="absolute left-1/2 top-full z-40 w-[calc(100vw-2rem)] -translate-x-1/2 rounded-2xl border border-slate-200/80 bg-white/95 dark:border-none dark:bg-black/95 p-4 shadow-xl md:hidden mt-2">
             <div className="flex flex-col gap-2">

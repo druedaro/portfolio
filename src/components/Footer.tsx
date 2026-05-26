@@ -13,9 +13,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
           <span>{copyright}</span>
         </div>
 
-        {/* Built with section */}
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500 dark:text-slate-400">
-          {/* Built with Astro & React */}
           <div className="flex items-center gap-1.5">
             <span className="text-slate-500 dark:text-slate-400">Built with</span>
             <a
@@ -25,7 +23,6 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
               className="group flex items-center gap-1.5 transition-colors hover:text-[#FF5D01]"
               aria-label="Astro"
             >
-              {/* Astro logo */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 85 107"
@@ -67,7 +64,6 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
               className="group flex items-center gap-1.5 transition-colors hover:text-[#61DAFB]"
               aria-label="React"
             >
-              {/* React logo */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="-11.5 -10.23174 23 20.46348"
@@ -87,7 +83,6 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
 
           <span className="text-slate-300 dark:text-slate-700">·</span>
 
-          {/* Styled with TailwindCSS */}
           <a
             href="https://tailwindcss.com"
             target="_blank"
@@ -96,7 +91,6 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
             aria-label="Styled with TailwindCSS"
           >
             <span className="text-slate-500 dark:text-slate-400">Styled with</span>
-            {/* Tailwind CSS logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 54 33"
@@ -111,29 +105,6 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
               />
             </svg>
             <span className="font-medium text-slate-600 dark:text-slate-300 group-hover:text-[#06B6D4] transition-colors">TailwindCSS</span>
-          </a>
-
-          <span className="text-slate-300 dark:text-slate-700">·</span>
-
-          {/* Deployed on Vercel */}
-          <a
-            href="https://vercel.com"
-            target="_blank"
-            rel="noreferrer"
-            className="group flex items-center gap-1.5 transition-colors hover:text-slate-900 dark:hover:text-white"
-            aria-label="Deployed on Vercel"
-          >
-            <span className="text-slate-500 dark:text-slate-400">Deployed on</span>
-            {/* Vercel logo */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 76 65"
-              className="h-3.5 w-auto fill-slate-800 dark:fill-white group-hover:fill-slate-900 dark:group-hover:fill-white transition-colors"
-              aria-hidden="true"
-            >
-              <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" />
-            </svg>
-            <span className="font-medium text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Vercel</span>
           </a>
         </div>
 

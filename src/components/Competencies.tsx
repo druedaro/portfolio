@@ -41,7 +41,6 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
         <div className="mt-16">
           <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-slate-400 mb-12">{sectionSubtitle}</p>
 
-          {/* TechCarousel Astro island injected via children */}
           {children && <div className="mb-20">{children}</div>}
 
           <div className="grid gap-6 lg:grid-cols-4">

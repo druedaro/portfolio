@@ -94,7 +94,6 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
           ))}
         </div>
         
-        {/* GitHub "More projects" button */}
         <div className="mt-16 flex justify-center reveal reveal-up" style={{ transitionDelay: '300ms' }}>
           <a href="https://github.com/druedaro" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-8 py-4 text-sm font-semibold text-slate-800 transition hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800/70 dark:bg-slate-900/50 dark:text-slate-300 dark:hover:border-slate-700 dark:hover:bg-slate-800 dark:hover:text-white w-full sm:w-auto min-w-[280px]">
             {t.id === 'projects' ? 'More projects on' : t.id === 'projectes' ? 'Més projectes a' : 'Más proyectos en'}

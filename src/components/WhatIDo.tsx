@@ -33,7 +33,6 @@ export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
     <section className="relative overflow-hidden py-24">
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
-          {/* Left — accordion */}
           <div>
             <h2 className="mb-10 text-5xl font-black tracking-[-0.05em] text-slate-900 dark:text-white sm:text-6xl">
               {t.heading.replace('?', '')}<span className="text-red-500">?</span>
@@ -96,7 +95,6 @@ export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
             </div>
           </div>
           
-          {/* Right — LetterGlitch animation */}
           <div className="relative w-full h-64 lg:sticky lg:top-28 lg:h-[400px] overflow-hidden flex justify-center items-center">
             <LetterGlitch />
           </div>

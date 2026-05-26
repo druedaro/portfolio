@@ -31,11 +31,11 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
   const description = t.description || 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.';
 
   return (
-    <section id={sectionId} className="relative overflow-hidden py-28">
+    <section id={sectionId} className="relative overflow-hidden pt-16 pb-28 lg:pt-12">
       <div className="absolute inset-0" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 reveal reveal-up">
             <div className="flex flex-col gap-4">
               <h2 className="text-6xl font-black uppercase tracking-[-0.08em] text-slate-900 dark:text-white sm:text-7xl">
                 {title1}
@@ -49,7 +49,7 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl">
+          <div className="rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl reveal reveal-up" style={{ transitionDelay: '200ms' }}>
             <p className="mb-8 text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">{sectionTag}</p>
             <div className="space-y-4">
               {contacts.map((contact) => (

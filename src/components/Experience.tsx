@@ -37,7 +37,7 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
     <section id={sectionId} className="relative overflow-hidden py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
-        <div className="mb-12 max-w-3xl">
+        <div className="mb-12 max-w-3xl reveal reveal-up">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500">{sectionTag}</p>
           <h2 className="mt-4 text-5xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-6xl">{sectionTitle}</h2>
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400">
@@ -49,7 +49,7 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
           .exp-card {
             border-radius: 1rem;
             padding: 1.25rem 1.25rem 1.25rem 2rem;
-            transition: box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
           }
           .exp-card:hover {
             box-shadow: 0 0 0 1px rgba(239,68,68,0.2), 0 8px 40px -8px rgba(239,68,68,0.25);
@@ -64,7 +64,8 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
           {items.map((exp, idx) => (
             <div
               key={idx}
-              className="exp-card group relative border-l-2 border-slate-200 dark:border-white/10 hover:border-red-500/60 pb-4 cursor-default"
+              className="exp-card group relative border-l-2 border-slate-200 dark:border-white/10 hover:border-red-500/60 pb-4 cursor-default reveal reveal-up"
+              style={{ transitionDelay: `${idx * 150}ms` }}
             >
               <div className="absolute -left-[9px] top-4 h-[16px] w-[16px] rounded-full border-2 border-red-500/40 bg-red-500/10 dark:bg-red-500/20 transition-all duration-400 group-hover:border-red-500 group-hover:bg-red-500/20 group-hover:scale-110" />
 

@@ -10,6 +10,7 @@ const langs = [
 export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavItem[] }) {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState('light');
+  const [activeSection, setActiveSection] = useState('');
   const rootRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -31,6 +32,34 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
     const isDark = document.documentElement.classList.contains('dark');
     setTheme(isDark ? 'dark' : 'light');
   }, []);
+
+  // Scrollspy to detect active section
+  useEffect(() => {
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+    
+    const observer = new IntersectionObserver(observerCallback, {
+      rootMargin: '-30% 0px -50% 0px' // triggers when the section is in the top/middle of viewport
+    });
+
+    // We look for elements by id matching the hrefs
+    t.forEach(link => {
+      if (link.href.startsWith('#')) {
+        const id = link.href.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+          observer.observe(element);
+        }
+      }
+    });
+
+    return () => observer.disconnect();
+  }, [t]);
 
   const toggleTheme = () => {
     const nextTheme = theme === 'dark' ? 'light' : 'dark';
@@ -55,15 +84,22 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-1 overflow-x-auto whitespace-nowrap pr-1">
-          {t.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="px-3 md:px-4 py-2 text-xs md:text-sm font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-neutral-400 dark:hover:text-white dark:hover:bg-white/10 rounded-full transition-all flex items-center gap-2"
-            >
-              {link.label}
-            </a>
-          ))}
+          {t.map((link) => {
+            const isActive = link.href.startsWith('#') && activeSection === link.href.substring(1);
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                className={`px-3 md:px-4 py-2 text-xs md:text-sm font-medium rounded-full transition-all flex items-center gap-2 ${
+                  isActive 
+                    ? 'text-red-500 drop-shadow-[0_0_10px_rgba(239,68,68,0.7)] dark:drop-shadow-[0_0_10px_rgba(239,68,68,0.5)]' 
+                    : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-neutral-400 dark:hover:text-white dark:hover:bg-white/10'
+                }`}
+              >
+                {link.label}
+              </a>
+            );
+          })}
         </div>
 
         {/* Spacer */}
@@ -133,16 +169,23 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
         {open && (
           <div className="absolute left-1/2 top-full z-40 w-[calc(100vw-2rem)] -translate-x-1/2 rounded-2xl border border-slate-200/80 bg-white/95 dark:border-none dark:bg-black/95 p-4 shadow-xl md:hidden mt-2">
             <div className="flex flex-col gap-2">
-              {t.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="block px-3 py-3 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-neutral-300 dark:hover:bg-white/5 dark:hover:text-white transition"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {t.map((link) => {
+                const isActive = link.href.startsWith('#') && activeSection === link.href.substring(1);
+                return (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className={`block px-3 py-3 rounded-lg text-sm font-medium transition ${
+                      isActive 
+                        ? 'text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]' 
+                        : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-neutral-300 dark:hover:bg-white/5 dark:hover:text-white'
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                );
+              })}
 
               <div className="mt-2 flex items-center gap-2 border-t border-slate-200 dark:border-white/6 pt-3">
                 {langs.map((l) => (

@@ -62,7 +62,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full bg-orange-600 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-white shadow-sm dark:bg-orange-600/90"
+                      className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-slate-500 transition-colors duration-300 dark:border-slate-700/70 dark:bg-slate-900/90 dark:text-slate-400 group-hover:border-orange-500 group-hover:bg-orange-600 group-hover:text-white dark:group-hover:border-orange-500/80 dark:group-hover:bg-orange-600 dark:group-hover:text-white"
                     >
                       {tag}
                     </span>
@@ -74,7 +74,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                   <a href={project.codeUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.codeLabel || 'Código disponible'} className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-slate-700/50 dark:bg-slate-800/30 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:bg-slate-800 dark:hover:text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                   </a>
-                  <a href={project.demoUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.demoLabel || 'Ver demo'} className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-600 text-white transition hover:bg-orange-500 hover:drop-shadow-[0_0_15px_rgba(234,88,12,0.8)] border border-transparent">
+                  <a href={project.demoUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.demoLabel || 'Ver demo'} className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-600 text-white transition hover:bg-orange-500 hover:drop-shadow-[0_0_8px_rgba(234,88,12,0.6)] border border-transparent">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                   </a>
                 </div>

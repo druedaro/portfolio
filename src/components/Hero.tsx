@@ -4,9 +4,10 @@ import type { HeroTranslation } from '../i18n/translations';
 export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }: { t?: Partial<HeroTranslation>, lang?: string }) {
   const projectsHref = lang === 'es' ? '#proyectos' : lang === 'en' ? '#projects' : '#projectes';
   const contactHref = lang === 'es' ? '#contacto' : lang === 'en' ? '#contact' : '#contacte';
+  const sectionId = lang === 'es' ? 'sobre-mi' : lang === 'en' ? 'about-me' : 'sobre-mi';
 
   return (
-    <section className="relative overflow-hidden bg-slate-50/80 dark:bg-slate-950/80 px-6 pb-24 pt-16 sm:px-10 lg:px-16">
+    <section id={sectionId} className="relative overflow-hidden bg-slate-50/80 dark:bg-slate-950/80 px-6 pb-24 pt-16 lg:pt-28 sm:px-10 lg:px-16">
       <div className="absolute inset-x-0 top-0 -z-10 h-[420px]" />
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const technologies = [
   {
@@ -127,41 +127,103 @@ const technologies = [
 ];
 
 export default function TechCarousel() {
-  // Duplicate list for seamless infinite loop
-  const items = [...technologies, ...technologies];
+  const trackRef = useRef<HTMLDivElement>(null);
+  const setRef = useRef<HTMLDivElement>(null);
+  
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const currentTranslate = useRef(0);
+  const prevTranslate = useRef(0);
+  const animationRef = useRef<number | null>(null);
+
+  const speed = 0.5; // pixels per frame
+
+  const animate = () => {
+    if (!isDragging.current) {
+      currentTranslate.current -= speed;
+    }
+    
+    if (trackRef.current && setRef.current) {
+      // The total width of one complete set of technologies (including its trailing gap)
+      const singleSetWidth = setRef.current.offsetWidth;
+      
+      // Seamless loop logic:
+      // If we scroll left past the first set, jump back to the right by exactly one set width
+      if (Math.abs(currentTranslate.current) >= singleSetWidth) {
+        currentTranslate.current += singleSetWidth;
+      }
+      // If we drag right past the start, jump back to the left by exactly one set width
+      if (currentTranslate.current > 0) {
+        currentTranslate.current -= singleSetWidth;
+      }
+
+      trackRef.current.style.transform = `translateX(${currentTranslate.current}px)`;
+    }
+    
+    animationRef.current = requestAnimationFrame(animate);
+  };
+
+  useEffect(() => {
+    animationRef.current = requestAnimationFrame(animate);
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, []);
+
+  const handlePointerDown = (e: React.PointerEvent) => {
+    isDragging.current = true;
+    startX.current = e.pageX;
+    prevTranslate.current = currentTranslate.current;
+  };
+
+  const handlePointerMove = (e: React.PointerEvent) => {
+    if (!isDragging.current) return;
+    const deltaX = e.pageX - startX.current;
+    currentTranslate.current = prevTranslate.current + deltaX;
+  };
+
+  const handlePointerUpOrLeave = () => {
+    isDragging.current = false;
+  };
+
+  const TechnologySet = ({ isRef = false }: { isRef?: boolean }) => (
+    <div ref={isRef ? setRef : null} className="flex w-max gap-8 pr-8">
+      {technologies.map((tech, i) => (
+        <div
+          key={`${tech.name}-${i}`}
+          className="group flex items-center gap-2.5 rounded-full border border-slate-200/80 bg-white/60 px-4 py-2.5 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-slate-300 hover:bg-white hover:shadow-md dark:border-slate-800/60 dark:bg-slate-900/50 dark:hover:border-slate-600 dark:hover:bg-slate-800/70 select-none"
+        >
+          <span className="flex-shrink-0 transition-transform duration-300 group-hover:scale-110 pointer-events-none">
+            {tech.svg}
+          </span>
+          <span className="whitespace-nowrap text-sm font-medium text-slate-600 transition-colors duration-300 group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-white pointer-events-none">
+            {tech.name}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
 
   return (
-    <div className="relative w-full overflow-hidden py-4">
-      <style>{`
-        @keyframes ticker {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .ticker-track {
-          animation: ticker 30s linear infinite;
-          will-change: transform;
-        }
-      `}</style>
-
+    <div 
+      className="relative w-full overflow-hidden py-4 cursor-grab active:cursor-grabbing touch-none"
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUpOrLeave}
+      onPointerLeave={handlePointerUpOrLeave}
+      onPointerCancel={handlePointerUpOrLeave}
+    >
       {/* Left fade mask */}
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-slate-50 to-transparent dark:from-slate-950" />
       {/* Right fade mask */}
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-slate-50 to-transparent dark:from-slate-950" />
 
-      <div className="ticker-track flex w-max gap-8">
-        {items.map((tech, i) => (
-          <div
-            key={`${tech.name}-${i}`}
-            className="group flex items-center gap-2.5 rounded-full border border-slate-200/80 bg-white/60 px-4 py-2.5 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-slate-300 hover:bg-white hover:shadow-md dark:border-slate-800/60 dark:bg-slate-900/50 dark:hover:border-slate-600 dark:hover:bg-slate-800/70"
-          >
-            <span className="flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
-              {tech.svg}
-            </span>
-            <span className="whitespace-nowrap text-sm font-medium text-slate-600 transition-colors duration-300 group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-white">
-              {tech.name}
-            </span>
-          </div>
-        ))}
+      <div ref={trackRef} className="flex w-max will-change-transform">
+        <TechnologySet isRef />
+        <TechnologySet />
+        <TechnologySet />
       </div>
     </div>
   );

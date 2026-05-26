@@ -49,7 +49,7 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
           .exp-card {
             border-radius: 1rem;
             padding: 1.25rem 1.25rem 1.25rem 2rem;
-            transition: box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
           }
           .exp-card:hover {
             box-shadow: 0 0 0 1px rgba(239,68,68,0.2), 0 8px 40px -8px rgba(239,68,68,0.25);

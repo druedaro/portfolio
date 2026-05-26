@@ -13,69 +13,69 @@
 
 ---
 
-## Sobre el proyecto
+## About
 
-Portfolio personal de **David Rueda**, Frontend Developer especializado en arquitecturas frontend modernas y marketing técnico. El sitio está diseñado para transmitir credibilidad y excelencia técnica a través de una experiencia visual premium, animaciones nativas de alto rendimiento y un diseño completamente responsivo.
+Personal portfolio of **David Rueda**, Frontend Developer specialised in modern frontend architectures and technical marketing. The site is designed to convey technical credibility and excellence through a premium visual experience, high-performance native animations, and a fully responsive layout.
 
-> Construido con **Astro** para máxima velocidad, **React** para los componentes interactivos, y **Tailwind CSS** para un sistema de estilos coherente y mantenible.
+> Built with **Astro** for maximum speed, **React** for interactive components, and **Tailwind CSS** for a consistent and maintainable design system.
 
 ---
 
-## Stack tecnológico
+## Tech Stack
 
-| Capa | Tecnología | Motivo |
+| Layer | Technology | Why |
 |---|---|---|
-| Framework | [Astro 5](https://astro.build) | Renderizado estático, máxima performance y zero JS por defecto |
-| UI Components | [React 19](https://react.dev) | Islands architecture para componentes interactivos |
-| Estilos | [Tailwind CSS 3](https://tailwindcss.com) | Utility-first, dark mode nativo, responsive |
-| Lenguaje | [TypeScript 5](https://www.typescriptlang.org) | Tipado estático en todo el proyecto |
-| i18n | Custom (`src/i18n/`) | Soporte multiidioma ES / EN / CA |
-| Animaciones | IntersectionObserver API | Scroll reveals nativos sin dependencias externas |
+| Framework | [Astro 5](https://astro.build) | Static rendering, maximum performance, zero JS by default |
+| UI Components | [React 19](https://react.dev) | Islands architecture for interactive components |
+| Styles | [Tailwind CSS 3](https://tailwindcss.com) | Utility-first, native dark mode, responsive |
+| Language | [TypeScript 5](https://www.typescriptlang.org) | Static typing across the entire project |
+| i18n | Custom (`src/i18n/`) | Multilingual support ES / EN / CA |
+| Animations | IntersectionObserver API | Native scroll reveals with no external dependencies |
 
 ---
 
-## Características
+## Features
 
-- ⚡ **Rendimiento extremo** — Generación estática (SSG) con Astro. Cero hidratación innecesaria.
-- 🌐 **Multiidioma** — Español, Inglés y Catalán con rutas `/`, `/en/` y `/ca/`.
-- 🎨 **Dark / Light mode** — Con preferencia persistida en `localStorage`.
-- 📱 **Totalmente responsivo** — Diseño mobile-first, optimizado para cualquier dispositivo.
-- ✨ **Scroll Reveal Animations** — Animaciones de entrada suaves con `IntersectionObserver`, sin librerías.
-- ♿ **Accesibilidad WCAG AA** — Contraste correcto, semántica HTML5, atributos ARIA.
-- 🔍 **SEO optimizado** — Meta tags, hreflang alternates, títulos y descripciones por idioma.
-- 🖼️ **Favicon SVG** — Monograma DR personalizado, compatible con todos los navegadores modernos.
+- ⚡ **Extreme performance** — Static Site Generation (SSG) with Astro. Zero unnecessary hydration.
+- 🌐 **Multilingual** — Spanish, English and Catalan at `/`, `/en/` and `/ca/`.
+- 🎨 **Dark / Light mode** — With preference persisted in `localStorage`.
+- 📱 **Fully responsive** — Mobile-first design, optimised for any device.
+- ✨ **Scroll Reveal Animations** — Smooth entry animations with `IntersectionObserver`, no libraries.
+- ♿ **WCAG AA Accessible** — Correct contrast ratios, HTML5 semantics, ARIA attributes.
+- 🔍 **SEO optimised** — Meta tags, hreflang alternates, per-locale titles and descriptions.
+- 🖼️ **SVG Favicon** — Custom DR monogram, supported by all modern browsers.
 
 ---
 
-## Estructura del proyecto
+## Project Structure
 
 ```
 portfolio/
 ├── public/
-│   └── favicon.svg           # Monograma DR
+│   └── favicon.svg           # DR monogram
 ├── src/
 │   ├── components/
-│   │   ├── Nav.tsx           # Navegación con scrollspy y selector de idioma
-│   │   ├── Hero.tsx          # Sección principal con efecto LetterGlitch
-│   │   ├── WhatIDo.tsx       # Servicios en acordeón
-│   │   ├── Experience.tsx    # Trayectoria profesional (timeline)
-│   │   ├── Education.tsx     # Formación académica
-│   │   ├── Competencies.tsx  # Competencias técnicas con TechCarousel
-│   │   ├── Projects.tsx      # Proyectos destacados
-│   │   ├── Contact.tsx       # Sección de contacto
-│   │   ├── Footer.tsx        # Footer con créditos de stack
-│   │   ├── TechCarousel.tsx  # Carrusel de tecnologías
-│   │   ├── LetterGlitch.tsx  # Efecto glitch animado (canvas)
-│   │   ├── ScrollToTop.tsx   # Botón volver arriba
-│   │   └── PortfolioPage.astro # Layout raíz + IntersectionObserver
+│   │   ├── Nav.tsx           # Navigation with scrollspy and language selector
+│   │   ├── Hero.tsx          # Hero section with LetterGlitch effect
+│   │   ├── WhatIDo.tsx       # Accordion-based services section
+│   │   ├── Experience.tsx    # Professional timeline
+│   │   ├── Education.tsx     # Academic background
+│   │   ├── Competencies.tsx  # Technical skills with TechCarousel
+│   │   ├── Projects.tsx      # Featured projects
+│   │   ├── Contact.tsx       # Contact section
+│   │   ├── Footer.tsx        # Footer with stack credits
+│   │   ├── TechCarousel.tsx  # Technology logo carousel
+│   │   ├── LetterGlitch.tsx  # Animated glitch effect (canvas)
+│   │   ├── ScrollToTop.tsx   # Scroll-to-top button
+│   │   └── PortfolioPage.astro # Root layout + IntersectionObserver script
 │   ├── i18n/
-│   │   └── translations.ts   # Diccionario de traducciones ES/EN/CA
+│   │   └── translations.ts   # ES/EN/CA translation dictionary
 │   ├── pages/
-│   │   ├── index.astro       # Ruta ES (por defecto)
-│   │   ├── en/index.astro    # Ruta EN
-│   │   └── ca/index.astro    # Ruta CA
+│   │   ├── index.astro       # ES route (default)
+│   │   ├── en/index.astro    # EN route
+│   │   └── ca/index.astro    # CA route
 │   └── styles/
-│       └── global.css        # Estilos base y clases de animación reveal
+│       └── global.css        # Base styles and reveal animation classes
 ├── astro.config.mjs
 ├── tailwind.config.js
 └── tsconfig.json
@@ -83,58 +83,58 @@ portfolio/
 
 ---
 
-## Desarrollo local
+## Local Development
 
-### Requisitos previos
+### Prerequisites
 - Node.js `>=18`
 - npm `>=9`
 
-### Instalación y arranque
+### Setup & Start
 
 ```bash
-# 1. Instalar dependencias
+# 1. Install dependencies
 npm install
 
-# 2. Iniciar servidor de desarrollo
+# 2. Start the dev server
 npm run dev
 
-# 3. Abrir en el navegador
+# 3. Open in your browser
 # http://localhost:4321/
 ```
 
-### Otros comandos
+### Other Commands
 
 ```bash
-npm run build     # Build de producción (genera /dist)
-npm run preview   # Vista previa del build de producción
-npm run format    # Formatea el código con Prettier
+npm run build     # Production build (outputs to /dist)
+npm run preview   # Preview the production build locally
+npm run format    # Format code with Prettier
 ```
 
 ---
 
-## Ramas
+## Branches
 
-| Rama | Propósito |
+| Branch | Purpose |
 |---|---|
-| `main` | Versión estable y desplegada en producción |
-| `develop` | Desarrollo incremental — rama de trabajo principal |
+| `main` | Stable version deployed to production |
+| `develop` | Incremental development — main working branch |
 
-El flujo de trabajo es `develop` → `main` mediante merge sin fast-forward.
+Workflow: `develop` → `main` via no-fast-forward merge.
 
 ---
 
-## Despliegue
+## Deployment
 
-El sitio se genera como HTML estático con `astro build` y puede desplegarse en cualquier CDN o plataforma de hosting estático:
+The site is generated as static HTML via `astro build` and can be deployed to any CDN or static hosting platform:
 
-- **Vercel** (recomendado) — Detección automática de Astro
-- **Netlify** — Compatible con salida estática
-- **GitHub Pages** — Con configuración de base path si es necesario
+- **Vercel** (recommended) — Automatic Astro detection
+- **Netlify** — Compatible with static output
+- **GitHub Pages** — With base path configuration if needed
 
 ---
 
 <div align="center">
 
-Hecho con ❤️ por **David Rueda**
+Made with ❤️ by **David Rueda**
 
 </div>

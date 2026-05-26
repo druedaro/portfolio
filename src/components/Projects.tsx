@@ -53,7 +53,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
           {items.map((project, index) => (
             <div
               key={project.title}
-              className={`grid gap-10 rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 p-8 shadow-[0_40px_140px_-70px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_140px_-70px_rgba(15,23,42,0.8)] lg:grid-cols-[1.05fr_0.95fr] ${
+              className={`group grid gap-10 rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 p-8 shadow-[0_40px_140px_-70px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_140px_-70px_rgba(15,23,42,0.8)] transition-all duration-500 hover:border-orange-500/50 hover:shadow-[0_0_40px_rgba(249,115,22,0.15)] dark:hover:border-orange-500/40 dark:hover:shadow-[0_0_40px_rgba(249,115,22,0.2)] lg:grid-cols-[1.05fr_0.95fr] ${
                 index % 2 === 1 ? 'lg:grid-cols-[0.95fr_1.05fr]' : ''
               }`}
             >
@@ -62,7 +62,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs uppercase tracking-[0.28em] text-slate-500 dark:border-slate-700/70 dark:bg-slate-900/90 dark:text-slate-400"
+                      className="rounded-full bg-orange-600 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-white shadow-sm dark:bg-orange-600/90"
                     >
                       {tag}
                     </span>

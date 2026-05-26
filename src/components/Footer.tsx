@@ -9,12 +9,12 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
     <footer className="border-t border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 py-8 text-slate-500 dark:text-slate-400 transition-colors duration-300">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 sm:px-10 lg:flex-row">
         <div className="flex items-center gap-3 text-sm text-slate-700 dark:text-white">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-red-500 font-semibold text-white">M.</span>
+          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-red-700 font-semibold text-white">M.</span>
           <span>{copyright}</span>
         </div>
 
         {/* Built with section */}
-        <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400 dark:text-slate-500">
+        <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500 dark:text-slate-400">
           {/* Built with Astro */}
           <a
             href="https://astro.build"
@@ -23,7 +23,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
             className="group flex items-center gap-1.5 transition-colors hover:text-[#FF5D01]"
             aria-label="Built with Astro"
           >
-            <span className="opacity-70 group-hover:opacity-100 transition-opacity">Built with</span>
+            <span className="opacity-85 group-hover:opacity-100 transition-opacity">Built with</span>
             {/* Astro logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
             className="group flex items-center gap-1.5 transition-colors hover:text-[#06B6D4]"
             aria-label="Styled with TailwindCSS"
           >
-            <span className="opacity-70 group-hover:opacity-100 transition-opacity">Styled with</span>
+            <span className="opacity-85 group-hover:opacity-100 transition-opacity">Styled with</span>
             {/* Tailwind CSS logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
             className="group flex items-center gap-1.5 transition-colors hover:text-slate-900 dark:hover:text-white"
             aria-label="Deployed on Vercel"
           >
-            <span className="opacity-70 group-hover:opacity-100 transition-opacity">Deployed on</span>
+            <span className="opacity-85 group-hover:opacity-100 transition-opacity">Deployed on</span>
             {/* Vercel logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
           </a>
         </div>
 
-        <div className="flex items-center gap-6 text-slate-400 dark:text-slate-500">
+        <div className="flex items-center gap-6 text-slate-600 dark:text-slate-400">
           <a href="https://github.com/mpujazon" target="_blank" rel="noreferrer" className="transition hover:text-slate-900 dark:hover:text-white">GitHub</a>
           <a href="https://www.linkedin.com/in/mpujazon" target="_blank" rel="noreferrer" className="transition hover:text-slate-900 dark:hover:text-white">LinkedIn</a>
           <a href="mailto:mpujazoncardenas@gmail.com" className="transition hover:text-slate-900 dark:hover:text-white">Email</a>

@@ -31,16 +31,16 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
   const description = t.description || 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.';
 
   return (
-    <section id={sectionId} className="relative overflow-hidden pt-16 pb-28 lg:pt-12">
+    <section id={sectionId} className="relative overflow-hidden pt-16 pb-28 lg:pt-12 w-full">
       <div className="absolute inset-0" />
-      <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+      <div className="relative mx-auto max-w-6xl px-6 sm:px-10 w-full">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8 reveal reveal-up">
             <div className="flex flex-col gap-4">
-              <h2 className="text-6xl font-black uppercase tracking-[-0.08em] text-slate-900 dark:text-white sm:text-7xl">
+              <h2 className="text-4xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-5xl lg:text-6xl xl:text-7xl">
                 {title1}
               </h2>
-              <h3 className="text-6xl font-black uppercase tracking-[-0.08em] text-red-500 sm:text-7xl">
+              <h3 className="text-4xl font-black uppercase tracking-[-0.05em] text-red-500 sm:text-5xl lg:text-6xl xl:text-7xl">
                 {title2}
               </h3>
             </div>

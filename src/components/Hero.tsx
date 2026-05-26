@@ -14,7 +14,7 @@ export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }
           <div className="space-y-8">
             <div className="flex items-center gap-3 reveal reveal-up">
               <span className="inline-flex h-10 w-1 rounded-full bg-red-500" />
-              <p className="text-xs uppercase tracking-[0.3em] text-red-400">{t.subtitle}</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-red-600 dark:text-red-400">{t.subtitle}</p>
             </div>
             <h1 className="text-6xl font-black tracking-[-0.04em] text-slate-900 dark:text-white sm:text-7xl lg:text-8xl reveal reveal-up" style={{ transitionDelay: '100ms' }}>
               {t.title}

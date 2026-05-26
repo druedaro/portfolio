@@ -12,14 +12,14 @@ export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 reveal reveal-up">
               <span className="inline-flex h-10 w-1 rounded-full bg-red-500" />
               <p className="text-xs uppercase tracking-[0.3em] text-red-400">{t.subtitle}</p>
             </div>
-            <h1 className="text-6xl font-black tracking-[-0.04em] text-slate-900 dark:text-white sm:text-7xl lg:text-8xl">
+            <h1 className="text-6xl font-black tracking-[-0.04em] text-slate-900 dark:text-white sm:text-7xl lg:text-8xl reveal reveal-up" style={{ transitionDelay: '100ms' }}>
               {t.title}
             </h1>
-            <div className="max-w-2xl space-y-6">
+            <div className="max-w-2xl space-y-6 reveal reveal-up" style={{ transitionDelay: '200ms' }}>
               <p className="text-lg leading-8 text-slate-700 dark:text-slate-300">
                 {t.description}
               </p>
@@ -38,13 +38,13 @@ export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }
                 </a>
               </div>
             </div>
-            <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+            <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400 reveal reveal-up" style={{ transitionDelay: '300ms' }}>
               <span className="inline-flex h-2 w-2 rounded-full bg-red-500" />
               {t.location}
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative reveal reveal-left" style={{ transitionDelay: '200ms' }}>
             <div className="absolute inset-0 -z-10 rounded-[3rem] bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-slate-900 dark:via-slate-950 dark:to-slate-800 blur-2xl" />
             <div className="relative overflow-hidden rounded-[3rem] border border-slate-200 bg-white/90 shadow-[0_40px_120px_-40px_rgba(148,163,184,0.3)] dark:border-white/10 dark:bg-slate-900/90 dark:shadow-[0_40px_120px_-40px_rgba(15,23,42,0.9)]">
               <div className="aspect-[4/5] min-h-[420px] bg-slate-100 dark:bg-slate-800/80">

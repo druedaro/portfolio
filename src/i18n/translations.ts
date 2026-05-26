@@ -120,8 +120,8 @@ export interface TranslationDictionary {
 export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
   es: {
     meta: {
-      title: "Portfolio | Frontend Developer & Technical Marketer",
-      description: "Portfolio de frontend developer y technical marketer construido con Astro, React y Tailwind CSS."
+      title: "David Rueda | Frontend Developer & Technical Marketer",
+      description: "David Rueda — Portfolio de frontend developer y technical marketer construido con Astro, React y Tailwind CSS."
     },
     nav: [
       { label: 'Sobre mí', href: '#sobre-mi' },
@@ -290,8 +290,8 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
   },
   en: {
     meta: {
-      title: "Portfolio | Frontend Developer & Technical Marketer",
-      description: "Frontend developer and technical marketer portfolio built with Astro, React, and Tailwind CSS."
+      title: "David Rueda | Frontend Developer & Technical Marketer",
+      description: "David Rueda — Frontend developer and technical marketer portfolio built with Astro, React, and Tailwind CSS."
     },
     nav: [
       { label: 'About me', href: '#about-me' },
@@ -460,8 +460,8 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
   },
   ca: {
     meta: {
-      title: "Portfolio | Frontend Developer & Technical Marketer",
-      description: "Portfolio de frontend developer i technical marketer construït amb Astro, React i Tailwind CSS."
+      title: "David Rueda | Frontend Developer & Technical Marketer",
+      description: "David Rueda — Portfolio de frontend developer i technical marketer construït amb Astro, React i Tailwind CSS."
     },
     nav: [
       { label: 'Sobre mi', href: '#sobre-mi' },

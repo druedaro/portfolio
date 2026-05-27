@@ -46,12 +46,19 @@ const CERTS: Cert[] = [
   { name: 'Excel Online', issuer: 'Udemy', year: 2020, category: 'UI/UX & Data' },
 ];
 
-const CATEGORY_ICONS: Record<string, string> = {
-  'Marketing Digital': '📢',
-  'SEO': '🔍',
-  'Web Analytics': '📊',
-  'Inteligencia Artificial': '🤖',
-  'UI/UX & Data': '🎨',
+const MegaphoneIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>;
+const SearchIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>;
+const ChartIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>;
+const SparklesIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M3 5h4"/></svg>;
+const LayoutIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>;
+const AwardIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>;
+
+const CATEGORY_ICONS: Record<string, (cls?: string) => React.ReactNode> = {
+  'Marketing Digital': (c) => <MegaphoneIcon className={c} />,
+  'SEO': (c) => <SearchIcon className={c} />,
+  'Web Analytics': (c) => <ChartIcon className={c} />,
+  'Inteligencia Artificial': (c) => <SparklesIcon className={c} />,
+  'UI/UX & Data': (c) => <LayoutIcon className={c} />,
 };
 
 const CATEGORIES = ['Marketing Digital', 'Inteligencia Artificial', 'SEO', 'Web Analytics', 'UI/UX & Data'];
@@ -111,7 +118,9 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
                     : 'border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-red-400 hover:text-red-500 dark:hover:border-red-500/50 dark:hover:text-red-400'
                 }`}
               >
-                {CATEGORY_ICONS[cat]} {cat}
+                <span className="flex items-center gap-1.5">
+                  {CATEGORY_ICONS[cat]('w-4 h-4')} {cat}
+                </span>
                 <span className="ml-1.5 text-xs opacity-70">({count})</span>
               </button>
             );
@@ -125,8 +134,8 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
               className="group relative rounded-2xl border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 p-5 transition-all duration-300 hover:border-red-500/50 hover:shadow-[0_0_24px_rgba(239,68,68,0.12)] dark:hover:shadow-[0_0_24px_rgba(239,68,68,0.15)] hover:-translate-y-1"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-2xl pointer-events-none" />
-              <span className="text-xl mb-3 block" aria-hidden="true">
-                {CATEGORY_ICONS[cert.category] ?? '🏅'}
+              <span className="mb-3 block text-red-500" aria-hidden="true">
+                {CATEGORY_ICONS[cert.category] ? CATEGORY_ICONS[cert.category]('w-6 h-6') : <AwardIcon className="w-6 h-6" />}
               </span>
               <h3 className="text-sm font-semibold text-slate-900 dark:text-white leading-snug mb-3 group-hover:text-red-500 transition-colors duration-300 overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
                 {cert.name}

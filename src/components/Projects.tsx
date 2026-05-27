@@ -44,7 +44,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 max-w-3xl reveal reveal-up">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500">{sectionTag}</p>
-          <h2 className="mt-4 text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-7xl">
+          <h2 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white break-words">
             {sectionTitle}
           </h2>
         </div>

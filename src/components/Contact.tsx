@@ -37,10 +37,10 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="min-w-0 space-y-8 reveal reveal-up">
             <div className="flex flex-col gap-4">
-              <h2 className="text-5xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-6xl">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white break-words">
                 {title1}
               </h2>
-              <h3 className="text-5xl font-black uppercase tracking-[-0.05em] text-red-500 sm:text-6xl">
+              <h3 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-red-500 break-words">
                 {title2}
               </h3>
             </div>

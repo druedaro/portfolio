@@ -77,7 +77,7 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
         <div className="mb-10">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500 mb-4">{t.section}</p>
           <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-4">
-            <h2 className="text-5xl font-black uppercase tracking-[-0.06em] text-slate-900 dark:text-white sm:text-6xl">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white break-words">
               {t.title}
             </h2>
             <span className="text-base font-mono text-slate-400 dark:text-slate-500">

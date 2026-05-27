@@ -34,7 +34,7 @@ export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
-            <h2 className="mb-10 text-5xl font-black tracking-[-0.05em] text-slate-900 dark:text-white sm:text-6xl">
+            <h2 className="mb-10 text-4xl sm:text-5xl md:text-6xl font-black tracking-[-0.05em] text-slate-900 dark:text-white break-words">
               {t.heading.replace('?', '')}<span className="text-red-500">?</span>
             </h2>
 

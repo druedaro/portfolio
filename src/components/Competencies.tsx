@@ -32,7 +32,7 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 reveal reveal-up">
-          <h2 className="text-5xl font-black uppercase tracking-[-0.06em] text-slate-900 dark:text-white sm:text-7xl mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white mb-6 break-words">
             {sectionTitle}
           </h2>
           <div className="w-16 h-1 bg-red-500" />

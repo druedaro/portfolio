@@ -76,8 +76,16 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
   return (
     <section ref={rootRef} className="fixed inset-x-0 top-4 z-50 flex justify-center px-3 md:px-4 transition-all duration-500">
       <nav className="relative flex items-center gap-2 px-2 py-3 md:px-4 rounded-full border border-slate-200 bg-white/80 dark:border-white/10 dark:bg-black/80 backdrop-blur-xl transition-colors duration-500 max-w-[calc(100vw-1.5rem)] shadow-2xl shadow-red-500/5">
-        <a href={homeHref} className="shrink-0 mx-1" aria-label="Inicio">
-          <img src="/favicon.svg" alt="DR" className="h-9 w-9 rounded-xl" />
+        <a href={homeHref} className="shrink-0 mx-1 flex items-center text-slate-900 dark:text-white" aria-label="Inicio">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" className="h-9 w-9">
+            <g stroke="currentColor" strokeWidth="6.5" strokeLinecap="round" fill="none">
+              <line x1="26" y1="17" x2="26" y2="47" />
+              <circle cx="16.5" cy="37.5" r="9.5" />
+              <line x1="39" y1="27" x2="39" y2="47" />
+              <path d="M 39 35 Q 44 26 49 28.5" />
+            </g>
+            <circle cx="55" cy="46" r="4.5" fill="#ef4444" />
+          </svg>
         </a>
 
         <div className="hidden md:flex items-center gap-1 overflow-x-auto whitespace-nowrap pr-1">

@@ -9,7 +9,15 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
     <footer className="border-t border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 py-8 text-slate-500 dark:text-slate-400 transition-colors duration-300">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 sm:px-10 lg:flex-row">
         <div className="flex items-center gap-3 text-sm text-slate-700 dark:text-white">
-          <img src="/favicon.svg" alt="DR" className="h-9 w-9 rounded-xl" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" className="h-9 w-9 text-slate-900 dark:text-white">
+            <g stroke="currentColor" strokeWidth="6.5" strokeLinecap="round" fill="none">
+              <line x1="26" y1="17" x2="26" y2="47" />
+              <circle cx="16.5" cy="37.5" r="9.5" />
+              <line x1="39" y1="27" x2="39" y2="47" />
+              <path d="M 39 35 Q 44 26 49 28.5" />
+            </g>
+            <circle cx="55" cy="46" r="4.5" fill="#ef4444" />
+          </svg>
           <span>{copyright}</span>
         </div>
 

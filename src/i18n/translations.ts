@@ -88,6 +88,16 @@ export interface FooterTranslation {
   copyright: string;
 }
 
+export interface CertificationsTranslation {
+  id: string;
+  section: string;
+  title: string;
+  subtitle: string;
+  filterAll: string;
+  showMore: string;
+  showLess: string;
+}
+
 export interface MetaTranslation {
   title: string;
   description: string;
@@ -115,6 +125,7 @@ export interface TranslationDictionary {
   projects: ProjectsTranslation;
   contact: ContactTranslation;
   footer: FooterTranslation;
+  certifications: CertificationsTranslation;
 }
 
 export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
@@ -127,6 +138,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Sobre mí', href: '#sobre-mi' },
       { label: 'Experiencia', href: '#experiencia' },
       { label: 'Educación', href: '#educacion' },
+      { label: 'Certificaciones', href: '#certificaciones' },
       { label: 'Competencias', href: '#competencias' },
       { label: 'Proyectos', href: '#proyectos' },
       { label: 'Contacto', href: '#contacto' }
@@ -285,7 +297,16 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.'
     },
     footer: {
-      copyright: '© 2026 MIGUEL PUJAZÓN CÁRDENAS'
+      copyright: '© 2026 DAVID RUEDA ROSAS'
+    },
+    certifications: {
+      id: 'certificaciones',
+      section: 'Certificaciones',
+      title: 'Certificaciones',
+      subtitle: 'certificaciones',
+      filterAll: 'Todos',
+      showMore: 'Ver todas',
+      showLess: 'Ver menos'
     }
   },
   en: {
@@ -297,6 +318,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'About me', href: '#about-me' },
       { label: 'Experience', href: '#experience' },
       { label: 'Education', href: '#education' },
+      { label: 'Certifications', href: '#certifications' },
       { label: 'Skills', href: '#skills' },
       { label: 'Projects', href: '#projects' },
       { label: 'Contact', href: '#contact' }
@@ -455,7 +477,16 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Available to collaborate on frontend projects with Angular, development best practices, and digital products that work from the very first scroll.'
     },
     footer: {
-      copyright: '© 2026 MIGUEL PUJAZÓN CÁRDENAS'
+      copyright: '© 2026 DAVID RUEDA ROSAS'
+    },
+    certifications: {
+      id: 'certifications',
+      section: 'Certifications',
+      title: 'Certifications',
+      subtitle: 'certifications',
+      filterAll: 'All',
+      showMore: 'Show all',
+      showLess: 'Show less'
     }
   },
   ca: {
@@ -467,6 +498,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Sobre mi', href: '#sobre-mi' },
       { label: 'Experiència', href: '#experiencia' },
       { label: 'Educació', href: '#educacio' },
+      { label: 'Certificacions', href: '#certificacions' },
       { label: 'Competències', href: '#competencies' },
       { label: 'Projectes', href: '#projectes' },
       { label: 'Contacte', href: '#contacte' }
@@ -625,7 +657,16 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Disponible per col·laborar en projectes frontend amb Angular, bones pràctiques de desenvolupament i productes digitals que funcionen des del primer scroll.'
     },
     footer: {
-      copyright: '© 2026 MIGUEL PUJAZÓN CÁRDENAS'
+      copyright: '© 2026 DAVID RUEDA ROSAS'
+    },
+    certifications: {
+      id: 'certificacions',
+      section: 'Certificacions',
+      title: 'Certificacions',
+      subtitle: 'certificacions',
+      filterAll: 'Tots',
+      showMore: 'Veure totes',
+      showLess: 'Veure menys'
     }
   }
 };

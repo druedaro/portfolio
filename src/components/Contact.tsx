@@ -3,20 +3,20 @@ import React from 'react';
 const contacts = [
   {
     label: 'LinkedIn',
-    value: 'Miguel Pujazón Cárdenas',
-    href: 'https://www.linkedin.com/in/mpujazon',
+    value: 'David Rueda Rosas',
+    href: 'https://www.linkedin.com/in/david-rueda-rosas/',
     icon: '⬆'
   },
   {
     label: 'GitHub',
-    value: 'mpujazon',
-    href: 'https://github.com/mpujazon',
+    value: 'druedaro',
+    href: 'https://github.com/druedaro',
     icon: '🐙'
   },
   {
     label: 'Email',
-    value: 'mpujazoncardenas@gmail.com',
-    href: 'mailto:mpujazoncardenas@gmail.com',
+    value: 'ruedarosasdavid@gmail.com',
+    href: 'mailto:ruedarosasdavid@gmail.com',
     icon: '✉️'
   }
 ];

@@ -5,6 +5,7 @@ import Hero from './Hero.tsx';
 import WhatIDo from './WhatIDo.tsx';
 import Experience from './Experience.tsx';
 import Education from './Education.tsx';
+import Certifications from './Certifications.tsx';
 import Competencies from './Competencies.tsx';
 import TechCarousel from './TechCarousel.tsx';
 import Projects from './Projects.tsx';
@@ -62,6 +63,7 @@ const caUrl = `${origin}/ca/`;
       <WhatIDo client:visible t={t.whatIDo} />
       <Experience t={t.experience} />
       <Education t={t.education} />
+      <Certifications client:visible t={t.certifications} />
       <Competencies t={t.competencies}>
         <TechCarousel client:visible />
       </Competencies>

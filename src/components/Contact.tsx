@@ -56,12 +56,14 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
           <div className="min-w-0 overflow-hidden rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl reveal reveal-up" style={{ transitionDelay: '200ms' }}>
             <p className="mb-8 text-sm uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">{sectionTag}</p>
             <div className="space-y-4">
-              {contacts.map((contact) => (
+              {contacts.map((contact) => {
+                const isMail = contact.href.startsWith('mailto:');
+                return (
                 <a
                   key={contact.label}
                   href={contact.href}
-                  target="_blank"
-                  rel="noreferrer"
+                  target={isMail ? undefined : "_blank"}
+                  rel={isMail ? undefined : "noreferrer"}
                   className="flex min-w-0 items-center justify-between rounded-3xl border border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-400 dark:border-slate-800/70 dark:bg-slate-900/90 dark:text-slate-200 dark:hover:border-slate-600/80 dark:hover:bg-slate-900/95 px-5 py-4 text-left transition-all"
                 >
                   <div className="flex min-w-0 items-center gap-4">
@@ -75,7 +77,7 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
                   </div>
                   <span className="text-slate-400">↗</span>
                 </a>
-              ))}
+              )})}
             </div>
           </div>
         </div>

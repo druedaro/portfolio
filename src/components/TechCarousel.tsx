@@ -4,7 +4,7 @@ const technologies = [
   {
     name: 'Angular',
     svg: (
-      <svg viewBox="0 0 250 250" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 250 250" className="h-7 w-7" aria-hidden="true">
         <path d="M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z" fill="#DD0031"/>
         <path d="M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z" fill="#C3002F"/>
         <path d="M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2H183L125 52.1zm17 83.3h-34l17-40.9 17 40.9z" fill="#fff"/>
@@ -14,7 +14,7 @@ const technologies = [
   {
     name: 'TypeScript',
     svg: (
-      <svg viewBox="0 0 400 400" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 400 400" className="h-7 w-7" aria-hidden="true">
         <rect width="400" height="400" rx="50" fill="#3178C6"/>
         <path d="M87.7 200.7V217h52v148h36.9V217h52v-16c0-9 0-16.3-.4-16.5-.3-.3-31.7-.4-70-.4l-69.5.3v16.3zM321.4 184c10.2 2.4 18 7 25 14.3 3.7 4 9.2 11 9.6 12.8.1.5-17.3 12.3-27.8 18.8-.4.3-2-1.4-3.6-4-5.2-7.4-10.5-10.6-18.8-11.2-12.1-.8-20 5.5-20 16 0 3.2.5 5 1.8 7.6 2.7 5.5 7.7 8.8 23.2 15.6 28.6 12.3 40.9 20.4 48.5 32 8.5 13 10.4 33.4 4.7 48.7-6.4 16.7-22.2 28-44.3 31.8-6.8 1.2-23 1-30.5-.3-16-3-31.3-11-40.7-21.3-3.7-4-10.8-14.7-10.4-15.4.2-.2 1.9-1.3 3.9-2.5l15.8-9.1 12.4-7.2 2.6 3.7c3.3 5.2 10.7 12.2 15 14.6 13.3 7 31.7 6 40.8-2.2 3.7-3.4 5.3-6.9 5.3-12 0-4.6-.7-6.7-3-10.2-3.2-4.4-9.6-8-27.6-16-20.7-8.9-29.5-14.4-37.7-23-4.7-5.2-9-13.3-10.8-20.1-1.5-5.8-1.9-20.4-.6-26.1 4.4-20.4 19.7-34.4 41.8-38.4 7.2-1.3 23.8-.8 30.7.9z" fill="#fff"/>
       </svg>
@@ -23,7 +23,7 @@ const technologies = [
   {
     name: 'JavaScript',
     svg: (
-      <svg viewBox="0 0 630 630" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 630 630" className="h-7 w-7" aria-hidden="true">
         <rect width="630" height="630" fill="#f7df1e"/>
         <path d="M423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 37.94 30.45 19.4 0 31.66-7.6 31.66-37.16v-201.3h59.2v202.1c0 61.17-35.86 88.95-88.2 88.95-47.1 0-74.4-24.4-88.2-53.74z"/>
       </svg>
@@ -32,7 +32,7 @@ const technologies = [
   {
     name: 'RxJS',
     svg: (
-      <svg viewBox="0 0 100 100" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 100 100" className="h-7 w-7" aria-hidden="true">
         <circle cx="50" cy="50" r="50" fill="#B7178C"/>
         <path d="M68.3 35.5c-3.6-6.2-10.3-10.4-18-10.4-11.5 0-20.8 9.3-20.8 20.8s9.3 20.8 20.8 20.8c2.8 0 5.5-.6 8-1.6L70 80h8L63.4 59.5c3.4-3.7 5.5-8.6 5.5-14a20.6 20.6 0 00-.6-5v-5zm-18 23.9c-7.4 0-13.5-6-13.5-13.4s6-13.5 13.5-13.5 13.4 6 13.4 13.5-6 13.4-13.4 13.4z" fill="#fff"/>
       </svg>
@@ -41,7 +41,7 @@ const technologies = [
   {
     name: 'Node.js',
     svg: (
-      <svg viewBox="0 0 256 289" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 256 289" className="h-7 w-7" aria-hidden="true">
         <path d="M128 288.4c-3.5 0-6.8-.9-9.8-2.6L68.5 257c-4.7-2.6-2.4-3.5-0.9-4 9.7-3.4 11.7-4.2 22-10.1.9-.5 2.2-.3 3.2.3l38.7 23c1.2.6 2.8.6 3.8 0l150.9-87.1c1.2-.7 2-2 2-3.4V102.1c0-1.5-.8-2.8-2-3.5L135.4 11.6c-1.2-.7-2.7-.7-3.8 0L131.3 11.5 35.8 87.1c-1.2.7-2 2.1-2 3.5v174.2c0 1.4.8 2.7 2 3.4l27.7 16c15 7.5 24.2-1.3 24.2-10.2V109.2c0-1.6 1.3-2.9 2.9-2.9h12.4c1.5 0 2.9 1.3 2.9 2.9v164.8c0 20-10.9 31.4-29.9 31.4-5.8 0-10.4 0-23.2-6.3L26 282.8C10.2 273.8 0 257.5 0 239.8V65.6C0 47.9 10.2 31.6 26 22.6L115.7 1.8c15.3-8.6 35.9-8.6 51.1 0L256 43.6c15.8 9 26 25.3 26 43V239.8c0 17.7-10.2 34-26 43l-89.7 51.8c-3 1.7-6.3 2.6-9.8 2.6l-2.5-.2z" fill="#539E43"/>
         <path d="M160.7 163.5c-39.4 0-47.7-18.1-47.7-33.2 0-1.6 1.3-2.9 2.9-2.9h12.6c1.4 0 2.7 1 2.9 2.4 2 13.5 7.9 20.3 29.3 20.3 18 0 25.7-4.1 25.7-13.6 0-5.5-2.2-9.6-30.2-12.3-23.4-2.3-37.9-7.5-37.9-26.2 0-17.3 14.6-27.6 39-27.6 27.4 0 40.9 9.5 42.6 30 .1.8-.2 1.6-.7 2.2-.5.6-1.3.9-2.1.9h-12.7c-1.3 0-2.5-.9-2.8-2.2-2.7-11.9-9.2-15.7-24.3-15.7-17.9 0-20 6.2-20 10.9 0 5.6 2.5 7.3 29.3 10.5 26.5 3.2 38.7 7.7 38.7 27.8 0 18.6-15.5 29.7-42.6 29.7z" fill="#fff"/>
       </svg>
@@ -50,7 +50,7 @@ const technologies = [
   {
     name: 'PostgreSQL',
     svg: (
-      <svg viewBox="0 0 432 432" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 432 432" className="h-7 w-7" aria-hidden="true">
         <path d="M323.5 305.9c1.3-10.7 1-12.6 8.7-10.9l2 .2c6.1.3 14.1-.9 18.8-3.2 10.1-4.8 16.1-12.8 6.1-10.7-22.8 4.8-24.4-3-24.4-3 24.1-35.8 34.2-81.2 25.5-92.4-23.7-30.3-64.7-16-65.4-15.6l-.2.1c-4.5-.9-9.5-1.5-15.1-1.6-10.2-.2-18 2.7-23.9 7.1 0 0-72.6-30-69.3 38.4.7 14.2 20.4 107.5 43.8 79.3 8.6-10.3 16.9-19 16.9-19 4.1 2.7 9 4.2 14.2 3.7l.4-.4c-.1 1.4-.1 2.8.1 4.4-5.9 6.6-4.2 7.8-16.1 10.2-12 2.5-5 6.8-.3 8 5.6 1.4 18.5 3.4 27.2-8.9l-.3 1.4c2.3 1.9 2.2 13.2 2.5 21.3.3 8.1.8 15.7 2.4 20.2 1.6 4.4 3.5 15.8 18.3 12.5 12.4-2.7 21.3-6.8 22.2-44.1" fill="#336791"/>
         <path d="M323.5 305.9c1.3-10.7 1-12.6 8.7-10.9l2 .2c6.1.3 14.1-.9 18.8-3.2 10.1-4.8 16.1-12.8 6.1-10.7-22.8 4.8-24.4-3-24.4-3 24.1-35.8 34.2-81.2 25.5-92.4-23.7-30.3-64.7-16-65.4-15.6l-.2.1c-4.5-.9-9.5-1.5-15.1-1.6-10.2-.2-18 2.7-23.9 7.1 0 0-72.6-30-69.3 38.4.7 14.2 20.4 107.5 43.8 79.3 8.6-10.3 16.9-19 16.9-19 4.1 2.7 9 4.2 14.2 3.7l.4-.4c-.1 1.4-.1 2.8.1 4.4-5.9 6.6-4.2 7.8-16.1 10.2-12 2.5-5 6.8-.3 8 5.6 1.4 18.5 3.4 27.2-8.9l-.3 1.4c2.3 1.9 2.2 13.2 2.5 21.3.3 8.1.8 15.7 2.4 20.2 1.6 4.4 3.5 15.8 18.3 12.5 12.4-2.7 21.3-6.8 22.2-44.1" fill="none" stroke="#fff" strokeWidth="2"/>
       </svg>
@@ -59,7 +59,7 @@ const technologies = [
   {
     name: 'Vitest',
     svg: (
-      <svg viewBox="0 0 32 32" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 32 32" className="h-7 w-7" aria-hidden="true">
         <path d="M16 2L2 28h28L16 2z" fill="none"/>
         <path d="M16 5.5l-11.5 20h23L16 5.5z" fill="#729B1B"/>
         <path d="M16 5.5L7.5 21h8.5l-4.5-7.8 4.5 0z" fill="#ACD33B"/>
@@ -71,7 +71,7 @@ const technologies = [
   {
     name: 'CSS3',
     svg: (
-      <svg viewBox="0 0 452 520" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 452 520" className="h-7 w-7" aria-hidden="true">
         <path d="M41.4 0h369.2l-33.6 374.4L225.8 420 74.5 374.3 41.4 0z" fill="#264de4"/>
         <path d="M225.8 389.7l120-33.2 28.7-320.3H225.8v353.5z" fill="#2965f1"/>
         <path d="M225.8 208.7h60.2l4.2-47.1H225.8v-45.9h114.7l-1.2 13-12.2 137.1H225.8v-57.1z" fill="#fff"/>
@@ -92,7 +92,7 @@ const technologies = [
   {
     name: 'SASS',
     svg: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true">
         <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12c6.628 0 12-5.373 12-12S18.628 0 12 0zm3.361 14.464c-.14.668-.496 1.243-1.002 1.61-.506.366-1.158.53-1.91.487-.734-.042-1.332-.3-1.78-.77-.447-.47-.648-1.07-.595-1.79.05-.62.283-1.175.69-1.65a3.58 3.58 0 011.6-.995 3.98 3.98 0 01-.172-.698c-.135-.83.08-1.566.596-2.06.46-.445 1.097-.65 1.854-.6.752.05 1.368.35 1.784.866.372.458.53 1.033.46 1.65a2.43 2.43 0 01-.625 1.38c.47.41.735.98.695 1.594v.004a2.6 2.6 0 01-.595 1.972zm-5.69.63c.37.53.91.875 1.56 1 .65.123 1.3-.01 1.81-.37a1.9 1.9 0 00.75-1.207c.05-.434-.035-.84-.248-1.17-.21-.33-.51-.567-.895-.7a.47.47 0 01-.2-.07c-.76.433-1.45.505-2.05.215-.37-.18-.61-.47-.71-.848-.1-.38-.02-.756.235-1.06.35-.42.933-.637 1.69-.625a3.17 3.17 0 01.55.055 3.79 3.79 0 00-.29-.99c-.29-.6-.73-.97-1.29-1.07-.56-.1-1.07.12-1.43.61-.29.39-.41.87-.35 1.38.06.45.25.87.56 1.22a3.65 3.65 0 00-.67 1.66c-.08.683.12 1.32.48 1.77l.49-.8z" fill="#CC6699"/>
       </svg>
     ),
@@ -100,7 +100,7 @@ const technologies = [
   {
     name: 'Git',
     svg: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true">
         <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.604-.404-.545-.547-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" fill="#F05032"/>
       </svg>
     ),
@@ -108,7 +108,7 @@ const technologies = [
   {
     name: 'Jira',
     svg: (
-      <svg viewBox="0 0 32 32" className="h-6 w-6" aria-hidden="true">
+      <svg viewBox="0 0 32 32" className="h-7 w-7" aria-hidden="true">
         <defs>
           <linearGradient id="jira-a" x1="99%" x2="50%" y1="0%" y2="50%">
             <stop offset="18%" stopColor="#0052CC"/>
@@ -136,7 +136,7 @@ export default function TechCarousel() {
   const prevTranslate = useRef(0);
   const animationRef = useRef<number | null>(null);
 
-  const speed = 0.5;
+  const speed = 1.2;
 
   const animate = () => {
     if (!isDragging.current) {
@@ -189,12 +189,12 @@ export default function TechCarousel() {
       {technologies.map((tech, i) => (
         <div
           key={`${tech.name}-${i}`}
-          className="group flex items-center gap-2.5 rounded-full border border-slate-200/80 bg-white/60 px-4 py-2.5 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-slate-300 hover:bg-white hover:shadow-md dark:border-slate-800/60 dark:bg-slate-900/50 dark:hover:border-slate-600 dark:hover:bg-slate-800/70 select-none"
+          className="group flex items-center gap-3.5 rounded-full border border-slate-200/80 bg-white/60 px-6 py-3.5 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-slate-300 hover:bg-white hover:shadow-md dark:border-slate-800/60 dark:bg-slate-900/50 dark:hover:border-slate-600 dark:hover:bg-slate-800/70 select-none"
         >
           <span className="flex-shrink-0 transition-transform duration-300 group-hover:scale-110 pointer-events-none">
             {tech.svg}
           </span>
-          <span className="whitespace-nowrap text-sm font-medium text-slate-600 transition-colors duration-300 group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-white pointer-events-none">
+          <span className="whitespace-nowrap text-base font-medium text-slate-600 transition-colors duration-300 group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-white pointer-events-none">
             {tech.name}
           </span>
         </div>

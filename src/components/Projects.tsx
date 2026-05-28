@@ -16,15 +16,16 @@ const projects: ProjectItem[] = [
     videoUrl: '/assets/seocompass.webm'
   },
   {
-    title: 'FilmHorizon',
+    title: 'MovieApp',
     description:
-      'SPA mobile-first para descubrir películas y series, con gestión de watchlist personal. Arquitectura feature-based con Angular 21, integración con TMDB API, autenticación Firebase, rutas protegidas y despliegue en Vercel.',
-    tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+      'Aplicación web optimizada de búsqueda y exploración de películas y series. Integración con la API de TMDB, scroll infinito, filtros por año/género y navegación bidireccional. Desarrollada con React 19, Tailwind CSS y autenticación con Supabase.',
+    tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     demoLabel: 'Ver demo',
     codeLabel: 'Código disponible',
     demo: true,
-    codeUrl: '#',
-    demoUrl: '#'
+    codeUrl: 'https://github.com/druedaro/sprint7-movie-app',
+    demoUrl: 'https://sprint7-movie-app-q7z4.vercel.app/',
+    videoUrl: '/assets/movieapp.webm'
   },
   {
     title: 'Budget Generator',

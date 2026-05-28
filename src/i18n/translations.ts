@@ -252,12 +252,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/seocompass.webm'
         },
         {
-          title: 'FilmHorizon',
-          description: 'SPA mobile-first para descubrir películas y series, con gestión de watchlist personal. Arquitectura feature-based con Angular 21, integración con TMDB API, autenticación Firebase, rutas protegidas y despliegue en Vercel.',
-          tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+          title: 'MovieApp',
+          description: 'Aplicación web optimizada de búsqueda y exploración de películas y series. Integración con la API de TMDB, scroll infinito, filtros por año/género y navegación de actores. React 19, Tailwind CSS y Supabase.',
+          tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint7-movie-app',
+          demoUrl: 'https://sprint7-movie-app-q7z4.vercel.app/',
+          videoUrl: '/assets/movieapp.webm'
         },
         {
           title: 'Budget Generator',
@@ -459,12 +462,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/seocompass.webm'
         },
         {
-          title: 'FilmHorizon',
-          description: 'Mobile-first SPA to discover movies and series, featuring a personal watchlist management. Feature-based architecture with Angular 21, TMDB API integration, Firebase authentication, protected routes, and deployed on Vercel.',
-          tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+          title: 'MovieApp',
+          description: 'Optimized web application for searching and exploring movies and series. Features TMDB API integration, infinite scroll, genre/year filters, and actor navigation. React 19, Tailwind CSS and Supabase.',
+          tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint7-movie-app',
+          demoUrl: 'https://sprint7-movie-app-q7z4.vercel.app/',
+          videoUrl: '/assets/movieapp.webm'
         },
         {
           title: 'Budget Generator',
@@ -666,12 +672,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/seocompass.webm'
         },
         {
-          title: 'FilmHorizon',
-          description: 'SPA mobile-first per descobrir pel·lícules i sèries, amb gestió de llista de seguiment personal. Arquitectura feature-based amb Angular 21, integració amb TMDB API, autenticació Firebase, rutes protegides i desplegament a Vercel.',
-          tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+          title: 'MovieApp',
+          description: 'Aplicació web optimitzada de cerca i exploració de pel·lícules i sèries. Integració amb l\'API de TMDB, scroll infinit, filtres per any/gènere i navegació d\'actors. React 19, Tailwind CSS i Supabase.',
+          tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint7-movie-app',
+          demoUrl: 'https://sprint7-movie-app-q7z4.vercel.app/',
+          videoUrl: '/assets/movieapp.webm'
         },
         {
           title: 'Budget Generator',

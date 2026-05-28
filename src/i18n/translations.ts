@@ -254,6 +254,30 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
           demo: true
+        },
+        {
+          title: 'Task Flow',
+          description: 'Gestor de tareas colaborativo con tableros Kanban, asignación de prioridades y seguimiento de sprints en tiempo real. Construido con Angular 21, RxJS y WebSockets para sincronización instantánea entre usuarios.',
+          tags: ['Angular', 'RxJS', 'WebSockets', 'TypeScript'],
+          demoLabel: 'Ver demo',
+          codeLabel: 'Código disponible',
+          demo: true
+        },
+        {
+          title: 'Analytics Dashboard',
+          description: 'Panel de analítica web con visualización de métricas en tiempo real, informes exportables y segmentación de audiencias. Integración con Google Analytics 4 y Chart.js para representación de datos compleja.',
+          tags: ['React', 'Chart.js', 'GA4', 'TypeScript'],
+          demoLabel: 'Ver demo',
+          codeLabel: 'Código disponible',
+          demo: false
+        },
+        {
+          title: 'Design System CLI',
+          description: 'Herramienta de línea de comandos para generar componentes UI reutilizables con estilos predefinidos, documentación automática y soporte para múltiples frameworks. Publicado como paquete npm de uso interno.',
+          tags: ['Node.js', 'TypeScript', 'CLI', 'npm'],
+          demoLabel: 'Ver demo',
+          codeLabel: 'Código disponible',
+          demo: false
         }
       ]
     },
@@ -434,6 +458,30 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demoLabel: 'View demo',
           codeLabel: 'Code available',
           demo: true
+        },
+        {
+          title: 'Task Flow',
+          description: 'Collaborative task manager with Kanban boards, priority assignment, and real-time sprint tracking. Built with Angular 21, RxJS, and WebSockets for instant synchronization between users.',
+          tags: ['Angular', 'RxJS', 'WebSockets', 'TypeScript'],
+          demoLabel: 'View demo',
+          codeLabel: 'Code available',
+          demo: true
+        },
+        {
+          title: 'Analytics Dashboard',
+          description: 'Web analytics panel with real-time metrics visualization, exportable reports, and audience segmentation. Integrated with Google Analytics 4 and Chart.js for complex data representation.',
+          tags: ['React', 'Chart.js', 'GA4', 'TypeScript'],
+          demoLabel: 'View demo',
+          codeLabel: 'Code available',
+          demo: false
+        },
+        {
+          title: 'Design System CLI',
+          description: 'Command-line tool to generate reusable UI components with predefined styles, automatic documentation, and support for multiple frameworks. Published as an internal npm package.',
+          tags: ['Node.js', 'TypeScript', 'CLI', 'npm'],
+          demoLabel: 'View demo',
+          codeLabel: 'Code available',
+          demo: false
         }
       ]
     },
@@ -614,6 +662,30 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
           demo: true
+        },
+        {
+          title: 'Task Flow',
+          description: 'Gestor de tasques col·laboratiu amb taulers Kanban, assignació de prioritats i seguiment de sprints en temps real. Construït amb Angular 21, RxJS i WebSockets per a sincronització instantània entre usuaris.',
+          tags: ['Angular', 'RxJS', 'WebSockets', 'TypeScript'],
+          demoLabel: 'Veure demo',
+          codeLabel: 'Codi disponible',
+          demo: true
+        },
+        {
+          title: 'Analytics Dashboard',
+          description: `Panell d'analítica web amb visualització de mètriques en temps real, informes exportables i segmentació d'audiències. Integració amb Google Analytics 4 i Chart.js per a representació de dades complexa.`,
+          tags: ['React', 'Chart.js', 'GA4', 'TypeScript'],
+          demoLabel: 'Veure demo',
+          codeLabel: 'Codi disponible',
+          demo: false
+        },
+        {
+          title: 'Design System CLI',
+          description: `Eina de línia de comandes per generar components UI reutilitzables amb estils predefinits, documentació automàtica i suport per a múltiples frameworks. Publicat com a paquet npm d'ús intern.`,
+          tags: ['Node.js', 'TypeScript', 'CLI', 'npm'],
+          demoLabel: 'Veure demo',
+          codeLabel: 'Codi disponible',
+          demo: false
         }
       ]
     },

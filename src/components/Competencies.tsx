@@ -15,7 +15,7 @@ const groups = [
   },
   {
     title: 'Marketing Técnico',
-    items: ['SEO Técnico (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'CMS y E-commerce (WordPress/Shopify/Magento)', 'Auditorías SEO']
+    items: ['SEO Técnico (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'CMS y E-commerce (WordPress/Drupal/Shopify/Magento)', 'Auditorías SEO']
   },
   {
     title: 'Gestión y Agilidad',

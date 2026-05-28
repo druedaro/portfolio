@@ -349,8 +349,9 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       filterAll: 'Todos',
       showMore: 'Ver todas',
       showLess: 'Ver menos',
-      categories: ['Marketing Digital', 'Inteligencia Artificial', 'SEO', 'Web Analytics', 'UI/UX & Data'],
+      categories: ['Marketing Digital', 'Inteligencia Artificial', 'SEO', 'Web Analytics', 'UI/UX & Data', 'Desarrollo Web'],
       certs: [
+        { name: 'Microcredencial Universitaria en Frontend Development', issuer: 'Universitat Politècnica de Catalunya', year: 2026, category: 'Desarrollo Web' },
         { name: 'Anuncios de Shopping Basados en IA', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
         { name: 'Google Ads Display Certification', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
         { name: 'Google Ads Measurement Certification', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
@@ -599,8 +600,9 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       filterAll: 'All',
       showMore: 'Show all',
       showLess: 'Show less',
-      categories: ['Digital Marketing', 'Artificial Intelligence', 'SEO', 'Web Analytics', 'UI/UX & Data'],
+      categories: ['Digital Marketing', 'Artificial Intelligence', 'SEO', 'Web Analytics', 'UI/UX & Data', 'Frontend Development'],
       certs: [
+        { name: 'University Micro-credential in Frontend Development', issuer: 'Universitat Politècnica de Catalunya', year: 2026, category: 'Frontend Development' },
         { name: 'AI-Based Shopping Ads', issuer: 'Google Skillshop', year: 2026, category: 'Digital Marketing' },
         { name: 'Google Ads Display Certification', issuer: 'Google Skillshop', year: 2026, category: 'Digital Marketing' },
         { name: 'Google Ads Measurement Certification', issuer: 'Google Skillshop', year: 2026, category: 'Digital Marketing' },
@@ -849,8 +851,9 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       filterAll: 'Tots',
       showMore: 'Veure totes',
       showLess: 'Veure menys',
-      categories: ['Màrqueting Digital', 'Intel·ligència Artificial', 'SEO', 'Analítica Web', 'UI/UX i Dades'],
+      categories: ['Màrqueting Digital', 'Intel·ligència Artificial', 'SEO', 'Analítica Web', 'UI/UX i Dades', 'Desenvolupament Web'],
       certs: [
+        { name: 'Microcredencial Universitària en Frontend Development', issuer: 'Universitat Politècnica de Catalunya', year: 2026, category: 'Desenvolupament Web' },
         { name: 'Anuncis de Shopping Basats en IA', issuer: 'Google Skillshop', year: 2026, category: 'Màrqueting Digital' },
         { name: 'Google Ads Display Certification', issuer: 'Google Skillshop', year: 2026, category: 'Màrqueting Digital' },
         { name: 'Google Ads Measurement Certification', issuer: 'Google Skillshop', year: 2026, category: 'Màrqueting Digital' },

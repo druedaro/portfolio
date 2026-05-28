@@ -9,6 +9,7 @@ interface Cert {
 }
 
 const CERTS: Cert[] = [
+  { name: 'Microcredencial Universitaria en Frontend Development', issuer: 'Universitat Politècnica de Catalunya', year: 2026, category: 'Desarrollo Web' },
   { name: 'Anuncios de Shopping Basados en IA', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
   { name: 'Google Ads Display Certification', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
   { name: 'Google Ads Measurement Certification', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
@@ -52,6 +53,7 @@ const ChartIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xm
 const SparklesIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M3 5h4"/></svg>;
 const LayoutIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>;
 const AwardIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>;
+const CodeIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>;
 
 const CATEGORY_ICONS: Record<string, (cls?: string) => React.ReactNode> = {
   // Spanish
@@ -60,19 +62,22 @@ const CATEGORY_ICONS: Record<string, (cls?: string) => React.ReactNode> = {
   'Web Analytics': (c) => <ChartIcon className={c} />,
   'Inteligencia Artificial': (c) => <SparklesIcon className={c} />,
   'UI/UX & Data': (c) => <LayoutIcon className={c} />,
+  'Desarrollo Web': (c) => <CodeIcon className={c} />,
 
   // English
   'Digital Marketing': (c) => <MegaphoneIcon className={c} />,
   'Artificial Intelligence': (c) => <SparklesIcon className={c} />,
+  'Frontend Development': (c) => <CodeIcon className={c} />,
 
   // Catalan
   'Màrqueting Digital': (c) => <MegaphoneIcon className={c} />,
   'Intel·ligència Artificial': (c) => <SparklesIcon className={c} />,
   'Analítica Web': (c) => <ChartIcon className={c} />,
   'UI/UX i Dades': (c) => <LayoutIcon className={c} />,
+  'Desenvolupament Web': (c) => <CodeIcon className={c} />,
 };
 
-const CATEGORIES = ['Marketing Digital', 'Inteligencia Artificial', 'SEO', 'Web Analytics', 'UI/UX & Data'];
+const CATEGORIES = ['Marketing Digital', 'Inteligencia Artificial', 'SEO', 'Web Analytics', 'UI/UX & Data', 'Desarrollo Web'];
 const INITIAL_VISIBLE = 8;
 
 export default function Certifications({ t }: { t: CertificationsTranslation }) {

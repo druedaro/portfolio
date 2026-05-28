@@ -19,7 +19,7 @@ const groups = [
   },
   {
     title: 'Gestión y Agilidad',
-    items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Jira', 'Entrega por sprints', 'Enfoque de producto']
+    items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Teamwork', 'Entrega por sprints', 'Enfoque de producto']
   }
 ];
 
@@ -47,18 +47,22 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
 
           {children && <div className="mb-20">{children}</div>}
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {sectionGroups.map((group, index) => (
-              <div key={group.title} className="group rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-6 shadow-[0_30px_100px_-60px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_100px_-60px_rgba(15,23,42,0.8)] transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-red-500 hover:shadow-[0_0_40px_rgba(239,68,68,0.5)] dark:hover:shadow-[0_0_40px_rgba(239,68,68,0.4)] relative overflow-hidden z-10 reveal reveal-up" style={{ transitionDelay: `${index * 150}ms` }}>
+              <div
+                key={group.title}
+                className="group rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-6 shadow-[0_30px_100px_-60px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_100px_-60px_rgba(15,23,42,0.8)] transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-red-500 hover:shadow-[0_0_40px_rgba(239,68,68,0.5)] dark:hover:shadow-[0_0_40px_rgba(239,68,68,0.4)] relative overflow-hidden z-10 reveal reveal-up"
+                style={{ transitionDelay: `${index * 150}ms` }}
+              >
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 -z-10" />
                 <h3 className="mb-6 text-base font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-slate-300 transition-colors duration-300 group-hover:text-red-500">
                   {group.title}
                 </h3>
-                <div className="space-y-4">
+                <div className="flex flex-wrap gap-2">
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="inline-flex rounded-full border border-slate-200 bg-slate-50 dark:border-slate-800/70 dark:bg-slate-900/90 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 shadow-[0_15px_40px_-30px_rgba(148,163,184,0.2)] dark:shadow-[0_15px_40px_-30px_rgba(15,23,42,0.8)]"
+                      className="inline-flex rounded-full border border-slate-200 bg-slate-50 dark:border-slate-800/70 dark:bg-slate-900/90 px-3.5 py-1.5 text-sm text-slate-700 dark:text-slate-300 shadow-[0_15px_40px_-30px_rgba(148,163,184,0.2)] dark:shadow-[0_15px_40px_-30px_rgba(15,23,42,0.8)]"
                     >
                       {item}
                     </span>

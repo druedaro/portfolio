@@ -2,12 +2,15 @@ import React, { useRef, useEffect } from 'react';
 
 const technologies = [
   {
-    name: 'Angular',
+    name: 'React',
     svg: (
-      <svg viewBox="0 0 250 250" className="h-7 w-7" aria-hidden="true">
-        <path d="M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z" fill="#DD0031"/>
-        <path d="M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z" fill="#C3002F"/>
-        <path d="M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2H183L125 52.1zm17 83.3h-34l17-40.9 17 40.9z" fill="#fff"/>
+      <svg viewBox="-11.5 -10.23174 23 20.46348" className="h-7 w-7" aria-hidden="true">
+        <circle cx="0" cy="0" r="2.05" fill="#61DAFB"/>
+        <g stroke="#61DAFB" strokeWidth="1" fill="none">
+          <ellipse rx="11" ry="4.2"/>
+          <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
+          <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+        </g>
       </svg>
     ),
   },
@@ -30,11 +33,27 @@ const technologies = [
     ),
   },
   {
-    name: 'RxJS',
+    name: 'Next.js',
     svg: (
-      <svg viewBox="0 0 100 100" className="h-7 w-7" aria-hidden="true">
-        <circle cx="50" cy="50" r="50" fill="#B7178C"/>
-        <path d="M68.3 35.5c-3.6-6.2-10.3-10.4-18-10.4-11.5 0-20.8 9.3-20.8 20.8s9.3 20.8 20.8 20.8c2.8 0 5.5-.6 8-1.6L70 80h8L63.4 59.5c3.4-3.7 5.5-8.6 5.5-14a20.6 20.6 0 00-.6-5v-5zm-18 23.9c-7.4 0-13.5-6-13.5-13.4s6-13.5 13.5-13.5 13.4 6 13.4 13.5-6 13.4-13.4 13.4z" fill="#fff"/>
+      <svg viewBox="0 0 180 180" className="h-7 w-7" aria-hidden="true" fill="currentColor">
+        <path d="M117.84 103.957L54.74 32H36v116h16.29V59.482l61.27 82.518H144V32h-16.29v61.439l-9.87-10.518z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Analytics',
+    svg: (
+      <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true">
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-5h2v5zm4 0h-2V7h2v10zm4 0h-2v-4h-2v4H9v-5H7v5H5V5h14v12z" fill="#E37400"/>
+        <path d="M7 17h2v-5H7v5zm4 0h2V7h-2v10zm4-4v4h2v-4h-2z" fill="#F4B400"/>
+      </svg>
+    ),
+  },
+  {
+    name: 'Shopify',
+    svg: (
+      <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true" fill="#95BF47">
+        <path d="M19.5 7.5L12 3L4.5 7.5v9L12 21l7.5-4.5v-9zM12 4.5l6 3.6L12 11.7l-6-3.6 6-3.6zM5.7 8.5L11.1 11.7v7l-5.4-3.2v-5.5zm12.6 5.5l-5.4 3.2v-7l5.4-3.2v7z"/>
       </svg>
     ),
   },

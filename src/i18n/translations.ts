@@ -67,6 +67,7 @@ export interface ProjectItem {
   demo: boolean;
   codeUrl?: string;
   demoUrl?: string;
+  videoUrl?: string;
 }
 
 export interface ProjectsTranslation {
@@ -86,6 +87,16 @@ export interface ContactTranslation {
 
 export interface FooterTranslation {
   copyright: string;
+}
+
+export interface CertificationsTranslation {
+  id: string;
+  section: string;
+  title: string;
+  subtitle: string;
+  filterAll: string;
+  showMore: string;
+  showLess: string;
 }
 
 export interface MetaTranslation {
@@ -115,6 +126,7 @@ export interface TranslationDictionary {
   projects: ProjectsTranslation;
   contact: ContactTranslation;
   footer: FooterTranslation;
+  certifications: CertificationsTranslation;
 }
 
 export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
@@ -127,6 +139,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Sobre mí', href: '#sobre-mi' },
       { label: 'Experiencia', href: '#experiencia' },
       { label: 'Educación', href: '#educacion' },
+      { label: 'Certificaciones', href: '#certificaciones' },
       { label: 'Competencias', href: '#competencias' },
       { label: 'Proyectos', href: '#proyectos' },
       { label: 'Contacto', href: '#contacto' }
@@ -228,20 +241,48 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       title: 'Mis proyectos',
       items: [
         {
-          title: 'FilmHorizon',
-          description: 'SPA mobile-first para descubrir películas y series, con gestión de watchlist personal. Arquitectura feature-based con Angular 21, integración con TMDB API, autenticación Firebase, rutas protegidas y despliegue en Vercel.',
-          tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+          title: 'SEO Compass',
+          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
         },
         {
-          title: 'Budget Generator',
-          description: 'Aplicación de presupuestos web con selección de servicios, configuración dinámica de precios, historial persistente y URLs compartibles. Angular 21 con PrimeNG, tests unitarios con Vitest y despliegue en Vercel.',
-          tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+          title: 'MovieApp',
+          description: 'Aplicación web optimizada de búsqueda y exploración de películas y series. Integración con la API de TMDB, scroll infinito, filtros por año/género y navegación de actores. React 19, Tailwind CSS y Supabase.',
+          tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint7-movie-app',
+          demoUrl: 'https://sprint7-movie-app-q7z4.vercel.app/',
+          videoUrl: '/assets/movieapp.webm'
+        },
+        {
+          title: 'Budget Calculator',
+          description: 'Aplicación web para generar presupuestos profesionales de desarrollo web y marketing digital. Selección de servicios con tarifas dinámicas, descuentos, persistencia en almacenamiento local y sincronización por parámetros URL. React 19, Tailwind CSS, React Hook Form y Zod.',
+          tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
+          demoLabel: 'Ver demo',
+          codeLabel: 'Código disponible',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint6-web-budget-calculator',
+          demoUrl: 'https://sprint6-web-budget-calculator.vercel.app/',
+          videoUrl: '/assets/calculatorapp.webm'
+        },
+        {
+          title: 'Pokédex Classic',
+          description: 'Aplicación web modular que actúa como Pokédex interactiva conectándose a la PokéAPI pública. Búsqueda por nombre o ID, filtrado por tipos, estadísticas detalladas, descripción de habilidades y navegación secuencial. Creada con JavaScript ES6, HTML5 y Tailwind CSS.',
+          tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
+          demoLabel: 'Ver demo',
+          codeLabel: 'Código disponible',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/pokedex-API',
+          demoUrl: 'https://pokedex-api-sable.vercel.app/',
+          videoUrl: '/assets/pokedex.webm'
         }
       ]
     },
@@ -285,7 +326,16 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.'
     },
     footer: {
-      copyright: '© 2026 MIGUEL PUJAZÓN CÁRDENAS'
+      copyright: '© 2026 DAVID RUEDA ROSAS'
+    },
+    certifications: {
+      id: 'certificaciones',
+      section: 'Certificaciones',
+      title: 'Certificaciones',
+      subtitle: 'certificaciones',
+      filterAll: 'Todos',
+      showMore: 'Ver todas',
+      showLess: 'Ver menos'
     }
   },
   en: {
@@ -297,6 +347,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'About me', href: '#about-me' },
       { label: 'Experience', href: '#experience' },
       { label: 'Education', href: '#education' },
+      { label: 'Certifications', href: '#certifications' },
       { label: 'Skills', href: '#skills' },
       { label: 'Projects', href: '#projects' },
       { label: 'Contact', href: '#contact' }
@@ -398,20 +449,48 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       title: 'My projects',
       items: [
         {
-          title: 'FilmHorizon',
-          description: 'Mobile-first SPA to discover movies and series, featuring a personal watchlist management. Feature-based architecture with Angular 21, TMDB API integration, Firebase authentication, protected routes, and deployed on Vercel.',
-          tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+          title: 'SEO Compass',
+          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. React 19, TypeScript and Supabase with clean architecture and 25 unit tests.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
         },
         {
-          title: 'Budget Generator',
-          description: 'Web budget generation app with service selection, dynamic pricing configuration, persistent history, and shareable URLs. Angular 21 with PrimeNG, unit tests with Vitest, and deployed on Vercel.',
-          tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+          title: 'MovieApp',
+          description: 'Optimized web application for searching and exploring movies and series. Features TMDB API integration, infinite scroll, genre/year filters, and actor navigation. React 19, Tailwind CSS and Supabase.',
+          tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint7-movie-app',
+          demoUrl: 'https://sprint7-movie-app-q7z4.vercel.app/',
+          videoUrl: '/assets/movieapp.webm'
+        },
+        {
+          title: 'Budget Calculator',
+          description: 'Web application for generating professional budget estimates for web development and digital marketing. Features dynamic pricing, discounts, local storage persistence, and URL parameters synchronization. React 19, Tailwind CSS, React Hook Form, and Zod.',
+          tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
+          demoLabel: 'View demo',
+          codeLabel: 'Code available',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint6-web-budget-calculator',
+          demoUrl: 'https://sprint6-web-budget-calculator.vercel.app/',
+          videoUrl: '/assets/calculatorapp.webm'
+        },
+        {
+          title: 'Pokédex Classic',
+          description: 'Modular web application that serves as an interactive Pokédex using the public PokéAPI. Features Pokémon search by name/ID, type filtering, detailed stats, ability descriptions, and sequential navigation. Built with JavaScript ES6, HTML5, and Tailwind CSS.',
+          tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
+          demoLabel: 'View demo',
+          codeLabel: 'Code available',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/pokedex-API',
+          demoUrl: 'https://pokedex-api-sable.vercel.app/',
+          videoUrl: '/assets/pokedex.webm'
         }
       ]
     },
@@ -455,7 +534,16 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Available to collaborate on frontend projects with Angular, development best practices, and digital products that work from the very first scroll.'
     },
     footer: {
-      copyright: '© 2026 MIGUEL PUJAZÓN CÁRDENAS'
+      copyright: '© 2026 DAVID RUEDA ROSAS'
+    },
+    certifications: {
+      id: 'certifications',
+      section: 'Certifications',
+      title: 'Certifications',
+      subtitle: 'certifications',
+      filterAll: 'All',
+      showMore: 'Show all',
+      showLess: 'Show less'
     }
   },
   ca: {
@@ -467,6 +555,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Sobre mi', href: '#sobre-mi' },
       { label: 'Experiència', href: '#experiencia' },
       { label: 'Educació', href: '#educacio' },
+      { label: 'Certificacions', href: '#certificacions' },
       { label: 'Competències', href: '#competencies' },
       { label: 'Projectes', href: '#projectes' },
       { label: 'Contacte', href: '#contacte' }
@@ -568,20 +657,48 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       title: 'Els meus projectes',
       items: [
         {
-          title: 'FilmHorizon',
-          description: 'SPA mobile-first per descobrir pel·lícules i sèries, amb gestió de llista de seguiment personal. Arquitectura feature-based amb Angular 21, integració amb TMDB API, autenticació Firebase, rutes protegides i desplegament a Vercel.',
-          tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+          title: 'SEO Compass',
+          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. React 19, TypeScript i Supabase amb arquitectura neta i 25 tests unitaris.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
         },
         {
-          title: 'Budget Generator',
-          description: 'Aplicación de pressupostos web amb selecció de serveis, configuració dinàmica de preus, historial persistent i URLs compartibles. Angular 21 amb PrimeNG, tests unitaris amb Vitest i desplegament a Vercel.',
-          tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+          title: 'MovieApp',
+          description: 'Aplicació web optimitzada de cerca i exploració de pel·lícules i sèries. Integració amb l\'API de TMDB, scroll infinit, filtres per any/gènere i navegació d\'actors. React 19, Tailwind CSS i Supabase.',
+          tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint7-movie-app',
+          demoUrl: 'https://sprint7-movie-app-q7z4.vercel.app/',
+          videoUrl: '/assets/movieapp.webm'
+        },
+        {
+          title: 'Budget Calculator',
+          description: 'Aplicació web per generar pressupostos professionals de desenvolupament web i màrqueting digital. Selecció de serveis amb tarifes dinàmiques, descomptes, persistència en emmagatzematge local i sincronització per paràmetres URL. React 19, Tailwind CSS, React Hook Form i Zod.',
+          tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
+          demoLabel: 'Veure demo',
+          codeLabel: 'Codi disponible',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint6-web-budget-calculator',
+          demoUrl: 'https://sprint6-web-budget-calculator.vercel.app/',
+          videoUrl: '/assets/calculatorapp.webm'
+        },
+        {
+          title: 'Pokédex Classic',
+          description: 'Aplicació web modular que actua com a Pokédex interactiva connectant-se a la PokéAPI pública. Cerca per nom o ID, filtrat per tipus, estadístiques detallades, descripció d\'habilitats i navegació seqüencial. Creada amb JavaScript ES6, HTML5 i Tailwind CSS.',
+          tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
+          demoLabel: 'Veure demo',
+          codeLabel: 'Codi disponible',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/pokedex-API',
+          demoUrl: 'https://pokedex-api-sable.vercel.app/',
+          videoUrl: '/assets/pokedex.webm'
         }
       ]
     },
@@ -625,7 +742,16 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Disponible per col·laborar en projectes frontend amb Angular, bones pràctiques de desenvolupament i productes digitals que funcionen des del primer scroll.'
     },
     footer: {
-      copyright: '© 2026 MIGUEL PUJAZÓN CÁRDENAS'
+      copyright: '© 2026 DAVID RUEDA ROSAS'
+    },
+    certifications: {
+      id: 'certificacions',
+      section: 'Certificacions',
+      title: 'Certificacions',
+      subtitle: 'certificacions',
+      filterAll: 'Tots',
+      showMore: 'Veure totes',
+      showLess: 'Veure menys'
     }
   }
 };

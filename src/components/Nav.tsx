@@ -33,7 +33,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
     setTheme(isDark ? 'dark' : 'light');
   }, []);
 
-  // Scrollspy to detect active section
   useEffect(() => {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
@@ -44,10 +43,9 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
     };
     
     const observer = new IntersectionObserver(observerCallback, {
-      rootMargin: '-30% 0px -50% 0px' // triggers when the section is in the top/middle of viewport
+      rootMargin: '-30% 0px -50% 0px'
     });
 
-    // We look for elements by id matching the hrefs
     t.forEach(link => {
       if (link.href.startsWith('#')) {
         const id = link.href.substring(1);
@@ -78,11 +76,18 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
   return (
     <section ref={rootRef} className="fixed inset-x-0 top-4 z-50 flex justify-center px-3 md:px-4 transition-all duration-500">
       <nav className="relative flex items-center gap-2 px-2 py-3 md:px-4 rounded-full border border-slate-200 bg-white/80 dark:border-white/10 dark:bg-black/80 backdrop-blur-xl transition-colors duration-500 max-w-[calc(100vw-1.5rem)] shadow-2xl shadow-red-500/5">
-        <a href={homeHref} className="text-slate-900 dark:text-white font-bold tracking-tighter mx-2 shrink-0 bg-none border-none cursor-pointer decoration-0">
-          M<span className="text-red-500">.</span>
+        <a href={homeHref} className="shrink-0 mx-1 flex items-center text-slate-900 dark:text-white" aria-label="Inicio">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" className="h-9 w-9">
+            <g stroke="currentColor" strokeWidth="6.5" strokeLinecap="round" fill="none">
+              <line x1="26" y1="17" x2="26" y2="47" />
+              <circle cx="16.5" cy="37.5" r="9.5" />
+              <line x1="39" y1="27" x2="39" y2="47" />
+              <path d="M 39 35 Q 44 26 49 28.5" />
+            </g>
+            <circle cx="55" cy="46" r="4.5" fill="#ef4444" />
+          </svg>
         </a>
 
-        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-1 overflow-x-auto whitespace-nowrap pr-1">
           {t.map((link) => {
             const isActive = link.href.startsWith('#') && activeSection === link.href.substring(1);
@@ -102,12 +107,9 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
           })}
         </div>
 
-        {/* Spacer */}
         <div className="flex-1" />
 
-        {/* Language + Theme + Hamburger */}
         <div className="flex items-center gap-2">
-          {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
             type="button"
@@ -126,7 +128,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
             )}
           </button>
 
-          {/* Languages */}
           <div className="hidden md:flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50/55 dark:border-white/10 dark:bg-black/30 px-1 py-1">
             {langs.map((l) => (
               <a
@@ -141,7 +142,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
             ))}
           </div>
 
-          {/* Hamburger Button */}
           <button
             aria-label="Abrir menú"
             aria-expanded={open}
@@ -165,7 +165,6 @@ export default function Nav({ lang = 'es', t = [] }: { lang?: string, t?: NavIte
           </button>
         </div>
 
-        {/* Mobile menu overlay */}
         {open && (
           <div className="absolute left-1/2 top-full z-40 w-[calc(100vw-2rem)] -translate-x-1/2 rounded-2xl border border-slate-200/80 bg-white/95 dark:border-none dark:bg-black/95 p-4 shadow-xl md:hidden mt-2">
             <div className="flex flex-col gap-2">

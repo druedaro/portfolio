@@ -32,7 +32,7 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 reveal reveal-up">
-          <h2 className="text-5xl font-black uppercase tracking-[-0.06em] text-slate-900 dark:text-white sm:text-7xl mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white mb-6 break-words">
             {sectionTitle}
           </h2>
           <div className="w-16 h-1 bg-red-500" />
@@ -41,7 +41,6 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
         <div className="mt-16">
           <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-slate-400 mb-12">{sectionSubtitle}</p>
 
-          {/* TechCarousel Astro island injected via children */}
           {children && <div className="mb-20">{children}</div>}
 
           <div className="grid gap-6 lg:grid-cols-4">

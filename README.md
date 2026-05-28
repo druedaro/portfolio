@@ -9,6 +9,8 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-3.x-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
+*Built with Astro & React*
+
 </div>
 
 ---
@@ -34,6 +36,17 @@ Personal portfolio of **David Rueda**, Frontend Developer specialised in modern 
 
 ---
 
+## Featured Projects
+
+The portfolio showcases four real-world web applications:
+
+1. **[SEO Compass](https://github.com/druedaro/SEOCompass)** — An all-in-one collaborative SEO management platform featuring on-page content analysis, technical audits, a task action center, and keyword performance tracking. Built with **React 19**, **TypeScript**, and **Supabase**.
+2. **[MovieApp](https://github.com/druedaro/sprint7-movie-app)** — A modern movies and series exploration web application integrating the public TMDB API, search & filter utilities, infinite scrolling, and actor filmographies. Built with **React 19**, **Tailwind CSS**, and **Supabase** authentication.
+3. **[Budget Calculator](https://github.com/druedaro/sprint6-web-budget-calculator)** — A professional budget generation tool for digital marketing and web development services, with real-time fee calculations, discounts, local storage persistence, and URL synchronization. Built with **React 19**, **React Hook Form**, and **Zod**.
+4. **[Pokédex Classic](https://github.com/druedaro/pokedex-API)** — An interactive Pokémon browser fetching real-time data from the PokéAPI, featuring a fast search by name/ID, type filters, and detailed stats. Built with modular **JavaScript (ES6)**, **Tailwind CSS**, and **Fetch API**.
+
+---
+
 ## Features
 
 - ⚡ **Extreme performance** — Static Site Generation (SSG) with Astro. Zero unnecessary hydration.
@@ -52,6 +65,7 @@ Personal portfolio of **David Rueda**, Frontend Developer specialised in modern 
 ```
 portfolio/
 ├── public/
+│   ├── assets/               # WebM video previews for projects
 │   └── favicon.svg           # DR monogram
 ├── src/
 │   ├── components/

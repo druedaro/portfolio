@@ -4,28 +4,55 @@ import type { ProjectItem } from '../i18n/translations';
 
 const projects: ProjectItem[] = [
   {
-    title: 'FilmHorizon',
+    title: 'SEO Compass',
     description:
-      'SPA mobile-first para descubrir películas y series, con gestión de watchlist personal. Arquitectura feature-based con Angular 21, integración con TMDB API, autenticación Firebase, rutas protegidas y despliegue en Vercel.',
-    tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
+      'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
+    tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
     demoLabel: 'Ver demo',
     codeLabel: 'Código disponible',
     demo: true,
-    codeUrl: '#',
-    demoUrl: '#'
+    codeUrl: 'https://github.com/druedaro/SEOCompass',
+    demoUrl: 'https://seo-compass.vercel.app/',
+    videoUrl: '/assets/seocompass.webm'
   },
   {
-    title: 'Budget Generator',
+    title: 'MovieApp',
     description:
-      'Aplicación de presupuestos web con selección de servicios, configuración dinámica de precios, historial persistente y URLs compartibles. Angular 21 con PrimeNG, tests unitarios con Vitest y despliegue en Vercel.',
-    tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+      'Aplicación web optimizada de búsqueda y exploración de películas y series. Integración con la API de TMDB, scroll infinito, filtros por año/género y navegación bidireccional. Desarrollada con React 19, Tailwind CSS y autenticación con Supabase.',
+    tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     demoLabel: 'Ver demo',
     codeLabel: 'Código disponible',
     demo: true,
-    codeUrl: '#',
-    demoUrl: '#'
+    codeUrl: 'https://github.com/druedaro/sprint7-movie-app',
+    demoUrl: 'https://sprint7-movie-app-q7z4.vercel.app/',
+    videoUrl: '/assets/movieapp.webm'
+  },
+  {
+    title: 'Budget Calculator',
+    description:
+      'Aplicación web para generar presupuestos profesionales de desarrollo web y marketing digital. Selección de servicios con tarifas dinámicas, descuentos, persistencia en almacenamiento local y sincronización por parámetros URL. React 19, Tailwind CSS, React Hook Form y Zod.',
+    tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
+    demoLabel: 'Ver demo',
+    codeLabel: 'Código disponible',
+    demo: true,
+    codeUrl: 'https://github.com/druedaro/sprint6-web-budget-calculator',
+    demoUrl: 'https://sprint6-web-budget-calculator.vercel.app/',
+    videoUrl: '/assets/calculatorapp.webm'
+  },
+  {
+    title: 'Pokédex Classic',
+    description:
+      'Aplicación web modular que actúa como Pokédex interactiva conectándose a la PokéAPI pública. Búsqueda por nombre o ID, filtrado por tipos, estadísticas detalladas, descripción de habilidades y navegación secuencial. Creada con JavaScript ES6, HTML5 y Tailwind CSS.',
+    tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
+    demoLabel: 'Ver demo',
+    codeLabel: 'Código disponible',
+    demo: true,
+    codeUrl: 'https://github.com/druedaro/pokedex-API',
+    demoUrl: 'https://pokedex-api-sable.vercel.app/',
+    videoUrl: '/assets/pokedex.webm'
   }
 ];
+
 
 import type { ProjectsTranslation } from '../i18n/translations';
 
@@ -44,7 +71,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 max-w-3xl reveal reveal-up">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500">{sectionTag}</p>
-          <h2 className="mt-4 text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white sm:text-7xl">
+          <h2 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white break-words">
             {sectionTitle}
           </h2>
         </div>
@@ -80,21 +107,32 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                   </a>
                 </div>
               </div>
-              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 dark:border-slate-800/80 dark:bg-slate-900/80 p-6">
-                <div className="aspect-[16/9] rounded-[1.75rem] bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-slate-800 dark:via-slate-900 dark:to-slate-950 shadow-[0_30px_120px_-50px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
-                  <div className="flex h-full items-center justify-center text-center text-slate-500 dark:text-slate-400">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400">{imageLabel}</p>
-                      <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">{imageSubtitle}</p>
+              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 dark:border-slate-800/80 dark:bg-slate-900/80 p-6 self-center w-full">
+                <div className="aspect-[16/9] rounded-[1.75rem] overflow-hidden shadow-[0_30px_120px_-50px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
+                  {project.videoUrl ? (
+                    <video
+                      src={project.videoUrl}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover rounded-[1.75rem]"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center text-center bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-slate-800 dark:via-slate-900 dark:to-slate-950 rounded-[1.75rem]">
+                      <div>
+                        <p className="text-sm uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400">{imageLabel}</p>
+                        <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">{imageSubtitle}</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
+
             </div>
           ))}
         </div>
         
-        {/* GitHub "More projects" button */}
         <div className="mt-16 flex justify-center reveal reveal-up" style={{ transitionDelay: '300ms' }}>
           <a href="https://github.com/druedaro" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-8 py-4 text-sm font-semibold text-slate-800 transition hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800/70 dark:bg-slate-900/50 dark:text-slate-300 dark:hover:border-slate-700 dark:hover:bg-slate-800 dark:hover:text-white w-full sm:w-auto min-w-[280px]">
             {t.id === 'projects' ? 'More projects on' : t.id === 'projectes' ? 'Més projectes a' : 'Más proyectos en'}

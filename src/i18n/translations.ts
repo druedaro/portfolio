@@ -241,6 +241,17 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       title: 'Mis proyectos',
       items: [
         {
+          title: 'SEO Compass',
+          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
+          demoLabel: 'Ver demo',
+          codeLabel: 'Código disponible',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
+        },
+        {
           title: 'FilmHorizon',
           description: 'SPA mobile-first para descubrir películas y series, con gestión de watchlist personal. Arquitectura feature-based con Angular 21, integración con TMDB API, autenticación Firebase, rutas protegidas y despliegue en Vercel.',
           tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
@@ -255,17 +266,6 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
           demo: true
-        },
-        {
-          title: 'SEO Compass',
-          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
-          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
-          demoLabel: 'Ver demo',
-          codeLabel: 'Código disponible',
-          demo: true,
-          codeUrl: 'https://github.com/druedaro/SEOCompass',
-          demoUrl: 'https://seo-compass.vercel.app/',
-          videoUrl: '/assets/seocompass.webm'
         },
         {
           title: 'Analytics Dashboard',
@@ -448,6 +448,17 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       title: 'My projects',
       items: [
         {
+          title: 'SEO Compass',
+          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. React 19, TypeScript and Supabase with clean architecture and 25 unit tests.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
+          demoLabel: 'View demo',
+          codeLabel: 'Code available',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
+        },
+        {
           title: 'FilmHorizon',
           description: 'Mobile-first SPA to discover movies and series, featuring a personal watchlist management. Feature-based architecture with Angular 21, TMDB API integration, Firebase authentication, protected routes, and deployed on Vercel.',
           tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
@@ -462,17 +473,6 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demoLabel: 'View demo',
           codeLabel: 'Code available',
           demo: true
-        },
-        {
-          title: 'SEO Compass',
-          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. React 19, TypeScript and Supabase with clean architecture and 25 unit tests.',
-          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
-          demoLabel: 'View demo',
-          codeLabel: 'Code available',
-          demo: true,
-          codeUrl: 'https://github.com/druedaro/SEOCompass',
-          demoUrl: 'https://seo-compass.vercel.app/',
-          videoUrl: '/assets/seocompass.webm'
         },
         {
           title: 'Analytics Dashboard',
@@ -655,6 +655,17 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       title: 'Els meus projectes',
       items: [
         {
+          title: 'SEO Compass',
+          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. React 19, TypeScript i Supabase amb arquitectura neta i 25 tests unitaris.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
+          demoLabel: 'Veure demo',
+          codeLabel: 'Codi disponible',
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
+        },
+        {
           title: 'FilmHorizon',
           description: 'SPA mobile-first per descobrir pel·lícules i sèries, amb gestió de llista de seguiment personal. Arquitectura feature-based amb Angular 21, integració amb TMDB API, autenticació Firebase, rutes protegides i desplegament a Vercel.',
           tags: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'PrimeNG'],
@@ -669,17 +680,6 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
           demo: true
-        },
-        {
-          title: 'SEO Compass',
-          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. React 19, TypeScript i Supabase amb arquitectura neta i 25 tests unitaris.',
-          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
-          demoLabel: 'Veure demo',
-          codeLabel: 'Codi disponible',
-          demo: true,
-          codeUrl: 'https://github.com/druedaro/SEOCompass',
-          demoUrl: 'https://seo-compass.vercel.app/',
-          videoUrl: '/assets/seocompass.webm'
         },
         {
           title: 'Analytics Dashboard',

@@ -4,6 +4,18 @@ import type { ProjectItem } from '../i18n/translations';
 
 const projects: ProjectItem[] = [
   {
+    title: 'SEO Compass',
+    description:
+      'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
+    tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
+    demoLabel: 'Ver demo',
+    codeLabel: 'Código disponible',
+    demo: true,
+    codeUrl: 'https://github.com/druedaro/SEOCompass',
+    demoUrl: 'https://seo-compass.vercel.app/',
+    videoUrl: '/assets/seocompass.webm'
+  },
+  {
     title: 'FilmHorizon',
     description:
       'SPA mobile-first para descubrir películas y series, con gestión de watchlist personal. Arquitectura feature-based con Angular 21, integración con TMDB API, autenticación Firebase, rutas protegidas y despliegue en Vercel.',
@@ -24,18 +36,6 @@ const projects: ProjectItem[] = [
     demo: true,
     codeUrl: '#',
     demoUrl: '#'
-  },
-  {
-    title: 'SEO Compass',
-    description:
-      'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
-    tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
-    demoLabel: 'Ver demo',
-    codeLabel: 'Código disponible',
-    demo: true,
-    codeUrl: 'https://github.com/druedaro/SEOCompass',
-    demoUrl: 'https://seo-compass.vercel.app/',
-    videoUrl: '/assets/seocompass.webm'
   },
   {
     title: 'Analytics Dashboard',
@@ -115,7 +115,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                   </a>
                 </div>
               </div>
-              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 dark:border-slate-800/80 dark:bg-slate-900/80 p-6">
+              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 dark:border-slate-800/80 dark:bg-slate-900/80 p-6 self-center w-full">
                 <div className="aspect-[16/9] rounded-[1.75rem] overflow-hidden shadow-[0_30px_120px_-50px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
                   {project.videoUrl ? (
                     <video

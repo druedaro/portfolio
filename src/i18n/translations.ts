@@ -235,7 +235,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Gestión y Agilidad',
-          items: ['Liderazgo de equipos', 'Metodologías ágiles', 'coordinación cross-functional y toma de decisiones basada en datos', 'Entrega por sprints', 'Enfoque de producto']
+          items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Coordinación transversal y decisiones basadas en datos', 'Entrega por sprints', 'Enfoque de producto']
         }
       ]
     },
@@ -447,7 +447,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Management & Agile',
-          items: ['Team leadership', 'Agile methodologies', 'cross-functional coordination and data-informed decision-making', 'Sprint delivery', 'Product focus']
+          items: ['Team leadership', 'Agile methodologies', 'Cross-functional coordination and data-informed decision-making', 'Sprint delivery', 'Product focus']
         }
       ]
     },
@@ -659,7 +659,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Gestió i Agilitat',
-          items: ['Lideratge d\'equips', 'Metodologies àgils', 'coordinació cross-functional i presa de decisions basada en dades', 'Lliurament per sprints', 'Enfocament de producte']
+          items: ['Lideratge d\'equips', 'Metodologies àgils', 'Coordinació transversal i decisions basades en dades', 'Lliurament per sprints', 'Enfocament de producte']
         }
       ]
     },

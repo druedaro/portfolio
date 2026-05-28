@@ -19,7 +19,7 @@ const groups = [
   },
   {
     title: 'Gestión y Agilidad',
-    items: ['Liderazgo de equipos', 'Metodologías ágiles', 'coordinación cross-functional y toma de decisiones basada en datos', 'Entrega por sprints', 'Enfoque de producto']
+    items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Coordinación transversal y decisiones basadas en datos', 'Entrega por sprints', 'Enfoque de producto']
   }
 ];
 

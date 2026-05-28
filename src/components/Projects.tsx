@@ -40,26 +40,16 @@ const projects: ProjectItem[] = [
     videoUrl: '/assets/calculatorapp.webm'
   },
   {
-    title: 'Analytics Dashboard',
+    title: 'Pokédex Classic',
     description:
-      'Panel de analítica web con visualización de métricas en tiempo real, informes exportables y segmentación de audiencias. Integración con Google Analytics 4 y Chart.js para representación de datos compleja.',
-    tags: ['React', 'Chart.js', 'GA4', 'TypeScript'],
+      'Aplicación web modular que actúa como Pokédex interactiva conectándose a la PokéAPI pública. Búsqueda por nombre o ID, filtrado por tipos, estadísticas detalladas, descripción de habilidades y navegación secuencial. Creada con JavaScript ES6, HTML5 y Tailwind CSS.',
+    tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
     demoLabel: 'Ver demo',
     codeLabel: 'Código disponible',
-    demo: false,
-    codeUrl: '#',
-    demoUrl: '#'
-  },
-  {
-    title: 'Design System CLI',
-    description:
-      'Herramienta de línea de comandos para generar componentes UI reutilizables con estilos predefinidos, documentación automática y soporte para múltiples frameworks. Publicado como paquete npm de uso interno.',
-    tags: ['Node.js', 'TypeScript', 'CLI', 'npm'],
-    demoLabel: 'Ver demo',
-    codeLabel: 'Código disponible',
-    demo: false,
-    codeUrl: '#',
-    demoUrl: '#'
+    demo: true,
+    codeUrl: 'https://github.com/druedaro/pokedex-API',
+    demoUrl: 'https://pokedex-api-sable.vercel.app/',
+    videoUrl: '/assets/pokedex.webm'
   }
 ];
 

@@ -274,20 +274,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/calculatorapp.webm'
         },
         {
-          title: 'Analytics Dashboard',
-          description: 'Panel de analítica web con visualización de métricas en tiempo real, informes exportables y segmentación de audiencias. Integración con Google Analytics 4 y Chart.js para representación de datos compleja.',
-          tags: ['React', 'Chart.js', 'GA4', 'TypeScript'],
+          title: 'Pokédex Classic',
+          description: 'Aplicación web modular que actúa como Pokédex interactiva conectándose a la PokéAPI pública. Búsqueda por nombre o ID, filtrado por tipos, estadísticas detalladas, descripción de habilidades y navegación secuencial. Creada con JavaScript ES6, HTML5 y Tailwind CSS.',
+          tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
-          demo: false
-        },
-        {
-          title: 'Design System CLI',
-          description: 'Herramienta de línea de comandos para generar componentes UI reutilizables con estilos predefinidos, documentación automática y soporte para múltiples frameworks. Publicado como paquete npm de uso interno.',
-          tags: ['Node.js', 'TypeScript', 'CLI', 'npm'],
-          demoLabel: 'Ver demo',
-          codeLabel: 'Código disponible',
-          demo: false
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/pokedex-API',
+          demoUrl: 'https://pokedex-api-sable.vercel.app/',
+          videoUrl: '/assets/pokedex.webm'
         }
       ]
     },
@@ -487,20 +482,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/calculatorapp.webm'
         },
         {
-          title: 'Analytics Dashboard',
-          description: 'Web analytics panel with real-time metrics visualization, exportable reports, and audience segmentation. Integrated with Google Analytics 4 and Chart.js for complex data representation.',
-          tags: ['React', 'Chart.js', 'GA4', 'TypeScript'],
+          title: 'Pokédex Classic',
+          description: 'Modular web application that serves as an interactive Pokédex using the public PokéAPI. Features Pokémon search by name/ID, type filtering, detailed stats, ability descriptions, and sequential navigation. Built with JavaScript ES6, HTML5, and Tailwind CSS.',
+          tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
-          demo: false
-        },
-        {
-          title: 'Design System CLI',
-          description: 'Command-line tool to generate reusable UI components with predefined styles, automatic documentation, and support for multiple frameworks. Published as an internal npm package.',
-          tags: ['Node.js', 'TypeScript', 'CLI', 'npm'],
-          demoLabel: 'View demo',
-          codeLabel: 'Code available',
-          demo: false
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/pokedex-API',
+          demoUrl: 'https://pokedex-api-sable.vercel.app/',
+          videoUrl: '/assets/pokedex.webm'
         }
       ]
     },
@@ -700,20 +690,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/calculatorapp.webm'
         },
         {
-          title: 'Analytics Dashboard',
-          description: `Panell d'analítica web amb visualització de mètriques en temps real, informes exportables i segmentació d'audiències. Integració amb Google Analytics 4 i Chart.js per a representació de dades complexa.`,
-          tags: ['React', 'Chart.js', 'GA4', 'TypeScript'],
+          title: 'Pokédex Classic',
+          description: 'Aplicació web modular que actua com a Pokédex interactiva connectant-se a la PokéAPI pública. Cerca per nom o ID, filtrat per tipus, estadístiques detallades, descripció d\'habilitats i navegació seqüencial. Creada amb JavaScript ES6, HTML5 i Tailwind CSS.',
+          tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
-          demo: false
-        },
-        {
-          title: 'Design System CLI',
-          description: `Eina de línia de comandes per generar components UI reutilitzables amb estils predefinits, documentació automàtica i suport per a múltiples frameworks. Publicat com a paquet npm d'ús intern.`,
-          tags: ['Node.js', 'TypeScript', 'CLI', 'npm'],
-          demoLabel: 'Veure demo',
-          codeLabel: 'Codi disponible',
-          demo: false
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/pokedex-API',
+          demoUrl: 'https://pokedex-api-sable.vercel.app/',
+          videoUrl: '/assets/pokedex.webm'
         }
       ]
     },

@@ -89,6 +89,13 @@ export interface FooterTranslation {
   copyright: string;
 }
 
+export interface Cert {
+  name: string;
+  issuer: string;
+  year: number;
+  category: string;
+}
+
 export interface CertificationsTranslation {
   id: string;
   section: string;
@@ -97,6 +104,8 @@ export interface CertificationsTranslation {
   filterAll: string;
   showMore: string;
   showLess: string;
+  certs: Cert[];
+  categories: string[];
 }
 
 export interface MetaTranslation {
@@ -339,7 +348,45 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       subtitle: 'certificaciones',
       filterAll: 'Todos',
       showMore: 'Ver todas',
-      showLess: 'Ver menos'
+      showLess: 'Ver menos',
+      categories: ['Marketing Digital', 'Inteligencia Artificial', 'SEO', 'Web Analytics', 'UI/UX & Data'],
+      certs: [
+        { name: 'Anuncios de Shopping Basados en IA', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
+        { name: 'Google Ads Display Certification', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
+        { name: 'Google Ads Measurement Certification', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
+        { name: 'Google Ads Search Certification', issuer: 'Google Skillshop', year: 2026, category: 'Marketing Digital' },
+        { name: 'Google Analytics Certification', issuer: 'Google Skillshop', year: 2026, category: 'Web Analytics' },
+        { name: 'AI Fluency Framework & Foundations', issuer: 'Anthropic', year: 2026, category: 'Inteligencia Artificial' },
+        { name: 'Introduction to Subagents', issuer: 'Anthropic', year: 2026, category: 'Inteligencia Artificial' },
+        { name: 'Introduction to Agent Skills', issuer: 'Anthropic', year: 2026, category: 'Inteligencia Artificial' },
+        { name: 'Claude 101', issuer: 'Anthropic', year: 2026, category: 'Inteligencia Artificial' },
+        { name: 'Model Context Protocol: Advanced Topics', issuer: 'Anthropic', year: 2026, category: 'Inteligencia Artificial' },
+        { name: 'Introduction to Model Context Protocol', issuer: 'Anthropic', year: 2026, category: 'Inteligencia Artificial' },
+        { name: 'Claude Code in Action', issuer: 'Anthropic', year: 2026, category: 'Inteligencia Artificial' },
+        { name: 'Auditorías SEO', issuer: 'LinkedIn', year: 2020, category: 'SEO' },
+        { name: 'Análisis Competitivo e Investigación de Palabras Clave', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'SEO Toolkit', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Keyword Research', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'SEO Técnico y SEO On Page', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Principios Fundamentales de SEO', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Google Analytics Avanzado', issuer: 'Google', year: 2020, category: 'Web Analytics' },
+        { name: 'Google Tag Manager Fundamentals', issuer: 'Google', year: 2020, category: 'Web Analytics' },
+        { name: 'Google Analytics Individual Qualification', issuer: 'Google Skillshop', year: 2020, category: 'Web Analytics' },
+        { name: 'Certificación en Aplicaciones de Google Ads', issuer: 'Google Skillshop', year: 2020, category: 'Marketing Digital' },
+        { name: 'Content Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Marketing Digital' },
+        { name: 'Social Media Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Marketing Digital' },
+        { name: 'Growth-Driven Design Certified', issuer: 'HubSpot Academy', year: 2020, category: 'UI/UX & Data' },
+        { name: 'Inbound Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Marketing Digital' },
+        { name: 'Inbound Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Marketing Digital' },
+        { name: 'Email Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Marketing Digital' },
+        { name: 'Copywriting para E-commerce', issuer: 'LinkedIn', year: 2020, category: 'Marketing Digital' },
+        { name: 'Instagram Marketing for Business', issuer: 'Udemy', year: 2020, category: 'Marketing Digital' },
+        { name: '#TwitterFlightSchool — Vídeo', issuer: 'Twitter', year: 2020, category: 'Marketing Digital' },
+        { name: 'YouTube Music Certification', issuer: 'Google Skillshop', year: 2020, category: 'Marketing Digital' },
+        { name: 'Adobe XD CC Avanzado', issuer: 'LinkedIn', year: 2020, category: 'UI/UX & Data' },
+        { name: 'Power BI y Excel — Análisis de Datos', issuer: 'Udemy', year: 2020, category: 'UI/UX & Data' },
+        { name: 'Excel Online', issuer: 'Udemy', year: 2020, category: 'UI/UX & Data' }
+      ]
     }
   },
   en: {
@@ -551,7 +598,45 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       subtitle: 'certifications',
       filterAll: 'All',
       showMore: 'Show all',
-      showLess: 'Show less'
+      showLess: 'Show less',
+      categories: ['Digital Marketing', 'Artificial Intelligence', 'SEO', 'Web Analytics', 'UI/UX & Data'],
+      certs: [
+        { name: 'AI-Based Shopping Ads', issuer: 'Google Skillshop', year: 2026, category: 'Digital Marketing' },
+        { name: 'Google Ads Display Certification', issuer: 'Google Skillshop', year: 2026, category: 'Digital Marketing' },
+        { name: 'Google Ads Measurement Certification', issuer: 'Google Skillshop', year: 2026, category: 'Digital Marketing' },
+        { name: 'Google Ads Search Certification', issuer: 'Google Skillshop', year: 2026, category: 'Digital Marketing' },
+        { name: 'Google Analytics Certification', issuer: 'Google Skillshop', year: 2026, category: 'Web Analytics' },
+        { name: 'AI Fluency Framework & Foundations', issuer: 'Anthropic', year: 2026, category: 'Artificial Intelligence' },
+        { name: 'Introduction to Subagents', issuer: 'Anthropic', year: 2026, category: 'Artificial Intelligence' },
+        { name: 'Introduction to Agent Skills', issuer: 'Anthropic', year: 2026, category: 'Artificial Intelligence' },
+        { name: 'Claude 101', issuer: 'Anthropic', year: 2026, category: 'Artificial Intelligence' },
+        { name: 'Model Context Protocol: Advanced Topics', issuer: 'Anthropic', year: 2026, category: 'Artificial Intelligence' },
+        { name: 'Introduction to Model Context Protocol', issuer: 'Anthropic', year: 2026, category: 'Artificial Intelligence' },
+        { name: 'Claude Code in Action', issuer: 'Anthropic', year: 2026, category: 'Artificial Intelligence' },
+        { name: 'SEO Audits', issuer: 'LinkedIn', year: 2020, category: 'SEO' },
+        { name: 'Competitive Analysis and Keyword Research', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'SEO Toolkit', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Keyword Research', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Technical SEO and On-Page SEO', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'SEO Fundamentals', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Advanced Google Analytics', issuer: 'Google', year: 2020, category: 'Web Analytics' },
+        { name: 'Google Tag Manager Fundamentals', issuer: 'Google', year: 2020, category: 'Web Analytics' },
+        { name: 'Google Analytics Individual Qualification', issuer: 'Google Skillshop', year: 2020, category: 'Web Analytics' },
+        { name: 'Google Ads Apps Certification', issuer: 'Google Skillshop', year: 2020, category: 'Digital Marketing' },
+        { name: 'Content Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Digital Marketing' },
+        { name: 'Social Media Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Digital Marketing' },
+        { name: 'Growth-Driven Design Certified', issuer: 'HubSpot Academy', year: 2020, category: 'UI/UX & Data' },
+        { name: 'Inbound Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Digital Marketing' },
+        { name: 'Inbound Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Digital Marketing' },
+        { name: 'Email Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Digital Marketing' },
+        { name: 'E-commerce Copywriting', issuer: 'LinkedIn', year: 2020, category: 'Digital Marketing' },
+        { name: 'Instagram Marketing for Business', issuer: 'Udemy', year: 2020, category: 'Digital Marketing' },
+        { name: '#TwitterFlightSchool — Video', issuer: 'Twitter', year: 2020, category: 'Digital Marketing' },
+        { name: 'YouTube Music Certification', issuer: 'Google Skillshop', year: 2020, category: 'Digital Marketing' },
+        { name: 'Advanced Adobe XD CC', issuer: 'LinkedIn', year: 2020, category: 'UI/UX & Data' },
+        { name: 'Power BI and Excel — Data Analysis', issuer: 'Udemy', year: 2020, category: 'UI/UX & Data' },
+        { name: 'Excel Online', issuer: 'Udemy', year: 2020, category: 'UI/UX & Data' }
+      ]
     }
   },
   ca: {
@@ -763,7 +848,45 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       subtitle: 'certificacions',
       filterAll: 'Tots',
       showMore: 'Veure totes',
-      showLess: 'Veure menys'
+      showLess: 'Veure menys',
+      categories: ['Màrqueting Digital', 'Intel·ligència Artificial', 'SEO', 'Analítica Web', 'UI/UX i Dades'],
+      certs: [
+        { name: 'Anuncis de Shopping Basats en IA', issuer: 'Google Skillshop', year: 2026, category: 'Màrqueting Digital' },
+        { name: 'Google Ads Display Certification', issuer: 'Google Skillshop', year: 2026, category: 'Màrqueting Digital' },
+        { name: 'Google Ads Measurement Certification', issuer: 'Google Skillshop', year: 2026, category: 'Màrqueting Digital' },
+        { name: 'Google Ads Search Certification', issuer: 'Google Skillshop', year: 2026, category: 'Màrqueting Digital' },
+        { name: 'Google Analytics Certification', issuer: 'Google Skillshop', year: 2026, category: 'Analítica Web' },
+        { name: 'AI Fluency Framework & Foundations', issuer: 'Anthropic', year: 2026, category: 'Intel·ligència Artificial' },
+        { name: 'Introduction to Subagents', issuer: 'Anthropic', year: 2026, category: 'Intel·ligència Artificial' },
+        { name: 'Introduction to Agent Skills', issuer: 'Anthropic', year: 2026, category: 'Intel·ligència Artificial' },
+        { name: 'Claude 101', issuer: 'Anthropic', year: 2026, category: 'Intel·ligència Artificial' },
+        { name: 'Model Context Protocol: Advanced Topics', issuer: 'Anthropic', year: 2026, category: 'Intel·ligència Artificial' },
+        { name: 'Introduction to Model Context Protocol', issuer: 'Anthropic', year: 2026, category: 'Intel·ligència Artificial' },
+        { name: 'Claude Code in Action', issuer: 'Anthropic', year: 2026, category: 'Intel·ligència Artificial' },
+        { name: 'Auditories SEO', issuer: 'LinkedIn', year: 2020, category: 'SEO' },
+        { name: 'Anàlisi Competitiu i Recerca de Paraules Clau', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'SEO Toolkit', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Keyword Research', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'SEO Tècnic i SEO On Page', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Principis Fonamentals de SEO', issuer: 'Semrush', year: 2020, category: 'SEO' },
+        { name: 'Google Analytics Avançat', issuer: 'Google', year: 2020, category: 'Analítica Web' },
+        { name: 'Google Tag Manager Fundamentals', issuer: 'Google', year: 2020, category: 'Analítica Web' },
+        { name: 'Google Analytics Individual Qualification', issuer: 'Google Skillshop', year: 2020, category: 'Analítica Web' },
+        { name: 'Certificació en Aplicacions de Google Ads', issuer: 'Google Skillshop', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'Content Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'Social Media Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'Growth-Driven Design Certified', issuer: 'HubSpot Academy', year: 2020, category: 'UI/UX i Dades' },
+        { name: 'Inbound Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'Inbound Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'Email Marketing Certified', issuer: 'HubSpot Academy', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'Copywriting per a E-commerce', issuer: 'LinkedIn', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'Instagram Marketing for Business', issuer: 'Udemy', year: 2020, category: 'Màrqueting Digital' },
+        { name: '#TwitterFlightSchool — Vídeo', issuer: 'Twitter', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'YouTube Music Certification', issuer: 'Google Skillshop', year: 2020, category: 'Màrqueting Digital' },
+        { name: 'Adobe XD CC Avançat', issuer: 'LinkedIn', year: 2020, category: 'UI/UX i Dades' },
+        { name: 'Power BI i Excel — Anàlisi de Dades', issuer: 'Udemy', year: 2020, category: 'UI/UX i Dades' },
+        { name: 'Excel Online', issuer: 'Udemy', year: 2020, category: 'UI/UX i Dades' }
+      ]
     }
   }
 };

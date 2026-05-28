@@ -54,11 +54,22 @@ const LayoutIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg x
 const AwardIcon = ({ className = "w-4 h-4" }: { className?: string }) => <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>;
 
 const CATEGORY_ICONS: Record<string, (cls?: string) => React.ReactNode> = {
+  // Spanish
   'Marketing Digital': (c) => <MegaphoneIcon className={c} />,
   'SEO': (c) => <SearchIcon className={c} />,
   'Web Analytics': (c) => <ChartIcon className={c} />,
   'Inteligencia Artificial': (c) => <SparklesIcon className={c} />,
   'UI/UX & Data': (c) => <LayoutIcon className={c} />,
+
+  // English
+  'Digital Marketing': (c) => <MegaphoneIcon className={c} />,
+  'Artificial Intelligence': (c) => <SparklesIcon className={c} />,
+
+  // Catalan
+  'Màrqueting Digital': (c) => <MegaphoneIcon className={c} />,
+  'Intel·ligència Artificial': (c) => <SparklesIcon className={c} />,
+  'Analítica Web': (c) => <ChartIcon className={c} />,
+  'UI/UX i Dades': (c) => <LayoutIcon className={c} />,
 };
 
 const CATEGORIES = ['Marketing Digital', 'Inteligencia Artificial', 'SEO', 'Web Analytics', 'UI/UX & Data'];
@@ -78,8 +89,11 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  const certsList = t.certs || CERTS;
+  const categoriesList = t.categories || CATEGORIES;
+
   const initialLimit = isMobile ? 3 : INITIAL_VISIBLE;
-  const filtered = activeFilter === 'all' ? CERTS : CERTS.filter(c => c.category === activeFilter);
+  const filtered = activeFilter === 'all' ? certsList : certsList.filter(c => c.category === activeFilter);
   const visible = showAll ? filtered : filtered.slice(0, initialLimit);
   const hasMore = filtered.length > initialLimit;
 
@@ -99,7 +113,7 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
               {t.title}
             </h2>
             <span className="text-base font-mono text-slate-600 dark:text-slate-400">
-              {CERTS.length} {t.subtitle}
+              {certsList.length} {t.subtitle}
             </span>
           </div>
           <div className="w-16 h-1 bg-red-600 dark:bg-red-400" />
@@ -115,10 +129,10 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
             }`}
           >
             {t.filterAll}
-            <span className="ml-1.5 text-xs">({CERTS.length})</span>
+            <span className="ml-1.5 text-xs">({certsList.length})</span>
           </button>
-          {CATEGORIES.map(cat => {
-            const count = CERTS.filter(c => c.category === cat).length;
+          {categoriesList.map(cat => {
+            const count = certsList.filter(c => c.category === cat).length;
             return (
               <button
                 key={cat}
@@ -130,7 +144,7 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
                 }`}
               >
                 <span className="flex items-center gap-1.5">
-                  {CATEGORY_ICONS[cat]('w-4 h-4')} {cat}
+                  {CATEGORY_ICONS[cat] ? CATEGORY_ICONS[cat]('w-4 h-4') : <AwardIcon className="w-4 h-4" />} {cat}
                 </span>
                 <span className="ml-1.5 text-xs">({count})</span>
               </button>

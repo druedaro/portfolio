@@ -231,7 +231,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Marketing Técnico',
-          items: ['SEO Técnico (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'CMS y E-commerce (WordPress/Shopify/Magento)', 'Auditorías SEO']
+          items: ['SEO Técnico (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'CMS y E-commerce (WordPress/Drupal/Shopify/Magento)', 'Auditorías SEO']
         },
         {
           title: 'Gestión y Agilidad',
@@ -443,7 +443,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Technical Marketing',
-          items: ['Technical SEO (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'CMS & E-commerce (WordPress/Shopify/Magento)', 'SEO Audits']
+          items: ['Technical SEO (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'CMS & E-commerce (WordPress/Drupal/Shopify/Magento)', 'SEO Audits']
         },
         {
           title: 'Management & Agile',
@@ -655,7 +655,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Màrqueting Tècnic',
-          items: ['SEO Tècnic (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'CMS i E-commerce (WordPress/Shopify/Magento)', 'Auditories SEO']
+          items: ['SEO Tècnic (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'CMS i E-commerce (WordPress/Drupal/Shopify/Magento)', 'Auditories SEO']
         },
         {
           title: 'Gestió i Agilitat',

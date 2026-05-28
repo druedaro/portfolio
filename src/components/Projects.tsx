@@ -24,8 +24,42 @@ const projects: ProjectItem[] = [
     demo: true,
     codeUrl: '#',
     demoUrl: '#'
+  },
+  {
+    title: 'Task Flow',
+    description:
+      'Gestor de tareas colaborativo con tableros Kanban, asignación de prioridades y seguimiento de sprints en tiempo real. Construido con Angular 21, RxJS y WebSockets para sincronización instantánea entre usuarios.',
+    tags: ['Angular', 'RxJS', 'WebSockets', 'TypeScript'],
+    demoLabel: 'Ver demo',
+    codeLabel: 'Código disponible',
+    demo: true,
+    codeUrl: '#',
+    demoUrl: '#'
+  },
+  {
+    title: 'Analytics Dashboard',
+    description:
+      'Panel de analítica web con visualización de métricas en tiempo real, informes exportables y segmentación de audiencias. Integración con Google Analytics 4 y Chart.js para representación de datos compleja.',
+    tags: ['React', 'Chart.js', 'GA4', 'TypeScript'],
+    demoLabel: 'Ver demo',
+    codeLabel: 'Código disponible',
+    demo: false,
+    codeUrl: '#',
+    demoUrl: '#'
+  },
+  {
+    title: 'Design System CLI',
+    description:
+      'Herramienta de línea de comandos para generar componentes UI reutilizables con estilos predefinidos, documentación automática y soporte para múltiples frameworks. Publicado como paquete npm de uso interno.',
+    tags: ['Node.js', 'TypeScript', 'CLI', 'npm'],
+    demoLabel: 'Ver demo',
+    codeLabel: 'Código disponible',
+    demo: false,
+    codeUrl: '#',
+    demoUrl: '#'
   }
 ];
+
 
 import type { ProjectsTranslation } from '../i18n/translations';
 

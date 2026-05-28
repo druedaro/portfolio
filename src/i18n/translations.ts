@@ -67,6 +67,7 @@ export interface ProjectItem {
   demo: boolean;
   codeUrl?: string;
   demoUrl?: string;
+  videoUrl?: string;
 }
 
 export interface ProjectsTranslation {
@@ -256,12 +257,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demo: true
         },
         {
-          title: 'Task Flow',
-          description: 'Gestor de tareas colaborativo con tableros Kanban, asignación de prioridades y seguimiento de sprints en tiempo real. Construido con Angular 21, RxJS y WebSockets para sincronización instantánea entre usuarios.',
-          tags: ['Angular', 'RxJS', 'WebSockets', 'TypeScript'],
+          title: 'SEO Compass',
+          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
         },
         {
           title: 'Analytics Dashboard',
@@ -460,12 +464,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demo: true
         },
         {
-          title: 'Task Flow',
-          description: 'Collaborative task manager with Kanban boards, priority assignment, and real-time sprint tracking. Built with Angular 21, RxJS, and WebSockets for instant synchronization between users.',
-          tags: ['Angular', 'RxJS', 'WebSockets', 'TypeScript'],
+          title: 'SEO Compass',
+          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. React 19, TypeScript and Supabase with clean architecture and 25 unit tests.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
         },
         {
           title: 'Analytics Dashboard',
@@ -664,12 +671,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           demo: true
         },
         {
-          title: 'Task Flow',
-          description: 'Gestor de tasques col·laboratiu amb taulers Kanban, assignació de prioritats i seguiment de sprints en temps real. Construït amb Angular 21, RxJS i WebSockets per a sincronització instantània entre usuaris.',
-          tags: ['Angular', 'RxJS', 'WebSockets', 'TypeScript'],
+          title: 'SEO Compass',
+          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. React 19, TypeScript i Supabase amb arquitectura neta i 25 tests unitaris.',
+          tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/SEOCompass',
+          demoUrl: 'https://seo-compass.vercel.app/',
+          videoUrl: '/assets/seocompass.webm'
         },
         {
           title: 'Analytics Dashboard',

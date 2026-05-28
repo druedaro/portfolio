@@ -26,15 +26,16 @@ const projects: ProjectItem[] = [
     demoUrl: '#'
   },
   {
-    title: 'Task Flow',
+    title: 'SEO Compass',
     description:
-      'Gestor de tareas colaborativo con tableros Kanban, asignación de prioridades y seguimiento de sprints en tiempo real. Construido con Angular 21, RxJS y WebSockets para sincronización instantánea entre usuarios.',
-    tags: ['Angular', 'RxJS', 'WebSockets', 'TypeScript'],
+      'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
+    tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
     demoLabel: 'Ver demo',
     codeLabel: 'Código disponible',
     demo: true,
-    codeUrl: '#',
-    demoUrl: '#'
+    codeUrl: 'https://github.com/druedaro/SEOCompass',
+    demoUrl: 'https://seo-compass.vercel.app/',
+    videoUrl: '/assets/seocompass.webm'
   },
   {
     title: 'Analytics Dashboard',
@@ -115,15 +116,27 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                 </div>
               </div>
               <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 dark:border-slate-800/80 dark:bg-slate-900/80 p-6">
-                <div className="aspect-[16/9] rounded-[1.75rem] bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-slate-800 dark:via-slate-900 dark:to-slate-950 shadow-[0_30px_120px_-50px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
-                  <div className="flex h-full items-center justify-center text-center text-slate-500 dark:text-slate-400">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400">{imageLabel}</p>
-                      <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">{imageSubtitle}</p>
+                <div className="aspect-[16/9] rounded-[1.75rem] overflow-hidden shadow-[0_30px_120px_-50px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_120px_-50px_rgba(15,23,42,0.8)]">
+                  {project.videoUrl ? (
+                    <video
+                      src={project.videoUrl}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover rounded-[1.75rem]"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center text-center bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-slate-800 dark:via-slate-900 dark:to-slate-950 rounded-[1.75rem]">
+                      <div>
+                        <p className="text-sm uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400">{imageLabel}</p>
+                        <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">{imageSubtitle}</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
+
             </div>
           ))}
         </div>

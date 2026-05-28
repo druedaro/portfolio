@@ -28,15 +28,16 @@ const projects: ProjectItem[] = [
     videoUrl: '/assets/movieapp.webm'
   },
   {
-    title: 'Budget Generator',
+    title: 'Budget Calculator',
     description:
-      'Aplicación de presupuestos web con selección de servicios, configuración dinámica de precios, historial persistente y URLs compartibles. Angular 21 con PrimeNG, tests unitarios con Vitest y despliegue en Vercel.',
-    tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+      'Aplicación web para generar presupuestos profesionales de desarrollo web y marketing digital. Selección de servicios con tarifas dinámicas, descuentos, persistencia en almacenamiento local y sincronización por parámetros URL. React 19, Tailwind CSS, React Hook Form y Zod.',
+    tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
     demoLabel: 'Ver demo',
     codeLabel: 'Código disponible',
     demo: true,
-    codeUrl: '#',
-    demoUrl: '#'
+    codeUrl: 'https://github.com/druedaro/sprint6-web-budget-calculator',
+    demoUrl: 'https://sprint6-web-budget-calculator.vercel.app/',
+    videoUrl: '/assets/calculatorapp.webm'
   },
   {
     title: 'Analytics Dashboard',

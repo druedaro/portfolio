@@ -263,12 +263,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/movieapp.webm'
         },
         {
-          title: 'Budget Generator',
-          description: 'Aplicación de presupuestos web con selección de servicios, configuración dinámica de precios, historial persistente y URLs compartibles. Angular 21 con PrimeNG, tests unitarios con Vitest y despliegue en Vercel.',
-          tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+          title: 'Budget Calculator',
+          description: 'Aplicación web para generar presupuestos profesionales de desarrollo web y marketing digital. Selección de servicios con tarifas dinámicas, descuentos, persistencia en almacenamiento local y sincronización por parámetros URL. React 19, Tailwind CSS, React Hook Form y Zod.',
+          tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint6-web-budget-calculator',
+          demoUrl: 'https://sprint6-web-budget-calculator.vercel.app/',
+          videoUrl: '/assets/calculatorapp.webm'
         },
         {
           title: 'Analytics Dashboard',
@@ -473,12 +476,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/movieapp.webm'
         },
         {
-          title: 'Budget Generator',
-          description: 'Web budget generation app with service selection, dynamic pricing configuration, persistent history, and shareable URLs. Angular 21 with PrimeNG, unit tests with Vitest, and deployed on Vercel.',
-          tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+          title: 'Budget Calculator',
+          description: 'Web application for generating professional budget estimates for web development and digital marketing. Features dynamic pricing, discounts, local storage persistence, and URL parameters synchronization. React 19, Tailwind CSS, React Hook Form, and Zod.',
+          tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint6-web-budget-calculator',
+          demoUrl: 'https://sprint6-web-budget-calculator.vercel.app/',
+          videoUrl: '/assets/calculatorapp.webm'
         },
         {
           title: 'Analytics Dashboard',
@@ -683,12 +689,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           videoUrl: '/assets/movieapp.webm'
         },
         {
-          title: 'Budget Generator',
-          description: 'Aplicación de pressupostos web amb selecció de serveis, configuració dinàmica de preus, historial persistent i URLs compartibles. Angular 21 amb PrimeNG, tests unitaris amb Vitest i desplegament a Vercel.',
-          tags: ['Vitest', 'Vercel', 'Angular', 'PrimeNG'],
+          title: 'Budget Calculator',
+          description: 'Aplicació web per generar pressupostos professionals de desenvolupament web i màrqueting digital. Selecció de serveis amb tarifes dinàmiques, descomptes, persistència en emmagatzematge local i sincronització per paràmetres URL. React 19, Tailwind CSS, React Hook Form i Zod.',
+          tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
-          demo: true
+          demo: true,
+          codeUrl: 'https://github.com/druedaro/sprint6-web-budget-calculator',
+          demoUrl: 'https://sprint6-web-budget-calculator.vercel.app/',
+          videoUrl: '/assets/calculatorapp.webm'
         },
         {
           title: 'Analytics Dashboard',

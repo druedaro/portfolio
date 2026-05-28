@@ -235,7 +235,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Gestión y Agilidad',
-          items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Jira', 'Entrega por sprints', 'Enfoque de producto']
+          items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Teamwork', 'Entrega por sprints', 'Enfoque de producto']
         }
       ]
     },
@@ -447,7 +447,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Management & Agile',
-          items: ['Team leadership', 'Agile methodologies', 'Jira', 'Sprint delivery', 'Product focus']
+          items: ['Team leadership', 'Agile methodologies', 'Teamwork', 'Sprint delivery', 'Product focus']
         }
       ]
     },
@@ -659,7 +659,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Gestió i Agilitat',
-          items: ['Lideratge d\'equips', 'Metodologies àgils', 'Jira', 'Lliurament per sprints', 'Enfocament de producte']
+          items: ['Lideratge d\'equips', 'Metodologies àgils', 'Teamwork', 'Lliurament per sprints', 'Enfocament de producte']
         }
       ]
     },

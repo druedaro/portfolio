@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { CertificationsTranslation } from '../i18n/translations';
 
 interface Cert {
@@ -67,10 +67,21 @@ const INITIAL_VISIBLE = 8;
 export default function Certifications({ t }: { t: CertificationsTranslation }) {
   const [activeFilter, setActiveFilter] = useState('all');
   const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const initialLimit = isMobile ? 3 : INITIAL_VISIBLE;
   const filtered = activeFilter === 'all' ? CERTS : CERTS.filter(c => c.category === activeFilter);
-  const visible = showAll ? filtered : filtered.slice(0, INITIAL_VISIBLE);
-  const hasMore = filtered.length > INITIAL_VISIBLE;
+  const visible = showAll ? filtered : filtered.slice(0, initialLimit);
+  const hasMore = filtered.length > initialLimit;
 
   const handleFilter = (cat: string) => {
     setActiveFilter(cat);
@@ -154,7 +165,7 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
               onClick={() => setShowAll(v => !v)}
               className="group flex items-center gap-2 text-sm font-medium text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors"
             >
-              {showAll ? t.showLess : `${t.showMore} (+${filtered.length - INITIAL_VISIBLE})`}
+              {showAll ? t.showLess : `${t.showMore} (+${filtered.length - initialLimit})`}
               <svg
                 width="16"
                 height="16"

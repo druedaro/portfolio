@@ -19,7 +19,7 @@ const groups = [
   },
   {
     title: 'Gestión y Agilidad',
-    items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Teamwork', 'Entrega por sprints', 'Enfoque de producto']
+    items: ['Liderazgo de equipos', 'Metodologías ágiles', 'coordinación cross-functional y toma de decisiones basada en datos', 'Entrega por sprints', 'Enfoque de producto']
   }
 ];
 
@@ -47,11 +47,11 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
 
           {children && <div className="mb-20">{children}</div>}
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="flex flex-wrap justify-center gap-8">
             {sectionGroups.map((group, index) => (
               <div
                 key={group.title}
-                className="group rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-6 shadow-[0_30px_100px_-60px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_100px_-60px_rgba(15,23,42,0.8)] transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-red-500 hover:shadow-[0_0_40px_rgba(239,68,68,0.5)] dark:hover:shadow-[0_0_40px_rgba(239,68,68,0.4)] relative overflow-hidden z-10 reveal reveal-up"
+                className="group rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-6 shadow-[0_30px_100px_-60px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_100px_-60px_rgba(15,23,42,0.8)] transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-red-500 hover:shadow-[0_0_40px_rgba(239,68,68,0.5)] dark:hover:shadow-[0_0_40px_rgba(239,68,68,0.4)] relative overflow-hidden z-10 reveal reveal-up w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.35rem)]"
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 -z-10" />

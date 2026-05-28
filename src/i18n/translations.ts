@@ -218,20 +218,24 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       subtitle: 'Tecnologías principales',
       groups: [
         {
-          title: 'Angular Moderno',
-          items: ['Signals', 'Standalone Components', 'OnPush', 'Lazy Loading', 'RxJS']
+          title: 'React Moderno',
+          items: ['Hooks', 'Context API', 'State Management', 'React Router', 'Vite']
         },
         {
           title: 'Arquitectura',
-          items: ['Feature-based', 'Separación de responsabilidades', 'APIs REST', 'Asincronía', 'TypeScript']
+          items: ['Feature-based', 'TypeScript', 'JavaScript ES6', 'APIs REST', 'Asincronía']
         },
         {
-          title: 'Calidad',
-          items: ['Testing unitario', 'Vitest', 'Jest', 'WCAG 2.2 AA', 'Estados de carga y error']
+          title: 'Calidad y Accesibilidad',
+          items: ['Testing unitario', 'Vitest / Jest', 'WCAG 2.2 AA', 'Clean Code', 'Rendimiento (Web Perf)']
         },
         {
-          title: 'Trabajo en equipo',
-          items: ['Metodologías ágiles', 'Jira', 'Entrega por sprints', 'Comunicación efectiva', 'Enfoque de producto']
+          title: 'Marketing Técnico',
+          items: ['SEO Técnico (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'E-commerce (Shopify/Magento)', 'Auditorías SEO']
+        },
+        {
+          title: 'Gestión y Agilidad',
+          items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Jira', 'Entrega por sprints', 'Enfoque de producto']
         }
       ]
     },
@@ -323,7 +327,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contacto',
       title1: 'Hablemos',
       title2: 'hoy',
-      description: 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.'
+      description: 'Disponible para colaborar en proyectos frontend con React, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.'
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'
@@ -426,20 +430,24 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       subtitle: 'Core technologies',
       groups: [
         {
-          title: 'Modern Angular',
-          items: ['Signals', 'Standalone Components', 'OnPush', 'Lazy Loading', 'RxJS']
+          title: 'Modern React',
+          items: ['Hooks', 'Context API', 'State Management', 'React Router', 'Vite']
         },
         {
           title: 'Architecture',
-          items: ['Feature-based', 'Separation of concerns', 'REST APIs', 'Asynchrony', 'TypeScript']
+          items: ['Feature-based', 'TypeScript', 'JavaScript ES6', 'REST APIs', 'Asynchrony']
         },
         {
-          title: 'Quality',
-          items: ['Unit testing', 'Vitest', 'Jest', 'WCAG 2.2 AA', 'Loading & error states']
+          title: 'Quality & Accessibility',
+          items: ['Unit testing', 'Vitest / Jest', 'WCAG 2.2 AA', 'Clean Code', 'Performance (Web Perf)']
         },
         {
-          title: 'Teamwork',
-          items: ['Agile methodologies', 'Jira', 'Sprint delivery', 'Effective communication', 'Product focus']
+          title: 'Technical Marketing',
+          items: ['Technical SEO (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'E-commerce (Shopify/Magento)', 'SEO Audits']
+        },
+        {
+          title: 'Management & Agile',
+          items: ['Team leadership', 'Agile methodologies', 'Jira', 'Sprint delivery', 'Product focus']
         }
       ]
     },
@@ -531,7 +539,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contact',
       title1: "Let's talk",
       title2: 'today',
-      description: 'Available to collaborate on frontend projects with Angular, development best practices, and digital products that work from the very first scroll.'
+      description: 'Available to collaborate on frontend projects with React, development best practices, and digital products that work from the very first scroll.'
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'
@@ -634,20 +642,24 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       subtitle: 'Tecnologies principals',
       groups: [
         {
-          title: 'Angular Modern',
-          items: ['Signals', 'Standalone Components', 'OnPush', 'Lazy Loading', 'RxJS']
+          title: 'React Modern',
+          items: ['Hooks', 'Context API', 'State Management', 'React Router', 'Vite']
         },
         {
           title: 'Arquitectura',
-          items: ['Feature-based', 'Separació de responsabilitats', 'APIs REST', 'Asincronia', 'TypeScript']
+          items: ['Feature-based', 'TypeScript', 'JavaScript ES6', 'APIs REST', 'Asincronia']
         },
         {
-          title: 'Qualitat',
-          items: ['Testing unitari', 'Vitest', 'Jest', 'WCAG 2.2 AA', 'Estats de càrrega i error']
+          title: 'Qualitat i Accessibilitat',
+          items: ['Testing unitari', 'Vitest / Jest', 'WCAG 2.2 AA', 'Clean Code', 'Rendiment (Web Perf)']
         },
         {
-          title: 'Treball en equip',
-          items: ['Metodologies àgils', 'Jira', 'Lliurament per sprints', 'Comunicació efectiva', 'Enfocament de producte']
+          title: 'Màrqueting Tècnic',
+          items: ['SEO Tècnic (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'E-commerce (Shopify/Magento)', 'Auditories SEO']
+        },
+        {
+          title: 'Gestió i Agilitat',
+          items: ['Lideratge d\'equips', 'Metodologies àgils', 'Jira', 'Lliurament per sprints', 'Enfocament de producte']
         }
       ]
     },
@@ -739,7 +751,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contacte',
       title1: 'Parlem',
       title2: 'avui',
-      description: 'Disponible per col·laborar en projectes frontend amb Angular, bones pràctiques de desenvolupament i productes digitals que funcionen des del primer scroll.'
+      description: 'Disponible per col·laborar en projectes frontend amb React, bones pràctiques de desenvolupament i productes digitals que funcionen des del primer scroll.'
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'

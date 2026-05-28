@@ -32,7 +32,7 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
   const sectionTag = t.section || 'Contacto';
   const title1 = t.title1 || 'Hablemos';
   const title2 = t.title2 || 'hoy';
-  const description = t.description || 'Disponible para colaborar en proyectos frontend con Angular, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.';
+  const description = t.description || 'Disponible para colaborar en proyectos frontend con React, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.';
 
   return (
     <section id={sectionId} className="relative overflow-hidden pt-16 pb-28 lg:pt-12 w-full">

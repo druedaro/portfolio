@@ -2,20 +2,24 @@ import React from 'react';
 
 const groups = [
   {
-    title: 'Angular Moderno',
-    items: ['Signals', 'Standalone Components', 'OnPush', 'Lazy Loading', 'RxJS']
+    title: 'React Moderno',
+    items: ['Hooks', 'Context API', 'State Management', 'React Router', 'Vite']
   },
   {
     title: 'Arquitectura',
-    items: ['Feature-based', 'Separación de responsabilidades', 'APIs REST', 'Asincronía', 'TypeScript']
+    items: ['Feature-based', 'TypeScript', 'JavaScript ES6', 'APIs REST', 'Asincronía']
   },
   {
-    title: 'Calidad',
-    items: ['Testing unitario', 'Vitest', 'Jest', 'WCAG 2.2 AA', 'Estados de carga y error']
+    title: 'Calidad y Accesibilidad',
+    items: ['Testing unitario', 'Vitest / Jest', 'WCAG 2.2 AA', 'Clean Code', 'Rendimiento (Web Perf)']
   },
   {
-    title: 'Trabajo en equipo',
-    items: ['Metodologías ágiles', 'Jira', 'Entrega por sprints', 'Comunicación efectiva', 'Enfoque de producto']
+    title: 'Marketing Técnico',
+    items: ['SEO Técnico (GSC)', 'Google Analytics 4', 'Google Tag Manager', 'E-commerce (Shopify/Magento)', 'Auditorías SEO']
+  },
+  {
+    title: 'Gestión y Agilidad',
+    items: ['Liderazgo de equipos', 'Metodologías ágiles', 'Jira', 'Entrega por sprints', 'Enfoque de producto']
   }
 ];
 
@@ -43,7 +47,7 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
 
           {children && <div className="mb-20">{children}</div>}
 
-          <div className="grid gap-6 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {sectionGroups.map((group, index) => (
               <div key={group.title} className="group rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-6 shadow-[0_30px_100px_-60px_rgba(148,163,184,0.2)] dark:shadow-[0_30px_100px_-60px_rgba(15,23,42,0.8)] transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-red-500 hover:shadow-[0_0_40px_rgba(239,68,68,0.5)] dark:hover:shadow-[0_0_40px_rgba(239,68,68,0.4)] relative overflow-hidden z-10 reveal reveal-up" style={{ transitionDelay: `${index * 150}ms` }}>
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 -z-10" />

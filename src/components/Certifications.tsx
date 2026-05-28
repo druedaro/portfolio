@@ -82,16 +82,16 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
 
         <div className="mb-10">
-          <p className="text-sm uppercase tracking-[0.32em] text-red-500 mb-4">{t.section}</p>
+          <p className="text-sm uppercase tracking-[0.32em] text-red-600 dark:text-red-400 mb-4">{t.section}</p>
           <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-4">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white break-words">
               {t.title}
             </h2>
-            <span className="text-base font-mono text-slate-400 dark:text-slate-500">
+            <span className="text-base font-mono text-slate-600 dark:text-slate-400">
               {CERTS.length} {t.subtitle}
             </span>
           </div>
-          <div className="w-16 h-1 bg-red-500" />
+          <div className="w-16 h-1 bg-red-600 dark:bg-red-400" />
         </div>
 
         <div className="flex flex-wrap gap-2 mb-8">
@@ -99,12 +99,12 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
             onClick={() => handleFilter('all')}
             className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
               activeFilter === 'all'
-                ? 'bg-red-500 text-white shadow-[0_0_16px_rgba(239,68,68,0.45)]'
-                : 'border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-red-400 hover:text-red-500 dark:hover:border-red-500/50 dark:hover:text-red-400'
+                ? 'bg-red-600 text-white shadow-[0_0_16px_rgba(220,38,38,0.45)]'
+                : 'border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-red-500 hover:text-red-600 dark:hover:border-red-500/50 dark:hover:text-red-400'
             }`}
           >
             {t.filterAll}
-            <span className="ml-1.5 text-xs opacity-70">({CERTS.length})</span>
+            <span className="ml-1.5 text-xs">({CERTS.length})</span>
           </button>
           {CATEGORIES.map(cat => {
             const count = CERTS.filter(c => c.category === cat).length;
@@ -114,14 +114,14 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
                 onClick={() => handleFilter(cat)}
                 className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
                   activeFilter === cat
-                    ? 'bg-red-500 text-white shadow-[0_0_16px_rgba(239,68,68,0.45)]'
-                    : 'border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-red-400 hover:text-red-500 dark:hover:border-red-500/50 dark:hover:text-red-400'
+                    ? 'bg-red-600 text-white shadow-[0_0_16px_rgba(220,38,38,0.45)]'
+                    : 'border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-red-500 hover:text-red-600 dark:hover:border-red-500/50 dark:hover:text-red-400'
                 }`}
               >
                 <span className="flex items-center gap-1.5">
                   {CATEGORY_ICONS[cat]('w-4 h-4')} {cat}
                 </span>
-                <span className="ml-1.5 text-xs opacity-70">({count})</span>
+                <span className="ml-1.5 text-xs">({count})</span>
               </button>
             );
           })}
@@ -131,18 +131,18 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
           {visible.map((cert, idx) => (
             <div
               key={`${cert.name}-${idx}`}
-              className="group relative rounded-2xl border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 p-5 transition-all duration-300 hover:border-red-500/50 hover:shadow-[0_0_24px_rgba(239,68,68,0.12)] dark:hover:shadow-[0_0_24px_rgba(239,68,68,0.15)] hover:-translate-y-1"
+              className="group relative rounded-2xl border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/90 p-5 transition-all duration-300 hover:border-red-600/50 hover:shadow-[0_0_24px_rgba(220,38,38,0.12)] dark:hover:shadow-[0_0_24px_rgba(220,38,38,0.15)] hover:-translate-y-1"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-2xl pointer-events-none" />
-              <span className="mb-3 block text-red-500" aria-hidden="true">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-2xl pointer-events-none" />
+              <span className="mb-3 block text-red-600 dark:text-red-400" aria-hidden="true">
                 {CATEGORY_ICONS[cert.category] ? CATEGORY_ICONS[cert.category]('w-6 h-6') : <AwardIcon className="w-6 h-6" />}
               </span>
-              <h3 className="text-sm font-semibold text-slate-900 dark:text-white leading-snug mb-3 group-hover:text-red-500 transition-colors duration-300 overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
+              <h3 className="text-sm font-semibold text-slate-900 dark:text-white leading-snug mb-3 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors duration-300 overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
                 {cert.name}
               </h3>
               <div className="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-800/50">
-                <p className="text-xs text-red-500/80 font-medium truncate max-w-[70%]">{cert.issuer}</p>
-                <p className="text-xs font-mono text-slate-400 dark:text-slate-500">{cert.year}</p>
+                <p className="text-xs text-red-700 dark:text-red-400 font-medium truncate max-w-[70%]">{cert.issuer}</p>
+                <p className="text-xs font-mono text-slate-600 dark:text-slate-300">{cert.year}</p>
               </div>
             </div>
           ))}
@@ -152,7 +152,7 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
           <div className="mt-8 flex justify-center">
             <button
               onClick={() => setShowAll(v => !v)}
-              className="group flex items-center gap-2 text-sm font-medium text-red-500 hover:text-red-400 transition-colors"
+              className="group flex items-center gap-2 text-sm font-medium text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors"
             >
               {showAll ? t.showLess : `${t.showMore} (+${filtered.length - INITIAL_VISIBLE})`}
               <svg

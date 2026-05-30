@@ -336,7 +336,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       ]
     },
     whatIDo: {
-      heading: '¿Qué hago?',
+      heading: 'Áreas de Especialización',
       services: [
         {
           id: 'web',
@@ -630,7 +630,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       ]
     },
     whatIDo: {
-      heading: 'What I do?',
+      heading: 'Areas of Specialization',
       services: [
         {
           id: 'web',
@@ -924,7 +924,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       ]
     },
     whatIDo: {
-      heading: 'Què faig?',
+      heading: 'Àrees d\'Especialització',
       services: [
         {
           id: 'web',

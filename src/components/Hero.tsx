@@ -46,7 +46,7 @@ export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative hidden lg:block">
             <div className="absolute inset-0 -z-10 rounded-[3rem] bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-slate-900 dark:via-slate-950 dark:to-slate-800 blur-2xl" />
             <div className="relative overflow-hidden rounded-[3rem] border border-slate-200 bg-white/90 shadow-[0_40px_120px_-40px_rgba(148,163,184,0.3)] dark:border-white/10 dark:bg-slate-900/90 dark:shadow-[0_40px_120px_-40px_rgba(15,23,42,0.9)]">
               <div className="aspect-[4/5] min-h-[420px] bg-slate-100 dark:bg-slate-800/80">

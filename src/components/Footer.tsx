@@ -28,7 +28,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
               href="https://astro.build"
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center gap-1.5 transition-colors hover:text-[#FF5D01]"
+              className="group flex items-center gap-1.5 transition-colors hover:text-[#FF5D01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded"
               aria-label="Astro"
             >
               <svg
@@ -69,7 +69,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
               href="https://react.dev"
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center gap-1.5 transition-colors hover:text-[#61DAFB]"
+              className="group flex items-center gap-1.5 transition-colors hover:text-[#61DAFB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded"
               aria-label="React"
             >
               <svg
@@ -95,7 +95,7 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
             href="https://tailwindcss.com"
             target="_blank"
             rel="noreferrer"
-            className="group flex items-center gap-1.5 transition-colors hover:text-[#06B6D4]"
+            className="group flex items-center gap-1.5 transition-colors hover:text-[#06B6D4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded"
             aria-label="Styled with TailwindCSS"
           >
             <span className="text-slate-500 dark:text-slate-400">Styled with</span>
@@ -117,9 +117,9 @@ export default function Footer({ t = {} as Partial<FooterTranslation>, lang = 'e
         </div>
 
         <div className="flex items-center gap-6 text-slate-600 dark:text-slate-400">
-          <a href="https://github.com/druedaro" target="_blank" rel="noreferrer" className="transition hover:text-slate-900 dark:hover:text-white">GitHub</a>
-          <a href="https://www.linkedin.com/in/david-rueda-rosas/" target="_blank" rel="noreferrer" className="transition hover:text-slate-900 dark:hover:text-white">LinkedIn</a>
-          <a href="mailto:ruedarosasdavid@gmail.com" className="transition hover:text-slate-900 dark:hover:text-white">Email</a>
+          <a href="https://github.com/druedaro" target="_blank" rel="noreferrer" className="transition hover:text-slate-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded">GitHub</a>
+          <a href="https://www.linkedin.com/in/david-rueda-rosas/" target="_blank" rel="noreferrer" className="transition hover:text-slate-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded">LinkedIn</a>
+          <a href="mailto:ruedarosasdavid@gmail.com" className="transition hover:text-slate-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded">Email</a>
         </div>
       </div>
     </footer>

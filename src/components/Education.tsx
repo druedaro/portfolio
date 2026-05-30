@@ -8,6 +8,16 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
   const sectionDesc = t.description || '';
   const items = t.items || [];
 
+  const getInstitutionLink = (name: string) => {
+    const normalized = name.toLowerCase();
+    if (normalized.includes('it academy') || normalized.includes('barcelona activa')) return 'https://www.barcelonactiva.cat/itacademy';
+    if (normalized.includes('devtalles')) return 'https://devtalles.com/';
+    if (normalized.includes('the corner')) return 'https://www.thecorner.cat/'; // o la web oficial
+    if (normalized.includes('barcelona')) return 'https://www.ub.edu/'; // Universitat de Barcelona
+    if (normalized.includes('catalunya') || normalized.includes('upc')) return 'https://www.upc.edu/';
+    return null;
+  };
+
   const formatDescription = (text: string) => {
     if (!text) return '';
     return text
@@ -41,13 +51,28 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
                 {/* Logo */}
                 {edu.logo && (
                   <div className="flex-shrink-0">
-                    <div className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 group-hover:border-red-500/20 shadow-sm">
-                      <img
-                        src={edu.logo}
-                        alt={edu.institution}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
+                    {getInstitutionLink(edu.institution) ? (
+                      <a
+                        href={getInstitutionLink(edu.institution)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 hover:border-red-500/40 shadow-sm block hover:scale-105 active:scale-95"
+                      >
+                        <img
+                          src={edu.logo}
+                          alt={edu.institution}
+                          className="w-full h-full object-contain"
+                        />
+                      </a>
+                    ) : (
+                      <div className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 group-hover:border-red-500/20 shadow-sm">
+                        <img
+                          src={edu.logo}
+                          alt={edu.institution}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    )}
                   </div>
                 )}
 
@@ -58,9 +83,20 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
                       <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white mb-0.5 leading-snug">
                         {edu.degree}
                       </h3>
-                      <p className="text-red-600 dark:text-red-500/80 font-medium text-sm">
-                        {edu.institution}
-                      </p>
+                      {getInstitutionLink(edu.institution) ? (
+                        <a
+                          href={getInstitutionLink(edu.institution)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-red-600 dark:text-red-500/80 font-medium text-sm hover:text-red-700 dark:hover:text-red-400/90 underline decoration-red-300 dark:decoration-red-900/40 underline-offset-4 transition-colors duration-300"
+                        >
+                          {edu.institution}
+                        </a>
+                      ) : (
+                        <p className="text-red-600 dark:text-red-500/80 font-medium text-sm">
+                          {edu.institution}
+                        </p>
+                      )}
                     </div>
                     <div className="flex flex-row md:flex-col items-center md:items-end gap-2 md:gap-1.5 flex-shrink-0">
                       <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">

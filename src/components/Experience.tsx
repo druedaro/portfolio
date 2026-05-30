@@ -33,6 +33,14 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
   const sectionDesc = t.description || 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.';
   const items = t.items || experiences;
 
+  const getCompanyLink = (name: string) => {
+    const normalized = name.toLowerCase();
+    if (normalized.includes('barcelona activa')) return 'https://www.barcelonactiva.cat/';
+    if (normalized.includes('lite solutions')) return 'https://litesolutions.es/';
+    if (normalized.includes('tbb agency') || normalized.includes('tbb.agency')) return 'https://tbb.agency/';
+    return null;
+  };
+
   const formatDescription = (text: string) => {
     if (!text) return '';
     return text
@@ -81,13 +89,28 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
                 {/* Logo */}
                 {exp.logo && (
                   <div className="flex-shrink-0">
-                    <div className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 group-hover:border-red-500/20 shadow-sm">
-                      <img
-                        src={exp.logo}
-                        alt={exp.company}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
+                    {getCompanyLink(exp.company) ? (
+                      <a
+                        href={getCompanyLink(exp.company)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 hover:border-red-500/40 shadow-sm block hover:scale-105 active:scale-95"
+                      >
+                        <img
+                          src={exp.logo}
+                          alt={exp.company}
+                          className="w-full h-full object-contain"
+                        />
+                      </a>
+                    ) : (
+                      <div className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 group-hover:border-red-500/20 shadow-sm">
+                        <img
+                          src={exp.logo}
+                          alt={exp.company}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    )}
                   </div>
                 )}
 
@@ -96,7 +119,18 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                     <div>
                       <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white group-hover:text-red-500 transition-colors duration-300">{exp.title}</h3>
-                      <p className="text-slate-500 dark:text-neutral-400 text-sm font-medium">{exp.company}</p>
+                      {getCompanyLink(exp.company) ? (
+                        <a
+                          href={getCompanyLink(exp.company)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-slate-500 dark:text-neutral-400 text-sm font-medium hover:text-red-500 dark:hover:text-red-400 underline decoration-slate-300 dark:decoration-neutral-700 underline-offset-4 transition-colors duration-300"
+                        >
+                          {exp.company}
+                        </a>
+                      ) : (
+                        <p className="text-slate-500 dark:text-neutral-400 text-sm font-medium">{exp.company}</p>
+                      )}
                     </div>
                     <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
                   </div>

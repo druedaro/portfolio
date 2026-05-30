@@ -157,14 +157,14 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Contacto', href: '#contacto' }
     ],
     hero: {
-      subtitle: 'Frontend developer · technical marketer',
-      title: 'Diseño web con impacto',
-      description: 'Desarrollo frontend moderno con enfoque en producto, rendimiento y experiencia visual. Interfaces oscuras, limpias y con movimiento sutil para destacar cada sección.',
+      subtitle: 'Desarrollador Frontend & SEO Técnico',
+      title: 'David Rueda',
+      description: 'Desarrollador Frontend en transición desde el **SEO técnico** hacia la creación de aplicaciones web. Especializado en **React, TypeScript y plataformas e-commerce**, combino mi background técnico y de negocio para construir productos digitales rápidos, accesibles y optimizados para conseguir resultados.',
       projectsBtn: 'Proyectos',
       contactBtn: 'Contacto',
-      location: 'Barcelona',
-      brandPhoto: 'Foto de marca',
-      photoSubtitle: 'Reemplaza este bloque con tu imagen o retrato'
+      location: 'Barcelona, España',
+      brandPhoto: 'David Rueda Rosas',
+      photoSubtitle: 'Desarrollador Frontend & SEO Técnico'
     },
     experience: {
       id: 'experiencia',
@@ -342,27 +342,27 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Desarrollo Web',
           items: [
-            'Single Page Applications (SPAs)',
-            'Landing pages y sitios web empresariales',
-            'Webs de portfolio'
+            'Desarrollo de aplicaciones web modernas bajo principios de Clean Code y arquitectura modular',
+            'Enfoque en escalabilidad, control de versiones colaborativo y optimización de rendimiento',
+            'Integración de componentes dinámicos con bases de datos y APIs REST'
           ]
         },
         {
           id: 'mobile',
-          title: 'Desarrollo Mobile',
+          title: 'SEO Técnico & Indexación',
           items: [
-            'Progressive Web Apps (PWA)',
-            'Diseño responsive mobile-first',
-            'Soluciones multiplataforma'
+            'Optimización técnica y auditorías web enfocadas en maximizar la indexabilidad orgánica',
+            'Mejora de Core Web Vitals y velocidad de carga (WPO) orientada a resultados en buscadores',
+            'Gestión de la arquitectura web, rastreo eficiente y optimización del presupuesto de rastreo (crawl budget)'
           ]
         },
         {
           id: 'design',
-          title: 'Diseño UI/UX y Prototipado',
+          title: 'Soluciones e-Commerce & Migraciones',
           items: [
-            'Wireframing y prototipado',
-            'Sistemas de diseño de componentes',
-            'Interfaces accesibles (WCAG)'
+            'Mantenimiento, desarrollo de módulos y adaptaciones en WordPress, PrestaShop y Shopify',
+            'Planificación y ejecución de migraciones técnicas complejas desde otras plataformas hacia Magento',
+            'Enfoque de conversión (CRO), optimización del checkout y flujos de compra del usuario'
           ]
         }
       ]
@@ -441,14 +441,14 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Contact', href: '#contact' }
     ],
     hero: {
-      subtitle: 'Frontend developer · technical marketer',
-      title: 'Web design with impact',
-      description: 'Modern frontend development with a focus on product, performance, and visual experience. Clean, dark interfaces with subtle motion to highlight each section.',
+      subtitle: 'Frontend Developer & Technical SEO',
+      title: 'David Rueda',
+      description: 'Frontend Developer transitioning from **technical SEO** to building web applications. Specialized in **React, TypeScript, and e-commerce**, I combine my technical and business background to build fast, accessible, and search-optimized digital products.',
       projectsBtn: 'Projects',
       contactBtn: 'Contact',
-      location: 'Barcelona',
-      brandPhoto: 'Brand photo',
-      photoSubtitle: 'Replace this block with your image or portrait'
+      location: 'Barcelona, Spain',
+      brandPhoto: 'David Rueda Rosas',
+      photoSubtitle: 'Frontend Developer & Technical SEO'
     },
     experience: {
       id: 'experience',
@@ -626,27 +626,27 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Web Development',
           items: [
-            'Single Page Applications (SPAs)',
-            'Landing pages and business websites',
-            'Portfolio websites'
+            'Building modern web applications under Clean Code principles and modular architecture',
+            'Focus on scalability, collaborative version control, and performance optimization',
+            'Integrating dynamic frontend components with REST APIs and databases'
           ]
         },
         {
           id: 'mobile',
-          title: 'Mobile Development',
+          title: 'Technical SEO & Indexing',
           items: [
-            'Progressive Web Apps (PWA)',
-            'Responsive mobile-first design',
-            'Cross-platform solutions'
+            'Technical optimization and web audits focused on maximizing organic indexing',
+            'Core Web Vitals and page speed (WPO) improvements driven by search engine results',
+            'Managing web architecture, efficient crawling, and crawl budget optimization'
           ]
         },
         {
           id: 'design',
-          title: 'UI/UX Design & Prototyping',
+          title: 'e-Commerce & Migrations',
           items: [
-            'Wireframing and prototyping',
-            'Component design systems',
-            'Accessibility-first interfaces (WCAG)'
+            'Functional maintenance, module enhancements, and template updates in WordPress, PrestaShop, and Shopify',
+            'Planning and executing complex technical migrations from other platforms to Magento',
+            'Conversion Rate Optimization (CRO), checkout enhancement, and user checkout flow optimization'
           ]
         }
       ]
@@ -725,14 +725,14 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Contacte', href: '#contacte' }
     ],
     hero: {
-      subtitle: 'Frontend developer · technical marketer',
-      title: 'Disseny web amb impacte',
-      description: 'Desenvolupament frontend modern amb enfocament en producte, rendiment i experiència visual. Interfícies fosques, netes i amb moviment subtil per destacar cada secció.',
+      subtitle: 'Desenvolupador Frontend & SEO Tècnic',
+      title: 'David Rueda',
+      description: 'Desenvolupador Frontend en transició des del **SEO tècnic** cap a la creació d\'aplicacions web. Especialitzat en **React, TypeScript i plataformes e-commerce**, combino el meu background tècnic i de negoci per construir productes digitals ràpids, accessibles i optimitzats per obtenir resultats.',
       projectsBtn: 'Projectes',
       contactBtn: 'Contacte',
-      location: 'Barcelona',
-      brandPhoto: 'Foto de marca',
-      photoSubtitle: 'Reemplaça aquest bloc amb la teva imatge o retrat'
+      location: 'Barcelona, Espanya',
+      brandPhoto: 'David Rueda Rosas',
+      photoSubtitle: 'Desenvolupador Frontend & SEO Tècnic'
     },
     experience: {
       id: 'experiencia',
@@ -910,27 +910,27 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Desenvolupament Web',
           items: [
-            'Single Page Applications (SPAs)',
-            'Landing pages i llocs web empresarials',
-            'Webs de portfolio'
+            'Desenvolupament d\'aplicacions web modernes sota principis de Clean Code i arquitectura modular',
+            'Enfocament en escalabilitat, control de versions col·laboratiu i optimització de rendiment',
+            'Integració de components interactius amb APIs REST i bases de dades'
           ]
         },
         {
           id: 'mobile',
-          title: 'Desenvolupament Mobile',
+          title: 'SEO Tècnic & Indexació',
           items: [
-            'Progressive Web Apps (PWA)',
-            'Disseny responsive mobile-first',
-            'Solucions multiplataforma'
+            'Optimització tècnica i auditories web enfocades a maximitzar la indexabilitat orgànica',
+            'Millora de Core Web Vitals i velocitat de càrrega (WPO) orientada a resultats en cercadors',
+            'Gestió de l\'arxiu web, rastreig eficient i optimització del pressupost de rastreig (crawl budget)'
           ]
         },
         {
           id: 'design',
-          title: 'Disseny UI/UX i Prototipat',
+          title: 'Solucions e-Commerce & Migracions',
           items: [
-            'Wireframing i prototipat',
-            'Sistemes de disseny de components',
-            'Interfícies accessibles (WCAG)'
+            'Manteniment, desenvolupament de mòduls i adaptacions en WordPress, PrestaShop i Shopify',
+            'Planificació i execució de migracions tècniques complexes des d\'altres plataformes cap a Magento',
+            'Enfocament de conversió (CRO), optimització del checkout i fluxos de compra de l\'usuari'
           ]
         }
       ]

@@ -6,6 +6,13 @@ export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }
   const contactHref = lang === 'es' ? '#contacto' : lang === 'en' ? '#contact' : '#contacte';
   const sectionId = lang === 'es' ? 'sobre-mi' : lang === 'en' ? 'about-me' : 'sobre-mi';
 
+  const formatDescription = (text: string) => {
+    if (!text) return '';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
+  };
+
   return (
     <section id={sectionId} className="relative overflow-hidden bg-slate-50/80 dark:bg-slate-950/80 px-6 pt-16 pb-20 lg:pt-28 lg:pb-24 sm:px-10 lg:px-16">
       <div className="absolute inset-x-0 top-0 -z-10 h-[420px]" />
@@ -20,9 +27,10 @@ export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }
               {t.title}
             </h1>
             <div className="max-w-2xl space-y-6">
-              <p className="text-lg leading-8 text-slate-700 dark:text-slate-300">
-                {t.description}
-              </p>
+              <p 
+                className="text-lg leading-8 text-slate-700 dark:text-slate-300"
+                dangerouslySetInnerHTML={{ __html: formatDescription(t.description || '') }}
+              />
               <div className="flex flex-wrap gap-4">
                 <a
                   href={projectsHref}

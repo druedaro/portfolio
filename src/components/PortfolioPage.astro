@@ -95,8 +95,8 @@ const canonicalUrl = lang === 'es' ? esUrl : lang === 'en' ? enUrl : caUrl;
       <Nav client:load lang={lang} t={t.nav} />
       <Hero t={t.hero} />
       <WhatIDo client:visible t={t.whatIDo} />
-      <Experience t={t.experience} />
-      <Education t={t.education} />
+      <Experience client:visible t={t.experience} lang={lang} />
+      <Education client:visible t={t.education} lang={lang} />
       <Certifications client:visible t={t.certifications} />
       <Competencies t={t.competencies}>
         <TechCarousel client:visible />

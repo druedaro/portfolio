@@ -20,6 +20,7 @@ export interface ExperienceItem {
   period: string;
   description: string;
   skills: string[];
+  logo?: string;
 }
 
 export interface ExperienceTranslation {
@@ -172,25 +173,36 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.',
       items: [
         {
-          title: 'Senior Frontend Developer',
-          company: 'Tech Company Inc.',
-          period: '2023 - Presente',
-          description: 'Desarrollo de aplicaciones web modernas con React, Angular y TypeScript. Liderazgo de equipo y mentoring de desarrolladores junior.',
-          skills: ['React', 'TypeScript', 'Angular', 'Team Lead']
+          title: 'Desarrollador Frontend',
+          company: 'Barcelona Activa',
+          period: 'nov. 2025 - actualidad',
+          description: 'Contribuyo al desarrollo técnico de la plataforma web de retos lógicos para la comunidad de estudiantes de IT Academy de Barcelona Activa. Mi rol se centra en la construcción de un producto robusto, escalable y centrado en los estudiantes. Implementación de interfaces modernas y mantenimiento de código limpio, colaboración estrecha con Backend y Product Owners para el despliegue de funcionalidades complejas, y ejecución de sprints quincenales bajo entorno Agile, asegurando la calidad en cada entrega.',
+          skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
+          logo: '/assets/barcelonaactiva.webp'
         },
         {
-          title: 'Frontend Developer',
-          company: 'Digital Agency',
-          period: '2021 - 2023',
-          description: 'Creación de interfaces responsive y optimización de rendimiento. Trabajo con Tailwind CSS y metodologías ágiles.',
-          skills: ['React', 'Tailwind CSS', 'Responsive Design', 'Agile']
+          title: 'Desarrollador Web Frontend Junior',
+          company: 'Lite Solutions',
+          period: 'sept. 2024 - dic. 2024',
+          description: 'Desarrollador Frontend especializado en soluciones e-Commerce. Responsable del desarrollo y mantenimiento de plataformas de WordPress y PrestaShop, implementando funcionalidades personalizadas mediante JavaScript/jQuery, PHP y MySQL. Maquetación responsive con Bootstrap y media queries para garantizar una adaptación óptima en dispositivos móviles. Edición de módulos, uso de hooks y modificaciones en plantillas y bases de datos para optimizar los sitios web.',
+          skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
+          logo: '/assets/litesolutions.webp'
         },
         {
-          title: 'Junior Developer',
-          company: 'Startup Studio',
-          period: '2020 - 2021',
-          description: 'Primeros pasos en desarrollo web. Proyectos con HTML, CSS, JavaScript vanilla y primeras experiencias con frameworks.',
-          skills: ['HTML', 'CSS', 'JavaScript', 'React']
+          title: 'Search Engine Optimization Specialist',
+          company: 'tbb Agency',
+          period: 'ene. 2023 - jul. 2023',
+          description: 'Optimización técnica de sitios web y tiendas online (Magento, PrestaShop, WordPress, Shopify, Drupal) para asegurar un correcto rastreo e indexación. Liderazgo de un equipo de SEO de 5 personas, diseñando y ejecutando estrategias alineadas con KPIs. Realización de auditorías técnicas periódicas, implementación de buenas prácticas de SEO y configuración avanzada de analítica web con Google Search Console, Google Analytics y Google Tag Manager para el seguimiento y análisis del comportamiento de los usuarios.',
+          skills: ['SEO Técnico', 'Liderazgo de Equipos', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
+          logo: '/assets/logo-tbb.agency.webp'
+        },
+        {
+          title: 'Técnico en Posicionamiento Web (SEO) Junior',
+          company: 'tbb Agency',
+          period: 'ene. 2021 - dic. 2022',
+          description: 'Ejecución de auditorías técnicas periódicas e implementación de buenas prácticas de optimización en motores de búsqueda (SEO) para diversos clientes y plataformas de e-commerce. Configuración y seguimiento de analítica web esencial para medir el rendimiento orgánico y proponer mejoras continuas de usabilidad y visibilidad en buscadores.',
+          skills: ['SEO', 'Google Search Console', 'Analítica Web', 'Optimización Web', 'E-commerce'],
+          logo: '/assets/logo-tbb.agency.webp'
         }
       ]
     },
@@ -445,25 +457,36 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Frontend development experience focused on scalable architecture, performance, and collaboration in multidisciplinary teams.',
       items: [
         {
-          title: 'Senior Frontend Developer',
-          company: 'Tech Company Inc.',
-          period: '2023 - Present',
-          description: 'Developing modern web applications with React, Angular, and TypeScript. Team leadership and mentoring of junior developers.',
-          skills: ['React', 'TypeScript', 'Angular', 'Team Lead']
-        },
-        {
           title: 'Frontend Developer',
-          company: 'Digital Agency',
-          period: '2021 - 2023',
-          description: 'Creating responsive interfaces and optimizing performance. Working with Tailwind CSS and agile methodologies.',
-          skills: ['React', 'Tailwind CSS', 'Responsive Design', 'Agile']
+          company: 'Barcelona Activa',
+          period: 'Nov. 2025 - Present',
+          description: 'Contribute to the technical development of the web platform for logic challenges aimed at the IT Academy student community of Barcelona Activa. My role focuses on building a robust, scalable, and student-centered product. Implementing modern interfaces and maintaining clean code to improve project scalability, collaborating closely with Backend developers and Product Owners to deploy complex features, and executing biweekly sprints under an Agile environment to ensure quality delivery.',
+          skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
+          logo: '/assets/barcelonaactiva.webp'
         },
         {
-          title: 'Junior Developer',
-          company: 'Startup Studio',
-          period: '2020 - 2021',
-          description: 'First steps in web development. Projects with HTML, CSS, vanilla JavaScript, and first experiences with frameworks.',
-          skills: ['HTML', 'CSS', 'JavaScript', 'React']
+          title: 'Junior Frontend Web Developer',
+          company: 'Lite Solutions',
+          period: 'Sept. 2024 - Dec. 2024',
+          description: 'Frontend developer specializing in e-commerce solutions. Responsible for the development and maintenance of WordPress and PrestaShop platforms, implementing custom features using JavaScript/jQuery, PHP, and MySQL. Responsive layout design using Bootstrap and media queries to guarantee optimal adaptivity across mobile and desktop devices. Module editing, hook usage, and template/database modifications to optimize website performance.',
+          skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
+          logo: '/assets/litesolutions.webp'
+        },
+        {
+          title: 'Search Engine Optimization Specialist',
+          company: 'tbb Agency',
+          period: 'Jan. 2023 - Jul. 2023',
+          description: 'Technical optimization of websites and online shops (Magento, PrestaShop, WordPress, Shopify, Drupal) to ensure correct crawling and indexing. Led a team of 5 SEO specialists, designing and executing strategies aligned with KPIs. Conducted regular technical audits, implemented SEO best practices, and set up advanced web analytics using Google Search Console, Google Analytics, and Google Tag Manager to track and analyze user behavior.',
+          skills: ['Technical SEO', 'Team Leadership', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
+          logo: '/assets/logo-tbb.agency.webp'
+        },
+        {
+          title: 'Junior Web Positioning (SEO) Technician',
+          company: 'tbb Agency',
+          period: 'Jan. 2021 - Dec. 2022',
+          description: 'Executed regular technical audits and implemented search engine optimization (SEO) best practices for various clients and e-commerce platforms. Set up and monitored essential web analytics to measure organic performance and propose continuous improvements in search engine visibility and usability.',
+          skills: ['SEO', 'Google Search Console', 'Web Analytics', 'Web Optimization', 'E-commerce'],
+          logo: '/assets/logo-tbb.agency.webp'
         }
       ]
     },
@@ -718,25 +741,36 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       description: 'Experiència en desenvolupament frontend amb enfocament en arquitectura escalable, rendiment i col·laboració en equips multidisciplinaris.',
       items: [
         {
-          title: 'Senior Frontend Developer',
-          company: 'Tech Company Inc.',
-          period: '2023 - Present',
-          description: 'Desenvolupament d\'aplicacions web modernes amb React, Angular i TypeScript. Lideratge d\'equip i mentoring de desenvolupadors junior.',
-          skills: ['React', 'TypeScript', 'Angular', 'Team Lead']
+          title: 'Desenvolupador Frontend',
+          company: 'Barcelona Activa',
+          period: 'nov. 2025 - actualitat',
+          description: 'Contribueixo al desenvolupament tècnic de la plataforma web de reptes lògics per a la comunitat d\'estudiants d\'IT Academy de Barcelona Activa. El meu rol es centra en la construcció d\'un producte robust, escalable i centrat en els estudiants. Implementació d\'interfícies modernes i manteniment de codi net per millorar l\'escalabilitat del projecte, col·laboració estreta amb Backend i Product Owners per al desplegament de funcionalitats complexes, i execució de sprints quinzenals sota entorn Agile, assegurant la qualitat en cada lliurament.',
+          skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
+          logo: '/assets/barcelonaactiva.webp'
         },
         {
-          title: 'Frontend Developer',
-          company: 'Digital Agency',
-          period: '2021 - 2023',
-          description: 'Creació d\'interfícies responsive i optimització de rendiment. Treball amb Tailwind CSS i metodologies àgiles.',
-          skills: ['React', 'Tailwind CSS', 'Responsive Design', 'Agile']
+          title: 'Desenvolupador Web Frontend Junior',
+          company: 'Lite Solutions',
+          period: 'set. 2024 - des. 2024',
+          description: 'Desenvolupador Frontend especialitzat en solucions e-Commerce. Responsable del desenvolupament i manteniment de plataformes de WordPress i PrestaShop, implementant funcionalitats personalitzades mitjançant JavaScript/jQuery, PHP i MySQL. Maquetació responsive amb Bootstrap i media queries per garantir una adaptació òptima en dispositius mòbils. Edició de mòduls, ús de hooks i modificacions en plantilles i bases de dades per optimitzar els llocs web.',
+          skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
+          logo: '/assets/litesolutions.webp'
         },
         {
-          title: 'Junior Developer',
-          company: 'Startup Studio',
-          period: '2020 - 2021',
-          description: 'Primers passos en desenvolupament web. Projectes amb HTML, CSS, JavaScript vanilla i primeres experiències amb frameworks.',
-          skills: ['HTML', 'CSS', 'JavaScript', 'React']
+          title: 'Search Engine Optimization Specialist',
+          company: 'tbb Agency',
+          period: 'gen. 2023 - jul. 2023',
+          description: 'Optimització tècnica de llocs web i botigues online (Magento, PrestaShop, WordPress, Shopify, Drupal) per assegurar un correcte rastreig i indexació. Lideratge d\'un equip de SEO de 5 persones, dissenyant i executant estrategies alineades amb KPIs. Realització d\'auditories tècniques periòdiques, implementació de bones pràctiques de SEO i configuració avançada d\'analítica web amb Google Search Console, Google Analytics i Google Tag Manager per al seguiment i anàlisi del comportament dels usuaris.',
+          skills: ['SEO Tècnic', 'Lideratge d\'Equips', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
+          logo: '/assets/logo-tbb.agency.webp'
+        },
+        {
+          title: 'Tècnic en Posicionamiento Web (SEO) Junior',
+          company: 'tbb Agency',
+          period: 'gen. 2021 - des. 2022',
+          description: 'Execució d\'auditories tècniques periòdiques i implementació de bones pràctiques d\'optimització en motors de cerca (SEO) per a diversos clients i plataformes d\'e-commerce. Configuració i seguiment d\'analítica web essencial per mesurar el rendiment orgànic i proposar millores contínues d\'usabilitat i visibilitat en cercadors.',
+          skills: ['SEO', 'Google Search Console', 'Analítica Web', 'Optimització Web', 'E-commerce'],
+          logo: '/assets/logo-tbb.agency.webp'
         }
       ]
     },

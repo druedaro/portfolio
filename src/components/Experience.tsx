@@ -60,34 +60,52 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
             background: rgba(239,68,68,0.04);
           }
         `}</style>
-        <div className="space-y-2">
+        <div className="space-y-4">
           {items.map((exp, idx) => (
             <div
               key={idx}
               className="exp-card group relative border-l-2 border-slate-200 dark:border-white/10 hover:border-red-500/60 pb-4 cursor-default reveal reveal-up"
               style={{ transitionDelay: `${idx * 150}ms` }}
             >
-              <div className="absolute -left-[9px] top-4 h-[16px] w-[16px] rounded-full border-2 border-red-500/40 bg-red-500/10 dark:bg-red-500/20 transition-all duration-400 group-hover:border-red-500 group-hover:bg-red-500/20 group-hover:scale-110" />
+              <div className="absolute -left-[9px] top-7 h-[16px] w-[16px] rounded-full border-2 border-red-500/40 bg-red-500/10 dark:bg-red-500/20 transition-all duration-400 group-hover:border-red-500 group-hover:bg-red-500/20 group-hover:scale-110" />
 
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
-                <div>
-                  <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white group-hover:text-red-500 transition-colors duration-300">{exp.title}</h3>
-                  <p className="text-slate-500 dark:text-neutral-400 text-sm">{exp.company}</p>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                {/* Logo */}
+                {exp.logo && (
+                  <div className="flex-shrink-0 mt-1">
+                    <div className="w-12 h-12 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-1.5 transition-all duration-300 group-hover:border-red-500/20 shadow-sm">
+                      <img
+                        src={exp.logo}
+                        alt={exp.company}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
+                    <div>
+                      <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white group-hover:text-red-500 transition-colors duration-300">{exp.title}</h3>
+                      <p className="text-slate-500 dark:text-neutral-400 text-sm font-medium">{exp.company}</p>
+                    </div>
+                    <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
+                  </div>
+
+                  <p className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed">{exp.description}</p>
+
+                  <div className="flex flex-wrap gap-2">
+                    {exp.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-2.5 py-1 text-xs font-medium bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-neutral-300 border border-slate-200 dark:border-white/10 rounded-full group-hover:border-red-500/30 group-hover:text-slate-900 dark:group-hover:text-white transition-colors duration-300"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
-              </div>
-
-              <p className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed">{exp.description}</p>
-
-              <div className="flex flex-wrap gap-2">
-                {exp.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-2.5 py-1 text-xs font-medium bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-neutral-300 border border-slate-200 dark:border-white/10 rounded-full group-hover:border-red-500/30 group-hover:text-slate-900 dark:group-hover:text-white transition-colors duration-300"
-                  >
-                    {skill}
-                  </span>
-                ))}
               </div>
             </div>
           ))}

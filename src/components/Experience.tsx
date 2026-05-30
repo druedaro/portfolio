@@ -29,12 +29,17 @@ const experiences: ExperienceItem[] = [
 
 import type { ExperienceTranslation } from '../i18n/translations';
 
-export default function Experience({ t = {} as Partial<ExperienceTranslation> }: { t?: Partial<ExperienceTranslation> }) {
+import ReadMore from './ReadMore';
+
+export default function Experience({ t = {} as Partial<ExperienceTranslation>, lang = 'es' }: { t?: Partial<ExperienceTranslation>, lang?: string }) {
   const sectionId = t.id || 'experiencia';
   const sectionTag = t.section || 'Experiencia';
   const sectionTitle = t.title || 'Trayectoria profesional';
   const sectionDesc = t.description || 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.';
   const items = t.items || experiences;
+
+  const showMoreLabel = lang === 'es' ? 'Ver más' : lang === 'en' ? 'Read more' : 'Veure més';
+  const showLessLabel = lang === 'es' ? 'Ver menos' : lang === 'en' ? 'Read less' : 'Veure menys';
 
   return (
     <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
@@ -127,10 +132,14 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
                     <p className="text-xs md:text-sm font-mono text-slate-500 dark:text-neutral-400 md:whitespace-nowrap">{exp.period}</p>
                   </div>
 
-                  <p 
-                    className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: formatDescription(exp.description) }}
-                  />
+                  <div className="mb-3">
+                    <ReadMore
+                      html={formatDescription(exp.description)}
+                      showMoreLabel={showMoreLabel}
+                      showLessLabel={showLessLabel}
+                      maskBgClass="from-slate-50 dark:from-slate-950 group-hover:from-[#fdf6f6] dark:group-hover:from-[#0a0718] transition-colors duration-300"
+                    />
+                  </div>
 
                   <div className="flex flex-wrap gap-2">
                     {exp.skills.map((skill) => (

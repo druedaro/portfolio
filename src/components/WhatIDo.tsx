@@ -86,13 +86,13 @@ export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
                     </button>
 
                     <div
-                      className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
                     >
-                      <ul className="space-y-2 px-5 pb-5 pt-1">
+                      <ul className="space-y-3.5 px-6 pb-6 pt-2">
                         {svc.items.map((item) => (
-                          <li key={item} className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
-                            <span className="text-red-400">·</span>
-                            <span dangerouslySetInnerHTML={{ __html: formatDescription(item) }} />
+                          <li key={item} className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <span className="w-1.5 h-1.5 rounded-full bg-red-500/80 dark:bg-red-400 mt-2 shrink-0" aria-hidden="true" />
+                            <span dangerouslySetInnerHTML={{ __html: formatDescription(item) }} className="flex-1" />
                           </li>
                         ))}
                       </ul>

@@ -2,12 +2,17 @@ import React from 'react';
 import type { EducationTranslation } from '../i18n/translations';
 import { formatDescription, getInstitutionLink } from '../utils/text';
 
-export default function Education({ t = {} as Partial<EducationTranslation> }: { t?: Partial<EducationTranslation> }) {
+import ReadMore from './ReadMore';
+
+export default function Education({ t = {} as Partial<EducationTranslation>, lang = 'es' }: { t?: Partial<EducationTranslation>, lang?: string }) {
   const sectionId = t.id || 'educación';
   const sectionTag = t.section || 'Educación';
   const sectionTitle = t.title || 'Formación y estudios';
   const sectionDesc = t.description || '';
   const items = t.items || [];
+
+  const showMoreLabel = lang === 'es' ? 'Ver más' : lang === 'en' ? 'Read more' : 'Veure més';
+  const showLessLabel = lang === 'es' ? 'Ver menos' : lang === 'en' ? 'Read less' : 'Veure menys';
 
   return (
     <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
@@ -109,10 +114,14 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
                     </div>
                   </div>
 
-                  <p 
-                    className="text-slate-700 dark:text-neutral-300 mb-4 leading-relaxed text-sm md:text-base"
-                    dangerouslySetInnerHTML={{ __html: formatDescription(edu.description) }}
-                  />
+                  <div className="mb-4">
+                    <ReadMore
+                      html={formatDescription(edu.description)}
+                      showMoreLabel={showMoreLabel}
+                      showLessLabel={showLessLabel}
+                      maskBgClass="from-white dark:from-slate-950 group-hover:from-slate-50/55 dark:group-hover:from-white/[0.05] transition-colors duration-300"
+                    />
+                  </div>
 
                   <div className="flex flex-wrap gap-2 pt-3 border-t border-slate-100 dark:border-white/5">
                     {edu.focus.map((item) => (

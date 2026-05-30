@@ -38,7 +38,7 @@ export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
   const [open, setOpen] = useState<string>(t.services[0]?.id ?? '');
 
   return (
-    <section className="relative overflow-hidden py-20 lg:py-24">
+    <section className="relative overflow-hidden py-12 md:py-20 lg:py-24">
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>

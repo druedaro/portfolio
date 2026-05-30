@@ -32,7 +32,7 @@ export default function Competencies({ t = {} as Partial<CompetenciesTranslation
   const sectionGroups = t.groups || groups;
 
   return (
-    <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
+    <section id={sectionId} className="relative overflow-hidden py-12 md:py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 reveal reveal-up">

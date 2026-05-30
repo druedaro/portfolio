@@ -364,6 +364,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
             'Planificación y ejecución de **migraciones técnicas complejas** desde otras plataformas hacia **Magento**',
             'Enfoque de conversión (**CRO**), optimización del **checkout** y flujos de compra del usuario'
           ]
+        },
+        {
+          id: 'analytics',
+          title: 'Analítica Web & Medición',
+          items: [
+            'Configuración avanzada de contenedores en **Google Tag Manager** (Web & Server-Side)',
+            'Implementación de eventos de comercio electrónico mejorado y audiencias en **Google Analytics 4**',
+            'Integración técnica de píxeles publicitarios (**Facebook Pixel, TikTok, Google Ads**) y API de Conversiones (CAPI)'
+          ]
         }
       ]
     },
@@ -648,6 +657,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
             'Planning and executing **complex technical migrations** from other platforms to **Magento**',
             'Conversion Rate Optimization (**CRO**), **checkout enhancement**, and user checkout flow optimization'
           ]
+        },
+        {
+          id: 'analytics',
+          title: 'Web Analytics & Measurement',
+          items: [
+            'Advanced container setup in **Google Tag Manager** (Web & Server-Side)',
+            'Implementing Enhanced E-commerce event tracking and custom audiences in **Google Analytics 4**',
+            'Technical integration of advertising pixels (**Facebook Pixel, TikTok, Google Ads**) and Conversions API (CAPI)'
+          ]
         }
       ]
     },
@@ -931,6 +949,15 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
             'Manteniment, desenvolupament de mòduls i adaptacions en **WordPress, PrestaShop i Shopify**',
             'Planificació i execució de **migracions tècniques complexes** des d\'altres plataformes cap a **Magento**',
             'Enfocament de conversió (**CRO**), optimització del **checkout** i fluxos de compra de l\'usuari'
+          ]
+        },
+        {
+          id: 'analytics',
+          title: 'Analítica Web & Mesura',
+          items: [
+            'Configuració avançada de contenidors en **Google Tag Manager** (Web & Server-Side)',
+            'Implementació d\'esdeveniments de comerç electrònic millorat i audiències en **Google Analytics 4**',
+            'Integració tècnica de píxels publicitaris (**Facebook Pixel, TikTok, Google Ads**) i API de Conversions (CAPI)'
           ]
         }
       ]

@@ -369,9 +369,9 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'analytics',
           title: 'Analítica Web & Medición',
           items: [
-            'Configuración avanzada de contenedores en **Google Tag Manager** (Web & Server-Side)',
+            'Configuración avanzada de contenedores en **Google Tag Manager**',
             'Implementación de eventos de comercio electrónico mejorado y audiencias en **Google Analytics 4**',
-            'Integración técnica de píxeles publicitarios (**Facebook Pixel, TikTok, Google Ads**) y API de Conversiones (CAPI)'
+            'Integración técnica de píxeles publicitarios (**Facebook Pixel, TikTok, Google Ads**)'
           ]
         }
       ]
@@ -662,9 +662,9 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'analytics',
           title: 'Web Analytics & Measurement',
           items: [
-            'Advanced container setup in **Google Tag Manager** (Web & Server-Side)',
+            'Advanced container setup in **Google Tag Manager**',
             'Implementing Enhanced E-commerce event tracking and custom audiences in **Google Analytics 4**',
-            'Technical integration of advertising pixels (**Facebook Pixel, TikTok, Google Ads**) and Conversions API (CAPI)'
+            'Technical integration of advertising pixels (**Facebook Pixel, TikTok, and Google Ads**)'
           ]
         }
       ]
@@ -955,9 +955,9 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'analytics',
           title: 'Analítica Web & Mesura',
           items: [
-            'Configuració avançada de contenidors en **Google Tag Manager** (Web & Server-Side)',
+            'Configuració avançada de contenidors en **Google Tag Manager**',
             'Implementació d\'esdeveniments de comerç electrònic millorat i audiències en **Google Analytics 4**',
-            'Integració tècnica de píxels publicitaris (**Facebook Pixel, TikTok, Google Ads**) i API de Conversions (CAPI)'
+            'Integració tècnica de píxels publicitaris (**Facebook Pixel, TikTok, Google Ads**)'
           ]
         }
       ]

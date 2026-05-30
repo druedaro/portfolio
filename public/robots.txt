@@ -1,2 +1,21 @@
 User-agent: *
 Allow: /
+
+# Bloquear bots de rastreo SEO y scraping agresivo innecesarios para el portfolio
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+# Referencia del Sitemap
+Sitemap: https://davidrueda.dev/sitemap.xml

@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatDescription, getCompanyLink } from '../utils/text';
 
 const experiences = [
   {
@@ -32,21 +33,6 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
   const sectionTitle = t.title || 'Trayectoria profesional';
   const sectionDesc = t.description || 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.';
   const items = t.items || experiences;
-
-  const getCompanyLink = (name: string) => {
-    const normalized = name.toLowerCase();
-    if (normalized.includes('barcelona activa')) return 'https://www.barcelonactiva.cat/';
-    if (normalized.includes('lite solutions')) return 'https://litesolutions.es/';
-    if (normalized.includes('tbb agency') || normalized.includes('tbb.agency')) return 'https://tbb.agency/';
-    return null;
-  };
-
-  const formatDescription = (text: string) => {
-    if (!text) return '';
-    return text
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
-  };
 
   return (
     <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">

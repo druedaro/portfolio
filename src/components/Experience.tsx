@@ -33,6 +33,13 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
   const sectionDesc = t.description || 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.';
   const items = t.items || experiences;
 
+  const formatDescription = (text: string) => {
+    if (!text) return '';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
+  };
+
   return (
     <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
@@ -93,7 +100,10 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
                     <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
                   </div>
 
-                  <p className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed">{exp.description}</p>
+                  <p 
+                    className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: formatDescription(exp.description) }}
+                  />
 
                   <div className="flex flex-wrap gap-2">
                     {exp.skills.map((skill) => (

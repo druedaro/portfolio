@@ -176,7 +176,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Desarrollador Frontend',
           company: 'Barcelona Activa',
           period: 'nov. 2025 - actualidad',
-          description: 'Lidero el desarrollo técnico y la maquetación de la plataforma de retos lógicos de IT Academy, un producto clave enfocado en potenciar el aprendizaje técnico de la comunidad estudiantil. Colaboro de forma transversal con Backend y Product Owners para diseñar y desplegar funcionalidades avanzadas, priorizando el rendimiento, la accesibilidad (WCAG) y la usabilidad. Aplico metodologías ágiles (Scrum) en sprints quincenales y aseguro la escalabilidad a largo plazo del ecosistema mediante refactorizaciones estratégicas, arquitectura limpia y la implementación de componentes reutilizables de alta calidad.',
+          description: 'Lidero el desarrollo técnico y la maquetación de la **plataforma de retos lógicos de IT Academy**, un producto clave enfocado en potenciar el aprendizaje técnico de la comunidad estudiantil. Colaboro de forma transversal con Backend y Product Owners para diseñar y desplegar funcionalidades avanzadas, priorizando el **rendimiento, la accesibilidad (WCAG) y la usabilidad**. Aplico metodologías ágiles (**Scrum**) en sprints quincenales y aseguro la escalabilidad a largo plazo del ecosistema mediante **refactorizaciones estratégicas, arquitectura limpia** y la implementación de componentes reutilizables de alta calidad.',
           skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
           logo: '/assets/barcelonaactiva.webp'
         },
@@ -184,7 +184,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Desarrollador Web Frontend Junior',
           company: 'Lite Solutions',
           period: 'sept. 2024 - dic. 2024',
-          description: 'Especializado en el desarrollo frontend de soluciones e-commerce a medida. Responsable del mantenimiento evolutivo y la optimización de tiendas online basadas en WordPress y PrestaShop. Implementé funcionalidades interactivas avanzadas con JavaScript ES6 y jQuery, estructuré consultas eficientes a bases de datos relacionales (MySQL) y desarrollé adaptaciones lógicas con PHP. Aseguré una experiencia de usuario fluida y multidispositivo mediante maquetación semántica y diseño adaptativo con Bootstrap y CSS avanzado, optimizando plantillas y extendiendo módulos del core técnico.',
+          description: 'Especializado en el desarrollo frontend de soluciones **e-commerce a medida**. Responsable del mantenimiento evolutivo y la optimización de tiendas online basadas en **WordPress y PrestaShop**. Implementé funcionalidades interactivas avanzadas con **JavaScript ES6 y jQuery**, estructuré consultas eficientes a bases de datos relacionales (**MySQL**) y desarrollé adaptaciones lógicas con **PHP**. Aseguré una experiencia de usuario fluida y multidispositivo mediante **maquetación semántica y diseño adaptativo con Bootstrap y CSS avanzado**, optimizando plantillas y extendiendo módulos del core técnico.',
           skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
           logo: '/assets/litesolutions.webp'
         },
@@ -192,7 +192,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Search Engine Optimization Specialist',
           company: 'tbb Agency',
           period: 'ene. 2023 - jul. 2023',
-          description: 'Dirección técnica de la estrategia SEO y analítica web de más de 50 e-commerce y portales de alta envergadura construidos con plataformas complejas (Magento, PrestaShop, Shopify, WordPress y Drupal). Lideré un equipo de 5 consultores SEO, coordinando auditorías técnicas de rastreo, indexabilidad e integraciones críticas de datos. Diseñé e implementé arquitecturas complejas de medición de analítica web mediante Google Tag Manager, Google Analytics 4 y Search Console, transformando datos de comportamiento de usuario en insights de negocio que mejoraron significativamente la visibilidad orgánica de las marcas.',
+          description: 'Dirección técnica de la estrategia **SEO y analítica web** de más de 50 e-commerce y portales de alta envergadura construidos con plataformas complejas (**Magento, PrestaShop, Shopify, WordPress y Drupal**). Lideré un equipo de **5 consultores SEO**, coordinando auditorías técnicas de rastreo, indexabilidad e integraciones críticas de datos. Diseñé e implementé arquitecturas complejas de medición de analítica web mediante **Google Tag Manager, Google Analytics 4 y Search Console**, transformando datos de comportamiento de usuario en insights de negocio que mejoraron significativamente la visibilidad orgánica de las marcas.',
           skills: ['SEO Técnico', 'Liderazgo de Equipos', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
           logo: '/assets/logo-tbb.agency.webp'
         },
@@ -200,7 +200,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Técnico en Posicionamiento Web (SEO) Junior',
           company: 'tbb Agency',
           period: 'ene. 2021 - dic. 2022',
-          description: 'Ejecución de auditorías SEO on-page y off-page orientadas a corregir problemas de velocidad de carga, enlazado interno e indexación. Responsable de la monitorización del rendimiento de búsquedas y de la correcta implementación técnica de etiquetas semánticas y metadatos en múltiples gestores de contenido. Configuré paneles de control de analítica de tráfico esenciales y documenté informes de rendimiento técnico para guiar mejoras de visibilidad y optimización web.',
+          description: 'Ejecución de **auditorías SEO on-page y off-page** orientadas a corregir problemas de velocidad de carga, enlazado interno e indexación. Responsable de la monitorización del rendimiento de búsquedas y de la correcta implementación técnica de **etiquetas semánticas y metadatos** en múltiples gestores de contenido. Configuré paneles de control de analítica de tráfico esenciales y documenté **informes de rendimiento técnico** para guiar mejoras de visibilidad y optimización web.',
           skills: ['SEO', 'Google Search Console', 'Analítica Web', 'Optimización Web', 'E-commerce'],
           logo: '/assets/logo-tbb.agency.webp'
         }
@@ -216,7 +216,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Bootcamp Frontend (React)',
           institution: 'IT Academy · Barcelona Activa',
           year: 'mar. 2025 – ene. 2026',
-          description: 'Programa intensivo acreditado con Microcredencial Universitaria por la UPC. Desarrollé aplicaciones reales sprint a sprint: desde maquetación semántica con HTML y CSS hasta SPAs completas con React 19 y TypeScript, consumo de APIs REST, gestión de datos con Supabase y autenticación. El proyecto final, SEO Compass —plataforma colaborativa de gestión SEO— obtuvo la máxima nota. Trabajo en equipo con Git y metodologías ágiles en todo el programa.',
+          description: 'Programa intensivo acreditado con **Microcredencial Universitaria por la UPC**. Desarrollo práctico de aplicaciones reales mediante sprints quincenales, cubriendo desde maquetación semántica estructurada hasta la creación de **Single Page Applications (SPAs)** robustas con **React 19** y **TypeScript**. Integración de base de datos y autenticación mediante **Supabase**, consumo optimizado de **APIs REST** y control de versiones colaborativo con **Git**. Proyecto final, **SEO Compass** (plataforma colaborativa de gestión SEO), calificado con la **nota máxima (10)**.',
           focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'APIs REST', 'Metodologías ágiles'],
           logo: '/assets/itacademy.webp',
           grade: 'Proyecto final: 10'
@@ -225,7 +225,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'React: Hooks y MERN',
           institution: 'DevTalles',
           year: 'jun. 2024 – oct. 2024',
-          description: 'Formación avanzada en React moderno diseñada íntegramente con Hooks y componentes funcionales. El curso aborda useState, useEffect, useContext, useReducer y hooks personalizados, además de routing con React Router, gestión de estado global y construcción de aplicaciones full-stack con la pila MERN. Énfasis en buenas prácticas, código limpio y patrones profesionales aplicados desde el primer día.',
+          description: 'Especialización avanzada en arquitectura modular con **React.js**, componentes funcionales y **Hooks** nativos e integrados (`useState`, `useEffect`, `useContext`, `useReducer`). Dominio de enrutado dinámico mediante **React Router** y gestión del estado de la aplicación. Construcción de aplicaciones integrales bajo la pila **MERN** (MongoDB, Express, React, Node.js) aplicando metodologías de **Clean Code** y patrones de diseño profesionales desde la base.',
           focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
           logo: '/assets/devtalles-white-black.webp'
         },
@@ -233,7 +233,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Confección y Publicación de Páginas Web (IFCD0110)',
           institution: 'The Corner Centre d\'Estudis',
           year: 'mar. 2024 – oct. 2024',
-          description: 'Certificado de profesionalidad oficial de 480 horas que sentó las bases técnicas del desarrollo web. Aprendí HTML semántico para SEO, CSS avanzado con animaciones y layouts modernos, JavaScript para añadir dinamismo, Bootstrap y diseño responsive. También desarrollé competencias en WordPress —personalización de temas, plugins, WPO y seguridad— y en la integración de herramientas de medición como Google Analytics y Google Tag Manager.',
+          description: 'Certificado de profesionalidad oficial (480 h) enfocado en fundamentos de ingeniería web. Adquisición de competencias sólidas en **HTML5 semántico** orientado a la accesibilidad y SEO, **CSS3 moderno** (layouts flexibles con Grid y Flexbox, media queries), y programación interactiva con **JavaScript vanilla**. Especialización en el ecosistema **WordPress** (diseño adaptado, desarrollo de temas, plugins y WPO) e integraciones avanzadas de analítica con **Google Analytics** y **Google Tag Manager**. Calificación final sobresaliente con **nota: 9,90**.',
           focus: ['HTML semántico', 'CSS avanzado', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
           logo: '/assets/thecorner.webp',
           grade: 'Nota: 9,90'
@@ -242,7 +242,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Máster en Dirección de e-Commerce y Marketing Digital',
           institution: 'Universitat de Barcelona',
           year: 'sept. 2019 – jul. 2020',
-          description: 'Máster de formación permanente aprobado por la agencia de posgrado de la UB con enfoque estratégico y operativo. Adquirí dominio en SEO técnico y on-page, SEM, analítica web avanzada, social media, email marketing y gestión de e-commerce. El trabajo de fin de máster, un plan de marketing digital completo para un centro médico privado, obtuvo una nota de 9,5. Profesores en activo de empresas líderes del sector.',
+          description: 'Posgrado de enfoque estratégico avalado por la **Universitat de Barcelona**. Especialización técnica y operativa en canales de adquisición digital, incluyendo **SEO técnico**, SEM/Google Ads, analítica web y gestión integral de plataformas e-commerce. Trabajo de fin de máster consistente en el desarrollo de un plan integral de marketing digital para una clínica médica, calificado con una **nota de 9,5** (calificación global media del máster: **9,93**).',
           focus: ['SEO técnico', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Marketing'],
           logo: '/assets/ub.webp',
           grade: 'Nota: 9,93'
@@ -251,7 +251,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Grado en Administración y Dirección de Empresas',
           institution: 'Universitat de Barcelona',
           year: '2015 – 2019',
-          description: 'Grado universitario con mención en Organización de Empresas y suplemento europeo. Cuatro años de formación en dirección general, estrategia empresarial, finanzas, marketing y recursos humanos que me dan una visión de negocio sólida aplicada hoy al desarrollo de producto digital. El trabajo de fin de grado, sobre las implicaciones de la tecnología 5G en el mundo empresarial, fue calificado con un 9.',
+          description: 'Grado oficial universitario con **mención en Organización de Empresas** y Suplemento Europeo al Título. Cuatro años de formación en alta dirección, **estrategia de negocio**, finanzas corporativas, marketing y gestión de equipos. Esta formación me aporta una visión comercial e institucional muy valiosa que aplico directamente en el desarrollo de productos digitales orientados al cliente final. Trabajo de fin de grado centrado en el impacto tecnológico del **5G en el tejido empresarial** (calificado con **nota: 9**).',
           focus: ['Estrategia empresarial', 'Gestión financiera', 'Marketing', 'Organización de Empresas', 'Dirección general'],
           logo: '/assets/ub.webp'
         }
@@ -460,7 +460,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Frontend Developer',
           company: 'Barcelona Activa',
           period: 'Nov. 2025 - Present',
-          description: 'Lead the frontend engineering and layout design of IT Academy\'s logical challenges platform, a critical student-centered web product. Collaborate closely with Backend developers and Product Owners to design and deliver complex modules, ensuring exceptional web performance, accessibility (WCAG), and clean code standards. Drive agile sprint execution (Scrum), implement modular architecture, and execute strategic refactoring to build a robust, scalable, and highly interactive learning application.',
+          description: 'Lead the frontend engineering and layout design of **IT Academy\'s logical challenges platform**, a critical student-centered web product. Collaborate closely with Backend developers and Product Owners to design and deliver complex modules, ensuring exceptional **web performance, accessibility (WCAG), and clean code** standards. Drive agile sprint execution (**Scrum**), implement modular architecture, and execute **strategic refactoring** to build a robust, scalable, and highly interactive learning application.',
           skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
           logo: '/assets/barcelonaactiva.webp'
         },
@@ -468,7 +468,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Junior Frontend Web Developer',
           company: 'Lite Solutions',
           period: 'Sept. 2024 - Dec. 2024',
-          description: 'Specialized in frontend development for tailored e-commerce systems. Led the feature enhancement, debugging, and layout optimization of prominent online stores powered by WordPress and PrestaShop. Crafted interactive user experiences using JavaScript ES6 and jQuery, developed database integrations with PHP and MySQL, and implemented pixel-perfect, mobile-first interfaces using Bootstrap and CSS3. Conducted modular extensions, utilized lifecycle hooks, and optimized templates to improve store conversion rates and load times.',
+          description: 'Specialized in frontend development for tailored **e-commerce systems**. Led the feature enhancement, debugging, and layout optimization of prominent online stores powered by **WordPress and PrestaShop**. Crafted interactive user experiences using **JavaScript ES6 and jQuery**, developed database integrations with **PHP and MySQL**, and implemented pixel-perfect, mobile-first interfaces using **Bootstrap and CSS3**. Conducted modular extensions, utilized lifecycle hooks, and optimized templates to improve store conversion rates and load times.',
           skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
           logo: '/assets/litesolutions.webp'
         },
@@ -476,7 +476,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Search Engine Optimization Specialist',
           company: 'tbb Agency',
           period: 'Jan. 2023 - Jul. 2023',
-          description: 'Spearheaded the technical SEO strategy and web analytics implementation for over 50 large-scale e-commerce stores and corporate websites (Magento, PrestaShop, Shopify, WordPress, and Drupal). Led and mentored a high-performing team of 5 SEO specialists, coordinating deep crawl audits, indexability optimizations, and data integration. Architected complex measurement plans using Google Tag Manager, Google Analytics 4, and Search Console, turning raw user behavior data into actionable commercial insights that drove massive organic traffic growth.',
+          description: 'Spearheaded the technical **SEO strategy and web analytics** implementation for over 50 large-scale e-commerce stores and corporate websites (**Magento, PrestaShop, Shopify, WordPress, and Drupal**). Led and mentored a high-performing team of **5 SEO specialists**, coordinating deep crawl audits, indexability optimizations, and data integration. Architected complex measurement plans using **Google Tag Manager, Google Analytics 4, and Search Console**, turning raw user behavior data into actionable commercial insights that drove massive organic traffic growth.',
           skills: ['Technical SEO', 'Team Leadership', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
           logo: '/assets/logo-tbb.agency.webp'
         },
@@ -484,7 +484,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Junior Web Positioning (SEO) Technician',
           company: 'tbb Agency',
           period: 'Jan. 2021 - Dec. 2022',
-          description: 'Executed comprehensive on-page and off-page SEO audits, focusing on page speed, internal linking, and crawling errors. Responsible for search visibility monitoring, metadata implementation, and structured data setup across diverse CMS environments. Configured basic analytics tracking, tracked keyword performance, and compiled monthly reporting to facilitate data-driven site optimizations.',
+          description: 'Executed comprehensive **on-page and off-page SEO audits**, focusing on page speed, internal linking, and crawling errors. Responsible for search visibility monitoring, **metadata implementation**, and structured data setup across diverse CMS environments. Configured basic analytics tracking, tracked keyword performance, and compiled **monthly reporting** to facilitate data-driven site optimizations.',
           skills: ['SEO', 'Google Search Console', 'Web Analytics', 'Web Optimization', 'E-commerce'],
           logo: '/assets/logo-tbb.agency.webp'
         }
@@ -500,7 +500,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Frontend Bootcamp (React)',
           institution: 'IT Academy · Barcelona Activa',
           year: 'Mar. 2025 – Jan. 2026',
-          description: 'Intensive programme accredited with a University Micro-credential by the UPC. I built real-world applications sprint by sprint: from semantic HTML/CSS layouts to full SPAs with React 19 and TypeScript, REST API consumption, Supabase data management and authentication. My final project, SEO Compass — a collaborative SEO management platform — received a perfect score. Team collaboration with Git and agile methodologies throughout.',
+          description: 'Intensive program accredited with a **UPC University Micro-credential**. Practical development of real-world applications using biweekly sprints, covering structured semantic layout to building robust **Single Page Applications (SPAs)** using **React 19** and **TypeScript**. Integrated databases and authentication with **Supabase**, optimized **REST APIs** consumption, and managed collaborative version control with **Git**. Final project, **SEO Compass** (collaborative SEO management platform), awarded the **maximum grade (10)**.',
           focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'REST APIs', 'Agile'],
           logo: '/assets/itacademy.webp',
           grade: 'Final project: 10'
@@ -509,7 +509,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'React: Hooks & MERN',
           institution: 'DevTalles',
           year: 'Jun. 2024 – Oct. 2024',
-          description: "Advanced React training built entirely around Hooks and functional components. Covers useState, useEffect, useContext, useReducer and custom hooks, alongside React Router, global state management, and full-stack MERN app development. Strong emphasis on clean code, professional patterns, and real-world best practices from day one.",
+          description: 'Advanced specialization in modular architecture using **React.js**, functional components, and native/custom **Hooks** (`useState`, `useEffect`, `useContext`, `useReducer`). Expertise in dynamic routing via **React Router** and application state management. Built end-to-end full-stack applications under the **MERN** stack (MongoDB, Express, React, Node.js), applying **Clean Code** principles and professional design patterns from day one.',
           focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
           logo: '/assets/devtalles-white-black.webp'
         },
@@ -517,7 +517,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Web Page Design and Publishing (IFCD0110)',
           institution: 'The Corner Centre d\'Estudis',
           year: 'Mar. 2024 – Oct. 2024',
-          description: 'Official 480-hour professional certification that built my technical web foundations. I learned semantic HTML for SEO, advanced CSS with animations and modern layouts, JavaScript for interactivity, Bootstrap and responsive design. Also gained hands-on experience with WordPress — theme customisation, plugins, WPO and security — and measurement tools like Google Analytics and Google Tag Manager.',
+          description: 'Official 480-hour vocational certificate establishing a solid web engineering foundation. Mastery of **semantic HTML5** for accessibility (WCAG) and SEO, **modern CSS3** (layouts using Flexbox, CSS Grid, and media queries), and interactive scripting with **vanilla JavaScript**. Developed extensive hands-on expertise in the **WordPress** ecosystem (custom themes, plugins, and WPO optimization) and analytics integration with **Google Analytics** and **Google Tag Manager**. Achieved an outstanding final grade of **9.90**.',
           focus: ['Semantic HTML', 'Advanced CSS', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
           logo: '/assets/thecorner.webp',
           grade: 'Grade: 9.90'
@@ -526,7 +526,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Master in E-Commerce & Digital Marketing Management',
           institution: 'Universitat de Barcelona',
           year: 'Sept. 2019 – Jul. 2020',
-          description: "Postgraduate programme approved by the UB's postgraduate agency with a strategic and operational focus. I gained expertise in technical and on-page SEO, SEM, advanced web analytics, social media, email marketing, and e-commerce management. My final thesis — a full digital marketing plan for a private medical centre — was awarded 9.5. Taught by active professionals from leading industry companies.",
+          description: 'Postgraduate degree focused on digital business strategy approved by the **Universitat de Barcelona**. Gained deep technical expertise in acquisition channels including **technical SEO**, SEM/Google Ads, advanced web analytics, and full e-commerce system management. Final master thesis (a comprehensive digital marketing strategy for a private medical clinic) graded **9.5** (overall master grade average: **9.93**).',
           focus: ['Technical SEO', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Marketing'],
           logo: '/assets/ub.webp',
           grade: 'Grade: 9.93'
@@ -535,7 +535,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Bachelor in Business Administration (ADE)',
           institution: 'Universitat de Barcelona',
           year: '2015 – 2019',
-          description: 'University degree with a specialisation in Business Organisation and a European supplement. Four years of training in general management, business strategy, finance, marketing, and human resources — giving me the business perspective I now apply daily to digital product development. My final thesis on the implications of 5G technology in business was graded 9.',
+          description: 'Bachelor\'s degree with a specialization in **Business Organisation** and a European Diploma Supplement. Four years of training in executive management, **business strategy**, corporate finance, marketing, and team leadership. This background provides me with a strong business perspective that I apply directly when developing digital products. Final thesis on the impact of **5G technology in the business sector** graded **9**.',
           focus: ['Business strategy', 'Financial management', 'Marketing', 'Business Organisation', 'General management'],
           logo: '/assets/ub.webp'
         }
@@ -744,7 +744,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Desenvolupador Frontend',
           company: 'Barcelona Activa',
           period: 'nov. 2025 - actualitat',
-          description: 'Lidero el desenvolupament tècnic i la maquetació de la plataforma de reptes lògics d\'IT Academy, un producte clau enfocat a potenciar l\'aprenentatge tècnic de la comunitat estudiantil. Col·laboro transversalment amb Backend i Product Owners per dissenyar i desplegar funcionalitats avançades, prioritzant el rendiment, l\'accessibilitat (WCAG) i la usabilitat. Aplico metodologies àgiles (Scrum) en sprints quinzenals i asseguro l\'escalabilitat a llarg termini de l\'ecosistema mitjançant refactoritzacions estratègiques, arquitectura neta i components reutilitzables d\'alta qualitat.',
+          description: 'Lidero el desenvolupament tècnic i la maquetació de la **plataforma de reptes lògics d\'IT Academy**, un producte clau enfocat a potenciar l\'aprenentatge tècnic de la comunitat estudiantil. Col·laboro transversalment amb Backend i Product Owners per dissenyar i desplegar funcionalitats avançades, prioritzant el **rendiment, l\'accessibilitat (WCAG) i la usabilitat**. Aplico metodologies àgiles (**Scrum**) en sprints quinzenals i asseguro l\'escalabilitat a llarg termini de l\'ecosistema mitjançant **refactoritzacions estratègiques, arquitectura neta** i components reutilitzables d\'alta qualitat.',
           skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
           logo: '/assets/barcelonaactiva.webp'
         },
@@ -752,7 +752,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Desenvolupador Web Frontend Junior',
           company: 'Lite Solutions',
           period: 'set. 2024 - des. 2024',
-          description: 'Especialitzat en el desenvolupament frontend de solucions e-commerce a mida. Responsable del manteniment evolutiu i l\'optimització de botigues online basades en WordPress i PrestaShop. Vaig implementar funcionalitats interactives avançades amb JavaScript ES6 i jQuery, vaig estructurar consultes eficients a bases de dades relacionals (MySQL) i vaig desenvolupar adaptacions lògiques amb PHP. Vaig assegurar una experiència d\'usuari fluida i multidispositiu mitjançant maquetació semàntica i disseny adaptatiu com a Bootstrap i CSS avançat, optimitzant plantilles i estenent mòduls del core tècnic.',
+          description: 'Especialitzat en el desenvolupament frontend de solucions **e-commerce a mida**. Responsable del manteniment evolutiu i l\'optimització de botigues online basades en **WordPress i PrestaShop**. Vaig implementar funcionalitats interactives avançades amb **JavaScript ES6 i jQuery**, vaig estructurar consultes eficients a bases de dades relacionals (**MySQL**) i vaig desenvolupar adaptacions lògiques amb **PHP**. Vaig assegurar una experiència d\'usuari fluida i multidispositiu mitjançant **maquetació semàntica i disseny adaptatiu amb Bootstrap i CSS avançat**, optimitzant plantilles i estenent mòduls del core tècnic.',
           skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
           logo: '/assets/litesolutions.webp'
         },
@@ -760,7 +760,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Search Engine Optimization Specialist',
           company: 'tbb Agency',
           period: 'gen. 2023 - jul. 2023',
-          description: 'Direcció tècnica de l\'estratègia SEO i analítica web de més de 50 e-commerce i portals de gran envergadura construïts amb plataformes complexes (Magento, PrestaShop, Shopify, WordPress i Drupal). Vaig liderar un equip de 5 consultors SEO, coordinant auditories tècniques de rastreig, indexabilitat i integracions crítiques de dades. Vaig dissenyar i implementar arquitectures complexes de mesura d\'analítica web mitjançant Google Tag Manager, Google Analytics 4 i Search Console, transformant dades de comportament d\'usuari en insights de negoci que van millorar significativament la visibilitat orgànica de les marques.',
+          description: 'Direcció tècnica de l\'estratègia **SEO i analítica web** de més de 50 e-commerce i portals de gran envergadura construïts amb plataformes complexes (**Magento, PrestaShop, Shopify, WordPress i Drupal**). Vaig liderar un equip de **5 consultors SEO**, coordinant auditories tècniques de rastreig, indexabilitat i integracions crítiques de dades. Vaig dissenyar i implementar arquitectures complexes de mesura d\'analítica web mitjançant **Google Tag Manager, Google Analytics 4 i Search Console**, transformant dades de comportament d\'usuari en insights de negoci que van millorar significativament la visibilitat orgànica de les marques.',
           skills: ['SEO Tècnic', 'Lideratge d\'Equips', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
           logo: '/assets/logo-tbb.agency.webp'
         },
@@ -768,7 +768,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Tècnic en Posicionament Web (SEO) Junior',
           company: 'tbb Agency',
           period: 'gen. 2021 - des. 2022',
-          description: 'Execució d\'auditories SEO on-page i off-page orientades a corregir problemes de velocitat de càrrega, enllaçat intern i indexació. Responsable de la monitorització del rendiment de cerques i de la correcta implementació tècnica d\'etiquetes semàntiques i metadades en múltiples gestors de contingut. Vaig configurar panells de control de mesura de trànsit essencials i vaig documentar informes de rendiment tècnic per guiar millores de visibilitat i optimització web.',
+          description: 'Execució d\'**auditories SEO on-page i off-page** orientades a corregir problemes de velocitat de càrrega, enllaçat intern i indexació. Responsable de la monitorització del rendiment de cerques i de la correcta implementació tècnica d\'**etiquetes semàntiques i metadades** en múltiples gestors de contingut. Vaig configurar panells de control de mesura de trànsit essencials i vaig documentar **informes de rendiment tècnic** per guiar millores de visibilitat i optimització web.',
           skills: ['SEO', 'Google Search Console', 'Analítica Web', 'Optimització Web', 'E-commerce'],
           logo: '/assets/logo-tbb.agency.webp'
         }
@@ -784,7 +784,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Bootcamp Frontend (React)',
           institution: 'IT Academy · Barcelona Activa',
           year: 'mar. 2025 – gen. 2026',
-          description: 'Programa intensiu acreditat amb Microcredencial Universitària per la UPC. Vaig desenvolupar aplicacions reals sprint a sprint: des de maquetació semàntica amb HTML i CSS fins a SPAs completes amb React 19 i TypeScript, consum d\'APIs REST, gestió de dades amb Supabase i autenticació. El projecte final, SEO Compass —plataforma col·laborativa de gestió SEO— va obtenir la nota màxima. Treball en equip amb Git i metodologies àgils durant tot el programa.',
+          description: 'Programa intensiu acreditat amb **Microcredencial Universitària per la UPC**. Desenvolupament pràctic d\'aplicacions reals mitjançant sprints quinzenals, cobrint des de maquetació semàntica estructurada fins a la creació de **Single Page Applications (SPAs)** robustes amb **React 19** i **TypeScript**. Integració de base de dades i autenticació mitjançant **Supabase**, consum optimitzat de **APIs REST** i control de versions col·laboratiu amb **Git**. Projecte final, **SEO Compass** (plataforma col·laborativa de gestió SEO), qualificat amb la **nota màxima (10)**.',
           focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'APIs REST', 'Metodologies àgils'],
           logo: '/assets/itacademy.webp',
           grade: 'Projecte final: 10'
@@ -793,7 +793,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'React: Hooks i MERN',
           institution: 'DevTalles',
           year: 'jun. 2024 – oct. 2024',
-          description: 'Formació avançada en React modern dissenyada íntegrament amb Hooks i components funcionals. El curs aborda useState, useEffect, useContext, useReducer i hooks personalitzats, a més de routing amb React Router, gestió d\'estat global i construcció d\'aplicacions full-stack amb la pila MERN. Èmfasi en bones pràctiques, codi net i patrons professionals aplicats des del primer dia.',
+          description: 'Especialització avançada en arquitectura modular amb **React.js**, components funcionals i **Hooks** natius i integrats (`useState`, `useEffect`, `useContext`, `useReducer`). Domini d\'enrutament dinàmic mitjançant **React Router** i gestió de l\'estat de l\'aplicació. Construcció d\'aplicacions integrals sota la pila **MERN** (MongoDB, Express, React, Node.js) aplicant metodologies de **Clean Code** i patrons de disseny professionals des de la base.',
           focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
           logo: '/assets/devtalles-white-black.webp'
         },
@@ -801,7 +801,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Confecció i Publicació de Pàgines Web (IFCD0110)',
           institution: 'The Corner Centre d\'Estudis',
           year: 'mar. 2024 – oct. 2024',
-          description: 'Certificat de professionalitat oficial de 480 hores que va establir les bases tècniques del desenvolupament web. Vaig aprendre HTML semàntic per a SEO, CSS avançat amb animacions i layouts moderns, JavaScript per a la interactivitat, Bootstrap i disseny responsive. També vaig adquirir competències en WordPress —personalització de temes, plugins, WPO i seguretat— i en eines de mesura com Google Analytics i Google Tag Manager.',
+          description: 'Certificat de professionalitat oficial (480 h) enfocat en fonaments d\'enginyeria web. Adquisició de competències sòlides en **HTML5 semàntic** orientat a l\'accessibilitat i SEO, **CSS3 modern** (layouts flexibles amb Grid i Flexbox, media queries), i programació interactiva amb **JavaScript vanilla**. Especialització en l\'ecosistema **WordPress** (disseny adaptat, desenvolupament de temes, plugins i WPO) i integracions avançades d\'analítica amb **Google Analytics** i **Google Tag Manager**. Qualificació final excel·lent amb **nota: 9,90**.',
           focus: ['HTML semàntic', 'CSS avançat', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
           logo: '/assets/thecorner.webp',
           grade: 'Nota: 9,90'
@@ -810,7 +810,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Màster en Direcció d\'E-Commerce i Màrqueting Digital',
           institution: 'Universitat de Barcelona',
           year: 'set. 2019 – jul. 2020',
-          description: 'Màster de formació permanent aprovat per l\'agència de postgrau de la UB amb enfocament estratègic i operatiu. Vaig adquirir domini en SEO tècnic i on-page, SEM, analítica web avançada, social media, email màrqueting i gestió d\'e-commerce. El treball de fi de màster, un pla de màrqueting digital complet per a un centre mèdic privat, va obtenir un 9,5. Professors en actiu d\'empreses líders del sector.',
+          description: 'Postgrau d\'enfocament estratègic avalat per la **Universitat de Barcelona**. Especialització tècnica i operativa en canals d\'adquisició digital, incloent **SEO tècnic**, SEM/Google Ads, analítica web i gestió integral de plataformes e-commerce. Treball de fi de màster consistent en el desenvolupament d\'un pla integral de màrqueting digital per a una clínica mèdica, qualificat amb una **nota de 9,5** (qualificació global mitjana del màster: **9,93**).',
           focus: ['SEO tècnic', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Màrqueting'],
           logo: '/assets/ub.webp',
           grade: 'Nota: 9,93'
@@ -819,7 +819,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'Grau en Administració i Direcció d\'Empreses (ADE)',
           institution: 'Universitat de Barcelona',
           year: '2015 – 2019',
-          description: 'Grau universitari amb menció en Organització d\'Empreses i suplement europeu. Quatre anys de formació en direcció general, estratègia empresarial, finances, màrqueting i recursos humans que em donen una visió de negoci sòlida aplicada avui al desenvolupament de producte digital. El treball de fi de grau, sobre les implicacions de la tecnologia 5G en el món empresarial, va ser qualificat amb un 9.',
+          description: 'Grau oficial universitari amb **menció en Organització d\'Empreses** i Suplement Europeu al Títol. Quatre anys de formació en alta direcció, **estratègia de negoci**, finances corporatives, màrqueting i gestió d\'equips. Aquesta formació em proporciona una visió comercial i institucional molt valuosa que aplico directament al desenvolupament de productes digitals orientats al client final. Treball de fi de grau centrat en l\'impacte tecnològic del **5G en el teixit empresarial** (qualificat amb **nota: 9**).',
           focus: ['Estratègia empresarial', 'Gestió financera', 'Màrqueting', 'Organització d\'Empreses', 'Direcció general'],
           logo: '/assets/ub.webp'
         }

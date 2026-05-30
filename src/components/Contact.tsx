@@ -66,7 +66,7 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
                   href={contact.href}
                   target={isMail ? undefined : "_blank"}
                   rel={isMail ? undefined : "noreferrer"}
-                  className="flex min-w-0 items-center justify-between rounded-3xl border border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-400 dark:border-slate-800/70 dark:bg-slate-900/90 dark:text-slate-200 dark:hover:border-slate-600/80 dark:hover:bg-slate-900/95 px-5 py-4 text-left transition-all"
+                  className="flex min-w-0 items-center justify-between rounded-3xl border border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-400 dark:border-slate-800/70 dark:bg-slate-900/90 dark:text-slate-200 dark:hover:border-slate-600/80 dark:hover:bg-slate-900/95 px-5 py-4 text-left transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950"
                 >
                   <div className="flex min-w-0 items-center gap-4">
                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-3xl bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 text-base">
@@ -74,7 +74,7 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
                     </span>
                     <div className="min-w-0">
                       <p className="font-semibold text-slate-800 dark:text-white">{contact.label}</p>
-                      <p className="truncate text-sm text-slate-500 dark:text-slate-400">{contact.value}</p>
+                      <p className="truncate text-sm text-slate-600 dark:text-slate-400">{contact.value}</p>
                     </div>
                   </div>
                   <span className="text-slate-400">↗</span>

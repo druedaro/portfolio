@@ -80,12 +80,14 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
                         href={getCompanyLink(exp.company)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 hover:border-red-500/40 shadow-sm block hover:scale-105 active:scale-95"
+                        className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 hover:border-red-500/40 shadow-sm block hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950"
                       >
                         <img
                           src={exp.logo}
                           alt={exp.company}
                           className="w-full h-full object-contain"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </a>
                     ) : (
@@ -94,6 +96,8 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
                           src={exp.logo}
                           alt={exp.company}
                           className="w-full h-full object-contain"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     )}
@@ -110,15 +114,15 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
                           href={getCompanyLink(exp.company)}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-slate-500 dark:text-neutral-400 text-sm font-medium hover:text-red-500 dark:hover:text-red-400 underline decoration-slate-300 dark:decoration-neutral-700 underline-offset-4 transition-colors duration-300"
+                          className="text-slate-600 dark:text-neutral-400 text-sm font-medium hover:text-red-500 dark:hover:text-red-400 underline decoration-slate-300 dark:decoration-neutral-700 underline-offset-4 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded"
                         >
                           {exp.company}
                         </a>
                       ) : (
-                        <p className="text-slate-500 dark:text-neutral-400 text-sm font-medium">{exp.company}</p>
+                        <p className="text-slate-600 dark:text-neutral-400 text-sm font-medium">{exp.company}</p>
                       )}
                     </div>
-                    <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
+                    <p className="text-xs md:text-sm font-mono text-slate-500 dark:text-neutral-400 md:whitespace-nowrap">{exp.period}</p>
                   </div>
 
                   <p 

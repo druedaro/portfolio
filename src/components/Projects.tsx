@@ -67,7 +67,7 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
   const imageSubtitle = t.id === 'projects' ? 'Replace with real screenshot' : t.id === 'projectes' ? 'Reemplaçar amb captura real' : 'Reemplazar con captura real';
 
   return (
-    <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
+    <section id={sectionId} className="relative overflow-hidden py-12 md:py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 max-w-3xl reveal reveal-up">

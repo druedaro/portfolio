@@ -108,7 +108,7 @@ export default function Certifications({ t }: { t: CertificationsTranslation }) 
   };
 
   return (
-    <section id={t.id} className="relative overflow-hidden py-20 lg:py-24">
+    <section id={t.id} className="relative overflow-hidden py-12 md:py-20 lg:py-24">
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
 
         <div className="mb-10">

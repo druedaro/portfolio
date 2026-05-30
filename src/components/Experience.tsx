@@ -42,7 +42,7 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation>, l
   const showLessLabel = lang === 'es' ? 'Ver menos' : lang === 'en' ? 'Read less' : 'Veure menys';
 
   return (
-    <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
+    <section id={sectionId} className="relative overflow-hidden py-12 md:py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-12 max-w-3xl reveal reveal-up">

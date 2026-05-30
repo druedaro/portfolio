@@ -34,6 +34,13 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
   const title2 = t.title2 || 'hoy';
   const description = t.description || 'Disponible para colaborar en proyectos frontend con React, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.';
 
+  const formatDescription = (text: string) => {
+    if (!text) return '';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
+  };
+
   return (
     <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24 w-full">
       <div className="absolute inset-0" />
@@ -48,9 +55,10 @@ export default function Contact({ t = {} as Partial<ContactTranslation> }: { t?:
                 {title2}
               </h3>
             </div>
-            <p className="max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-              {description}
-            </p>
+            <p 
+              className="max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300"
+              dangerouslySetInnerHTML={{ __html: formatDescription(description) }}
+            />
           </div>
 
           <div className="min-w-0 overflow-hidden rounded-[2rem] border border-slate-200 bg-white dark:border-slate-800/70 dark:bg-slate-950/95 p-8 shadow-[0_40px_120px_-50px_rgba(148,163,184,0.3)] dark:shadow-[0_40px_120px_-50px_rgba(15,23,42,0.8)] backdrop-blur-xl reveal reveal-up" style={{ transitionDelay: '200ms' }}>

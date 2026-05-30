@@ -24,9 +24,10 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
           <h2 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white break-words">
             {sectionTitle}
           </h2>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400">
-            {sectionDesc}
-          </p>
+          <p 
+            className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400"
+            dangerouslySetInnerHTML={{ __html: formatDescription(sectionDesc) }}
+          />
         </div>
 
         <div className="grid md:grid-cols-1 gap-5">

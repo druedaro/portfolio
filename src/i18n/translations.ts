@@ -170,7 +170,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'experiencia',
       section: 'Experiencia',
       title: 'Trayectoria profesional',
-      description: 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.',
+      description: 'Mi trayectoria profesional integra el **desarrollo frontend**, la consultoría de **SEO técnico** y la optimización estratégica de **plataformas e-commerce**.',
       items: [
         {
           title: 'Desarrollador Frontend',
@@ -372,7 +372,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contacto',
       title1: 'Hablemos',
       title2: 'hoy',
-      description: 'Disponible para colaborar en proyectos frontend con React, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.'
+      description: 'Disponible para colaborar en **desarrollo frontend**, consultoría de **SEO técnico** o estrategias de **marketing digital**. Aporto soluciones eficientes combinando código de calidad con objetivos de conversión y rendimiento en motores de búsqueda.',
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'
@@ -454,7 +454,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'experience',
       section: 'Experience',
       title: 'Professional experience',
-      description: 'Frontend development experience focused on scalable architecture, performance, and collaboration in multidisciplinary teams.',
+      description: 'My professional career integrates **frontend development**, **technical SEO** consulting, and strategic **e-commerce optimization**.',
       items: [
         {
           title: 'Frontend Developer',
@@ -656,7 +656,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contact',
       title1: "Let's talk",
       title2: 'today',
-      description: 'Available to collaborate on frontend projects with React, development best practices, and digital products that work from the very first scroll.'
+      description: 'Available for collaboration on **frontend development**, **technical SEO** consulting, or **digital marketing** strategies. I deliver efficient solutions combining quality code with conversion goals and search engine performance.',
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'
@@ -738,7 +738,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'experiencia',
       section: 'Experiència',
       title: 'Trajectòria professional',
-      description: 'Experiència en desenvolupament frontend amb enfocament en arquitectura escalable, rendiment i col·laboració en equips multidisciplinaris.',
+      description: 'La meva trajectòria professional integra el **desenvolupament frontend**, la consultoria de **SEO tècnic** i l\'optimització estratègica de **plataformes e-commerce**.',
       items: [
         {
           title: 'Desenvolupador Frontend',
@@ -940,7 +940,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contacte',
       title1: 'Parlem',
       title2: 'avui',
-      description: 'Disponible per col·laborar en projectes frontend amb React, bones pràctiques de desenvolupament i productes digitals que funcionen des del primer scroll.'
+      description: 'Disponible per col·laborar en **desenvolupament frontend**, consultoria de **SEO tècnic** o estratègies de **màrqueting digital**. Aporto solucions eficients combinant codi de qualitat amb objectius de conversió i rendiment en motors de cerca.',
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'

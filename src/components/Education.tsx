@@ -37,7 +37,7 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
                   <div className="flex-shrink-0">
                     {getInstitutionLink(edu.institution) ? (
                       <a
-                        href={getInstitutionLink(edu.institution)}
+                        href={getInstitutionLink(edu.institution) ?? undefined}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 hover:border-red-500/40 shadow-sm block hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950"
@@ -73,7 +73,7 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
                       </h3>
                       {getInstitutionLink(edu.institution) ? (
                         <a
-                          href={getInstitutionLink(edu.institution)}
+                          href={getInstitutionLink(edu.institution) ?? undefined}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-red-600 dark:text-red-500/80 font-medium text-sm hover:text-red-700 dark:hover:text-red-400/90 underline decoration-red-300 dark:decoration-red-900/40 underline-offset-4 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded"

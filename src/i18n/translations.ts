@@ -291,7 +291,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
+          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. **React 19**, **TypeScript** y **Supabase** con arquitectura clean y 25 tests unitarios.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -302,7 +302,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'MovieApp',
-          description: 'Aplicación web optimizada de búsqueda y exploración de películas y series. Integración con la API de TMDB, scroll infinito, filtros por año/género y navegación de actores. React 19, Tailwind CSS y Supabase.',
+          description: 'Aplicación web optimizada de búsqueda y exploración de películas y series. Integración con la API de TMDB, scroll infinito, filtros por año/género y navegación de actores. **React 19**, **Tailwind CSS** y **Supabase**.',
           tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -313,7 +313,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Budget Calculator',
-          description: 'Aplicación web para generar presupuestos profesionales de desarrollo web y marketing digital. Selección de servicios con tarifas dinámicas, descuentos, persistencia en almacenamiento local y sincronización por parámetros URL. React 19, Tailwind CSS, React Hook Form y Zod.',
+          description: 'Aplicación web para generar presupuestos profesionales de desarrollo web y marketing digital. Selección de servicios con tarifas dinámicas, descuentos, persistencia en almacenamiento local y sincronización por parámetros URL. **React 19**, **Tailwind CSS**, **React Hook Form** y **Zod**.',
           tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -324,7 +324,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Pokédex Classic',
-          description: 'Aplicación web modular que actúa como Pokédex interactiva conectándose a la PokéAPI pública. Búsqueda por nombre o ID, filtrado por tipos, estadísticas detalladas, descripción de habilidades y navegación secuencial. Creada con JavaScript ES6, HTML5 y Tailwind CSS.',
+          description: 'Aplicación web modular que actúa como Pokédex interactiva conectándose a la PokéAPI pública. Búsqueda por nombre o ID, filtrado por tipos, estadísticas detalladas, descripción de habilidades y navegación secuencial. Creada con **JavaScript ES6**, **HTML5** y **Tailwind CSS**.',
           tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -342,27 +342,27 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Desarrollo Web',
           items: [
-            'Desarrollo de aplicaciones web modernas bajo principios de Clean Code y arquitectura modular',
-            'Enfoque en escalabilidad, control de versiones colaborativo y optimización de rendimiento',
-            'Integración de componentes dinámicos con bases de datos y APIs REST'
+            'Desarrollo de aplicaciones web modernas bajo principios de **Clean Code** y **arquitectura modular**',
+            'Enfoque en **escalabilidad**, **control de versiones colaborativo** y **optimización de rendimiento**',
+            'Integración de componentes dinámicos con **bases de datos** y **APIs REST**'
           ]
         },
         {
           id: 'mobile',
           title: 'SEO Técnico & Indexación',
           items: [
-            'Optimización técnica y auditorías web enfocadas en maximizar la indexabilidad orgánica',
-            'Mejora de Core Web Vitals y velocidad de carga (WPO) orientada a resultados en buscadores',
-            'Gestión de la arquitectura web, rastreo eficiente y optimización del presupuesto de rastreo (crawl budget)'
+            'Optimización técnica y auditorías web enfocadas en maximizar la **indexabilidad orgánica**',
+            'Mejora de **Core Web Vitals** y velocidad de carga (**WPO**) orientada a resultados en buscadores',
+            'Gestión de la **arquitectura web**, **rastreo eficiente** y optimización del **crawl budget**'
           ]
         },
         {
           id: 'design',
           title: 'Soluciones e-Commerce & Migraciones',
           items: [
-            'Mantenimiento, desarrollo de módulos y adaptaciones en WordPress, PrestaShop y Shopify',
-            'Planificación y ejecución de migraciones técnicas complejas desde otras plataformas hacia Magento',
-            'Enfoque de conversión (CRO), optimización del checkout y flujos de compra del usuario'
+            'Mantenimiento, desarrollo de módulos y adaptaciones en **WordPress, PrestaShop y Shopify**',
+            'Planificación y ejecución de **migraciones técnicas complejas** desde otras plataformas hacia **Magento**',
+            'Enfoque de conversión (**CRO**), optimización del **checkout** y flujos de compra del usuario'
           ]
         }
       ]
@@ -575,7 +575,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. React 19, TypeScript and Supabase with clean architecture and 25 unit tests.',
+          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. **React 19**, **TypeScript** and **Supabase** with clean architecture and 25 unit tests.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -586,7 +586,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'MovieApp',
-          description: 'Optimized web application for searching and exploring movies and series. Features TMDB API integration, infinite scroll, genre/year filters, and actor navigation. React 19, Tailwind CSS and Supabase.',
+          description: 'Optimized web application for searching and exploring movies and series. Features TMDB API integration, infinite scroll, genre/year filters, and actor navigation. **React 19**, **Tailwind CSS** and **Supabase**.',
           tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -597,7 +597,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Budget Calculator',
-          description: 'Web application for generating professional budget estimates for web development and digital marketing. Features dynamic pricing, discounts, local storage persistence, and URL parameters synchronization. React 19, Tailwind CSS, React Hook Form, and Zod.',
+          description: 'Web application for generating professional budget estimates for web development and digital marketing. Features dynamic pricing, discounts, local storage persistence, and URL parameters synchronization. **React 19**, **Tailwind CSS**, **React Hook Form**, and **Zod**.',
           tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -608,7 +608,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Pokédex Classic',
-          description: 'Modular web application that serves as an interactive Pokédex using the public PokéAPI. Features Pokémon search by name/ID, type filtering, detailed stats, ability descriptions, and sequential navigation. Built with JavaScript ES6, HTML5, and Tailwind CSS.',
+          description: 'Modular web application that serves as an interactive Pokédex using the public PokéAPI. Features Pokémon search by name/ID, type filtering, detailed stats, ability descriptions, and sequential navigation. Built with **JavaScript ES6**, **HTML5**, and **Tailwind CSS**.',
           tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -626,27 +626,27 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Web Development',
           items: [
-            'Building modern web applications under Clean Code principles and modular architecture',
-            'Focus on scalability, collaborative version control, and performance optimization',
-            'Integrating dynamic frontend components with REST APIs and databases'
+            'Building modern web applications under **Clean Code** principles and **modular architecture**',
+            'Focus on **scalability**, **collaborative version control**, and **performance optimization**',
+            'Integrating dynamic frontend components with **REST APIs** and **databases**'
           ]
         },
         {
           id: 'mobile',
           title: 'Technical SEO & Indexing',
           items: [
-            'Technical optimization and web audits focused on maximizing organic indexing',
-            'Core Web Vitals and page speed (WPO) improvements driven by search engine results',
-            'Managing web architecture, efficient crawling, and crawl budget optimization'
+            'Technical optimization and web audits focused on maximizing **organic indexing**',
+            'Core Web Vitals and page speed (**WPO**) improvements driven by search engine results',
+            'Managing **web architecture**, **efficient crawling**, and **crawl budget** optimization'
           ]
         },
         {
           id: 'design',
           title: 'e-Commerce & Migrations',
           items: [
-            'Functional maintenance, module enhancements, and template updates in WordPress, PrestaShop, and Shopify',
-            'Planning and executing complex technical migrations from other platforms to Magento',
-            'Conversion Rate Optimization (CRO), checkout enhancement, and user checkout flow optimization'
+            'Functional maintenance, module enhancements, and template updates in **WordPress, PrestaShop, and Shopify**',
+            'Planning and executing **complex technical migrations** from other platforms to **Magento**',
+            'Conversion Rate Optimization (**CRO**), **checkout enhancement**, and user checkout flow optimization'
           ]
         }
       ]
@@ -859,7 +859,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. React 19, TypeScript i Supabase amb arquitectura neta i 25 tests unitaris.',
+          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. **React 19**, **TypeScript** i **Supabase** amb arquitectura neta i 25 tests unitaris.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -870,7 +870,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'MovieApp',
-          description: 'Aplicació web optimitzada de cerca i exploració de pel·lícules i sèries. Integració amb l\'API de TMDB, scroll infinit, filtres per any/gènere i navegació d\'actors. React 19, Tailwind CSS i Supabase.',
+          description: 'Aplicació web optimitzada de cerca i exploració de pel·lícules i sèries. Integració amb l\'API de TMDB, scroll infinit, filtres per any/gènere i navegació d\'actors. **React 19**, **Tailwind CSS** i **Supabase**.',
           tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -881,7 +881,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Budget Calculator',
-          description: 'Aplicació web per generar pressupostos professionals de desenvolupament web i màrqueting digital. Selecció de serveis amb tarifes dinàmiques, descomptes, persistència en emmagatzematge local i sincronització per paràmetres URL. React 19, Tailwind CSS, React Hook Form i Zod.',
+          description: 'Aplicació web per generar pressupostos professionals de desenvolupament web i màrqueting digital. Selecció de serveis amb tarifes dinàmiques, descomptes, persistència en emmagatzematge local i sincronització per paràmetres URL. **React 19**, **Tailwind CSS**, **React Hook Form** i **Zod**.',
           tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -892,7 +892,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Pokédex Classic',
-          description: 'Aplicació web modular que actua com a Pokédex interactiva connectant-se a la PokéAPI pública. Cerca per nom o ID, filtrat per tipus, estadístiques detallades, descripció d\'habilitats i navegació seqüencial. Creada amb JavaScript ES6, HTML5 i Tailwind CSS.',
+          description: 'Aplicació web modular que actua com a Pokédex interactiva connectant-se a la PokéAPI pública. Cerca per nom o ID, filtrat per tipus, estadístiques detallades, descripció d\'habilitats i navegació seqüencial. Creada amb **JavaScript ES6**, **HTML5** i **Tailwind CSS**.',
           tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -910,27 +910,27 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Desenvolupament Web',
           items: [
-            'Desenvolupament d\'aplicacions web modernes sota principis de Clean Code i arquitectura modular',
-            'Enfocament en escalabilitat, control de versions col·laboratiu i optimització de rendiment',
-            'Integració de components interactius amb APIs REST i bases de dades'
+            'Desenvolupament d\'aplicacions web modernes sota principis de **Clean Code** i **arquitectura modular**',
+            'Enfocament en **escalabilitat**, **control de versions col·laboratiu** i **optimització de rendiment**',
+            'Integració de components interactius amb **APIs REST** i **bases de dades**'
           ]
         },
         {
           id: 'mobile',
           title: 'SEO Tècnic & Indexació',
           items: [
-            'Optimització tècnica i auditories web enfocades a maximitzar la indexabilitat orgànica',
-            'Millora de Core Web Vitals i velocitat de càrrega (WPO) orientada a resultats en cercadors',
-            'Gestió de l\'arxiu web, rastreig eficient i optimització del pressupost de rastreig (crawl budget)'
+            'Optimització tècnica i auditories web enfocades a maximitzar la **indexabilitat orgànica**',
+            'Millora de **Core Web Vitals** i velocitat de càrrega (**WPO**) orientada a resultats en cercadors',
+            'Gestió de l\'arxiu web, rastreig eficient i optimització del **crawl budget**'
           ]
         },
         {
           id: 'design',
           title: 'Solucions e-Commerce & Migracions',
           items: [
-            'Manteniment, desenvolupament de mòduls i adaptacions en WordPress, PrestaShop i Shopify',
-            'Planificació i execució de migracions tècniques complexes des d\'altres plataformes cap a Magento',
-            'Enfocament de conversió (CRO), optimització del checkout i fluxos de compra de l\'usuari'
+            'Manteniment, desenvolupament de mòduls i adaptacions en **WordPress, PrestaShop i Shopify**',
+            'Planificació i execució de **migracions tècniques complexes** des d\'altres plataformes cap a **Magento**',
+            'Enfocament de conversió (**CRO**), optimització del **checkout** i fluxos de compra de l\'usuari'
           ]
         }
       ]

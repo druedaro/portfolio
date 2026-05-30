@@ -29,6 +29,13 @@ const icons: Record<string, React.ReactElement> = {
 export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
   const [open, setOpen] = useState<string>(t.services[0]?.id ?? '');
 
+  const formatDescription = (text: string) => {
+    if (!text) return '';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
+  };
+
   return (
     <section className="relative overflow-hidden py-20 lg:py-24">
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
@@ -84,7 +91,7 @@ export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
                         {svc.items.map((item) => (
                           <li key={item} className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
                             <span className="text-red-400">·</span>
-                            {item}
+                            <span dangerouslySetInnerHTML={{ __html: formatDescription(item) }} />
                           </li>
                         ))}
                       </ul>

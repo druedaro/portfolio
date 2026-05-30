@@ -1,5 +1,6 @@
 import React from 'react';
 import type { EducationTranslation } from '../i18n/translations';
+import { formatDescription, getInstitutionLink } from '../utils/text';
 
 export default function Education({ t = {} as Partial<EducationTranslation> }: { t?: Partial<EducationTranslation> }) {
   const sectionId = t.id || 'educación';
@@ -7,23 +8,6 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
   const sectionTitle = t.title || 'Formación y estudios';
   const sectionDesc = t.description || '';
   const items = t.items || [];
-
-  const getInstitutionLink = (name: string) => {
-    const normalized = name.toLowerCase();
-    if (normalized.includes('it academy') || normalized.includes('barcelona activa')) return 'https://www.barcelonactiva.cat/itacademy';
-    if (normalized.includes('devtalles')) return 'https://devtalles.com/';
-    if (normalized.includes('the corner')) return 'https://thecorner.es/';
-    if (normalized.includes('barcelona')) return 'https://www.ub.edu/'; // Universitat de Barcelona
-    if (normalized.includes('catalunya') || normalized.includes('upc')) return 'https://www.upc.edu/';
-    return null;
-  };
-
-  const formatDescription = (text: string) => {
-    if (!text) return '';
-    return text
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
-  };
 
   return (
     <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">

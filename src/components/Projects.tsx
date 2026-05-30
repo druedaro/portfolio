@@ -55,19 +55,13 @@ const projects: ProjectItem[] = [
 
 
 import type { ProjectsTranslation } from '../i18n/translations';
+import { formatDescription } from '../utils/text';
 
 export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t?: Partial<ProjectsTranslation> }) {
   const sectionId = t.id || 'proyectos';
   const sectionTag = t.section || 'Proyectos personales';
   const sectionTitle = t.title || 'Mis proyectos';
   const items = t.items || projects;
-
-  const formatDescription = (text: string) => {
-    if (!text) return '';
-    return text
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
-  };
 
   const imageLabel = t.id === 'projects' ? 'Project Image' : t.id === 'projectes' ? 'Imatge del projecte' : 'Imagen del proyecto';
   const imageSubtitle = t.id === 'projects' ? 'Replace with real screenshot' : t.id === 'projectes' ? 'Reemplaçar amb captura real' : 'Reemplazar con captura real';

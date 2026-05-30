@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { WhatIDoTranslation } from '../i18n/translations';
 import LetterGlitch from './LetterGlitch';
+import { formatDescription } from '../utils/text';
 
 const icons: Record<string, React.ReactElement> = {
   web: (
@@ -35,13 +36,6 @@ const icons: Record<string, React.ReactElement> = {
 
 export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
   const [open, setOpen] = useState<string>(t.services[0]?.id ?? '');
-
-  const formatDescription = (text: string) => {
-    if (!text) return '';
-    return text
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
-  };
 
   return (
     <section className="relative overflow-hidden py-20 lg:py-24">

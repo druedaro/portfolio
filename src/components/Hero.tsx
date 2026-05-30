@@ -1,17 +1,11 @@
 import React from 'react';
 import type { HeroTranslation } from '../i18n/translations';
+import { formatDescription } from '../utils/text';
 
 export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }: { t?: Partial<HeroTranslation>, lang?: string }) {
   const projectsHref = lang === 'es' ? '#proyectos' : lang === 'en' ? '#projects' : '#projectes';
   const contactHref = lang === 'es' ? '#contacto' : lang === 'en' ? '#contact' : '#contacte';
   const sectionId = lang === 'es' ? 'sobre-mi' : lang === 'en' ? 'about-me' : 'sobre-mi';
-
-  const formatDescription = (text: string) => {
-    if (!text) return '';
-    return text
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
-  };
 
   return (
     <section id={sectionId} className="relative overflow-hidden bg-slate-50/80 dark:bg-slate-950/80 px-6 pt-16 pb-20 lg:pt-28 lg:pb-24 sm:px-10 lg:px-16">

@@ -176,7 +176,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Desarrollador Frontend',
           company: 'Barcelona Activa',
           period: 'nov. 2025 - actualidad',
-          description: 'Lidero el desarrollo técnico y la maquetación de la **plataforma de retos lógicos de IT Academy**, un producto clave enfocado en potenciar el aprendizaje técnico de la comunidad estudiantil. Colaboro de forma transversal con Backend y Product Owners para diseñar y desplegar funcionalidades avanzadas, priorizando el **rendimiento, la accesibilidad (WCAG) y la usabilidad**. Aplico metodologías ágiles (**Scrum**) en sprints quincenales y aseguro la escalabilidad a largo plazo del ecosistema mediante **refactorizaciones estratégicas, arquitectura limpia** y la implementación de componentes reutilizables de alta calidad.',
+          description: 'Lidero el desarrollo técnico y la maquetación de la **plataforma de retos lógicos de IT Academy**, un producto clave enfocado en potenciar el aprendizaje técnico de la comunidad estudiantil. Colaboro de forma transversal con Backend y Product Owners para diseñar y desplegar funcionalidades avanzadas, priorizando el **rendimiento, la accesibilidad (WCAG) y la usabilidad**. Aplico metodologías ágiles (**Scrum**) en sprints quincenales y aseguro la escalabilidad a largo plazo del ecosistema mediante **refactorizaciones estratégicas, arquitectura limpia** y la implementación de componentes reutilizables.',
           skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
           logo: '/assets/barcelonaactiva.webp'
         },
@@ -225,7 +225,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'React: Hooks y MERN',
           institution: 'DevTalles',
           year: 'jun. 2024 – oct. 2024',
-          description: 'Especialización avanzada en arquitectura modular con **React.js**, componentes funcionales y **Hooks** nativos e integrados (`useState`, `useEffect`, `useContext`, `useReducer`). Dominio de enrutado dinámico mediante **React Router** y gestión del estado de la aplicación. Construcción de aplicaciones integrales bajo la pila **MERN** (MongoDB, Express, React, Node.js) aplicando metodologías de **Clean Code** y patrones de diseño profesionales desde la base.',
+          description: 'Especialización avanzada en principios SOLID con **React.js**, componentes funcionales y **Hooks** nativos e integrados (`useState`, `useEffect`, `useContext`, `useReducer`). Dominio de enrutado dinámico mediante **React Router** y gestión del estado de la aplicación. Construcción de aplicaciones integrales bajo la pila **MERN** (MongoDB, Express, React, Node.js) aplicando metodologías de **Clean Code** y patrones de diseño profesionales desde la base.',
           focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
           logo: '/assets/devtalles-white-black.webp'
         },
@@ -291,7 +291,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. **React 19**, **TypeScript** y **Supabase** con arquitectura clean y 25 tests unitarios.',
+          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. **React 19**, **TypeScript** y **Supabase** con tests unitarios siguiendo la metodología MoSCoW.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -342,37 +342,37 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Desarrollo Web',
           items: [
-            'Desarrollo de aplicaciones web modernas bajo principios de **Clean Code** y **arquitectura modular**',
-            'Enfoque en **escalabilidad**, **control de versiones colaborativo** y **optimización de rendimiento**',
-            'Integración de componentes dinámicos con **bases de datos** y **APIs REST**'
+            'Desarrollo de aplicaciones web modernas bajo principios de **Clean Code** y **principios SOLID**.',
+            'Enfoque en **escalabilidad**, **control de versiones colaborativo** y **optimización de rendimiento**.',
+            'Integración de componentes dinámicos con **bases de datos** y **APIs REST**.'
           ]
         },
         {
           id: 'mobile',
           title: 'SEO Técnico & Indexación',
           items: [
-            'Optimización técnica y auditorías web enfocadas en maximizar la **indexabilidad orgánica**',
-            'Mejora de **Core Web Vitals** y velocidad de carga (**WPO**) orientada a resultados en buscadores',
-            'Gestión de la **arquitectura web**, **rastreo eficiente** y optimización del **crawl budget**'
+            'Optimización técnica y auditorías web enfocadas en maximizar la **indexabilidad orgánica**.',
+            'Mejora de **Core Web Vitals** y velocidad de carga (**WPO**) orientada a resultados en buscadores.',
+            'Gestión de la **arquitectura web**, **rastreo eficiente** y optimización del **crawl budget**.'
           ]
         },
         {
           id: 'design',
           title: 'Soluciones e-Commerce & Migraciones',
           items: [
-            'Mantenimiento, desarrollo de módulos y adaptaciones en **WordPress, PrestaShop y Shopify**',
-            'Planificación y ejecución de **migraciones técnicas complejas** desde otras plataformas hacia **Magento**',
-            'Enfoque de conversión (**CRO**), optimización del **checkout** y flujos de compra del usuario'
+            'Mantenimiento, desarrollo de módulos y adaptaciones en **WordPress, PrestaShop y Shopify**.',
+            'Planificación y ejecución de **migraciones técnicas complejas** desde otras plataformas hacia **Magento**.',
+            'Enfoque de conversión (**CRO**), optimización del **checkout** y flujos de compra del usuario.'
           ]
         },
         {
           id: 'analytics',
           title: 'Analítica Web & Medición',
           items: [
-            'Configuración avanzada de contenedores en **Google Tag Manager**',
-            'Implementación de eventos de comercio electrónico mejorado y audiencias en **Google Analytics 4**',
-            'Integración técnica de píxeles publicitarios (**Facebook Pixel, TikTok, Google Ads**)',
-            'Elaboración de informes de resultados y rendimiento del negocio mediante herramientas como **Google Analytics 4**, **Search Console** y **Semrush**'
+            'Configuración avanzada de contenedores en **Google Tag Manager**.',
+            'Implementación de eventos de comercio electrónico mejorado y audiencias en **Google Analytics 4**.',
+            'Integración técnica de píxeles publicitarios (**Facebook Pixel, TikTok, Google Ads**).',
+            'Elaboración de informes de resultados y rendimiento del negocio mediante herramientas como **Google Analytics 4**, **Search Console** y **Semrush**.'
           ]
         }
       ]
@@ -470,7 +470,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           title: 'Frontend Developer',
           company: 'Barcelona Activa',
           period: 'Nov. 2025 - Present',
-          description: 'Lead the frontend engineering and layout design of **IT Academy\'s logical challenges platform**, a critical student-centered web product. Collaborate closely with Backend developers and Product Owners to design and deliver complex modules, ensuring exceptional **web performance, accessibility (WCAG), and clean code** standards. Drive agile sprint execution (**Scrum**), implement modular architecture, and execute **strategic refactoring** to build a robust, scalable, and highly interactive learning application.',
+          description: 'Lead the frontend engineering and layout design of **IT Academy\'s logical challenges platform**, a critical student-centered web product. Collaborate closely with Backend developers and Product Owners to design and deliver complex modules, ensuring exceptional **web performance, accessibility (WCAG), and clean code** standards. Drive agile sprint execution (**Scrum**), implement SOLID principles, and execute **strategic refactoring** to build a robust, scalable, and highly interactive learning application.',
           skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
           logo: '/assets/barcelonaactiva.webp'
         },
@@ -519,7 +519,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'React: Hooks & MERN',
           institution: 'DevTalles',
           year: 'Jun. 2024 – Oct. 2024',
-          description: 'Advanced specialization in modular architecture using **React.js**, functional components, and native/custom **Hooks** (`useState`, `useEffect`, `useContext`, `useReducer`). Expertise in dynamic routing via **React Router** and application state management. Built end-to-end full-stack applications under the **MERN** stack (MongoDB, Express, React, Node.js), applying **Clean Code** principles and professional design patterns from day one.',
+          description: 'Advanced specialization in SOLID principles using **React.js**, functional components, and native/custom **Hooks** (`useState`, `useEffect`, `useContext`, `useReducer`). Expertise in dynamic routing via **React Router** and application state management. Built end-to-end full-stack applications under the **MERN** stack (MongoDB, Express, React, Node.js), applying **Clean Code** principles and professional design patterns from day one.',
           focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
           logo: '/assets/devtalles-white-black.webp'
         },
@@ -585,7 +585,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. **React 19**, **TypeScript** and **Supabase** with clean architecture and 25 unit tests.',
+          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. **React 19**, **TypeScript** and **Supabase** with unit tests following the MoSCoW methodology.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -636,37 +636,37 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Web Development',
           items: [
-            'Building modern web applications under **Clean Code** principles and **modular architecture**',
-            'Focus on **scalability**, **collaborative version control**, and **performance optimization**',
-            'Integrating dynamic frontend components with **REST APIs** and **databases**'
+            'Building modern web applications under **Clean Code** principles and **SOLID principles**.',
+            'Focus on **scalability**, **collaborative version control**, and **performance optimization**.',
+            'Integrating dynamic frontend components with **REST APIs** and **databases**.'
           ]
         },
         {
           id: 'mobile',
           title: 'Technical SEO & Indexing',
           items: [
-            'Technical optimization and web audits focused on maximizing **organic indexing**',
-            'Core Web Vitals and page speed (**WPO**) improvements driven by search engine results',
-            'Managing **web architecture**, **efficient crawling**, and **crawl budget** optimization'
+            'Technical optimization and web audits focused on maximizing **organic indexing**.',
+            'Core Web Vitals and page speed (**WPO**) improvements driven by search engine results.',
+            'Managing **web architecture**, **efficient crawling**, and **crawl budget** optimization.'
           ]
         },
         {
           id: 'design',
           title: 'e-Commerce & Migrations',
           items: [
-            'Functional maintenance, module enhancements, and template updates in **WordPress, PrestaShop, and Shopify**',
-            'Planning and executing **complex technical migrations** from other platforms to **Magento**',
-            'Conversion Rate Optimization (**CRO**), **checkout enhancement**, and user checkout flow optimization'
+            'Functional maintenance, module enhancements, and template updates in **WordPress, PrestaShop, and Shopify**.',
+            'Planning and executing **complex technical migrations** from other platforms to **Magento**.',
+            'Conversion Rate Optimization (**CRO**), **checkout enhancement**, and user checkout flow optimization.'
           ]
         },
         {
           id: 'analytics',
           title: 'Web Analytics & Measurement',
           items: [
-            'Advanced container setup in **Google Tag Manager**',
-            'Implementing Enhanced E-commerce event tracking and custom audiences in **Google Analytics 4**',
-            'Technical integration of advertising pixels (**Facebook Pixel, TikTok, and Google Ads**)',
-            'Elaborating business performance and search engine results reports using data from **Google Analytics 4**, **Search Console**, and **Semrush**'
+            'Advanced container setup in **Google Tag Manager**.',
+            'Implementing Enhanced E-commerce event tracking and custom audiences in **Google Analytics 4**.',
+            'Technical integration of advertising pixels (**Facebook Pixel, TikTok, and Google Ads**).',
+            'Elaborating business performance and search engine results reports using data from **Google Analytics 4**, **Search Console**, and **Semrush**.'
           ]
         }
       ]
@@ -813,7 +813,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           degree: 'React: Hooks i MERN',
           institution: 'DevTalles',
           year: 'jun. 2024 – oct. 2024',
-          description: 'Especialització avançada en arquitectura modular amb **React.js**, components funcionals i **Hooks** natius i integrats (`useState`, `useEffect`, `useContext`, `useReducer`). Domini d\'enrutament dinàmic mitjançant **React Router** i gestió de l\'estat de l\'aplicació. Construcció d\'aplicacions integrals sota la pila **MERN** (MongoDB, Express, React, Node.js) aplicant metodologies de **Clean Code** i patrons de disseny professionals des de la base.',
+          description: 'Especialització avançada en principis SOLID amb **React.js**, components funcionals i **Hooks** natius i integrats (`useState`, `useEffect`, `useContext`, `useReducer`). Domini d\'enrutament dinàmic mitjançant **React Router** i gestió de l\'estat de l\'aplicació. Construcció d\'aplicacions integrals sota la pila **MERN** (MongoDB, Express, React, Node.js) aplicant metodologies de **Clean Code** i patrons de disseny professionals des de la base.',
           focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
           logo: '/assets/devtalles-white-black.webp'
         },
@@ -879,7 +879,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. **React 19**, **TypeScript** i **Supabase** amb arquitectura neta i 25 tests unitaris.',
+          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. **React 19**, **TypeScript** i **Supabase** amb tests unitaris seguint la metodologia MoSCoW.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -930,37 +930,37 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Desenvolupament Web',
           items: [
-            'Desenvolupament d\'aplicacions web modernes sota principis de **Clean Code** i **arquitectura modular**',
-            'Enfocament en **escalabilitat**, **control de versions col·laboratiu** i **optimització de rendiment**',
-            'Integració de components interactius amb **APIs REST** i **bases de dades**'
+            'Desenvolupament d\'aplicacions web modernes sota principis de **Clean Code** i **principis SOLID**.',
+            'Enfocament en **escalabilitat**, **control de versions col·laboratiu** i **optimització de rendiment**.',
+            'Integració de components interactius amb **APIs REST** i **bases de dades**.'
           ]
         },
         {
           id: 'mobile',
           title: 'SEO Tècnic & Indexació',
           items: [
-            'Optimització tècnica i auditories web enfocades a maximitzar la **indexabilitat orgànica**',
-            'Millora de **Core Web Vitals** i velocitat de càrrega (**WPO**) orientada a resultats en cercadors',
-            'Gestió de l\'arxiu web, rastreig eficient i optimització del **crawl budget**'
+            'Optimització tècnica i auditories web enfocades a maximitzar la **indexabilitat orgànica**.',
+            'Millora de **Core Web Vitals** i velocitat de càrrega (**WPO**) orientada a resultats en cercadors.',
+            'Gestió de l\'arxiu web, rastreig eficient i optimització del **crawl budget**.'
           ]
         },
         {
           id: 'design',
           title: 'Solucions e-Commerce & Migracions',
           items: [
-            'Manteniment, desenvolupament de mòduls i adaptacions en **WordPress, PrestaShop i Shopify**',
-            'Planificació i execució de **migracions tècniques complexes** des d\'altres plataformes cap a **Magento**',
-            'Enfocament de conversió (**CRO**), optimització del **checkout** i fluxos de compra de l\'usuari'
+            'Manteniment, desenvolupament de mòduls i adaptacions en **WordPress, PrestaShop i Shopify**.',
+            'Planificació i execució de **migracions tècniques complexes** des d\'altres plataformes cap a **Magento**.',
+            'Enfocament de conversió (**CRO**), optimització del **checkout** i fluxos de compra de l\'usuari.'
           ]
         },
         {
           id: 'analytics',
           title: 'Analítica Web & Mesura',
           items: [
-            'Configuració avançada de contenidors en **Google Tag Manager**',
-            'Implementació d\'esdeveniments de comerç electrònic millorat i audiències en **Google Analytics 4**',
-            'Integració tècnica de píxels publicitaris (**Facebook Pixel, TikTok, Google Ads**)',
-            'Elaboració d\'informes de resultats i rendiment del negoci mitjançant eines com **Google Analytics 4**, **Search Console** i **Semrush**'
+            'Configuració avançada de contenidors en **Google Tag Manager**.',
+            'Implementació d\'esdeveniments de comerç electrònic millorat i audiències en **Google Analytics 4**.',
+            'Integració tècnica de píxels publicitaris (**Facebook Pixel, TikTok, Google Ads**).',
+            'Elaboració d\'informes de resultats i rendiment del negoci mitjançant eines com **Google Analytics 4**, **Search Console** i **Semrush**.'
           ]
         }
       ]

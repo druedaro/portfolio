@@ -8,7 +8,7 @@ export default function Hero({ t = {} as Partial<HeroTranslation>, lang = 'es' }
   const sectionId = lang === 'es' ? 'sobre-mi' : lang === 'en' ? 'about-me' : 'sobre-mi';
 
   return (
-    <section id={sectionId} className="relative overflow-hidden bg-slate-50/80 dark:bg-slate-950/80 px-6 pt-12 pb-14 md:pt-20 md:pb-24 lg:pt-28 lg:pb-24 sm:px-10 lg:px-16">
+    <section id={sectionId} className="relative overflow-hidden bg-slate-50/80 dark:bg-slate-950/80 px-6 pt-24 pb-14 md:pt-20 md:pb-24 lg:pt-28 lg:pb-24 sm:px-10 lg:px-16">
       <div className="absolute inset-x-0 top-0 -z-10 h-[420px]" />
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">

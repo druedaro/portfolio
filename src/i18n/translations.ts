@@ -371,7 +371,8 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           items: [
             'Configuración avanzada de contenedores en **Google Tag Manager**',
             'Implementación de eventos de comercio electrónico mejorado y audiencias en **Google Analytics 4**',
-            'Integración técnica de píxeles publicitarios (**Facebook Pixel, TikTok, Google Ads**)'
+            'Integración técnica de píxeles publicitarios (**Facebook Pixel, TikTok, Google Ads**)',
+            'Elaboración de informes de resultados y rendimiento del negocio mediante herramientas como **Google Analytics 4**, **Search Console** y **Semrush**'
           ]
         }
       ]
@@ -664,7 +665,8 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           items: [
             'Advanced container setup in **Google Tag Manager**',
             'Implementing Enhanced E-commerce event tracking and custom audiences in **Google Analytics 4**',
-            'Technical integration of advertising pixels (**Facebook Pixel, TikTok, and Google Ads**)'
+            'Technical integration of advertising pixels (**Facebook Pixel, TikTok, and Google Ads**)',
+            'Elaborating business performance and search engine results reports using data from **Google Analytics 4**, **Search Console**, and **Semrush**'
           ]
         }
       ]
@@ -957,7 +959,8 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           items: [
             'Configuració avançada de contenidors en **Google Tag Manager**',
             'Implementació d\'esdeveniments de comerç electrònic millorat i audiències en **Google Analytics 4**',
-            'Integració tècnica de píxels publicitaris (**Facebook Pixel, TikTok, Google Ads**)'
+            'Integració tècnica de píxels publicitaris (**Facebook Pixel, TikTok, Google Ads**)',
+            'Elaboració d\'informes de resultats i rendiment del negoci mitjançant eines com **Google Analytics 4**, **Search Console** i **Semrush**'
           ]
         }
       ]

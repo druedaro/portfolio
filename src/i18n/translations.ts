@@ -20,6 +20,7 @@ export interface ExperienceItem {
   period: string;
   description: string;
   skills: string[];
+  logo?: string;
 }
 
 export interface ExperienceTranslation {
@@ -36,6 +37,8 @@ export interface EducationItem {
   year: string;
   description: string;
   focus: string[];
+  logo?: string;
+  grade?: string;
 }
 
 export interface EducationTranslation {
@@ -154,41 +157,52 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Contacto', href: '#contacto' }
     ],
     hero: {
-      subtitle: 'Frontend developer · technical marketer',
-      title: 'Diseño web con impacto',
-      description: 'Desarrollo frontend moderno con enfoque en producto, rendimiento y experiencia visual. Interfaces oscuras, limpias y con movimiento sutil para destacar cada sección.',
+      subtitle: 'Desarrollador Frontend & SEO Técnico',
+      title: 'David Rueda',
+      description: 'Desarrollador Frontend con una sólida trayectoria en **SEO técnico** y creación de aplicaciones web. Especializado en **React, TypeScript y plataformas e-commerce**, combino mi background técnico y de negocio para construir productos digitales rápidos, accesibles y optimizados para conseguir resultados.',
       projectsBtn: 'Proyectos',
       contactBtn: 'Contacto',
-      location: 'Barcelona',
-      brandPhoto: 'Foto de marca',
-      photoSubtitle: 'Reemplaza este bloque con tu imagen o retrato'
+      location: 'Barcelona, España',
+      brandPhoto: 'David Rueda Rosas',
+      photoSubtitle: 'Desarrollador Frontend & SEO Técnico'
     },
     experience: {
       id: 'experiencia',
       section: 'Experiencia',
       title: 'Trayectoria profesional',
-      description: 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.',
+      description: 'Mi trayectoria profesional integra el **desarrollo frontend**, la consultoría de **SEO técnico** y la optimización estratégica de **plataformas e-commerce**.',
       items: [
         {
-          title: 'Senior Frontend Developer',
-          company: 'Tech Company Inc.',
-          period: '2023 - Presente',
-          description: 'Desarrollo de aplicaciones web modernas con React, Angular y TypeScript. Liderazgo de equipo y mentoring de desarrolladores junior.',
-          skills: ['React', 'TypeScript', 'Angular', 'Team Lead']
+          title: 'Desarrollador Frontend',
+          company: 'Barcelona Activa',
+          period: 'nov. 2025 - actualidad',
+          description: 'Lidero el desarrollo técnico y la maquetación de la **plataforma de retos lógicos de IT Academy**, un producto clave enfocado en potenciar el aprendizaje técnico de la comunidad estudiantil. Colaboro de forma transversal con Backend y Product Owners para diseñar y desplegar funcionalidades avanzadas, priorizando el **rendimiento, la accesibilidad (WCAG) y la usabilidad**. Aplico metodologías ágiles (**Scrum**) en sprints quincenales y aseguro la escalabilidad a largo plazo del ecosistema mediante **refactorizaciones estratégicas, arquitectura limpia** y la implementación de componentes reutilizables de alta calidad.',
+          skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
+          logo: '/assets/barcelonaactiva.webp'
         },
         {
-          title: 'Frontend Developer',
-          company: 'Digital Agency',
-          period: '2021 - 2023',
-          description: 'Creación de interfaces responsive y optimización de rendimiento. Trabajo con Tailwind CSS y metodologías ágiles.',
-          skills: ['React', 'Tailwind CSS', 'Responsive Design', 'Agile']
+          title: 'Desarrollador Web Frontend Junior',
+          company: 'Lite Solutions',
+          period: 'sept. 2024 - dic. 2024',
+          description: 'Especializado en el desarrollo frontend de soluciones **e-commerce a medida**. Responsable del mantenimiento evolutivo y la optimización de tiendas online basadas en **WordPress y PrestaShop**. Implementé funcionalidades interactivas avanzadas con **JavaScript ES6 y jQuery**, estructuré consultas eficientes a bases de datos relacionales (**MySQL**) y desarrollé adaptaciones lógicas con **PHP**. Aseguré una experiencia de usuario fluida y multidispositivo mediante **maquetación semántica y diseño adaptativo con Bootstrap y CSS avanzado**, optimizando plantillas y extendiendo módulos del core técnico.',
+          skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
+          logo: '/assets/litesolutions.webp'
         },
         {
-          title: 'Junior Developer',
-          company: 'Startup Studio',
-          period: '2020 - 2021',
-          description: 'Primeros pasos en desarrollo web. Proyectos con HTML, CSS, JavaScript vanilla y primeras experiencias con frameworks.',
-          skills: ['HTML', 'CSS', 'JavaScript', 'React']
+          title: 'Search Engine Optimization Specialist',
+          company: 'tbb Agency',
+          period: 'ene. 2023 - jul. 2023',
+          description: 'Dirección técnica de la estrategia **SEO y analítica web** de más de 50 e-commerce y portales de alta envergadura construidos con plataformas complejas (**Magento, PrestaShop, Shopify, WordPress y Drupal**). Lideré un equipo de **5 consultores SEO**, coordinando auditorías técnicas de rastreo, indexabilidad e integraciones críticas de datos. Diseñé e implementé arquitecturas complejas de medición de analítica web mediante **Google Tag Manager, Google Analytics 4 y Search Console**, transformando datos de comportamiento de usuario en insights de negocio que mejoraron significativamente la visibilidad orgánica de las marcas.',
+          skills: ['SEO Técnico', 'Liderazgo de Equipos', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
+          logo: '/assets/logo-tbb.agency.webp'
+        },
+        {
+          title: 'Técnico en Posicionamiento Web (SEO) Junior',
+          company: 'tbb Agency',
+          period: 'ene. 2021 - dic. 2022',
+          description: 'Ejecución de **auditorías SEO on-page y off-page** orientadas a corregir problemas de velocidad de carga, enlazado interno e indexación. Responsable de la monitorización del rendimiento de búsquedas y de la correcta implementación técnica de **etiquetas semánticas y metadatos** en múltiples gestores de contenido. Configuré paneles de control de analítica de tráfico esenciales y documenté **informes de rendimiento técnico** para guiar mejoras de visibilidad y optimización web.',
+          skills: ['SEO', 'Google Search Console', 'Analítica Web', 'Optimización Web', 'E-commerce'],
+          logo: '/assets/logo-tbb.agency.webp'
         }
       ]
     },
@@ -196,28 +210,50 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'educacion',
       section: 'Educación',
       title: 'Formación y estudios',
-      description: 'Combinación de formación académica, bootcamps intensivos y aprendizaje continuo en desarrollo moderno de frontend.',
+      description: 'Formación técnica en desarrollo frontend combinada con una base sólida en negocio digital, marketing y e-commerce.',
       items: [
         {
-          degree: 'Máster en Desarrollo Frontend Avanzado',
-          institution: 'Tech Academy',
-          year: '2023',
-          description: 'Especialización en arquitecturas modernas de frontend, performance optimization y buenas prácticas en desarrollo.',
-          focus: ['React', 'TypeScript', 'Web Performance']
+          degree: 'Bootcamp Frontend (React)',
+          institution: 'IT Academy · Barcelona Activa',
+          year: 'mar. 2025 – ene. 2026',
+          description: 'Programa intensivo acreditado con **Microcredencial Universitaria por la UPC**. Desarrollo práctico de aplicaciones reales mediante sprints quincenales, cubriendo desde maquetación semántica estructurada hasta la creación de **Single Page Applications (SPAs)** robustas con **React 19** y **TypeScript**. Integración de base de datos y autenticación mediante **Supabase**, consumo optimizado de **APIs REST** y control de versiones colaborativo con **Git**. Proyecto final, **SEO Compass** (plataforma colaborativa de gestión SEO), calificado con la **nota máxima (10)**.',
+          focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'APIs REST', 'Metodologías ágiles'],
+          logo: '/assets/itacademy.webp',
+          grade: 'Proyecto final: 10'
         },
         {
-          degree: 'Bootcamp Full Stack JavaScript',
-          institution: 'Code Institute',
-          year: '2020',
-          description: 'Formación intensiva en desarrollo web. Creación de aplicaciones completas con Node.js, Express y React.',
-          focus: ['JavaScript', 'Node.js', 'React']
+          degree: 'React: Hooks y MERN',
+          institution: 'DevTalles',
+          year: 'jun. 2024 – oct. 2024',
+          description: 'Especialización avanzada en arquitectura modular con **React.js**, componentes funcionales y **Hooks** nativos e integrados (`useState`, `useEffect`, `useContext`, `useReducer`). Dominio de enrutado dinámico mediante **React Router** y gestión del estado de la aplicación. Construcción de aplicaciones integrales bajo la pila **MERN** (MongoDB, Express, React, Node.js) aplicando metodologías de **Clean Code** y patrones de diseño profesionales desde la base.',
+          focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
+          logo: '/assets/devtalles-white-black.webp'
         },
         {
-          degree: 'Grado en Ingeniería Informática',
-          institution: 'Universidad Autónoma',
-          year: '2018',
-          description: 'Formación académica fundamental en ciencias de la computación, algoritmos y diseño de sistemas.',
-          focus: ['Algoritmos', 'Estructuras de datos', 'Sistemas']
+          degree: 'Confección y Publicación de Páginas Web (IFCD0110)',
+          institution: 'The Corner Centre d\'Estudis',
+          year: 'mar. 2024 – oct. 2024',
+          description: 'Certificado de profesionalidad oficial (480 h) enfocado en fundamentos de ingeniería web. Adquisición de competencias sólidas en **HTML5 semántico** orientado a la accesibilidad y SEO, **CSS3 moderno** (layouts flexibles con Grid y Flexbox, media queries), y programación interactiva con **JavaScript vanilla**. Especialización en el ecosistema **WordPress** (diseño adaptado, desarrollo de temas, plugins y WPO) e integraciones avanzadas de analítica con **Google Analytics** y **Google Tag Manager**. Calificación final sobresaliente con **nota: 9,90**.',
+          focus: ['HTML semántico', 'CSS avanzado', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
+          logo: '/assets/thecorner.webp',
+          grade: 'Nota: 9,90'
+        },
+        {
+          degree: 'Máster en Dirección de e-Commerce y Marketing Digital',
+          institution: 'Universitat de Barcelona',
+          year: 'sept. 2019 – jul. 2020',
+          description: 'Posgrado de enfoque estratégico avalado por la **Universitat de Barcelona**. Especialización técnica y operativa en canales de adquisición digital, incluyendo **SEO técnico**, SEM/Google Ads, analítica web y gestión integral de plataformas e-commerce. Trabajo de fin de máster consistente en el desarrollo de un plan integral de marketing digital para una clínica médica, calificado con una **nota de 9,5** (calificación global media del máster: **9,93**).',
+          focus: ['SEO técnico', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Marketing'],
+          logo: '/assets/ub.webp',
+          grade: 'Nota: 9,93'
+        },
+        {
+          degree: 'Grado en Administración y Dirección de Empresas',
+          institution: 'Universitat de Barcelona',
+          year: '2015 – 2019',
+          description: 'Grado oficial universitario con **mención en Organización de Empresas** y Suplemento Europeo al Título. Cuatro años de formación en alta dirección, **estrategia de negocio**, finanzas corporativas, marketing y gestión de equipos. Esta formación me aporta una visión comercial e institucional muy valiosa que aplico directamente en el desarrollo de productos digitales orientados al cliente final. Trabajo de fin de grado centrado en el impacto tecnológico del **5G en el tejido empresarial** (calificado con **nota: 9**).',
+          focus: ['Estrategia empresarial', 'Gestión financiera', 'Marketing', 'Organización de Empresas', 'Dirección general'],
+          logo: '/assets/ub.webp'
         }
       ]
     },
@@ -255,7 +291,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. React 19, TypeScript y Supabase con arquitectura clean y 25 tests unitarios.',
+          description: 'Plataforma SPA colaborativa de gestión SEO para equipos y freelancers. Análisis de contenido on-page, auditorías técnicas, centro de tareas y seguimiento de keywords. **React 19**, **TypeScript** y **Supabase** con arquitectura clean y 25 tests unitarios.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -266,7 +302,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'MovieApp',
-          description: 'Aplicación web optimizada de búsqueda y exploración de películas y series. Integración con la API de TMDB, scroll infinito, filtros por año/género y navegación de actores. React 19, Tailwind CSS y Supabase.',
+          description: 'Aplicación web optimizada de búsqueda y exploración de películas y series. Integración con la API de TMDB, scroll infinito, filtros por año/género y navegación de actores. **React 19**, **Tailwind CSS** y **Supabase**.',
           tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -277,7 +313,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Budget Calculator',
-          description: 'Aplicación web para generar presupuestos profesionales de desarrollo web y marketing digital. Selección de servicios con tarifas dinámicas, descuentos, persistencia en almacenamiento local y sincronización por parámetros URL. React 19, Tailwind CSS, React Hook Form y Zod.',
+          description: 'Aplicación web para generar presupuestos profesionales de desarrollo web y marketing digital. Selección de servicios con tarifas dinámicas, descuentos, persistencia en almacenamiento local y sincronización por parámetros URL. **React 19**, **Tailwind CSS**, **React Hook Form** y **Zod**.',
           tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -288,7 +324,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Pokédex Classic',
-          description: 'Aplicación web modular que actúa como Pokédex interactiva conectándose a la PokéAPI pública. Búsqueda por nombre o ID, filtrado por tipos, estadísticas detalladas, descripción de habilidades y navegación secuencial. Creada con JavaScript ES6, HTML5 y Tailwind CSS.',
+          description: 'Aplicación web modular que actúa como Pokédex interactiva conectándose a la PokéAPI pública. Búsqueda por nombre o ID, filtrado por tipos, estadísticas detalladas, descripción de habilidades y navegación secuencial. Creada con **JavaScript ES6**, **HTML5** y **Tailwind CSS**.',
           tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'Ver demo',
           codeLabel: 'Código disponible',
@@ -306,27 +342,36 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Desarrollo Web',
           items: [
-            'Single Page Applications (SPAs)',
-            'Landing pages y sitios web empresariales',
-            'Webs de portfolio'
+            'Desarrollo de aplicaciones web modernas bajo principios de **Clean Code** y **arquitectura modular**',
+            'Enfoque en **escalabilidad**, **control de versiones colaborativo** y **optimización de rendimiento**',
+            'Integración de componentes dinámicos con **bases de datos** y **APIs REST**'
           ]
         },
         {
           id: 'mobile',
-          title: 'Desarrollo Mobile',
+          title: 'SEO Técnico & Indexación',
           items: [
-            'Progressive Web Apps (PWA)',
-            'Diseño responsive mobile-first',
-            'Soluciones multiplataforma'
+            'Optimización técnica y auditorías web enfocadas en maximizar la **indexabilidad orgánica**',
+            'Mejora de **Core Web Vitals** y velocidad de carga (**WPO**) orientada a resultados en buscadores',
+            'Gestión de la **arquitectura web**, **rastreo eficiente** y optimización del **crawl budget**'
           ]
         },
         {
           id: 'design',
-          title: 'Diseño UI/UX y Prototipado',
+          title: 'Soluciones e-Commerce & Migraciones',
           items: [
-            'Wireframing y prototipado',
-            'Sistemas de diseño de componentes',
-            'Interfaces accesibles (WCAG)'
+            'Mantenimiento, desarrollo de módulos y adaptaciones en **WordPress, PrestaShop y Shopify**',
+            'Planificación y ejecución de **migraciones técnicas complejas** desde otras plataformas hacia **Magento**',
+            'Enfoque de conversión (**CRO**), optimización del **checkout** y flujos de compra del usuario'
+          ]
+        },
+        {
+          id: 'analytics',
+          title: 'Analítica Web & Medición',
+          items: [
+            'Configuración avanzada de contenedores en **Google Tag Manager**',
+            'Implementación de eventos de comercio electrónico mejorado y audiencias en **Google Analytics 4**',
+            'Integración técnica de píxeles publicitarios (**Facebook Pixel, TikTok, Google Ads**)'
           ]
         }
       ]
@@ -336,7 +381,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contacto',
       title1: 'Hablemos',
       title2: 'hoy',
-      description: 'Disponible para colaborar en proyectos frontend con React, buenas prácticas de desarrollo y productos digitales que funcionan desde el primer scroll.'
+      description: 'Disponible para colaborar en **desarrollo frontend**, consultoría de **SEO técnico** o estrategias de **marketing digital**. Aporto soluciones eficientes combinando código de calidad con objetivos de conversión y rendimiento en motores de búsqueda.',
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'
@@ -405,41 +450,52 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Contact', href: '#contact' }
     ],
     hero: {
-      subtitle: 'Frontend developer · technical marketer',
-      title: 'Web design with impact',
-      description: 'Modern frontend development with a focus on product, performance, and visual experience. Clean, dark interfaces with subtle motion to highlight each section.',
+      subtitle: 'Frontend Developer & Technical SEO',
+      title: 'David Rueda',
+      description: 'Frontend Developer with a strong background in **technical SEO** and web application development. Specialized in **React, TypeScript, and e-commerce**, I combine my technical and business experience to build fast, accessible, and search-optimized digital products.',
       projectsBtn: 'Projects',
       contactBtn: 'Contact',
-      location: 'Barcelona',
-      brandPhoto: 'Brand photo',
-      photoSubtitle: 'Replace this block with your image or portrait'
+      location: 'Barcelona, Spain',
+      brandPhoto: 'David Rueda Rosas',
+      photoSubtitle: 'Frontend Developer & Technical SEO'
     },
     experience: {
       id: 'experience',
       section: 'Experience',
       title: 'Professional experience',
-      description: 'Frontend development experience focused on scalable architecture, performance, and collaboration in multidisciplinary teams.',
+      description: 'My professional career integrates **frontend development**, **technical SEO** consulting, and strategic **e-commerce optimization**.',
       items: [
         {
-          title: 'Senior Frontend Developer',
-          company: 'Tech Company Inc.',
-          period: '2023 - Present',
-          description: 'Developing modern web applications with React, Angular, and TypeScript. Team leadership and mentoring of junior developers.',
-          skills: ['React', 'TypeScript', 'Angular', 'Team Lead']
-        },
-        {
           title: 'Frontend Developer',
-          company: 'Digital Agency',
-          period: '2021 - 2023',
-          description: 'Creating responsive interfaces and optimizing performance. Working with Tailwind CSS and agile methodologies.',
-          skills: ['React', 'Tailwind CSS', 'Responsive Design', 'Agile']
+          company: 'Barcelona Activa',
+          period: 'Nov. 2025 - Present',
+          description: 'Lead the frontend engineering and layout design of **IT Academy\'s logical challenges platform**, a critical student-centered web product. Collaborate closely with Backend developers and Product Owners to design and deliver complex modules, ensuring exceptional **web performance, accessibility (WCAG), and clean code** standards. Drive agile sprint execution (**Scrum**), implement modular architecture, and execute **strategic refactoring** to build a robust, scalable, and highly interactive learning application.',
+          skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
+          logo: '/assets/barcelonaactiva.webp'
         },
         {
-          title: 'Junior Developer',
-          company: 'Startup Studio',
-          period: '2020 - 2021',
-          description: 'First steps in web development. Projects with HTML, CSS, vanilla JavaScript, and first experiences with frameworks.',
-          skills: ['HTML', 'CSS', 'JavaScript', 'React']
+          title: 'Junior Frontend Web Developer',
+          company: 'Lite Solutions',
+          period: 'Sept. 2024 - Dec. 2024',
+          description: 'Specialized in frontend development for tailored **e-commerce systems**. Led the feature enhancement, debugging, and layout optimization of prominent online stores powered by **WordPress and PrestaShop**. Crafted interactive user experiences using **JavaScript ES6 and jQuery**, developed database integrations with **PHP and MySQL**, and implemented pixel-perfect, mobile-first interfaces using **Bootstrap and CSS3**. Conducted modular extensions, utilized lifecycle hooks, and optimized templates to improve store conversion rates and load times.',
+          skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
+          logo: '/assets/litesolutions.webp'
+        },
+        {
+          title: 'Search Engine Optimization Specialist',
+          company: 'tbb Agency',
+          period: 'Jan. 2023 - Jul. 2023',
+          description: 'Spearheaded the technical **SEO strategy and web analytics** implementation for over 50 large-scale e-commerce stores and corporate websites (**Magento, PrestaShop, Shopify, WordPress, and Drupal**). Led and mentored a high-performing team of **5 SEO specialists**, coordinating deep crawl audits, indexability optimizations, and data integration. Architected complex measurement plans using **Google Tag Manager, Google Analytics 4, and Search Console**, turning raw user behavior data into actionable commercial insights that drove massive organic traffic growth.',
+          skills: ['Technical SEO', 'Team Leadership', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
+          logo: '/assets/logo-tbb.agency.webp'
+        },
+        {
+          title: 'Junior Web Positioning (SEO) Technician',
+          company: 'tbb Agency',
+          period: 'Jan. 2021 - Dec. 2022',
+          description: 'Executed comprehensive **on-page and off-page SEO audits**, focusing on page speed, internal linking, and crawling errors. Responsible for search visibility monitoring, **metadata implementation**, and structured data setup across diverse CMS environments. Configured basic analytics tracking, tracked keyword performance, and compiled **monthly reporting** to facilitate data-driven site optimizations.',
+          skills: ['SEO', 'Google Search Console', 'Web Analytics', 'Web Optimization', 'E-commerce'],
+          logo: '/assets/logo-tbb.agency.webp'
         }
       ]
     },
@@ -447,28 +503,50 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'education',
       section: 'Education',
       title: 'Education & studies',
-      description: 'Combination of academic background, intensive bootcamps, and continuous learning in modern frontend development.',
+      description: 'Technical frontend training combined with a solid background in digital business, marketing, and e-commerce.',
       items: [
         {
-          degree: "Master's in Advanced Frontend Development",
-          institution: 'Tech Academy',
-          year: '2023',
-          description: 'Specialization in modern frontend architectures, performance optimization, and development best practices.',
-          focus: ['React', 'TypeScript', 'Web Performance']
+          degree: 'Frontend Bootcamp (React)',
+          institution: 'IT Academy · Barcelona Activa',
+          year: 'Mar. 2025 – Jan. 2026',
+          description: 'Intensive program accredited with a **UPC University Micro-credential**. Practical development of real-world applications using biweekly sprints, covering structured semantic layout to building robust **Single Page Applications (SPAs)** using **React 19** and **TypeScript**. Integrated databases and authentication with **Supabase**, optimized **REST APIs** consumption, and managed collaborative version control with **Git**. Final project, **SEO Compass** (collaborative SEO management platform), awarded the **maximum grade (10)**.',
+          focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'REST APIs', 'Agile'],
+          logo: '/assets/itacademy.webp',
+          grade: 'Final project: 10'
         },
         {
-          degree: 'Full Stack JavaScript Bootcamp',
-          institution: 'Code Institute',
-          year: '2020',
-          description: 'Intensive web development training. Building complete applications with Node.js, Express, and React.',
-          focus: ['JavaScript', 'Node.js', 'React']
+          degree: 'React: Hooks & MERN',
+          institution: 'DevTalles',
+          year: 'Jun. 2024 – Oct. 2024',
+          description: 'Advanced specialization in modular architecture using **React.js**, functional components, and native/custom **Hooks** (`useState`, `useEffect`, `useContext`, `useReducer`). Expertise in dynamic routing via **React Router** and application state management. Built end-to-end full-stack applications under the **MERN** stack (MongoDB, Express, React, Node.js), applying **Clean Code** principles and professional design patterns from day one.',
+          focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
+          logo: '/assets/devtalles-white-black.webp'
         },
         {
-          degree: "Bachelor's in Computer Engineering",
-          institution: 'Autonomous University',
-          year: '2018',
-          description: 'Fundamental academic training in computer science, algorithms, and system design.',
-          focus: ['Algorithms', 'Data structures', 'Systems']
+          degree: 'Web Page Design and Publishing (IFCD0110)',
+          institution: 'The Corner Centre d\'Estudis',
+          year: 'Mar. 2024 – Oct. 2024',
+          description: 'Official 480-hour vocational certificate establishing a solid web engineering foundation. Mastery of **semantic HTML5** for accessibility (WCAG) and SEO, **modern CSS3** (layouts using Flexbox, CSS Grid, and media queries), and interactive scripting with **vanilla JavaScript**. Developed extensive hands-on expertise in the **WordPress** ecosystem (custom themes, plugins, and WPO optimization) and analytics integration with **Google Analytics** and **Google Tag Manager**. Achieved an outstanding final grade of **9.90**.',
+          focus: ['Semantic HTML', 'Advanced CSS', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
+          logo: '/assets/thecorner.webp',
+          grade: 'Grade: 9.90'
+        },
+        {
+          degree: 'Master in E-Commerce & Digital Marketing Management',
+          institution: 'Universitat de Barcelona',
+          year: 'Sept. 2019 – Jul. 2020',
+          description: 'Postgraduate degree focused on digital business strategy approved by the **Universitat de Barcelona**. Gained deep technical expertise in acquisition channels including **technical SEO**, SEM/Google Ads, advanced web analytics, and full e-commerce system management. Final master thesis (a comprehensive digital marketing strategy for a private medical clinic) graded **9.5** (overall master grade average: **9.93**).',
+          focus: ['Technical SEO', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Marketing'],
+          logo: '/assets/ub.webp',
+          grade: 'Grade: 9.93'
+        },
+        {
+          degree: 'Bachelor in Business Administration (ADE)',
+          institution: 'Universitat de Barcelona',
+          year: '2015 – 2019',
+          description: 'Bachelor\'s degree with a specialization in **Business Organisation** and a European Diploma Supplement. Four years of training in executive management, **business strategy**, corporate finance, marketing, and team leadership. This background provides me with a strong business perspective that I apply directly when developing digital products. Final thesis on the impact of **5G technology in the business sector** graded **9**.',
+          focus: ['Business strategy', 'Financial management', 'Marketing', 'Business Organisation', 'General management'],
+          logo: '/assets/ub.webp'
         }
       ]
     },
@@ -506,7 +584,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. React 19, TypeScript and Supabase with clean architecture and 25 unit tests.',
+          description: 'Collaborative SEO management SPA for small teams and freelancers. On-page content analysis, technical audits, task action center, and keyword tracking. **React 19**, **TypeScript** and **Supabase** with clean architecture and 25 unit tests.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -517,7 +595,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'MovieApp',
-          description: 'Optimized web application for searching and exploring movies and series. Features TMDB API integration, infinite scroll, genre/year filters, and actor navigation. React 19, Tailwind CSS and Supabase.',
+          description: 'Optimized web application for searching and exploring movies and series. Features TMDB API integration, infinite scroll, genre/year filters, and actor navigation. **React 19**, **Tailwind CSS** and **Supabase**.',
           tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -528,7 +606,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Budget Calculator',
-          description: 'Web application for generating professional budget estimates for web development and digital marketing. Features dynamic pricing, discounts, local storage persistence, and URL parameters synchronization. React 19, Tailwind CSS, React Hook Form, and Zod.',
+          description: 'Web application for generating professional budget estimates for web development and digital marketing. Features dynamic pricing, discounts, local storage persistence, and URL parameters synchronization. **React 19**, **Tailwind CSS**, **React Hook Form**, and **Zod**.',
           tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -539,7 +617,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Pokédex Classic',
-          description: 'Modular web application that serves as an interactive Pokédex using the public PokéAPI. Features Pokémon search by name/ID, type filtering, detailed stats, ability descriptions, and sequential navigation. Built with JavaScript ES6, HTML5, and Tailwind CSS.',
+          description: 'Modular web application that serves as an interactive Pokédex using the public PokéAPI. Features Pokémon search by name/ID, type filtering, detailed stats, ability descriptions, and sequential navigation. Built with **JavaScript ES6**, **HTML5**, and **Tailwind CSS**.',
           tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'View demo',
           codeLabel: 'Code available',
@@ -557,27 +635,36 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Web Development',
           items: [
-            'Single Page Applications (SPAs)',
-            'Landing pages and business websites',
-            'Portfolio websites'
+            'Building modern web applications under **Clean Code** principles and **modular architecture**',
+            'Focus on **scalability**, **collaborative version control**, and **performance optimization**',
+            'Integrating dynamic frontend components with **REST APIs** and **databases**'
           ]
         },
         {
           id: 'mobile',
-          title: 'Mobile Development',
+          title: 'Technical SEO & Indexing',
           items: [
-            'Progressive Web Apps (PWA)',
-            'Responsive mobile-first design',
-            'Cross-platform solutions'
+            'Technical optimization and web audits focused on maximizing **organic indexing**',
+            'Core Web Vitals and page speed (**WPO**) improvements driven by search engine results',
+            'Managing **web architecture**, **efficient crawling**, and **crawl budget** optimization'
           ]
         },
         {
           id: 'design',
-          title: 'UI/UX Design & Prototyping',
+          title: 'e-Commerce & Migrations',
           items: [
-            'Wireframing and prototyping',
-            'Component design systems',
-            'Accessibility-first interfaces (WCAG)'
+            'Functional maintenance, module enhancements, and template updates in **WordPress, PrestaShop, and Shopify**',
+            'Planning and executing **complex technical migrations** from other platforms to **Magento**',
+            'Conversion Rate Optimization (**CRO**), **checkout enhancement**, and user checkout flow optimization'
+          ]
+        },
+        {
+          id: 'analytics',
+          title: 'Web Analytics & Measurement',
+          items: [
+            'Advanced container setup in **Google Tag Manager**',
+            'Implementing Enhanced E-commerce event tracking and custom audiences in **Google Analytics 4**',
+            'Technical integration of advertising pixels (**Facebook Pixel, TikTok, and Google Ads**)'
           ]
         }
       ]
@@ -587,7 +674,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contact',
       title1: "Let's talk",
       title2: 'today',
-      description: 'Available to collaborate on frontend projects with React, development best practices, and digital products that work from the very first scroll.'
+      description: 'Available for collaboration on **frontend development**, **technical SEO** consulting, or **digital marketing** strategies. I deliver efficient solutions combining quality code with conversion goals and search engine performance.',
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'
@@ -656,41 +743,52 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       { label: 'Contacte', href: '#contacte' }
     ],
     hero: {
-      subtitle: 'Frontend developer · technical marketer',
-      title: 'Disseny web amb impacte',
-      description: 'Desenvolupament frontend modern amb enfocament en producte, rendiment i experiència visual. Interfícies fosques, netes i amb moviment subtil per destacar cada secció.',
+      subtitle: 'Desenvolupador Frontend & SEO Tècnic',
+      title: 'David Rueda',
+      description: 'Desenvolupador Frontend amb una sòlida trajectòria en **SEO tècnic** i creació d\'aplicacions web. Especialitzat en **React, TypeScript i plataformes e-commerce**, combino el meu background tècnic i de negoci per construir productes digitals ràpids, accessibles i optimitzats per obtenir resultats.',
       projectsBtn: 'Projectes',
       contactBtn: 'Contacte',
-      location: 'Barcelona',
-      brandPhoto: 'Foto de marca',
-      photoSubtitle: 'Reemplaça aquest bloc amb la teva imatge o retrat'
+      location: 'Barcelona, Espanya',
+      brandPhoto: 'David Rueda Rosas',
+      photoSubtitle: 'Desenvolupador Frontend & SEO Tècnic'
     },
     experience: {
       id: 'experiencia',
       section: 'Experiència',
       title: 'Trajectòria professional',
-      description: 'Experiència en desenvolupament frontend amb enfocament en arquitectura escalable, rendiment i col·laboració en equips multidisciplinaris.',
+      description: 'La meva trajectòria professional integra el **desenvolupament frontend**, la consultoria de **SEO tècnic** i l\'optimització estratègica de **plataformes e-commerce**.',
       items: [
         {
-          title: 'Senior Frontend Developer',
-          company: 'Tech Company Inc.',
-          period: '2023 - Present',
-          description: 'Desenvolupament d\'aplicacions web modernes amb React, Angular i TypeScript. Lideratge d\'equip i mentoring de desenvolupadors junior.',
-          skills: ['React', 'TypeScript', 'Angular', 'Team Lead']
+          title: 'Desenvolupador Frontend',
+          company: 'Barcelona Activa',
+          period: 'nov. 2025 - actualitat',
+          description: 'Lidero el desenvolupament tècnic i la maquetació de la **plataforma de reptes lògics d\'IT Academy**, un producte clau enfocat a potenciar l\'aprenentatge tècnic de la comunitat estudiantil. Col·laboro transversalment amb Backend i Product Owners per dissenyar i desplegar funcionalitats avançades, prioritzant el **rendiment, l\'accessibilitat (WCAG) i la usabilitat**. Aplico metodologies àgiles (**Scrum**) en sprints quinzenals i asseguro l\'escalabilitat a llarg termini de l\'ecosistema mitjançant **refactoritzacions estratègiques, arquitectura neta** i components reutilitzables d\'alta qualitat.',
+          skills: ['React', 'TypeScript', 'Agile', 'Scrum', 'Git', 'Clean Code'],
+          logo: '/assets/barcelonaactiva.webp'
         },
         {
-          title: 'Frontend Developer',
-          company: 'Digital Agency',
-          period: '2021 - 2023',
-          description: 'Creació d\'interfícies responsive i optimització de rendiment. Treball amb Tailwind CSS i metodologies àgiles.',
-          skills: ['React', 'Tailwind CSS', 'Responsive Design', 'Agile']
+          title: 'Desenvolupador Web Frontend Junior',
+          company: 'Lite Solutions',
+          period: 'set. 2024 - des. 2024',
+          description: 'Especialitzat en el desenvolupament frontend de solucions **e-commerce a mida**. Responsable del manteniment evolutiu i l\'optimització de botigues online basades en **WordPress i PrestaShop**. Vaig implementar funcionalitats interactives avançades amb **JavaScript ES6 i jQuery**, vaig estructurar consultes eficients a bases de dades relacionals (**MySQL**) i vaig desenvolupar adaptacions lògiques amb **PHP**. Vaig assegurar una experiència d\'usuari fluida i multidispositiu mitjançant **maquetació semàntica i disseny adaptatiu amb Bootstrap i CSS avançat**, optimitzant plantilles i estenent mòduls del core tècnic.',
+          skills: ['JavaScript', 'jQuery', 'WordPress', 'PrestaShop', 'Bootstrap', 'PHP', 'MySQL', 'Responsive Design'],
+          logo: '/assets/litesolutions.webp'
         },
         {
-          title: 'Junior Developer',
-          company: 'Startup Studio',
-          period: '2020 - 2021',
-          description: 'Primers passos en desenvolupament web. Projectes amb HTML, CSS, JavaScript vanilla i primeres experiències amb frameworks.',
-          skills: ['HTML', 'CSS', 'JavaScript', 'React']
+          title: 'Search Engine Optimization Specialist',
+          company: 'tbb Agency',
+          period: 'gen. 2023 - jul. 2023',
+          description: 'Direcció tècnica de l\'estratègia **SEO i analítica web** de més de 50 e-commerce i portals de gran envergadura construïts amb plataformes complexes (**Magento, PrestaShop, Shopify, WordPress i Drupal**). Vaig liderar un equip de **5 consultors SEO**, coordinant auditories tècniques de rastreig, indexabilitat i integracions crítiques de dades. Vaig dissenyar i implementar arquitectures complexes de mesura d\'analítica web mitjançant **Google Tag Manager, Google Analytics 4 i Search Console**, transformant dades de comportament d\'usuari en insights de negoci que van millorar significativament la visibilitat orgànica de les marques.',
+          skills: ['SEO Tècnic', 'Lideratge d\'Equips', 'Magento', 'PrestaShop', 'Shopify', 'WordPress', 'Google Analytics', 'Google Tag Manager'],
+          logo: '/assets/logo-tbb.agency.webp'
+        },
+        {
+          title: 'Tècnic en Posicionament Web (SEO) Junior',
+          company: 'tbb Agency',
+          period: 'gen. 2021 - des. 2022',
+          description: 'Execució d\'**auditories SEO on-page i off-page** orientades a corregir problemes de velocitat de càrrega, enllaçat intern i indexació. Responsable de la monitorització del rendiment de cerques i de la correcta implementació tècnica d\'**etiquetes semàntiques i metadades** en múltiples gestors de contingut. Vaig configurar panells de control de mesura de trànsit essencials i vaig documentar **informes de rendiment tècnic** per guiar millores de visibilitat i optimització web.',
+          skills: ['SEO', 'Google Search Console', 'Analítica Web', 'Optimització Web', 'E-commerce'],
+          logo: '/assets/logo-tbb.agency.webp'
         }
       ]
     },
@@ -698,28 +796,50 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'educacio',
       section: 'Educació',
       title: 'Formació i estudis',
-      description: 'Combinació de formació acadèmica, bootcamps intensius i aprenentatge continu en desenvolupament modern de frontend.',
+      description: 'Formació tècnica en desenvolupament frontend combinada amb una base sòlida en negoci digital, màrqueting i e-commerce.',
       items: [
         {
-          degree: 'Màster en Desenvolupament Frontend Avançat',
-          institution: 'Tech Academy',
-          year: '2023',
-          description: 'Especialització en arquitectures modernes de frontend, performance optimization i bones pràctiques en desenvolupament.',
-          focus: ['React', 'TypeScript', 'Web Performance']
+          degree: 'Bootcamp Frontend (React)',
+          institution: 'IT Academy · Barcelona Activa',
+          year: 'mar. 2025 – gen. 2026',
+          description: 'Programa intensiu acreditat amb **Microcredencial Universitària per la UPC**. Desenvolupament pràctic d\'aplicacions reals mitjançant sprints quinzenals, cobrint des de maquetació semàntica estructurada fins a la creació de **Single Page Applications (SPAs)** robustes amb **React 19** i **TypeScript**. Integració de base de dades i autenticació mitjançant **Supabase**, consum optimitzat de **APIs REST** i control de versions col·laboratiu amb **Git**. Projecte final, **SEO Compass** (plataforma col·laborativa de gestió SEO), qualificat amb la **nota màxima (10)**.',
+          focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'APIs REST', 'Metodologies àgils'],
+          logo: '/assets/itacademy.webp',
+          grade: 'Projecte final: 10'
         },
         {
-          degree: 'Bootcamp Full Stack JavaScript',
-          institution: 'Code Institute',
-          year: '2020',
-          description: 'Formación intensiva en desarrollo web. Creación de aplicaciones completas con Node.js, Express y React.',
-          focus: ['JavaScript', 'Node.js', 'React']
+          degree: 'React: Hooks i MERN',
+          institution: 'DevTalles',
+          year: 'jun. 2024 – oct. 2024',
+          description: 'Especialització avançada en arquitectura modular amb **React.js**, components funcionals i **Hooks** natius i integrats (`useState`, `useEffect`, `useContext`, `useReducer`). Domini d\'enrutament dinàmic mitjançant **React Router** i gestió de l\'estat de l\'aplicació. Construcció d\'aplicacions integrals sota la pila **MERN** (MongoDB, Express, React, Node.js) aplicant metodologies de **Clean Code** i patrons de disseny professionals des de la base.',
+          focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
+          logo: '/assets/devtalles-white-black.webp'
         },
         {
-          degree: 'Grau en Enginyeria Informàtica',
-          institution: 'Universitat Autònoma',
-          year: '2018',
-          description: 'Formació acadèmica fonamental en ciències de la computació, algorismes i disseny de sistemes.',
-          focus: ['Algorismes', 'Estructures de dades', 'Sistemes']
+          degree: 'Confecció i Publicació de Pàgines Web (IFCD0110)',
+          institution: 'The Corner Centre d\'Estudis',
+          year: 'mar. 2024 – oct. 2024',
+          description: 'Certificat de professionalitat oficial (480 h) enfocat en fonaments d\'enginyeria web. Adquisició de competències sòlides en **HTML5 semàntic** orientat a l\'accessibilitat i SEO, **CSS3 modern** (layouts flexibles amb Grid i Flexbox, media queries), i programació interactiva amb **JavaScript vanilla**. Especialització en l\'ecosistema **WordPress** (disseny adaptat, desenvolupament de temes, plugins i WPO) i integracions avançades d\'analítica amb **Google Analytics** i **Google Tag Manager**. Qualificació final excel·lent amb **nota: 9,90**.',
+          focus: ['HTML semàntic', 'CSS avançat', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
+          logo: '/assets/thecorner.webp',
+          grade: 'Nota: 9,90'
+        },
+        {
+          degree: 'Màster en Direcció d\'E-Commerce i Màrqueting Digital',
+          institution: 'Universitat de Barcelona',
+          year: 'set. 2019 – jul. 2020',
+          description: 'Postgrau d\'enfocament estratègic avalat per la **Universitat de Barcelona**. Especialització tècnica i operativa en canals d\'adquisició digital, incloent **SEO tècnic**, SEM/Google Ads, analítica web i gestió integral de plataformes e-commerce. Treball de fi de màster consistent en el desenvolupament d\'un pla integral de màrqueting digital per a una clínica mèdica, qualificat amb una **nota de 9,5** (qualificació global mitjana del màster: **9,93**).',
+          focus: ['SEO tècnic', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Màrqueting'],
+          logo: '/assets/ub.webp',
+          grade: 'Nota: 9,93'
+        },
+        {
+          degree: 'Grau en Administració i Direcció d\'Empreses (ADE)',
+          institution: 'Universitat de Barcelona',
+          year: '2015 – 2019',
+          description: 'Grau oficial universitari amb **menció en Organització d\'Empreses** i Suplement Europeu al Títol. Quatre anys de formació en alta direcció, **estratègia de negoci**, finances corporatives, màrqueting i gestió d\'equips. Aquesta formació em proporciona una visió comercial i institucional molt valuosa que aplico directament al desenvolupament de productes digitals orientats al client final. Treball de fi de grau centrat en l\'impacte tecnològic del **5G en el teixit empresarial** (qualificat amb **nota: 9**).',
+          focus: ['Estratègia empresarial', 'Gestió financera', 'Màrqueting', 'Organització d\'Empreses', 'Direcció general'],
+          logo: '/assets/ub.webp'
         }
       ]
     },
@@ -757,7 +877,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       items: [
         {
           title: 'SEO Compass',
-          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. React 19, TypeScript i Supabase amb arquitectura neta i 25 tests unitaris.',
+          description: 'Plataforma SPA col·laborativa de gestió SEO per a equips i freelancers. Anàlisi de contingut on-page, auditories tècniques, centre de tasques i seguiment de keywords. **React 19**, **TypeScript** i **Supabase** amb arquitectura neta i 25 tests unitaris.',
           tags: ['React 19', 'TypeScript', 'Supabase', 'Vitest'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -768,7 +888,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'MovieApp',
-          description: 'Aplicació web optimitzada de cerca i exploració de pel·lícules i sèries. Integració amb l\'API de TMDB, scroll infinit, filtres per any/gènere i navegació d\'actors. React 19, Tailwind CSS i Supabase.',
+          description: 'Aplicació web optimitzada de cerca i exploració de pel·lícules i sèries. Integració amb l\'API de TMDB, scroll infinit, filtres per any/gènere i navegació d\'actors. **React 19**, **Tailwind CSS** i **Supabase**.',
           tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Supabase'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -779,7 +899,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Budget Calculator',
-          description: 'Aplicació web per generar pressupostos professionals de desenvolupament web i màrqueting digital. Selecció de serveis amb tarifes dinàmiques, descomptes, persistència en emmagatzematge local i sincronització per paràmetres URL. React 19, Tailwind CSS, React Hook Form i Zod.',
+          description: 'Aplicació web per generar pressupostos professionals de desenvolupament web i màrqueting digital. Selecció de serveis amb tarifes dinàmiques, descomptes, persistència en emmagatzematge local i sincronització per paràmetres URL. **React 19**, **Tailwind CSS**, **React Hook Form** i **Zod**.',
           tags: ['React 19', 'React Hook Form', 'Zod', 'Tailwind CSS'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -790,7 +910,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
         },
         {
           title: 'Pokédex Classic',
-          description: 'Aplicació web modular que actua com a Pokédex interactiva connectant-se a la PokéAPI pública. Cerca per nom o ID, filtrat per tipus, estadístiques detallades, descripció d\'habilitats i navegació seqüencial. Creada amb JavaScript ES6, HTML5 i Tailwind CSS.',
+          description: 'Aplicació web modular que actua com a Pokédex interactiva connectant-se a la PokéAPI pública. Cerca per nom o ID, filtrat per tipus, estadístiques detallades, descripció d\'habilitats i navegació seqüencial. Creada amb **JavaScript ES6**, **HTML5** i **Tailwind CSS**.',
           tags: ['JavaScript ES6', 'Tailwind CSS', 'PokéAPI', 'Fetch API'],
           demoLabel: 'Veure demo',
           codeLabel: 'Codi disponible',
@@ -808,27 +928,36 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
           id: 'web',
           title: 'Desenvolupament Web',
           items: [
-            'Single Page Applications (SPAs)',
-            'Landing pages i llocs web empresarials',
-            'Webs de portfolio'
+            'Desenvolupament d\'aplicacions web modernes sota principis de **Clean Code** i **arquitectura modular**',
+            'Enfocament en **escalabilitat**, **control de versions col·laboratiu** i **optimització de rendiment**',
+            'Integració de components interactius amb **APIs REST** i **bases de dades**'
           ]
         },
         {
           id: 'mobile',
-          title: 'Desenvolupament Mobile',
+          title: 'SEO Tècnic & Indexació',
           items: [
-            'Progressive Web Apps (PWA)',
-            'Disseny responsive mobile-first',
-            'Solucions multiplataforma'
+            'Optimització tècnica i auditories web enfocades a maximitzar la **indexabilitat orgànica**',
+            'Millora de **Core Web Vitals** i velocitat de càrrega (**WPO**) orientada a resultats en cercadors',
+            'Gestió de l\'arxiu web, rastreig eficient i optimització del **crawl budget**'
           ]
         },
         {
           id: 'design',
-          title: 'Disseny UI/UX i Prototipat',
+          title: 'Solucions e-Commerce & Migracions',
           items: [
-            'Wireframing i prototipat',
-            'Sistemes de disseny de components',
-            'Interfícies accessibles (WCAG)'
+            'Manteniment, desenvolupament de mòduls i adaptacions en **WordPress, PrestaShop i Shopify**',
+            'Planificació i execució de **migracions tècniques complexes** des d\'altres plataformes cap a **Magento**',
+            'Enfocament de conversió (**CRO**), optimització del **checkout** i fluxos de compra de l\'usuari'
+          ]
+        },
+        {
+          id: 'analytics',
+          title: 'Analítica Web & Mesura',
+          items: [
+            'Configuració avançada de contenidors en **Google Tag Manager**',
+            'Implementació d\'esdeveniments de comerç electrònic millorat i audiències en **Google Analytics 4**',
+            'Integració tècnica de píxels publicitaris (**Facebook Pixel, TikTok, Google Ads**)'
           ]
         }
       ]
@@ -838,7 +967,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       section: 'Contacte',
       title1: 'Parlem',
       title2: 'avui',
-      description: 'Disponible per col·laborar en projectes frontend amb React, bones pràctiques de desenvolupament i productes digitals que funcionen des del primer scroll.'
+      description: 'Disponible per col·laborar en **desenvolupament frontend**, consultoria de **SEO tècnic** o estratègies de **màrqueting digital**. Aporto solucions eficients combinant codi de qualitat amb objectius de conversió i rendiment en motors de cerca.',
     },
     footer: {
       copyright: '© 2026 DAVID RUEDA ROSAS'

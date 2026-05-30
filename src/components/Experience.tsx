@@ -33,16 +33,24 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
   const sectionDesc = t.description || 'Experiencia en desarrollo frontend con enfoque en arquitectura escalable, rendimiento y colaboración en equipos multidisciplinarios.';
   const items = t.items || experiences;
 
+  const formatDescription = (text: string) => {
+    if (!text) return '';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
+  };
+
   return (
-    <section id={sectionId} className="relative overflow-hidden py-28">
+    <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-12 max-w-3xl reveal reveal-up">
           <p className="text-sm uppercase tracking-[0.32em] text-red-500">{sectionTag}</p>
           <h2 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[-0.05em] text-slate-900 dark:text-white break-words">{sectionTitle}</h2>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400">
-            {sectionDesc}
-          </p>
+          <p 
+            className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-400"
+            dangerouslySetInnerHTML={{ __html: formatDescription(sectionDesc) }}
+          />
         </div>
 
         <style>{`
@@ -60,34 +68,55 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
             background: rgba(239,68,68,0.04);
           }
         `}</style>
-        <div className="space-y-2">
+        <div className="space-y-4">
           {items.map((exp, idx) => (
             <div
               key={idx}
               className="exp-card group relative border-l-2 border-slate-200 dark:border-white/10 hover:border-red-500/60 pb-4 cursor-default reveal reveal-up"
               style={{ transitionDelay: `${idx * 150}ms` }}
             >
-              <div className="absolute -left-[9px] top-4 h-[16px] w-[16px] rounded-full border-2 border-red-500/40 bg-red-500/10 dark:bg-red-500/20 transition-all duration-400 group-hover:border-red-500 group-hover:bg-red-500/20 group-hover:scale-110" />
+              <div className="absolute -left-[9px] top-7 h-[16px] w-[16px] rounded-full border-2 border-red-500/40 bg-red-500/10 dark:bg-red-500/20 transition-all duration-400 group-hover:border-red-500 group-hover:bg-red-500/20 group-hover:scale-110" />
 
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
-                <div>
-                  <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white group-hover:text-red-500 transition-colors duration-300">{exp.title}</h3>
-                  <p className="text-slate-500 dark:text-neutral-400 text-sm">{exp.company}</p>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                {/* Logo */}
+                {exp.logo && (
+                  <div className="flex-shrink-0">
+                    <div className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 group-hover:border-red-500/20 shadow-sm">
+                      <img
+                        src={exp.logo}
+                        alt={exp.company}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
+                    <div>
+                      <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white group-hover:text-red-500 transition-colors duration-300">{exp.title}</h3>
+                      <p className="text-slate-500 dark:text-neutral-400 text-sm font-medium">{exp.company}</p>
+                    </div>
+                    <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
+                  </div>
+
+                  <p 
+                    className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: formatDescription(exp.description) }}
+                  />
+
+                  <div className="flex flex-wrap gap-2">
+                    {exp.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-2.5 py-1 text-xs font-medium bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-neutral-300 border border-slate-200 dark:border-white/10 rounded-full group-hover:border-red-500/30 group-hover:text-slate-900 dark:group-hover:text-white transition-colors duration-300"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <p className="text-xs md:text-sm font-mono text-slate-400 dark:text-neutral-500 md:whitespace-nowrap">{exp.period}</p>
-              </div>
-
-              <p className="text-slate-700 dark:text-neutral-300 text-sm md:text-base mb-3 leading-relaxed">{exp.description}</p>
-
-              <div className="flex flex-wrap gap-2">
-                {exp.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-2.5 py-1 text-xs font-medium bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-neutral-300 border border-slate-200 dark:border-white/10 rounded-full group-hover:border-red-500/30 group-hover:text-slate-900 dark:group-hover:text-white transition-colors duration-300"
-                  >
-                    {skill}
-                  </span>
-                ))}
               </div>
             </div>
           ))}

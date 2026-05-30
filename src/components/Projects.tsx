@@ -62,11 +62,18 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
   const sectionTitle = t.title || 'Mis proyectos';
   const items = t.items || projects;
 
+  const formatDescription = (text: string) => {
+    if (!text) return '';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-xs font-mono font-medium text-red-600 dark:text-red-400">$1</code>');
+  };
+
   const imageLabel = t.id === 'projects' ? 'Project Image' : t.id === 'projectes' ? 'Imatge del projecte' : 'Imagen del proyecto';
   const imageSubtitle = t.id === 'projects' ? 'Replace with real screenshot' : t.id === 'projectes' ? 'Reemplaçar amb captura real' : 'Reemplazar con captura real';
 
   return (
-    <section id={sectionId} className="relative overflow-hidden pt-16 pb-28 lg:pt-12 lg:pb-12">
+    <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-16 max-w-3xl reveal reveal-up">
@@ -97,7 +104,10 @@ export default function Projects({ t = {} as Partial<ProjectsTranslation> }: { t
                   ))}
                 </div>
                 <h3 className="text-5xl font-black tracking-[-0.06em] text-slate-900 dark:text-white sm:text-6xl">{project.title}</h3>
-                <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 dark:text-slate-400">{project.description}</p>
+                <p 
+                  className="mt-6 max-w-xl text-base leading-8 text-slate-600 dark:text-slate-400"
+                  dangerouslySetInnerHTML={{ __html: formatDescription(project.description || '') }}
+                />
                 <div className="mt-8 flex items-center gap-4">
                   <a href={project.codeUrl || '#'} target="_blank" rel="noopener noreferrer" aria-label={project.codeLabel || 'Código disponible'} className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:scale-110 hover:bg-slate-100 hover:text-slate-900 active:scale-95 dark:border-slate-700/50 dark:bg-slate-800/30 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:bg-slate-800 dark:hover:text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>

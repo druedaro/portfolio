@@ -159,7 +159,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
     hero: {
       subtitle: 'Desarrollador Frontend & SEO Técnico',
       title: 'David Rueda',
-      description: 'Desarrollador Frontend en transición desde el **SEO técnico** hacia la creación de aplicaciones web. Especializado en **React, TypeScript y plataformas e-commerce**, combino mi background técnico y de negocio para construir productos digitales rápidos, accesibles y optimizados para conseguir resultados.',
+      description: 'Desarrollador Frontend con una sólida trayectoria en **SEO técnico** y creación de aplicaciones web. Especializado en **React, TypeScript y plataformas e-commerce**, combino mi background técnico y de negocio para construir productos digitales rápidos, accesibles y optimizados para conseguir resultados.',
       projectsBtn: 'Proyectos',
       contactBtn: 'Contacto',
       location: 'Barcelona, España',
@@ -443,7 +443,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
     hero: {
       subtitle: 'Frontend Developer & Technical SEO',
       title: 'David Rueda',
-      description: 'Frontend Developer transitioning from **technical SEO** to building web applications. Specialized in **React, TypeScript, and e-commerce**, I combine my technical and business background to build fast, accessible, and search-optimized digital products.',
+      description: 'Frontend Developer with a strong background in **technical SEO** and web application development. Specialized in **React, TypeScript, and e-commerce**, I combine my technical and business experience to build fast, accessible, and search-optimized digital products.',
       projectsBtn: 'Projects',
       contactBtn: 'Contact',
       location: 'Barcelona, Spain',
@@ -727,7 +727,7 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
     hero: {
       subtitle: 'Desenvolupador Frontend & SEO Tècnic',
       title: 'David Rueda',
-      description: 'Desenvolupador Frontend en transició des del **SEO tècnic** cap a la creació d\'aplicacions web. Especialitzat en **React, TypeScript i plataformes e-commerce**, combino el meu background tècnic i de negoci per construir productes digitals ràpids, accessibles i optimitzats per obtenir resultats.',
+      description: 'Desenvolupador Frontend amb una sòlida trajectòria en **SEO tècnic** i creació d\'aplicacions web. Especialitzat en **React, TypeScript i plataformes e-commerce**, combino el meu background tècnic i de negoci per construir productes digitals ràpids, accessibles i optimitzats per obtenir resultats.',
       projectsBtn: 'Projectes',
       contactBtn: 'Contacte',
       location: 'Barcelona, Espanya',

@@ -1,0 +1,26 @@
+# David Rueda Rosas - Frontend Developer & Technical SEO
+
+David Rueda Rosas is a professional Frontend Developer and Technical SEO Specialist based in Barcelona, Spain. He blends frontend software engineering with business strategy, digital marketing, and web analytics.
+
+## Contact Information
+- Website: https://davidrueda.dev
+- LinkedIn: https://www.linkedin.com/in/david-rueda-rosas/
+- GitHub: https://github.com/druedaro
+- Email: ruedarosasdavid@gmail.com
+
+## Technical Skills
+- **Frontend Development:** React 19, TypeScript, JavaScript ES6, Tailwind CSS, Astro, Bootstrap, CSS3, HTML5
+- **Back-End & Databases:** Node.js, Express, Supabase, PHP, MySQL, MongoDB (MERN Stack)
+- **Technical SEO & Analytics:** Google Tag Manager, Google Analytics 4, Search Console, Semrush, Web Performance Optimization (WPO), Crawl Budget Optimization, Information Architecture
+- **e-Commerce Platforms:** Magento (migrations), PrestaShop, WordPress, Shopify, Conversion Rate Optimization (CRO)
+- **Methodologies:** Agile, Scrum, Clean Code, Git
+
+## Experience Highlight
+- **Barcelona Activa (2025 - Present):** Frontend Developer. Building the IT Academy logical challenges web application with React 19, TypeScript, Supabase, and Agile Scrum.
+- **Lite Solutions (2024):** Junior Frontend Developer. Maintenance and modular expansion of custom PrestaShop and WordPress e-commerce stores.
+- **tbb Agency (2021 - 2023):** Technical SEO Specialist & Team Lead. Directed search strategies and advanced analytics for over 50 large-scale e-commerce stores (Magento, Shopify, WordPress).
+
+## Education Highlight
+- **Frontend Bootcamp (React) - IT Academy / Barcelona Activa (2026):** University Micro-credential by UPC. Top grade (10) on final project (SEO Compass).
+- **Master in E-Commerce & Digital Marketing - Universitat de Barcelona (2020):** Strategic marketing and technical acquisition channels. Grade average: 9.93.
+- **Bachelor in Business Administration (ADE) - Universitat de Barcelona (2019):** Specialization in Business Organisation and corporate strategy.

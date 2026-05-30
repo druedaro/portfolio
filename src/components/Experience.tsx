@@ -34,7 +34,7 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
   const items = t.items || experiences;
 
   return (
-    <section id={sectionId} className="relative overflow-hidden py-28">
+    <section id={sectionId} className="relative overflow-hidden py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="mb-12 max-w-3xl reveal reveal-up">

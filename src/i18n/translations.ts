@@ -36,6 +36,8 @@ export interface EducationItem {
   year: string;
   description: string;
   focus: string[];
+  logo?: string;
+  grade?: string;
 }
 
 export interface EducationTranslation {
@@ -196,28 +198,50 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'educacion',
       section: 'Educación',
       title: 'Formación y estudios',
-      description: 'Combinación de formación académica, bootcamps intensivos y aprendizaje continuo en desarrollo moderno de frontend.',
+      description: 'Formación técnica en desarrollo frontend combinada con una base sólida en negocio digital, marketing y e-commerce.',
       items: [
         {
-          degree: 'Máster en Desarrollo Frontend Avanzado',
-          institution: 'Tech Academy',
-          year: '2023',
-          description: 'Especialización en arquitecturas modernas de frontend, performance optimization y buenas prácticas en desarrollo.',
-          focus: ['React', 'TypeScript', 'Web Performance']
+          degree: 'Bootcamp Frontend (React)',
+          institution: 'IT Academy · Barcelona Activa',
+          year: 'mar. 2025 – ene. 2026',
+          description: 'Programa intensivo acreditado con Microcredencial Universitaria por la UPC. Desarrollé aplicaciones reales sprint a sprint: desde maquetación semántica con HTML y CSS hasta SPAs completas con React 19 y TypeScript, consumo de APIs REST, gestión de datos con Supabase y autenticación. El proyecto final, SEO Compass —plataforma colaborativa de gestión SEO— obtuvo la máxima nota. Trabajo en equipo con Git y metodologías ágiles en todo el programa.',
+          focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'APIs REST', 'Metodologías ágiles'],
+          logo: '/assets/itacademy.webp',
+          grade: 'Proyecto final: 10'
         },
         {
-          degree: 'Bootcamp Full Stack JavaScript',
-          institution: 'Code Institute',
-          year: '2020',
-          description: 'Formación intensiva en desarrollo web. Creación de aplicaciones completas con Node.js, Express y React.',
-          focus: ['JavaScript', 'Node.js', 'React']
+          degree: 'React: Hooks y MERN',
+          institution: 'DevTalles',
+          year: 'jun. 2024 – oct. 2024',
+          description: 'Formación avanzada en React moderno diseñada íntegramente con Hooks y componentes funcionales. El curso aborda useState, useEffect, useContext, useReducer y hooks personalizados, además de routing con React Router, gestión de estado global y construcción de aplicaciones full-stack con la pila MERN. Énfasis en buenas prácticas, código limpio y patrones profesionales aplicados desde el primer día.',
+          focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
+          logo: '/assets/devtalles-white-black.webp'
         },
         {
-          degree: 'Grado en Ingeniería Informática',
-          institution: 'Universidad Autónoma',
-          year: '2018',
-          description: 'Formación académica fundamental en ciencias de la computación, algoritmos y diseño de sistemas.',
-          focus: ['Algoritmos', 'Estructuras de datos', 'Sistemas']
+          degree: 'Confección y Publicación de Páginas Web (IFCD0110)',
+          institution: 'The Corner Centre d\'Estudis',
+          year: 'mar. 2024 – oct. 2024',
+          description: 'Certificado de profesionalidad oficial de 480 horas que sentó las bases técnicas del desarrollo web. Aprendí HTML semántico para SEO, CSS avanzado con animaciones y layouts modernos, JavaScript para añadir dinamismo, Bootstrap y diseño responsive. También desarrollé competencias en WordPress —personalización de temas, plugins, WPO y seguridad— y en la integración de herramientas de medición como Google Analytics y Google Tag Manager.',
+          focus: ['HTML semántico', 'CSS avanzado', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
+          logo: '/assets/thecorner.webp',
+          grade: 'Nota: 9,90'
+        },
+        {
+          degree: 'Máster en Dirección de e-Commerce y Marketing Digital',
+          institution: 'Universitat de Barcelona',
+          year: 'sept. 2019 – jul. 2020',
+          description: 'Máster de formación permanente aprobado por la agencia de posgrado de la UB con enfoque estratégico y operativo. Adquirí dominio en SEO técnico y on-page, SEM, analítica web avanzada, social media, email marketing y gestión de e-commerce. El trabajo de fin de máster, un plan de marketing digital completo para un centro médico privado, obtuvo una nota de 9,5. Profesores en activo de empresas líderes del sector.',
+          focus: ['SEO técnico', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Marketing'],
+          logo: '/assets/ub.webp',
+          grade: 'Nota: 9,93'
+        },
+        {
+          degree: 'Grado en Administración y Dirección de Empresas',
+          institution: 'Universitat de Barcelona',
+          year: '2015 – 2019',
+          description: 'Grado universitario con mención en Organización de Empresas y suplemento europeo. Cuatro años de formación en dirección general, estrategia empresarial, finanzas, marketing y recursos humanos que me dan una visión de negocio sólida aplicada hoy al desarrollo de producto digital. El trabajo de fin de grado, sobre las implicaciones de la tecnología 5G en el mundo empresarial, fue calificado con un 9.',
+          focus: ['Estrategia empresarial', 'Gestión financiera', 'Marketing', 'Organización de Empresas', 'Dirección general'],
+          logo: '/assets/ub.webp'
         }
       ]
     },
@@ -447,28 +471,50 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'education',
       section: 'Education',
       title: 'Education & studies',
-      description: 'Combination of academic background, intensive bootcamps, and continuous learning in modern frontend development.',
+      description: 'Technical frontend training combined with a solid background in digital business, marketing, and e-commerce.',
       items: [
         {
-          degree: "Master's in Advanced Frontend Development",
-          institution: 'Tech Academy',
-          year: '2023',
-          description: 'Specialization in modern frontend architectures, performance optimization, and development best practices.',
-          focus: ['React', 'TypeScript', 'Web Performance']
+          degree: 'Frontend Bootcamp (React)',
+          institution: 'IT Academy · Barcelona Activa',
+          year: 'Mar. 2025 – Jan. 2026',
+          description: 'Intensive programme accredited with a University Micro-credential by the UPC. I built real-world applications sprint by sprint: from semantic HTML/CSS layouts to full SPAs with React 19 and TypeScript, REST API consumption, Supabase data management and authentication. My final project, SEO Compass — a collaborative SEO management platform — received a perfect score. Team collaboration with Git and agile methodologies throughout.',
+          focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'REST APIs', 'Agile'],
+          logo: '/assets/itacademy.webp',
+          grade: 'Final project: 10'
         },
         {
-          degree: 'Full Stack JavaScript Bootcamp',
-          institution: 'Code Institute',
-          year: '2020',
-          description: 'Intensive web development training. Building complete applications with Node.js, Express, and React.',
-          focus: ['JavaScript', 'Node.js', 'React']
+          degree: 'React: Hooks & MERN',
+          institution: 'DevTalles',
+          year: 'Jun. 2024 – Oct. 2024',
+          description: "Advanced React training built entirely around Hooks and functional components. Covers useState, useEffect, useContext, useReducer and custom hooks, alongside React Router, global state management, and full-stack MERN app development. Strong emphasis on clean code, professional patterns, and real-world best practices from day one.",
+          focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
+          logo: '/assets/devtalles-white-black.webp'
         },
         {
-          degree: "Bachelor's in Computer Engineering",
-          institution: 'Autonomous University',
-          year: '2018',
-          description: 'Fundamental academic training in computer science, algorithms, and system design.',
-          focus: ['Algorithms', 'Data structures', 'Systems']
+          degree: 'Web Page Design and Publishing (IFCD0110)',
+          institution: 'The Corner Centre d\'Estudis',
+          year: 'Mar. 2024 – Oct. 2024',
+          description: 'Official 480-hour professional certification that built my technical web foundations. I learned semantic HTML for SEO, advanced CSS with animations and modern layouts, JavaScript for interactivity, Bootstrap and responsive design. Also gained hands-on experience with WordPress — theme customisation, plugins, WPO and security — and measurement tools like Google Analytics and Google Tag Manager.',
+          focus: ['Semantic HTML', 'Advanced CSS', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
+          logo: '/assets/thecorner.webp',
+          grade: 'Grade: 9.90'
+        },
+        {
+          degree: 'Master in E-Commerce & Digital Marketing Management',
+          institution: 'Universitat de Barcelona',
+          year: 'Sept. 2019 – Jul. 2020',
+          description: "Postgraduate programme approved by the UB's postgraduate agency with a strategic and operational focus. I gained expertise in technical and on-page SEO, SEM, advanced web analytics, social media, email marketing, and e-commerce management. My final thesis — a full digital marketing plan for a private medical centre — was awarded 9.5. Taught by active professionals from leading industry companies.",
+          focus: ['Technical SEO', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Marketing'],
+          logo: '/assets/ub.webp',
+          grade: 'Grade: 9.93'
+        },
+        {
+          degree: 'Bachelor in Business Administration (ADE)',
+          institution: 'Universitat de Barcelona',
+          year: '2015 – 2019',
+          description: 'University degree with a specialisation in Business Organisation and a European supplement. Four years of training in general management, business strategy, finance, marketing, and human resources — giving me the business perspective I now apply daily to digital product development. My final thesis on the implications of 5G technology in business was graded 9.',
+          focus: ['Business strategy', 'Financial management', 'Marketing', 'Business Organisation', 'General management'],
+          logo: '/assets/ub.webp'
         }
       ]
     },
@@ -698,28 +744,50 @@ export const translations: Record<'es' | 'en' | 'ca', TranslationDictionary> = {
       id: 'educacio',
       section: 'Educació',
       title: 'Formació i estudis',
-      description: 'Combinació de formació acadèmica, bootcamps intensius i aprenentatge continu en desenvolupament modern de frontend.',
+      description: 'Formació tècnica en desenvolupament frontend combinada amb una base sòlida en negoci digital, màrqueting i e-commerce.',
       items: [
         {
-          degree: 'Màster en Desenvolupament Frontend Avançat',
-          institution: 'Tech Academy',
-          year: '2023',
-          description: 'Especialització en arquitectures modernes de frontend, performance optimization i bones pràctiques en desenvolupament.',
-          focus: ['React', 'TypeScript', 'Web Performance']
+          degree: 'Bootcamp Frontend (React)',
+          institution: 'IT Academy · Barcelona Activa',
+          year: 'mar. 2025 – gen. 2026',
+          description: 'Programa intensiu acreditat amb Microcredencial Universitària per la UPC. Vaig desenvolupar aplicacions reals sprint a sprint: des de maquetació semàntica amb HTML i CSS fins a SPAs completes amb React 19 i TypeScript, consum d\'APIs REST, gestió de dades amb Supabase i autenticació. El projecte final, SEO Compass —plataforma col·laborativa de gestió SEO— va obtenir la nota màxima. Treball en equip amb Git i metodologies àgils durant tot el programa.',
+          focus: ['React 19', 'TypeScript', 'Supabase', 'Git', 'APIs REST', 'Metodologies àgils'],
+          logo: '/assets/itacademy.webp',
+          grade: 'Projecte final: 10'
         },
         {
-          degree: 'Bootcamp Full Stack JavaScript',
-          institution: 'Code Institute',
-          year: '2020',
-          description: 'Formación intensiva en desarrollo web. Creación de aplicaciones completas con Node.js, Express y React.',
-          focus: ['JavaScript', 'Node.js', 'React']
+          degree: 'React: Hooks i MERN',
+          institution: 'DevTalles',
+          year: 'jun. 2024 – oct. 2024',
+          description: 'Formació avançada en React modern dissenyada íntegrament amb Hooks i components funcionals. El curs aborda useState, useEffect, useContext, useReducer i hooks personalitzats, a més de routing amb React Router, gestió d\'estat global i construcció d\'aplicacions full-stack amb la pila MERN. Èmfasi en bones pràctiques, codi net i patrons professionals aplicats des del primer dia.',
+          focus: ['React.js', 'Hooks', 'React Router', 'Context API', 'MERN', 'Clean Code'],
+          logo: '/assets/devtalles-white-black.webp'
         },
         {
-          degree: 'Grau en Enginyeria Informàtica',
-          institution: 'Universitat Autònoma',
-          year: '2018',
-          description: 'Formació acadèmica fonamental en ciències de la computació, algorismes i disseny de sistemes.',
-          focus: ['Algorismes', 'Estructures de dades', 'Sistemes']
+          degree: 'Confecció i Publicació de Pàgines Web (IFCD0110)',
+          institution: 'The Corner Centre d\'Estudis',
+          year: 'mar. 2024 – oct. 2024',
+          description: 'Certificat de professionalitat oficial de 480 hores que va establir les bases tècniques del desenvolupament web. Vaig aprendre HTML semàntic per a SEO, CSS avançat amb animacions i layouts moderns, JavaScript per a la interactivitat, Bootstrap i disseny responsive. També vaig adquirir competències en WordPress —personalització de temes, plugins, WPO i seguretat— i en eines de mesura com Google Analytics i Google Tag Manager.',
+          focus: ['HTML semàntic', 'CSS avançat', 'JavaScript', 'WordPress', 'Bootstrap', 'Google Analytics', 'GTM'],
+          logo: '/assets/thecorner.webp',
+          grade: 'Nota: 9,90'
+        },
+        {
+          degree: 'Màster en Direcció d\'E-Commerce i Màrqueting Digital',
+          institution: 'Universitat de Barcelona',
+          year: 'set. 2019 – jul. 2020',
+          description: 'Màster de formació permanent aprovat per l\'agència de postgrau de la UB amb enfocament estratègic i operatiu. Vaig adquirir domini en SEO tècnic i on-page, SEM, analítica web avançada, social media, email màrqueting i gestió d\'e-commerce. El treball de fi de màster, un pla de màrqueting digital complet per a un centre mèdic privat, va obtenir un 9,5. Professors en actiu d\'empreses líders del sector.',
+          focus: ['SEO tècnic', 'SEM', 'Google Analytics', 'E-Commerce', 'Social Media', 'Email Màrqueting'],
+          logo: '/assets/ub.webp',
+          grade: 'Nota: 9,93'
+        },
+        {
+          degree: 'Grau en Administració i Direcció d\'Empreses (ADE)',
+          institution: 'Universitat de Barcelona',
+          year: '2015 – 2019',
+          description: 'Grau universitari amb menció en Organització d\'Empreses i suplement europeu. Quatre anys de formació en direcció general, estratègia empresarial, finances, màrqueting i recursos humans que em donen una visió de negoci sòlida aplicada avui al desenvolupament de producte digital. El treball de fi de grau, sobre les implicacions de la tecnologia 5G en el món empresarial, va ser qualificat amb un 9.',
+          focus: ['Estratègia empresarial', 'Gestió financera', 'Màrqueting', 'Organització d\'Empreses', 'Direcció general'],
+          logo: '/assets/ub.webp'
         }
       ]
     },

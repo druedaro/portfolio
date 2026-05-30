@@ -43,7 +43,14 @@ export default function WhatIDo({ t }: { t: WhatIDoTranslation }) {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
             <h2 className="mb-10 text-4xl sm:text-5xl md:text-6xl font-black tracking-[-0.05em] text-slate-900 dark:text-white break-words">
-              {t.heading.replace('?', '')}<span className="text-red-500">?</span>
+              {t.heading.endsWith('?') ? (
+                <>
+                  {t.heading.slice(0, -1)}
+                  <span className="text-red-500">?</span>
+                </>
+              ) : (
+                t.heading
+              )}
             </h2>
 
             <div className="space-y-3">

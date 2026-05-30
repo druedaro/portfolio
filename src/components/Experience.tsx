@@ -72,8 +72,8 @@ export default function Experience({ t = {} as Partial<ExperienceTranslation> }:
               <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                 {/* Logo */}
                 {exp.logo && (
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-12 h-12 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-1.5 transition-all duration-300 group-hover:border-red-500/20 shadow-sm">
+                  <div className="flex-shrink-0">
+                    <div className="w-20 h-20 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center overflow-hidden p-2 transition-all duration-300 group-hover:border-red-500/20 shadow-sm">
                       <img
                         src={exp.logo}
                         alt={exp.company}

@@ -12,7 +12,7 @@ export default function Education({ t = {} as Partial<EducationTranslation> }: {
     const normalized = name.toLowerCase();
     if (normalized.includes('it academy') || normalized.includes('barcelona activa')) return 'https://www.barcelonactiva.cat/itacademy';
     if (normalized.includes('devtalles')) return 'https://devtalles.com/';
-    if (normalized.includes('the corner')) return 'https://www.thecorner.cat/'; // o la web oficial
+    if (normalized.includes('the corner')) return 'https://thecorner.es/';
     if (normalized.includes('barcelona')) return 'https://www.ub.edu/'; // Universitat de Barcelona
     if (normalized.includes('catalunya') || normalized.includes('upc')) return 'https://www.upc.edu/';
     return null;
